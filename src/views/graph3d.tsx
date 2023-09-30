@@ -94,6 +94,10 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
         });
     }, [items]);
 
+    useEffect(() => {
+        fieldsStore.setFocused(null);
+    }, []);
+
     const handleDotClick = (dot: GraphItem) => {
         const nearest = dots
             .map(other => ({dot: other, distance: distance(dot.position, other.position)}))

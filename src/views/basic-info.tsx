@@ -53,7 +53,7 @@ export default function BasicInfo() {
             <CardFooter className="flex justify-end pt-8">
                 <Button asChild>
                     <Link to={"/fields-of-study"}>
-                        Wybór kierunków
+                        Kontynuuj
                         <ArrowRight className={"h-4 w-4 ml-2"} />
                     </Link>
                 </Button>

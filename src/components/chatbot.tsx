@@ -25,11 +25,12 @@ export default function Chatbot() {
     const [currentMessage, setCurrentMessage] = useState('');
     const { theme } = useTheme()
 
-    // const [question, setQuestion] = useState({});
+    const [question, setQuestion] = useState({});
 
     const handleSubmit = () => {
         if (currentMessage.trim()) {
             setMessages(prev => [...prev, currentMessage]);
+            let response = getNextAnswer(currentMessage);
             setCurrentMessage('');
         }
     };

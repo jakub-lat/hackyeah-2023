@@ -166,7 +166,7 @@ const DotPlot3D = (props: GraphProps) => {
             <SetupCamera/>
             <ambientLight/>
             <pointLight position={[10, 10, 10]}/>
-            <Dots controls={controls} {...props}/>
+            <Dots controls={controls} ref={props.dotsRef} {...props}/>
             <OrbitControls ref={controls}/>
         </Canvas>
     );
@@ -179,7 +179,7 @@ const Graph3D = React.memo(({className, ...props}: GraphProps & { className?: st
             <DotPlot3D {...props} />
         </div>
     )
-});
+}, (a, b) => a.items.length === b.items.length);
 
 
 export default Graph3D;

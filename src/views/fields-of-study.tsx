@@ -75,7 +75,7 @@ export default function FieldsOfStudy() {
     const add = (v: string) => {
         setSelectedFields([...(new Set([...selectedFields, v]))]);
         setSearch('');
-        graphRef.current.focus(v);
+        graphRef.current?.focus(v);
     };
 
     const remove = (v: string) => setSelectedFields(selectedFields.filter(x => x !== v));
@@ -118,7 +118,7 @@ export default function FieldsOfStudy() {
                     <CardHeader className={"flex flex-row items-center h-20"}>
                         <h3 className={"mr-5"}>Wybrane kierunki</h3>
                         <ScrollArea className={'h-20 py-3 flex-1'}>
-                            <div className={"flex items-center gap-3 flex-wrap"}>
+                            <div className={"flex items-center gap-3 flex-wrap min-h-20"}>
                                 {selectedFields
                                     .map(x => (
                                         <FieldOfStudyBadge key={x} onClick={() => remove(x.toLowerCase())}>

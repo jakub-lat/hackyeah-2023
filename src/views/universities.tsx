@@ -8,10 +8,8 @@ export default function Universities() {
     const [focus, setFocus] = useState(null)
 
     return <PageLayout>
-        <PageTitle>Uczelnie</PageTitle>
-
         <div className="flex flex-col lg:flex-row gap-5 py-5">
-            <div className="lg:w-[50%] flex flex-col gap-3 max-h-[40rem] overflow-auto">
+            <div className="lg:w-[35%] flex flex-col gap-3 max-h-[80vh] overflow-auto">
                 {UniMock.map((uni, i) =>
                     <UniCard
                         key={i}
@@ -23,7 +21,7 @@ export default function Universities() {
                     />
                 )}
             </div>
-            <div className="lg:w-[50%]">
+            <div className="w-[65%] h-[80vh]">
                 <Map
                     markers={UniMock.map((uni) => {
                         return {

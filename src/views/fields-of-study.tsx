@@ -16,7 +16,8 @@ import {cn} from "@/lib/utils.ts";
 import {Button} from "@/components/ui/button.tsx";
 import Graph3D, {DotsRef} from "@/views/graph3d.tsx";
 import {ScrollArea} from "@/components/ui/scroll-area.tsx";
-import {useFieldsStore} from "@/store/fieldsStore.ts";
+import {useGraphStore} from "@/store/graphStore.ts";
+import {useFilterStore} from "@/store/filterStore.ts";
 
 function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeof Badge>) {
     return <Badge variant={"secondary"} className={cn("cursor-pointer h-7 gap-x-4", className)} {...props}>
@@ -70,17 +71,18 @@ const fields: Record<string, string[]> = {
 
 export default function FieldsOfStudy() {
     const graphRef = useRef<DotsRef>(null);
-    const [selectedFields, setSelectedFields] = useState<string[]>([]);
     const [search, setSearch] = useState('');
-    const {focused} = useFieldsStore();
+    const {focused} = useGraphStore();
+
+    const {selectedFields, addSelectedField, removeSelectedField} = useFilterStore();
 
     const add = (v: string) => {
-        setSelectedFields([...(new Set([...selectedFields, v]))]);
+        addSelectedField(v);
         setSearch('');
         graphRef.current?.focus(v);
     };
 
-    const remove = (v: string) => setSelectedFields(selectedFields.filter(x => x.toLowerCase() !== v.toLowerCase()));
+    const remove = (v: string) => removeSelectedField(v);
 
     return <PageLayout>
         <div className={"flex justify-stretch gap-10 h-max flex-1"}>

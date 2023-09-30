@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Input } from '@/components/ui/input.tsx';
 import { Button } from '@/components/ui/button.tsx';
-import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '@/components/ui/card';
 import { Bot, BotIcon, ChevronRight, School2 } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
 
@@ -27,45 +27,45 @@ export default function Chatbot() {
     };
 
     return (
-        <div>
+        <div className="my-4">
             {messages.map((message, index) => (
                 <Card>
-                    <CardHeader>
-                        {message}
-                    </CardHeader>
+                <CardHeader>
+                    <div className="flex gap-2 px-6">
+                        <Bot color={theme === "dark" ? "white" : "black"} />
+                        <h1>Wolisz samorozwój czy zdobycie zawodu?</h1>
+                    </div>
+                </CardHeader>
+                <CardContent className="mx-6">
+                    <p className=" text-gray-700">{message}</p>
+                </CardContent>
                 </Card>
             ))}
 
             <Card>
                 <CardHeader>
-                <div className="flex gap-2 px-6">
-                    <Bot color={theme === "dark" ? "white" : "black"} />
-                    <h1>Wolisz samorozwój czy zdobycie zawodu?</h1>
-                </div>
+                    <div className="flex gap-2 px-6">
+                        <Bot color={theme === "dark" ? "white" : "black"} />
+                        <h1>Wolisz samorozwój czy zdobycie zawodu?</h1>
+                    </div>
                 </CardHeader>
             </Card>
 
-            <div className="flex mt-1">
-                        <Input
-                            className="text-white placeholder-red"
-                            value={currentMessage}
-                            onChange={e => setCurrentMessage(e.target.value)}
-                            placeholder="Wpisz..."
-                        />
-                        <Button
-                            color="primary"
-                            onClick={handleSubmit}
-                        >
-                            Odpowiedz
-                        </Button>
-                    </div>
-
-            <Card className="px-14 py-6 my-4">
-
-                <CardContent>
-                    
-                </CardContent>
-            </Card>
+            <div className="flex mt-1 gap-2">
+                <Input
+                    className="text-white placeholder-red px-12"
+                    value={currentMessage}
+                    onChange={e => setCurrentMessage(e.target.value)}
+                    placeholder="Wpisz..."
+                />
+                <Button
+                    className="grow w-40"
+                    color="primary"
+                    onClick={handleSubmit}
+                >
+                    Odpowiedz
+                </Button>
+            </div>
         </div>
     );
 }

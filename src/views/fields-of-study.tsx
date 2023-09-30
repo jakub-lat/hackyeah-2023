@@ -29,7 +29,7 @@ import {
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 import {Link} from "react-router-dom";
-// import getFaculties from '../store/facultiesStore.ts';
+import getFaculties from '../store/facultiesStore.ts';
 
 
 function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeof Badge>) {
@@ -41,7 +41,7 @@ function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeo
 
 
 const allFaculties: Record<string, string[]>  = {
-    "Informatyczne": [] // await getFaculties(),
+    "Informatyczne": await getFaculties(),
 };
 
 // const allFaculties: Record<string, string[]> = {

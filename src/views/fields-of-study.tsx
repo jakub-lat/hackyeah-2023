@@ -22,6 +22,7 @@ import {
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 import {Link} from "react-router-dom";
+import getFaculties from '../store/facultiesStore.ts';
 
 function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeof Badge>) {
     return <Badge variant={"secondary"} className={cn("cursor-pointer h-7 gap-x-4", className)} {...props}>
@@ -30,52 +31,9 @@ function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeo
     </Badge>
 }
 
-
-// const allFaculties: Record<string, string[]> = {
-//     'Informatyczne': [
-//         'Informatyka stosowana',
-//         'Informatyka algorytmiczna',
-//         'Cyberbezpieczeństwo',
-//         'Telekomunikacja',
-//         'Inżynieria systemów',
-//         'Inżynieria oprogramowania',
-//         'Inżynieria internetu rzeczy',
-//         'Inżynieria sieci komputerowych',
-//
-//     ],
-//     'Humanistyczne': [
-//         'Filozofia',
-//         'Socjologia',
-//         'Psychologia',
-//         'Pedagogika',
-//         'Historia',
-//         'Historia sztuki',
-//         'Historia kultury',
-//     ],
-//     'Techniczne': [
-//         'Inżynieria mechaniczna',
-//         'Inżynieria materiałowa',
-//         'Inżynieria chemiczna',
-//         'Inżynieria środowiska',
-//         'Inżynieria biomedyczna',
-//     ],
-//     'Medyczne': [
-//         'Medycyna',
-//         'Farmacja',
-//         'Dietetyka',
-//         'Zdrowie publiczne',
-//         'Pielęgniarstwo',
-//         'Położnictwo',
-//         'Fizjoterapia',
-//         'Logopedia',
-//         'Optyka',
-//         'Kosmetologia',
-//         'Zdrowie i uroda',
-//     ]
-// };
 const getAllFaculties = async () => {
     return {
-        Informatyczne: await getAllFaculties(),
+        Informatyczne: await getFaculties(),
     };
 };
 

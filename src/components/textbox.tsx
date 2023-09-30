@@ -11,7 +11,7 @@ export default function Textbox(
                 <Input
                     className="text-white placeholder-red px-12"
                     value={currentMessage}
-                    onChange={e => setCurrentMessage}
+                    onChange={e => setCurrentMessage(e.currentTarget.value)}
                     placeholder="Wpisz..."
                 />
                 <Button

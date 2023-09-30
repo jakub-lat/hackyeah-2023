@@ -10,6 +10,7 @@ import {Button} from "@/components/ui/button.tsx";
 import { User } from "lucide-react"
 import {ComponentProps} from "react";
 import {ThemeToggle} from "@/components/theme-toggle.tsx";
+import {appName} from "@/lib/const.ts";
 
 function NavItem({...props}: ComponentProps<typeof NavLink>) {
     return <NavLink
@@ -32,9 +33,10 @@ export function Navbar({
                     {...props}
                 >
                     <Link to={"/"} className={cn("font-bold")}>
-                        Wyszukiwarka uczelni
+                        {appName}
                     </Link>
-                    <NavItem to={"/"}>Znajdź uczelnię</NavItem>
+                    <NavItem to={"/fields-of-study"}>Znajdź kierunki</NavItem>
+                    <NavItem to={"/universities"}>Znajdź uczelnie</NavItem>
                     <NavItem to={"/favorites"}>Ulubione</NavItem>
                 </nav>
 

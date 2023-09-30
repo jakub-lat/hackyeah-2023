@@ -18,11 +18,11 @@ const UniCard = ({ header, city, major, icon, onClick }: {
         <Card className="flex items-center cursor-pointer hover:opacity-70 transition-all" onClick={onClick}>
             <CardHeader className="p-5">
                 <div className="flex gap-4 items-center">
-                    <div className={`w-10 h-10 custom-icon-${theme === "dark" ? "light" : "dark"}`}>
+                    <div className={`w-8 h-8 custom-icon-${theme === "dark" ? "light" : "dark"}`}>
                         {icon ? <img src={icon} /> : <Uni />}
                     </div>
                     <div>
-                        <CardTitle>{header}</CardTitle>
+                        <CardTitle className="text-lg">{header}</CardTitle>
                         <CardDescription>{city}, kierunek: {major}</CardDescription>
                     </div>
                 </div>

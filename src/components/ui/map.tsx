@@ -89,7 +89,7 @@ const Map = ({ className, markers }: Props) => {
             "w-full relative h-full min-h-[40rem] rounded-md overflow-hidden",
             className
         )}>
-            <div ref={mapContainer} className="absolute w-full h-full" />
+            <div ref={mapContainer} className="absolute w-full h-full min-h-[40rem]" />
         </div>
     );
 }

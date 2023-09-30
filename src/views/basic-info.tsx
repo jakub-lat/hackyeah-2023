@@ -21,7 +21,7 @@ function FormGroup({children}: PropsWithChildren<{}>) {
 }
 
 export default function BasicInfo() {
-    const [category, setCategory] = useState<string>('1-deg');
+    const [category, setCategory] = useState<string>('undergraduate');
     const [userOrigin, setUserOrigin] = useState<string>('poland');
 
     return <div className={"flex justify-center items-center mt-20"}>
@@ -37,7 +37,7 @@ export default function BasicInfo() {
                             <Label className={"mb-1"}>Czego szukasz?</Label>
                             <TabsInput value={category} onValueChange={setCategory}>
                                 <TabsInputItem value={"undergraduate"}>Studia I stopnia</TabsInputItem>
-                                <TabsInputItem value={"graduate"}>Studia II stopnia</TabsInputItem>
+                                <TabsInputItem value={"masters"}>Studia II stopnia</TabsInputItem>
                                 <TabsInputItem value={"postgraduate"}>Studia III stopnia</TabsInputItem>
                             </TabsInput>
                         </FormGroup>

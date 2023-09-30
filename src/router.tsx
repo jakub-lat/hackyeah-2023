@@ -20,7 +20,7 @@ export default createBrowserRouter(
             <Route path="/university" element={<University univ={{
                 name: "1",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur, magna id semper euismod, elit lorem egestas neque, blandit scelerisque nibh nunc nec risus. Aliquam sagittis congue diam, nec tempus risus mattis id. Curabitur congue sem elit, sit amet vestibulum leo semper sit amet. In neque lectus, ultrices vitae sagittis.",
-                fieldsOfStudy: ["a", "b"],
+                fieldsOfStudy: ["Lokalizacja", "Informatyka"],
                 rating: 2137,
                 comments: []
             }} />} />

@@ -1,4 +1,4 @@
-const StreetViewEmbed = (src:string) : JSX.Element =>  {
+const StreetViewEmbed = ({ src }: { src: string }) : JSX.Element =>  {
     return ( 
         <iframe
             src={src}

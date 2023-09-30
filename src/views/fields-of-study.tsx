@@ -29,6 +29,8 @@ import {
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 import {Link} from "react-router-dom";
+import getFaculties from '../store/facultiesStore.ts';
+
 
 function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeof Badge>) {
     return <Badge variant={"secondary"} className={cn("cursor-pointer h-7 gap-x-4", className)} {...props}>
@@ -37,48 +39,53 @@ function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeo
     </Badge>
 }
 
-const fields: Record<string, string[]> = {
-    'Informatyczne': [
-        'Informatyka stosowana',
-        'Informatyka algorytmiczna',
-        'Cyberbezpieczeństwo',
-        'Telekomunikacja',
-        'Inżynieria systemów',
-        'Inżynieria oprogramowania',
-        'Inżynieria internetu rzeczy',
-        'Inżynieria sieci komputerowych',
 
-    ],
-    'Humanistyczne': [
-        'Filozofia',
-        'Socjologia',
-        'Psychologia',
-        'Pedagogika',
-        'Historia',
-        'Historia sztuki',
-        'Historia kultury',
-    ],
-    'Techniczne': [
-        'Inżynieria mechaniczna',
-        'Inżynieria materiałowa',
-        'Inżynieria chemiczna',
-        'Inżynieria środowiska',
-        'Inżynieria biomedyczna',
-    ],
-    'Medyczne': [
-        'Medycyna',
-        'Farmacja',
-        'Dietetyka',
-        'Zdrowie publiczne',
-        'Pielęgniarstwo',
-        'Położnictwo',
-        'Fizjoterapia',
-        'Logopedia',
-        'Optyka',
-        'Kosmetologia',
-        'Zdrowie i uroda',
-    ]
+const allFaculties: Record<string, string[]>  = {
+    "Informatyczne": await getFaculties(),
 };
+
+// const allFaculties: Record<string, string[]> = {
+//     'Informatyczne': [
+//         'Informatyka stosowana',
+//         'Informatyka algorytmiczna',
+//         'Cyberbezpieczeństwo',
+//         'Telekomunikacja',
+//         'Inżynieria systemów',
+//         'Inżynieria oprogramowania',
+//         'Inżynieria internetu rzeczy',
+//         'Inżynieria sieci komputerowych',
+//
+//     ],
+//     'Humanistyczne': [
+//         'Filozofia',
+//         'Socjologia',
+//         'Psychologia',
+//         'Pedagogika',
+//         'Historia',
+//         'Historia sztuki',
+//         'Historia kultury',
+//     ],
+//     'Techniczne': [
+//         'Inżynieria mechaniczna',
+//         'Inżynieria materiałowa',
+//         'Inżynieria chemiczna',
+//         'Inżynieria środowiska',
+//         'Inżynieria biomedyczna',
+//     ],
+//     'Medyczne': [
+//         'Medycyna',
+//         'Farmacja',
+//         'Dietetyka',
+//         'Zdrowie publiczne',
+//         'Pielęgniarstwo',
+//         'Położnictwo',
+//         'Fizjoterapia',
+//         'Logopedia',
+//         'Optyka',
+//         'Kosmetologia',
+//         'Zdrowie i uroda',
+//     ]
+// };
 
 export default function FieldsOfStudy() {
     const graphRef = useRef<DotsRef>(null);
@@ -114,8 +121,8 @@ export default function FieldsOfStudy() {
                         <CommandInput value={search} onValueChange={setSearch} placeholder="Wyszukaj kierunek..."/>
                         <CommandList className={"max-h-[65vh]"}>
                             <CommandEmpty>Nie znaleziono.</CommandEmpty>
-                            {Object.keys(fields).map(x => <CommandGroup heading={x} key={x}>
-                                {fields[x]
+                            {Object.keys(allFaculties).map(x => <CommandGroup heading={x} key={x}>
+                                {allFaculties[x]
                                     .filter(x => !selectedFields.includes(x))
                                     .map(f =>
                                         <CommandItem key={f} value={f} onSelect={() => add(f)}>
@@ -146,7 +153,7 @@ export default function FieldsOfStudy() {
                             <Graph3D className={'h-full w-full'}
                                      dotsRef={graphRef}
                                      items={Object
-                                         .values(fields)
+                                         .values(allFaculties)
                                          .reduce((acc, x) => [...acc, ...x], [])
                                          .map(x => ({name: x}))
                                      }/>

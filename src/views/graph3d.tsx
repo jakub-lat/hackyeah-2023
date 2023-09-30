@@ -1,10 +1,11 @@
 import React, {forwardRef, MutableRefObject, useEffect, useImperativeHandle, useMemo, useRef, useState} from 'react';
 import {Canvas, useFrame, useThree} from 'react-three-fiber';
 import {Billboard, OrbitControls, Text} from '@react-three/drei';
-import {Vector3} from 'three';
 import * as THREE from 'three';
+import {Vector3} from 'three';
 import TWEEN from '@tweenjs/tween.js'
 import {OrbitControls as OrbitControlsImpl} from "three-stdlib/controls/OrbitControls";
+import embeddings from "../data/faculty_embeddings_glove.json";
 import {useGraphStore} from "@/store/graphStore.ts";
 
 interface GraphItem {
@@ -72,9 +73,32 @@ export interface DotsRef {
     focus: (name: string) => void;
 }
 
+function getNameForEmbedding(name: string) {
+    name = name.toLowerCase();
+
+    const namesToExisting = {
+        "cyberbezpieczeństwo": "bezpieczeństwo",
+    }
+
+    if (name in namesToExisting) name = namesToExisting[name];
+
+    if (name in embeddings) return name;
+
+    if (name.includes(" ")) {
+        name = name.split(" ")[0]
+    }
+
+    return name;
+
+}
+
 const Dots = forwardRef<DotsRef, DotsProps>(({
-                  items, controls, focusDistance = 4, tweenDuration = 1000, neighborCount = 4
-              }: DotsProps, ref) => {
+                                                 items,
+                                                 controls,
+                                                 focusDistance = 4,
+                                                 tweenDuration = 1000,
+                                                 neighborCount = 4
+                                             }: DotsProps, ref) => {
     const [highlighted, setHighlighted] = useState<Set<string>>(new Set());
     const [selected, setSelected] = useState<string | null>(null);
     const {camera} = useThree();
@@ -83,9 +107,27 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
 
     const dots = useMemo(() => {
         return items.map(item => {
-            const x = (Math.random() - 0.5) * 10;
-            const y = (Math.random() - 0.5) * 10;
-            const z = (Math.random() - 0.5) * 10;
+            const formattedName = getNameForEmbedding(item.name);
+            console.log("looking for: ", item.name, ' => ', formattedName);
+            const emb = embeddings[formattedName];
+            console.log(emb);
+            const moveTowardsMiddle = (x: number) => {
+                if(x < 0) {
+                    return -Math.pow(-x, 1/1.7);
+                }
+                else {
+                    return Math.pow(x, 1/1.7);
+                }
+            }
+            if (emb) {
+                var x = moveTowardsMiddle(emb[0]);
+                var y = moveTowardsMiddle(emb[1]);
+                var z = moveTowardsMiddle(emb[2]);
+            } else {
+                var x = (Math.random() - 0.5) * 10;
+                var y = (Math.random() - 0.5) * 10;
+                var z = (Math.random() - 0.5) * 10;
+            }
 
             return {
                 position: new Vector3(x, y, z),

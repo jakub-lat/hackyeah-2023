@@ -1,15 +1,8 @@
 import PageLayout, {PageTitle} from "@/layouts/PageLayout.tsx";
 
-import {
-    Command,
-    CommandEmpty,
-    CommandGroup,
-    CommandInput,
-    CommandItem,
-    CommandList,
-} from "@/components/ui/command"
+import {Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList,} from "@/components/ui/command"
 import {Card, CardHeader} from "@/components/ui/card.tsx";
-import {ComponentProps, useRef, useState} from "react";
+import {ComponentProps, useEffect, useRef, useState} from "react";
 import {ArrowRight, X} from "lucide-react";
 import {Badge} from "@/components/ui/badge.tsx";
 import {cn} from "@/lib/utils.ts";
@@ -31,7 +24,6 @@ import {
 import {Link} from "react-router-dom";
 import getFaculties from '../store/facultiesStore.ts';
 
-
 function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeof Badge>) {
     return <Badge variant={"secondary"} className={cn("cursor-pointer h-7 gap-x-4", className)} {...props}>
         <span>{children}</span>
@@ -39,10 +31,6 @@ function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeo
     </Badge>
 }
 
-
-const allFaculties: Record<string, string[]>  = {
-    "Informatyczne": await getFaculties(),
-};
 
 // const allFaculties: Record<string, string[]> = {
 //     'Informatyczne': [
@@ -86,6 +74,11 @@ const allFaculties: Record<string, string[]>  = {
 //         'Zdrowie i uroda',
 //     ]
 // };
+const getAllFaculties = async () => {
+    return {
+        Informatyczne: await getFaculties(),
+    };
+};
 
 export default function FieldsOfStudy() {
     const graphRef = useRef<DotsRef>(null);
@@ -93,6 +86,11 @@ export default function FieldsOfStudy() {
     const {focused} = useGraphStore();
 
     const {selectedFields, addSelectedField, removeSelectedField} = useFilterStore();
+    const [allFaculties, setAllFaculties] = useState({Informatyczne: []});
+
+    useEffect(() => {
+        getAllFaculties().then(setAllFaculties);
+    }, [allFaculties]);
 
     const add = (v: string) => {
         addSelectedField(v);
@@ -101,6 +99,7 @@ export default function FieldsOfStudy() {
     };
 
     const remove = (v: string) => removeSelectedField(v);
+
 
     return <>
         <PageLayout>
@@ -186,7 +185,8 @@ export default function FieldsOfStudy() {
                 <AlertDialogHeader>
                     <AlertDialogTitle>Nie wiesz jeszcze, co chcesz studiować?</AlertDialogTitle>
                     <AlertDialogDescription>
-                        Nasz asystent AI - kierunkomat - pomoże ci wybrać ścieżkę kariery dopasowaną do twoich predyspozycji
+                        Nasz asystent AI - kierunkomat - pomoże ci wybrać ścieżkę kariery dopasowaną do twoich
+                        predyspozycji
                         i zainteresowań!
                     </AlertDialogDescription>
                 </AlertDialogHeader>

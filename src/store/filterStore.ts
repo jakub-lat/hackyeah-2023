@@ -1,11 +1,15 @@
 import { create } from 'zustand';
 
 interface IFilter {
-    count: number;
-    increment: () => void;
+    selectedFields: string[],
+    setSelectedFields: (selectedFields: string[]) => void,
+    addSelectedField: (selectedField: string) => void,
+    removeSelectedField: (selectedField: string) => void,
 }
 
 export const useFilterStore = create<IFilter>((set) => ({
-    count: 0,
-    increment: () => set((state) => ({ count: state.count + 1 })),
+    selectedFields: [],
+    setSelectedFields: (selectedFields: string[]) => set({ selectedFields }),
+    addSelectedField: (selectedField: string) => set((state) => ({ selectedFields: [...state.selectedFields, selectedField] })),
+    removeSelectedField: (selectedField: string) => set((state) => ({ selectedFields: state.selectedFields.filter((field) => field !== selectedField) })),
 }))

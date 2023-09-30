@@ -5,7 +5,7 @@ import {Vector3} from 'three';
 import * as THREE from 'three';
 import TWEEN from '@tweenjs/tween.js'
 import {OrbitControls as OrbitControlsImpl} from "three-stdlib/controls/OrbitControls";
-import {useFieldsStore} from "@/store/fieldsStore.ts";
+import {useGraphStore} from "@/store/graphStore.ts";
 
 interface GraphItem {
     position?: Vector3;
@@ -79,7 +79,7 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
     const [selected, setSelected] = useState<string | null>(null);
     const {camera} = useThree();
 
-    const fieldsStore = useFieldsStore();
+    const fieldsStore = useGraphStore();
 
     const dots = useMemo(() => {
         return items.map(item => {
@@ -93,6 +93,10 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
             } as GraphItem;
         });
     }, [items]);
+
+    useEffect(() => {
+        fieldsStore.setFocused(null);
+    }, []);
 
     const handleDotClick = (dot: GraphItem) => {
         const nearest = dots

@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'radio-canada': ['Radio Canada', 'normal']
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

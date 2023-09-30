@@ -15,7 +15,7 @@ import {appName} from "@/lib/const.ts";
 function NavItem({...props}: ComponentProps<typeof NavLink>) {
     return <NavLink
         className={({ isActive }) => {
-            return cn("text-sm font-medium transition-colors hover:text-primary", { "text-muted-foreground": !isActive });
+            return cn("text-sm font-radio-canada font-medium transition-colors hover:text-primary", { "text-muted-foreground": !isActive });
         }}
         {...props}
     />
@@ -32,31 +32,31 @@ export function Navbar({
                     className={cn("flex items-center space-x-4 lg:space-x-6", className)}
                     {...props}
                 >
-                    <Link to={"/"} className={cn("font-bold")}>
+                    <Link to={"/"} className={cn("font-bold text-3xl")}>
                         {appName}
                     </Link>
-                    <NavItem to={"/fields-of-study"}>Znajdź kierunki</NavItem>
-                    <NavItem to={"/universities"}>Znajdź uczelnie</NavItem>
-                    <NavItem to={"/favorites"}>Ulubione</NavItem>
+                    <NavItem className="font-radio-canada" to={"/fields-of-study"}>Znajdź kierunki</NavItem>
+                    <NavItem className="font-radio-canada" to={"/universities"}>Znajdź uczelnie</NavItem>
+                    <NavItem className="font-radio-canada" to={"/favorites"}>Ulubione</NavItem>
                 </nav>
 
                 <div className="ml-auto flex items-center space-x-4">
                     <ThemeToggle />
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                            <Button variant="outline">
+                            <Button className="font-radio-canada" variant="outline">
                                 <User className={"mr-2 h-4 w-4"} />
                                 Jan Kowalski
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
-                            <DropdownMenuLabel>Moje konto</DropdownMenuLabel>
+                            <DropdownMenuLabel className="font-radio-canada">Moje konto</DropdownMenuLabel>
                             <DropdownMenuSeparator />
                             <DropdownMenuGroup>
-                                <DropdownMenuItem>
+                                <DropdownMenuItem className="font-radio-canada">
                                     Mój profil
                                 </DropdownMenuItem>
-                                <DropdownMenuItem>
+                                <DropdownMenuItem className="font-radio-canada">
                                     Wyloguj się
                                 </DropdownMenuItem>
                             </DropdownMenuGroup>

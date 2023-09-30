@@ -13,7 +13,6 @@ const field = (x) => {
 }
 
 const University = ({univ}:{univ: IUniversity}) => {
-
     return (
         <div className="university">
             <p className="description">
@@ -36,7 +35,5 @@ const University = ({univ}:{univ: IUniversity}) => {
         </div>
     );
 }
-
-
  
 export default University;

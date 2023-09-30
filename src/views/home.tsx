@@ -1,9 +1,16 @@
-import {Button} from "@/components/ui/button.tsx";
-import {ArrowRight} from "lucide-react";
-import {Link} from "react-router-dom";
-import {appName} from "@/lib/const.ts";
+import { Button } from "@/components/ui/button.tsx";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { appName } from "@/lib/const.ts";
+import { useAuthState, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { auth } from "@/lib/firebase.ts";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+    const [user] = useAuthState(auth);
+    const [signInWithGoogle, _, _error] = useSignInWithGoogle(auth);
+    const navigate = useNavigate();
+
     return <div className={"p-10 h-full"}>
         <div className={"flex flex-col items-center justify-around my-20"}>
             <div className={"text-center"}>
@@ -11,11 +18,22 @@ export default function Home() {
                 <h2 className="text-xl ">Znajdź swoją wymarzoną ścieżkę kariery</h2>
             </div>
 
-            <Button className={"w-64 mt-10 font-bold relative "} size={"lg"} asChild>
-                <Link to={"/basic-info"}>
-                    Zaczynamy
-                    <ArrowRight className={"w-5 h-5 absolute right-5"}/>
-                </Link>
+            <Button className={"w-64 mt-10 font-bold relative cursor-pointer"} size={"lg"} asChild onClick={() => {
+                if (!user)
+                    signInWithGoogle()
+                        .then(() => navigate("/basic-info"))
+            }}>
+                {user ? (
+                    <Link to={"/basic-info"}>
+                        Zaczynamy
+                        <ArrowRight className={"w-5 h-5 absolute right-5"} />
+                    </Link>
+                ) : (
+                    <span>
+                        Zaczynamy
+                        <ArrowRight className={"w-5 h-5 absolute right-5"} />
+                    </span>
+                )}
             </Button>
         </div>
     </div>

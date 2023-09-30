@@ -6,14 +6,16 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import {Label} from "@/components/ui/label";
-import {Button} from "@/components/ui/button.tsx";
-import {PropsWithChildren, useState} from "react";
-import {ArrowRight} from "lucide-react";
-import {Link} from "react-router-dom";
-import {TabsInput, TabsInputItem} from "@/components/tabs-input.tsx";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button.tsx";
+import { PropsWithChildren, useEffect, useState } from "react";
+import { ArrowRight } from "lucide-react";
+import { TabsInput, TabsInputItem } from "@/components/tabs-input.tsx";
+import { useNavigate } from "react-router-dom";
+import { auth, firestore } from "@/lib/firebase.ts";
+import { doc, getDoc, setDoc } from "@firebase/firestore";
 
-function FormGroup({children}: PropsWithChildren<{}>) {
+function FormGroup({ children }: PropsWithChildren<{}>) {
     return <div className="flex flex-col space-y-1.5">
         {children}
     </div>
@@ -23,6 +25,36 @@ function FormGroup({children}: PropsWithChildren<{}>) {
 export default function BasicInfo() {
     const [category, setCategory] = useState<string>('undergraduate');
     const [userOrigin, setUserOrigin] = useState<string>('poland');
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!auth.currentUser)
+            return;
+
+        const userRef = doc(firestore, 'users', auth.currentUser.uid);
+
+        getDoc(userRef).then((doc) => {
+            if (!doc.exists()) {
+                setDoc(userRef, {
+                    category: category,
+                    userOrigin: userOrigin
+                })
+            }
+            else {
+                setCategory(doc.data().category);
+                setUserOrigin(doc.data().userOrigin);
+            }
+        })
+    }, [auth.currentUser])
+
+    const next = () => {
+        setDoc(doc(firestore, 'users', auth.currentUser.uid), {
+            category: category,
+            userOrigin: userOrigin
+        }).then(() => {
+            navigate('/fields-of-study');
+        })
+    }
 
     return <div className={"flex justify-center items-center mt-20"}>
         <Card className="w-[600px]">
@@ -52,11 +84,9 @@ export default function BasicInfo() {
                 </form>
             </CardContent>
             <CardFooter className="flex justify-end pt-8">
-                <Button asChild>
-                    <Link to={"/fields-of-study"}>
-                        Kontynuuj
-                        <ArrowRight className={"h-4 w-4 ml-2"} />
-                    </Link>
+                <Button onClick={next}>
+                    Kontynuuj
+                    <ArrowRight className={"h-4 w-4 ml-2"} />
                 </Button>
             </CardFooter>
         </Card>

@@ -2,6 +2,7 @@ import PageLayout, {PageTitle} from "@/layouts/PageLayout.tsx";
 import {Button} from "@/components/ui/button.tsx";
 import {ArrowLeft} from "lucide-react";
 import {Link} from "react-router-dom";
+import Chatbot from "@/components/chatbot";
 
 export default function CareerAssistant() {
     return <PageLayout>
@@ -13,5 +14,6 @@ export default function CareerAssistant() {
             </Button>
             Asystent kierunków
         </PageTitle>
+        <Chatbot />
     </PageLayout>
 }

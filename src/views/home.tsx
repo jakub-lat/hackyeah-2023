@@ -12,7 +12,7 @@ export default function Home() {
             </div>
 
             <Button className={"w-64 mt-10 font-bold relative"} size={"lg"} asChild>
-                <Link to={"/fields-of-study"}>
+                <Link to={"/basic-info"}>
                     Zaczynamy
                     <ArrowRight className={"w-5 h-5 absolute right-5"}/>
                 </Link>

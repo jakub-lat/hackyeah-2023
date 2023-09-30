@@ -1,9 +1,9 @@
 import { ChatCompletionMessageParam } from "openai/resources/chat/index.mjs";
 import OpenAI from "openai";
 import { AssistantAnswer } from "./AssistantAnswer";
-
+import { openAiKey } from "./secrets";
 const openai = new OpenAI({
-    apiKey: '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', // defaults to process.env["OPENAI_API_KEY"]
+    apiKey: openAiKey, 
     dangerouslyAllowBrowser: true
 });
 

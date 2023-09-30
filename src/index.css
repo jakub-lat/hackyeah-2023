@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -75,6 +75,11 @@
   }
 }
 
+#root {
+  height: 100%;
+  min-height: 100vh;
+}
+
 .maplibregl-ctrl a,
 .maplibregl-ctrl-bottom-right {
   display: none !important;
@@ -92,3 +97,4 @@
 .custom-icon-light path {
   fill: white;
 }
+

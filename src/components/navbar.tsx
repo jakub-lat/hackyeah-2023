@@ -8,7 +8,7 @@ import UserDropdown from "@/components/user-dropdown.tsx";
 function NavItem({...props}: ComponentProps<typeof NavLink>) {
     return <NavLink
         className={({ isActive }) => {
-            return cn("text-sm font-radio-canada font-medium transition-colors hover:text-primary", { "text-muted-foreground": !isActive });
+            return cn("text-sm  font-medium transition-colors hover:text-primary", { "text-muted-foreground": !isActive });
         }}
         {...props}
     />
@@ -25,10 +25,12 @@ export function Navbar({
                     className={cn("flex items-center space-x-4 lg:space-x-6", className)}
                     {...props}
                 >
-                    <Link to={"/"} className={cn("font-bold text-3xl")}>
+                    <Link to={"/"} className={cn("font-bold text-3xl mr-5")}>
                         {appName}
                     </Link>
-
+                    <NavItem to={"/fields-of-study"}>Znajdź kierunki</NavItem>
+                    <NavItem to={"/universities"}>Znajdź uczelnie</NavItem>
+                    <NavItem to={"/favorites"}>Ulubione</NavItem>
                 </nav>
 
                 <div className="ml-auto flex items-center space-x-4">
@@ -36,11 +38,6 @@ export function Navbar({
                     <UserDropdown />
                 </div>
 
-            </div>
-            <div className="grid grid-cols-3 divider-x px-4">
-                <NavItem className="font-radio-canada" to={"/fields-of-study"}>Znajdź kierunki</NavItem>
-                <NavItem className="font-radio-canada" to={"/universities"}>Znajdź uczelnie</NavItem>
-                <NavItem className="font-radio-canada" to={"/favorites"}>Ulubione</NavItem>
             </div>
         </div>
 

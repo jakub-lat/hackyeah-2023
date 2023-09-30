@@ -54,7 +54,7 @@ const Dot = ({onClick, isHighlighted, isSelected}: {
             onPointerOut={() => setHovered(false)}
         >
             <sphereGeometry args={[0.1]}/>
-            <meshStandardMaterial color={isSelected ? 'red' : isHighlighted ? 'white' : hovered ? 'yellow' : 'blue'}/>
+            <meshStandardMaterial color={isSelected ? '#e03d19' : isHighlighted ? 'white' : hovered ? 'yellow' : '#64a6d9'}/>
         </mesh>
     );
 }

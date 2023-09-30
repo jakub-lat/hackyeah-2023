@@ -25,7 +25,16 @@ async function getPossibleJobs(fieldOfStudy: FieldOfStudy): Promise<string[]> {
   return JSON.parse(response)["jobs"];
 }
 
-export { askChat, getPossibleJobs };
+async function getSubjects(fieldOfStudy: FieldOfStudy): Promise<string[]> {
+  const prompt = `Podaj nazwy przedmiotów jakie mogę studiować na` +
+    `${fieldOfStudy.facultyName}: ${fieldOfStudy.type}, ${fieldOfStudy.universityId}? ` +
+    `Podaj wynik w JSON {subjects: [...]}.`;
+  const response = await askChat(prompt);
+  return JSON.parse(response)["subjects"];
+
+}
+
+export { askChat, getPossibleJobs, getSubjects };
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))

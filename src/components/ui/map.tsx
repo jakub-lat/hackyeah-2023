@@ -14,16 +14,20 @@ type Marker = {
     lng: number;
     lat: number;
     badge: string;
-    Icon?: any;
+    icon?: string;
     onClick?: () => void;
 }
 
 type Props = {
     className?: string;
+    focus?: {
+        lat: number;
+        lng: number;
+    } | null;
     markers: Marker[];
 }
 
-const Map = ({ className, markers }: Props) => {
+const Map = ({ className, focus, markers }: Props) => {
     const { theme } = useTheme()
 
     const mapContainer = useRef(null);
@@ -31,19 +35,28 @@ const Map = ({ className, markers }: Props) => {
     const [showBadge, setShowBadge] = useState(false);
     const [markersState, setMarkersState] = useState([])
 
-    const createMarker = ({ badge, Icon, onClick }: Marker) => {
+    const createMarker = ({ badge, icon, onClick }: Marker) => {
         const marker = document.createElement("div");
         marker.onclick = onClick
 
         marker.innerHTML = renderToString(
-            <Badge>
+            <Badge className="group p-2">
                 <div className={classnames(
-                    "w-6 h-6 custom-icon",
-                    !Icon && `custom-icon-${theme}`
+                    "w-5 h-5 custom-icon relative",
+                    !icon && `custom-icon-${theme}`
                 )}>
-                    {Icon ? <Icon /> : <Uni />}
+                    {icon ? <img src={icon} /> : <Uni />}
                 </div>
                 {showBadge && <span className="pl-2">{badge}</span>}
+
+                {showBadge && (
+                    <div className={classnames(
+                        "absolute group-hover:opacity-75 transition-all duration-200 -bottom-[13px] left-1/2",
+                        "transform -translate-x-1/2 w-0 h-0 border-solid border-transparent border-b-4 border-l-[10px]",
+                        "border-l-transparent border-t-[10px] border-r-[10px] border-r-transparent",
+                        theme === "dark" ? "border-t-white" : "border-t-black"
+                    )}></div>
+                )}
             </Badge>
         )
 
@@ -83,6 +96,26 @@ const Map = ({ className, markers }: Props) => {
                 setShowBadge(map.getZoom() > 6)
             })
     }, [map])
+
+    useEffect(() => {
+        if (map) {
+            if (focus) {
+                map.flyTo({
+                    center: [focus.lng, focus.lat],
+                    zoom: 10,
+                    essential: true,
+                    speed: 2,
+                    curve: 1,
+                });
+            } else {
+                map.flyTo({
+                    center: [19.4630064, 52.0682513],
+                    zoom: 5.5,
+                    essential: true,
+                });
+            }
+        }
+    }, [focus])
 
     return (
         <div className={classnames(

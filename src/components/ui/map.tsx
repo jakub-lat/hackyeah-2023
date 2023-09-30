@@ -6,7 +6,7 @@ import { useTheme } from "../theme-provider";
 import classnames from "classnames";
 import { renderToString } from "react-dom/server";
 import { Badge } from "@/components/ui/badge"
-import Uni from "../icons/uni";
+import { School2 } from "lucide-react";
 
 maptilersdk.config.apiKey = '8vtPQGKtYjWQNz9P9exA';
 
@@ -42,10 +42,12 @@ const Map = ({ className, focus, markers }: Props) => {
         marker.innerHTML = renderToString(
             <Badge className="group p-2">
                 <div className={classnames(
-                    "w-5 h-5 custom-icon relative",
-                    !icon && `custom-icon-${theme}`
+                    "w-5 h-5 relative",
                 )}>
-                    {icon ? <img src={icon} /> : <Uni />}
+                    {icon ?
+                        <img src={icon} /> :
+                        <School2 className="w-full h-full" color={theme === "dark" ? "black" : "white"} />
+                    }
                 </div>
                 {showBadge && <span className="pl-2">{badge}</span>}
 

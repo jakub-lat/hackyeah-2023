@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import {Vector3} from 'three';
 import TWEEN from '@tweenjs/tween.js'
 import {OrbitControls as OrbitControlsImpl} from "three-stdlib/controls/OrbitControls";
-import embeddings from "../data/faculty_embeddings_glove.json";
+import embeddings from "../data/faculty_embeddings_glovo.json";
 import {useGraphStore} from "@/store/graphStore.ts";
 
 interface GraphItem {
@@ -27,7 +27,7 @@ function SetupCamera() {
 
     useEffect(() => {
         // Adjust camera position
-        camera.position.z = 10;
+        camera.position.z = 15;
     }, []);
 
     return null; // This component doesn't render anything itself
@@ -108,15 +108,15 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
     const dots = useMemo(() => {
         return items.map(item => {
             const formattedName = getNameForEmbedding(item.name);
-            console.log("looking for: ", item.name, ' => ', formattedName);
+            // console.log("looking for: ", item.name, ' => ', formattedName);
             const emb = embeddings[formattedName];
-            console.log(emb);
+            // console.log(emb);
             const moveTowardsMiddle = (x: number) => {
                 if(x < 0) {
-                    return -Math.pow(-x, 1/1.7);
+                    return -Math.pow(-x, 1/1.1);
                 }
                 else {
-                    return Math.pow(x, 1/1.7);
+                    return Math.pow(x, 1/1.1);
                 }
             }
             if (emb) {

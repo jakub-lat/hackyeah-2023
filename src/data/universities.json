@@ -1,0 +1,214 @@
+[
+    {
+        "id": "1",
+        "name": "Uniwersytet Warszawski",
+        "address": "ul. Krakowskie Przedmieście 26/28, 00-927 Warszawa",
+        "latitude": "52.242502",
+        "longitude": "21.019781"
+    },
+    {
+        "id": "2",
+        "name": "Politechnika Warszawska",
+        "address": "ul. Plac Politechniki 1, 00-661 Warszawa",
+        "latitude": "52.218985",
+        "longitude": "20.996940"
+    },
+    {
+        "id": "3",
+        "name": "Uniwersytet Jagielloński",
+        "address": "ul. Gołębia 24, 31-007 Kraków",
+        "latitude": "50.061660",
+        "longitude": "19.936353"
+    },
+    {
+        "id": "4",
+        "name": "Politechnika Krakowska",
+        "address": "ul. Warszawska 24, 31-155 Kraków",
+        "latitude": "50.075047",
+        "longitude": "19.934623"
+    },
+    {
+        "id": "5",
+        "name": "Uniwersytet Wrocławski",
+        "address": "pl. Uniwersytecki 1, 50-137 Wrocław",
+        "latitude": "51.116905",
+        "longitude": "17.046950"
+    },
+    {
+        "id": "6",
+        "name": "Politechnika Wrocławska",
+        "address": "ul. Wybrzeże Wyspiańskiego 27, 50-370 Wrocław",
+        "latitude": "51.105076",
+        "longitude": "17.058911"
+    },
+    {
+        "id": "7",
+        "name": "Uniwersytet Gdański",
+        "address": "ul. Bazyliańska 8, 80-309 Gdańsk",
+        "latitude": "54.375431",
+        "longitude": "18.613105"
+    },
+    {
+        "id": "8",
+        "name": "Politechnika Gdańska",
+        "address": "ul. Narutowicza 11/12, 80-233 Gdańsk",
+        "latitude": "54.376714",
+        "longitude": "18.609335"
+    },
+    {
+        "id": "9",
+        "name": "Uniwersytet Łódzki",
+        "address": "ul. Narutowicza 68, 90-136 Łódź",
+        "latitude": "51.768082",
+        "longitude": "19.454228"
+    },
+    {
+        "id": "10",
+        "name": "Politechnika Łódzka",
+        "address": "ul. Żeromskiego 116, 90-924 Łódź",
+        "latitude": "51.773727",
+        "longitude": "19.459297"
+    },
+    {
+        "id": "11",
+        "name": "Uniwersytet Poznański",
+        "address": "ul. Wieniawskiego 1, 61-712 Poznań",
+        "latitude": "52.408217",
+        "longitude": "16.934607"
+    },
+    {
+        "id": "12",
+        "name": "Politechnika Poznańska",
+        "address": "ul. Piotrowo 3, 60-965 Poznań",
+        "latitude": "52.412240",
+        "longitude": "16.927998"
+    },
+    {
+        "id": "13",
+        "name": "Uniwersytet Śląski",
+        "address": "ul. Bankowa 12, 40-007 Katowice",
+        "latitude": "50.259147",
+        "longitude": "19.023515"
+    },
+    {
+        "id": "14",
+        "name": "Politechnika Śląska",
+        "address": "ul. Akademicka 2A, 44-100 Gliwice",
+        "latitude": "50.293879",
+        "longitude": "18.666688"
+    },
+    {
+        "id": "15",
+        "name": "Politechnika Białostocka",
+        "address": "ul. Wiejska 45A, 15-351 Białystok",
+        "latitude": "53.131561",
+        "longitude": "23.135177"
+    },
+    {
+        "id": "16",
+        "name": "Uniwersytet Białostocki",
+        "address": "ul. M. Skłodowskiej-Curie 14, 15-245 Białystok",
+        "latitude": "53.130616",
+        "longitude": "23.150408"
+    },
+    {
+        "id": "17",
+        "name": "Uniwersytet Rzeszowski",
+        "address": "ul. Rejtana 16C, 35-959 Rzeszów",
+        "latitude": "50.038508",
+        "longitude": "22.003609"
+    },
+    {
+        "id": "18",
+        "name": "Politechnika Rzeszowska",
+        "address": "al. Powstańców Warszawy 6, 35-959 Rzeszów",
+        "latitude": "50.041374",
+        "longitude": "22.011160"
+    },
+    {
+        "id": "19",
+        "name": "Uniwersytet Opolski",
+        "address": "pl. Kopernika 11a, 45-040 Opole",
+        "latitude": "50.666239",
+        "longitude": "17.929635"
+    },
+    {
+        "id": "20",
+        "name": "Politechnika Opolska",
+        "address": "ul. Katowicka 48, 45-065 Opole",
+        "latitude": "50.677306",
+        "longitude": "17.934869"
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Automatyki i Informatyki",
+        "universityId": "20",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Automatyki i Informatyki",
+        "universityId": "20",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Automatyki i Informatyki",
+        "universityId": "20",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Budownictwa i Architektury",
+        "universityId": "20",
+        "type": "Budownictwo",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Budownictwa i Architektury",
+        "universityId": "20",
+        "type": "Architektura",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Budownictwa i Architektury",
+        "universityId": "20",
+        "type": "Inżynieria środowiska",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "20",
+        "type": "Mechanika",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "20",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "20",
+        "type": "Energetyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Informatyki i Zarządzania",
+        "universityId": "20",
+        "type": "Informatyka",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Informatyki i Zarządzania",
+        "universityId": "20",
+        "type": "Sztuczna inteligencja",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Informatyki i Zarządzania",
+        "universityId": "20",
+        "type": "Cyberbezpieczeństwo",
+        "numberOfPoints": 285
+    }
+]

@@ -1,0 +1,2078 @@
+[
+    {
+        "id": "1",
+        "facultyName": "Wydział Matematyki, Informatyki i Mechaniki",
+        "universityId": "1",
+        "type": "Informatyka",
+        "numberOfPoints": 250
+    },
+    {
+        "id": "2",
+        "facultyName": "Wydział Matematyki, Informatyki i Mechaniki",
+        "universityId": "1",
+        "type": "Matematyka",
+        "numberOfPoints": 240
+    },
+    {
+        "id": "3",
+        "facultyName": "Wydział Matematyki, Informatyki i Mechaniki",
+        "universityId": "1",
+        "type": "Mechanika",
+        "numberOfPoints": 230
+    },
+    {
+        "id": "4",
+        "facultyName": "Wydział Biologii",
+        "universityId": "1",
+        "type": "Biologia",
+        "numberOfPoints": 260
+    },
+    {
+        "id": "5",
+        "facultyName": "Wydział Biologii",
+        "universityId": "1",
+        "type": "Biotechnologia",
+        "numberOfPoints": 255
+    },
+    {
+        "id": "6",
+        "facultyName": "Wydział Biologii",
+        "universityId": "1",
+        "type": "Biochemia",
+        "numberOfPoints": 245
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "2",
+        "type": "Informatyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "2",
+        "type": "Inżynieria oprogramowania",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "2",
+        "type": "Sieci komputerowe",
+        "numberOfPoints": 260
+    },
+    {
+        "facultyName": "Wydział Elektroniki i Technik Informacyjnych",
+        "universityId": "2",
+        "type": "Elektronika",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektroniki i Technik Informacyjnych",
+        "universityId": "2",
+        "type": "Telekomunikacja",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Elektroniki i Technik Informacyjnych",
+        "universityId": "2",
+        "type": "Inżynieria biomedyczna",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "2",
+        "type": "Mechanika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "2",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "2",
+        "type": "Energetyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "2",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "2",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "2",
+        "type": "Elektrotechnika stosowana",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "2",
+        "type": "Chemia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "2",
+        "type": "Inżynieria chemiczna",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "2",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Matematyki i Nauk Informacyjnych",
+        "universityId": "2",
+        "type": "Matematyka",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Matematyki i Nauk Informacyjnych",
+        "universityId": "2",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Matematyki i Nauk Informacyjnych",
+        "universityId": "2",
+        "type": "Statystyka",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechatroniki",
+        "universityId": "2",
+        "type": "Mechatronika",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Mechatroniki",
+        "universityId": "2",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Mechatroniki",
+        "universityId": "2",
+        "type": "Inżynieria mechatroniczna",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "3",
+        "type": "Informatyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "3",
+        "type": "Matematyka",
+        "numberOfPoints": 260
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "3",
+        "type": "Statystyka",
+        "numberOfPoints": 255
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "3",
+        "type": "Biologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "3",
+        "type": "Biotechnologia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "3",
+        "type": "Biochemia",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Fizyki, Astronomii i Informatyki Stosowanej",
+        "universityId": "3",
+        "type": "Fizyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Fizyki, Astronomii i Informatyki Stosowanej",
+        "universityId": "3",
+        "type": "Astronomia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Fizyki, Astronomii i Informatyki Stosowanej",
+        "universityId": "3",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "3",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "3",
+        "type": "Chemia stosowana",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "3",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Filozoficzny",
+        "universityId": "3",
+        "type": "Filozofia",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Filozoficzny",
+        "universityId": "3",
+        "type": "Kognitywistyka",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Filozoficzny",
+        "universityId": "3",
+        "type": "Etyka",
+        "numberOfPoints": 260
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych i Społecznych",
+        "universityId": "3",
+        "type": "Historia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych i Społecznych",
+        "universityId": "3",
+        "type": "Socjologia",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych i Społecznych",
+        "universityId": "3",
+        "type": "Politologia",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Komunikacji Społecznej",
+        "universityId": "3",
+        "type": "Zarządzanie",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Komunikacji Społecznej",
+        "universityId": "3",
+        "type": "Komunikacja społeczna",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Komunikacji Społecznej",
+        "universityId": "3",
+        "type": "Stosunki międzynarodowe",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Informatyki i Telekomunikacji",
+        "universityId": "4",
+        "type": "Informatyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Informatyki i Telekomunikacji",
+        "universityId": "4",
+        "type": "Teleinformatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Informatyki i Telekomunikacji",
+        "universityId": "4",
+        "type": "Cyberbezpieczeństwo",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Automatyki, Informatyki i Elektroniki",
+        "universityId": "4",
+        "type": "Elektronika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Automatyki, Informatyki i Elektroniki",
+        "universityId": "4",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Automatyki, Informatyki i Elektroniki",
+        "universityId": "4",
+        "type": "Inżynieria biomedyczna",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "4",
+        "type": "Mechanika",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "4",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "4",
+        "type": "Energetyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "4",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "4",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "4",
+        "type": "Elektrotechnika stosowana",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "4",
+        "type": "Chemia",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "4",
+        "type": "Inżynieria chemiczna",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "4",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Matematyki, Fizyki i Informatyki Stosowanej",
+        "universityId": "4",
+        "type": "Matematyka",
+        "numberOfPoints": 305
+    },
+    {
+        "facultyName": "Wydział Matematyki, Fizyki i Informatyki Stosowanej",
+        "universityId": "4",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Matematyki, Fizyki i Informatyki Stosowanej",
+        "universityId": "4",
+        "type": "Fizyka",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "4",
+        "type": "Architektura",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "4",
+        "type": "Urbanistyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "4",
+        "type": "Architektura krajobrazu",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "5",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "5",
+        "type": "Matematyka",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "5",
+        "type": "Statystyka",
+        "numberOfPoints": 255
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "5",
+        "type": "Biologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "5",
+        "type": "Biotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "5",
+        "type": "Biochemia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "5",
+        "type": "Fizyka",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "5",
+        "type": "Astronomia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "5",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "5",
+        "type": "Chemia",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "5",
+        "type": "Chemia stosowana",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "5",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Filozofii i Socjologii",
+        "universityId": "5",
+        "type": "Filozofia",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Filozofii i Socjologii",
+        "universityId": "5",
+        "type": "Socjologia",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Filozofii i Socjologii",
+        "universityId": "5",
+        "type": "Psychologia",
+        "numberOfPoints": 260
+    },
+    {
+        "facultyName": "Wydział Historyczny",
+        "universityId": "5",
+        "type": "Historia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Historyczny",
+        "universityId": "5",
+        "type": "Archeologia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Historyczny",
+        "universityId": "5",
+        "type": "Politologia",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "5",
+        "type": "Filologia polska",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "5",
+        "type": "Anglistyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "5",
+        "type": "Germanistyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Informatyki i Zarządzania",
+        "universityId": "6",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Informatyki i Zarządzania",
+        "universityId": "6",
+        "type": "Inżynieria oprogramowania",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Informatyki i Zarządzania",
+        "universityId": "6",
+        "type": "Sieci komputerowe",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Elektroniki",
+        "universityId": "6",
+        "type": "Elektronika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektroniki",
+        "universityId": "6",
+        "type": "Telekomunikacja",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektroniki",
+        "universityId": "6",
+        "type": "Inżynieria biomedyczna",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "6",
+        "type": "Mechanika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "6",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "6",
+        "type": "Energetyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "6",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "6",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "6",
+        "type": "Elektrotechnika stosowana",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "6",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "6",
+        "type": "Inżynieria chemiczna",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "6",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Matematyki",
+        "universityId": "6",
+        "type": "Matematyka",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Matematyki",
+        "universityId": "6",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Matematyki",
+        "universityId": "6",
+        "type": "Statystyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "6",
+        "type": "Architektura",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "6",
+        "type": "Urbanistyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "6",
+        "type": "Architektura krajobrazu",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Matematyki, Fizyki i Informatyki",
+        "universityId": "7",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Matematyki, Fizyki i Informatyki",
+        "universityId": "7",
+        "type": "Matematyka",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Matematyki, Fizyki i Informatyki",
+        "universityId": "7",
+        "type": "Fizyka",
+        "numberOfPoints": 255
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "7",
+        "type": "Biologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "7",
+        "type": "Biotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "7",
+        "type": "Biochemia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Fizyki Klasycznej i Informatyki",
+        "universityId": "7",
+        "type": "Fizyka",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Fizyki Klasycznej i Informatyki",
+        "universityId": "7",
+        "type": "Astronomia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Fizyki Klasycznej i Informatyki",
+        "universityId": "7",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "7",
+        "type": "Chemia",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "7",
+        "type": "Chemia stosowana",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "7",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "7",
+        "type": "Filologia polska",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "7",
+        "type": "Anglistyka",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "7",
+        "type": "Germanistyka",
+        "numberOfPoints": 260
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "7",
+        "type": "Historia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "7",
+        "type": "Archeologia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "7",
+        "type": "Politologia",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Zarządzania",
+        "universityId": "7",
+        "type": "Zarządzanie",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Zarządzania",
+        "universityId": "7",
+        "type": "Ekonomia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki i Automatyki",
+        "universityId": "8",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki i Automatyki",
+        "universityId": "8",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki i Automatyki",
+        "universityId": "8",
+        "type": "Informatyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Elektroniki, Telekomunikacji i Informatyki",
+        "universityId": "8",
+        "type": "Elektronika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Elektroniki, Telekomunikacji i Informatyki",
+        "universityId": "8",
+        "type": "Teleinformatyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektroniki, Telekomunikacji i Informatyki",
+        "universityId": "8",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "8",
+        "type": "Mechanika",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "8",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "8",
+        "type": "Energetyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Inżynierii Morskiej",
+        "universityId": "8",
+        "type": "Inżynieria okrętowa",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Inżynierii Morskiej",
+        "universityId": "8",
+        "type": "Technologia morska",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Inżynierii Morskiej",
+        "universityId": "8",
+        "type": "Logistyka morska",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "8",
+        "type": "Chemia",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "8",
+        "type": "Inżynieria chemiczna",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "8",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "8",
+        "type": "Informatyka",
+        "numberOfPoints": 305
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "8",
+        "type": "Cyberbezpieczeństwo",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "8",
+        "type": "Sztuczna inteligencja",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "8",
+        "type": "Architektura",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "8",
+        "type": "Urbanistyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Architektury",
+        "universityId": "8",
+        "type": "Architektura krajobrazu",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "9",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "9",
+        "type": "Matematyka",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "9",
+        "type": "Statystyka",
+        "numberOfPoints": 255
+    },
+    {
+        "facultyName": "Wydział Biologii i Ochrony Środowiska",
+        "universityId": "9",
+        "type": "Biologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Biologii i Ochrony Środowiska",
+        "universityId": "9",
+        "type": "Biotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Biologii i Ochrony Środowiska",
+        "universityId": "9",
+        "type": "Biochemia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Fizyki i Informatyki Stosowanej",
+        "universityId": "9",
+        "type": "Fizyka",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Fizyki i Informatyki Stosowanej",
+        "universityId": "9",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Fizyki i Informatyki Stosowanej",
+        "universityId": "9",
+        "type": "Astronomia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "9",
+        "type": "Chemia",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "9",
+        "type": "Chemia stosowana",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "9",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "9",
+        "type": "Filologia polska",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "9",
+        "type": "Anglistyka",
+        "numberOfPoints": 265
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "9",
+        "type": "Germanistyka",
+        "numberOfPoints": 260
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "9",
+        "type": "Historia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "9",
+        "type": "Archeologia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "9",
+        "type": "Politologia",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Zarządzania",
+        "universityId": "9",
+        "type": "Zarządzanie",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Zarządzania",
+        "universityId": "9",
+        "type": "Ekonomia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Elektroniki, Informatyki i Automatyki",
+        "universityId": "10",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Elektroniki, Informatyki i Automatyki",
+        "universityId": "10",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki, Elektroniki, Informatyki i Automatyki",
+        "universityId": "10",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "10",
+        "type": "Mechanika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "10",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "10",
+        "type": "Energetyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Inżynierii Materiałowej i Technologii Wzorcowej",
+        "universityId": "10",
+        "type": "Inżynieria materiałowa",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Inżynierii Materiałowej i Technologii Wzorcowej",
+        "universityId": "10",
+        "type": "Technologia chemiczna",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Inżynierii Materiałowej i Technologii Wzorcowej",
+        "universityId": "10",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Fizyki Technicznej, Informatyki i Matematyki Stosowanej",
+        "universityId": "10",
+        "type": "Fizyka techniczna",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Fizyki Technicznej, Informatyki i Matematyki Stosowanej",
+        "universityId": "10",
+        "type": "Informatyka stosowana",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Fizyki Technicznej, Informatyki i Matematyki Stosowanej",
+        "universityId": "10",
+        "type": "Matematyka stosowana",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "10",
+        "type": "Chemia",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "10",
+        "type": "Chemia techniczna",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "10",
+        "type": "Chemia kosmetyczna",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Organizacji i Zarządzania",
+        "universityId": "10",
+        "type": "Zarządzanie",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Organizacji i Zarządzania",
+        "universityId": "10",
+        "type": "Ekonomia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Organizacji i Zarządzania",
+        "universityId": "10",
+        "type": "Logistyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Architektury i Urbanistyki",
+        "universityId": "10",
+        "type": "Architektura",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Architektury i Urbanistyki",
+        "universityId": "10",
+        "type": "Urbanistyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Architektury i Urbanistyki",
+        "universityId": "10",
+        "type": "Architektura krajobrazu",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "11",
+        "type": "Biologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "11",
+        "type": "Biotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Biologii",
+        "universityId": "11",
+        "type": "Biochemia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Rolnictwa i Biologii Środowiska",
+        "universityId": "11",
+        "type": "Rolnictwo",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Rolnictwa i Biologii Środowiska",
+        "universityId": "11",
+        "type": "Ochrona środowiska",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Rolnictwa i Biologii Środowiska",
+        "universityId": "11",
+        "type": "Inżynieria środowiska",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Nauk o Żywności i Żywieniu Człowieka",
+        "universityId": "11",
+        "type": "Żywienie człowieka",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Nauk o Żywności i Żywieniu Człowieka",
+        "universityId": "11",
+        "type": "Technologia żywności",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Nauk o Żywności i Żywieniu Człowieka",
+        "universityId": "11",
+        "type": "Dietetyka",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Weterynaryjny",
+        "universityId": "11",
+        "type": "Medycyna weterynaryjna",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Weterynaryjny",
+        "universityId": "11",
+        "type": "Higiena weterynaryjna",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Weterynaryjny",
+        "universityId": "11",
+        "type": "Nauka o zwierzętach",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Nauk Leśnych i Łowieckich",
+        "universityId": "11",
+        "type": "Leśnictwo",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Nauk Leśnych i Łowieckich",
+        "universityId": "11",
+        "type": "Ochrona przyrody",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Nauk Leśnych i Łowieckich",
+        "universityId": "11",
+        "type": "Zootechnika",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Ogrodnictwa i Architektury Krajobrazu",
+        "universityId": "11",
+        "type": "Architektura krajobrazu",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Ogrodnictwa i Architektury Krajobrazu",
+        "universityId": "11",
+        "type": "Hortiterapia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Ogrodnictwa i Architektury Krajobrazu",
+        "universityId": "11",
+        "type": "Inżynieria ogrodnicza",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Technologii Drewna",
+        "universityId": "11",
+        "type": "Technologia drewna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Technologii Drewna",
+        "universityId": "11",
+        "type": "Meblarstwo",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "12",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "12",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "12",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "12",
+        "type": "Mechanika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "12",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "12",
+        "type": "Energetyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "12",
+        "type": "Informatyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "12",
+        "type": "Sztuczna inteligencja",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "12",
+        "type": "Cyberbezpieczeństwo",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "12",
+        "type": "Budownictwo",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "12",
+        "type": "Architektura",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "12",
+        "type": "Inżynieria środowiska",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "12",
+        "type": "Inżynieria chemiczna",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "12",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "12",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "12",
+        "type": "Zarządzanie",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "12",
+        "type": "Inżynieria produkcji",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "12",
+        "type": "Logistyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Matematyki, Informatyki i Nauk Informacyjnych",
+        "universityId": "13",
+        "type": "Informatyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Matematyki, Informatyki i Nauk Informacyjnych",
+        "universityId": "13",
+        "type": "Matematyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Matematyki, Informatyki i Nauk Informacyjnych",
+        "universityId": "13",
+        "type": "Statystyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Biologii i Ochrony Środowiska",
+        "universityId": "13",
+        "type": "Biologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Biologii i Ochrony Środowiska",
+        "universityId": "13",
+        "type": "Biotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Biologii i Ochrony Środowiska",
+        "universityId": "13",
+        "type": "Biochemia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "13",
+        "type": "Fizyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "13",
+        "type": "Astronomia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "13",
+        "type": "Informatyka fizyczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "13",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "13",
+        "type": "Chemia analityczna",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Chemiczny",
+        "universityId": "13",
+        "type": "Chemoinżynieria",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "13",
+        "type": "Filologia polska",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "13",
+        "type": "Anglistyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "13",
+        "type": "Germanistyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "13",
+        "type": "Historia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "13",
+        "type": "Archeologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Nauk Historycznych",
+        "universityId": "13",
+        "type": "Politologia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Finansów",
+        "universityId": "13",
+        "type": "Zarządzanie",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Finansów",
+        "universityId": "13",
+        "type": "Ekonomia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Finansów",
+        "universityId": "13",
+        "type": "Finanse",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki",
+        "universityId": "14",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki",
+        "universityId": "14",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektrotechniki",
+        "universityId": "14",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "14",
+        "type": "Mechanika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "14",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "14",
+        "type": "Energetyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "14",
+        "type": "Informatyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "14",
+        "type": "Sztuczna inteligencja",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "14",
+        "type": "Cyberbezpieczeństwo",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "14",
+        "type": "Budownictwo",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "14",
+        "type": "Architektura",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "14",
+        "type": "Inżynieria środowiska",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "14",
+        "type": "Inżynieria chemiczna",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "14",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "14",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "14",
+        "type": "Zarządzanie",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "14",
+        "type": "Inżynieria produkcji",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "14",
+        "type": "Logistyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "15",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "15",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "15",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "15",
+        "type": "Mechanika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "15",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "15",
+        "type": "Energetyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "15",
+        "type": "Informatyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "15",
+        "type": "Sztuczna inteligencja",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "15",
+        "type": "Cyberbezpieczeństwo",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "15",
+        "type": "Budownictwo",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "15",
+        "type": "Architektura",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "15",
+        "type": "Inżynieria środowiska",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "15",
+        "type": "Inżynieria chemiczna",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "15",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "15",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "15",
+        "type": "Zarządzanie",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "15",
+        "type": "Inżynieria produkcji",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "15",
+        "type": "Logistyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "16",
+        "type": "Informatyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "16",
+        "type": "Matematyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "16",
+        "type": "Statystyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Nauk Przyrodniczych",
+        "universityId": "16",
+        "type": "Biologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Nauk Przyrodniczych",
+        "universityId": "16",
+        "type": "Biotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Nauk Przyrodniczych",
+        "universityId": "16",
+        "type": "Biochemia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Fizyki",
+        "universityId": "16",
+        "type": "Fizyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Fizyki",
+        "universityId": "16",
+        "type": "Astronomia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Fizyki",
+        "universityId": "16",
+        "type": "Informatyka fizyczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "16",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "16",
+        "type": "Chemia analityczna",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "16",
+        "type": "Chemoinżynieria",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "16",
+        "type": "Filologia polska",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "16",
+        "type": "Anglistyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "16",
+        "type": "Germanistyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Matematyki, Informatyki i Mechaniki",
+        "universityId": "17",
+        "type": "Informatyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Matematyki, Informatyki i Mechaniki",
+        "universityId": "17",
+        "type": "Matematyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Matematyki, Informatyki i Mechaniki",
+        "universityId": "17",
+        "type": "Statystyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Biologiczno-Chemiczny",
+        "universityId": "17",
+        "type": "Biologia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Biologiczno-Chemiczny",
+        "universityId": "17",
+        "type": "Biotechnologia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Biologiczno-Chemiczny",
+        "universityId": "17",
+        "type": "Biochemia",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "17",
+        "type": "Fizyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "17",
+        "type": "Astronomia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Fizyki i Astronomii",
+        "universityId": "17",
+        "type": "Informatyka fizyczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "17",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "17",
+        "type": "Chemia analityczna",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Chemii",
+        "universityId": "17",
+        "type": "Chemoinżynieria",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "18",
+        "type": "Elektrotechnika",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "18",
+        "type": "Informatyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Elektryczny",
+        "universityId": "18",
+        "type": "Automatyka i robotyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "18",
+        "type": "Mechanika",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "18",
+        "type": "Inżynieria mechaniczna",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Mechaniczny",
+        "universityId": "18",
+        "type": "Energetyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "18",
+        "type": "Informatyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "18",
+        "type": "Sztuczna inteligencja",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Informatyki",
+        "universityId": "18",
+        "type": "Cyberbezpieczeństwo",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "18",
+        "type": "Budownictwo",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "18",
+        "type": "Architektura",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Budownictwa",
+        "universityId": "18",
+        "type": "Inżynieria środowiska",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "18",
+        "type": "Inżynieria chemiczna",
+        "numberOfPoints": 300
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "18",
+        "type": "Chemia",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Inżynierii Chemicznej",
+        "universityId": "18",
+        "type": "Nanotechnologia",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "18",
+        "type": "Zarządzanie",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "18",
+        "type": "Inżynieria produkcji",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Zarządzania i Inżynierii Produkcji",
+        "universityId": "18",
+        "type": "Logistyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "19",
+        "type": "Filologia polska",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "19",
+        "type": "Anglistyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Filologiczny",
+        "universityId": "19",
+        "type": "Germanistyka",
+        "numberOfPoints": 270
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "19",
+        "type": "Informatyka",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "19",
+        "type": "Matematyka",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Matematyki i Informatyki",
+        "universityId": "19",
+        "type": "Statystyka",
+        "numberOfPoints": 275
+    },
+    {
+        "facultyName": "Wydział Nauk Ścisłych",
+        "universityId": "19",
+        "type": "Fizyka",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Nauk Ścisłych",
+        "universityId": "19",
+        "type": "Chemia",
+        "numberOfPoints": 285
+    },
+    {
+        "facultyName": "Wydział Nauk Ścisłych",
+        "universityId": "19",
+        "type": "Astronomia",
+        "numberOfPoints": 280
+    },
+    {
+        "facultyName": "Wydział Prawa i Administracji",
+        "universityId": "19",
+        "type": "Prawo",
+        "numberOfPoints": 295
+    },
+    {
+        "facultyName": "Wydział Prawa i Administracji",
+        "universityId": "19",
+        "type": "Administracja",
+        "numberOfPoints": 290
+    },
+    {
+        "facultyName": "Wydział Prawa i Administracji",
+        "universityId": "19",
+        "type": "Bezpieczeństwo narodowe",
+        "numberOfPoints": 285
+    }
+]

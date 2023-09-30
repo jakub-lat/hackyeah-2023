@@ -7,19 +7,21 @@ import {
 import {Button} from "@/components/ui/button.tsx";
 import {LogIn, User} from "lucide-react";
 import {auth} from "@/lib/firebase.ts";
-import {useAuthState} from "react-firebase-hooks/auth";
-
+import {useAuthState, useSignInWithGoogle, useSignOut} from "react-firebase-hooks/auth";
+import LoadingButton from "@/components/ui/loading-button.tsx";
 
 export default function UserDropdown() {
-    const [user] = useAuthState(auth);
-
     // TODO logowanie
+    const [user] = useAuthState(auth);
+    const [signInWithGoogle, _, loading, _error] = useSignInWithGoogle(auth);
+
+    const [signOut, _signOutLoading] = useSignOut(auth);
 
     if (!user) {
-        return <Button variant={"outline"}>
+        return <LoadingButton variant={"outline"} isLoading={loading} onClick={() => signInWithGoogle()}>
             Login
             <LogIn className={"w-4 h-4 ml-2"} />
-        </Button>
+        </LoadingButton>
     }
 
     return <>
@@ -27,22 +29,21 @@ export default function UserDropdown() {
             <DropdownMenuTrigger asChild>
                 <Button variant="outline">
                     <User className={"mr-2 h-4 w-4"} />
-                    Jan Kowalski
+                    {user.displayName}
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
                 <DropdownMenuLabel>Moje konto</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                        Mój profil
+                    <DropdownMenuItem className={"cursor-pointer"}>
+                        Profil
                     </DropdownMenuItem>
-                    <DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => signOut()} className={"cursor-pointer"}>
                         Wyloguj się
                     </DropdownMenuItem>
                 </DropdownMenuGroup>
             </DropdownMenuContent>
         </DropdownMenu>
-
     </>
 }

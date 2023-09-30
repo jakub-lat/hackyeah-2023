@@ -8,5 +8,5 @@ export default function PageLayout({children}: PropsWithChildren<{}>) {
 }
 
 export function PageTitle({className, children}: PropsWithChildren<{ className?: string }>) {
-    return <h1 className={cn("text-2xl font-bold ", className)}>{children}</h1>
+    return <h1 className={cn("text-xl font-bold ", className)}>{children}</h1>
 }

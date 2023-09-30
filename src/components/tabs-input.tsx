@@ -4,7 +4,7 @@ import {ComponentProps} from "react";
 export function TabsInput({children, ...props}: ComponentProps<typeof Tabs>) {
     return (
         <Tabs defaultValue="account" {...props}>
-            <TabsList className="grid w-full grid-cols-2">
+            <TabsList className="grid w-full auto-cols-fr grid-flow-col">
                 {children}
             </TabsList>
         </Tabs>

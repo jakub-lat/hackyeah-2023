@@ -25,7 +25,7 @@ export default function BasicInfo() {
     const [userOrigin, setUserOrigin] = useState<string>('poland');
 
     return <div className={"flex justify-center items-center mt-20"}>
-        <Card className="w-[500px]">
+        <Card className="w-[600px]">
             <CardHeader>
                 <CardTitle>Zacznijmy!</CardTitle>
                 <CardDescription>Powiedz nam kilka słów o sobie.</CardDescription>
@@ -36,8 +36,9 @@ export default function BasicInfo() {
                         <FormGroup>
                             <Label className={"mb-1"}>Czego szukasz?</Label>
                             <TabsInput value={category} onValueChange={setCategory}>
-                                <TabsInputItem value={"1-deg"}>Studia I stopnia</TabsInputItem>
-                                <TabsInputItem value={"2-deg"}>Studia II stopnia</TabsInputItem>
+                                <TabsInputItem value={"undergraduate"}>Studia I stopnia</TabsInputItem>
+                                <TabsInputItem value={"graduate"}>Studia II stopnia</TabsInputItem>
+                                <TabsInputItem value={"postgraduate"}>Studia III stopnia</TabsInputItem>
                             </TabsInput>
                         </FormGroup>
                         <FormGroup>

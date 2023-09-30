@@ -29,7 +29,7 @@ import {
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 import {Link} from "react-router-dom";
-import getFaculties from '../store/facultiesStore.ts';
+// import getFaculties from '../store/facultiesStore.ts';
 
 
 function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeof Badge>) {
@@ -41,7 +41,7 @@ function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeo
 
 
 const allFaculties: Record<string, string[]>  = {
-    "Informatyczne": await getFaculties(),
+    "Informatyczne": [] // await getFaculties(),
 };
 
 // const allFaculties: Record<string, string[]> = {
@@ -112,7 +112,7 @@ export default function FieldsOfStudy() {
                             <h2 className={"text-md mb-5"}>Zaznacz kierunki, które cię interesują.</h2>
                         </div>
                         <Button variant={"secondary"} asChild>
-                            <Link to={"/career-assistant"}>
+                            <Link to={"/fields-of-study/assistant"}>
                                 Pomóż mi wybrać!
                             </Link>
                         </Button>
@@ -193,7 +193,7 @@ export default function FieldsOfStudy() {
                 <AlertDialogFooter>
                     <AlertDialogCancel>Pomiń</AlertDialogCancel>
                     <AlertDialogAction asChild>
-                        <Link to={"/career-assistant"}>
+                        <Link to={"/fields-of-study/assistant"}>
                             Kontynuuj
                         </Link>
                     </AlertDialogAction>

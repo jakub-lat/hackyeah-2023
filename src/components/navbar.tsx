@@ -29,7 +29,6 @@ export function Navbar({
                         {appName}
                     </Link>
                     <NavItem to={"/fields-of-study"}>Twoje kierunki</NavItem>
-                    <NavItem to={"/career-assistant"}>Asystent kierunków</NavItem>
                     <NavItem to={"/universities"}>Znajdź uczelnie</NavItem>
                     <NavItem to={"/favorites"}>Ulubione</NavItem>
                 </nav>

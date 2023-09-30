@@ -2,6 +2,7 @@ import {Button} from "@/components/ui/button.tsx";
 import {ArrowRight} from "lucide-react";
 import {Link} from "react-router-dom";
 import {appName} from "@/lib/const.ts";
+import Graph3D from "@/views/graph3d.tsx";
 
 export default function Home() {
     return <div className={"p-10 h-full"}>
@@ -18,5 +19,6 @@ export default function Home() {
                 </Link>
             </Button>
         </div>
+        {<Graph3D/>}
     </div>
 }

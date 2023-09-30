@@ -37,7 +37,7 @@ export function Navbar({
                 </div>
 
             </div>
-            <div className="flex space-x-4 px-4">
+            <div className="grid grid-cols-3 divider-x px-4">
                 <NavItem className="font-radio-canada" to={"/fields-of-study"}>Znajdź kierunki</NavItem>
                 <NavItem className="font-radio-canada" to={"/universities"}>Znajdź uczelnie</NavItem>
                 <NavItem className="font-radio-canada" to={"/favorites"}>Ulubione</NavItem>

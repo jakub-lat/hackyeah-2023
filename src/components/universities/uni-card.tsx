@@ -5,10 +5,9 @@ import { useTheme } from "@/components/theme-provider";
 import { ChevronRight } from "lucide-react";
 import { HTMLProps } from "react";
 
-const UniCard = ({ header, city, major, icon, onClick }: {
+const UniCard = ({ header, description, icon, onClick }: {
     header: string,
-    city: string,
-    major: string,
+    description: string,
     icon?: string,
     onClick?: () => void
 } & HTMLProps<HTMLButtonElement>) => {
@@ -23,7 +22,7 @@ const UniCard = ({ header, city, major, icon, onClick }: {
                     </div>
                     <div>
                         <CardTitle className="text-lg">{header}</CardTitle>
-                        <CardDescription>{city}, kierunek: {major}</CardDescription>
+                        <CardDescription>{description}</CardDescription>
                     </div>
                 </div>
             </CardHeader>

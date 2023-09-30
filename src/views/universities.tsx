@@ -8,14 +8,13 @@ export default function Universities() {
     const [focus, setFocus] = useState(null)
 
     return <PageLayout>
-        <div className="flex flex-col lg:flex-row gap-5 py-5">
+        <div className="flex flex-col lg:flex-row gap-5">
             <div className="lg:w-[35%] flex flex-col gap-3 max-h-[80vh] overflow-auto">
                 {UniMock.map((uni, i) =>
                     <UniCard
                         key={i}
                         header={uni.name}
-                        city={uni.city}
-                        major={uni.major}
+                        description={`${uni.city}, kierunek: ${uni.major}`}
                         icon={uni.icon}
                         onClick={() => setFocus({ lat: uni.lat, lng: uni.lng })}
                     />

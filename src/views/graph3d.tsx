@@ -5,6 +5,7 @@ import {Vector3} from 'three';
 import * as THREE from 'three';
 import TWEEN from '@tweenjs/tween.js'
 import {OrbitControls as OrbitControlsImpl} from "three-stdlib/controls/OrbitControls";
+import {useFieldsStore} from "@/store/fieldsStore.ts";
 
 interface GraphItem {
     position?: Vector3;
@@ -78,6 +79,8 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
     const [selected, setSelected] = useState<string | null>(null);
     const {camera} = useThree();
 
+    const fieldsStore = useFieldsStore();
+
     const dots = useMemo(() => {
         return items.map(item => {
             const x = (Math.random() - 0.5) * 10;
@@ -100,6 +103,7 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
 
         setHighlighted(new Set(nearest.map(x => x.name)));
         setSelected(dot.name);
+        fieldsStore.setFocused(dot.name);
 
 
         const targetPosition = new THREE.Vector3().copy(dot.position);
@@ -122,7 +126,7 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
             if (!dot) return;
 
             handleDotClick(dot);
-        }
+        },
     }));
 
     useFrame(() => {

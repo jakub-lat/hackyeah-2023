@@ -19,7 +19,7 @@ export function Navbar({
                            ...props
                        }: React.HTMLAttributes<HTMLElement>) {
     return (
-        <div className="p-3">
+        <div className="px-7 py-2">
             <div className="flex h-16 items-center px-4">
                 <nav
                     className={cn("flex items-center space-x-4 lg:space-x-6", className)}

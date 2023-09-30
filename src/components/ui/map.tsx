@@ -121,7 +121,7 @@ const Map = ({ className, focus, markers }: Props) => {
 
     return (
         <div className={classnames(
-            "w-full relative h-full min-h-[40rem] rounded-md overflow-hidden",
+            "w-full relative h-full min-h-[27rem] rounded-md overflow-hidden",
             className
         )}>
             <div ref={mapContainer} className="absolute w-full h-full min-h-[40rem]" />

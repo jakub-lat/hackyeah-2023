@@ -181,6 +181,8 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
         // controls.current.update();
     });
 
+    // const font = useFont('/roboto.json');
+
     return (
         <group>
             {dots.map((dot, index) => {
@@ -195,7 +197,7 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
                                 position={[0, 0.2, 0]}
                                 anchorX="center"
                                 anchorY="middle"
-                                font={'sans-serif'}
+                                font={"/roboto.json"}
                                 color={isHighlighted ? 'white' : 'gray'}
                             >
                                 {dot.name}

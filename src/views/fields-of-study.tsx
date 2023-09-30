@@ -115,7 +115,7 @@ export default function FieldsOfStudy() {
                                      }/>
                         </div>
                     </div>
-                    <Card className={"w-full m-0"}>
+                    <Card className={"w-full m-0 mb-4"}>
                         <CardHeader className={"flex flex-row items-center h-20"}>
                             <h3 className={"mr-5"}>Wybrane kierunki</h3>
                             <ScrollArea className={'h-12 p-0 flex-1 mr-5'}>
@@ -128,9 +128,11 @@ export default function FieldsOfStudy() {
                                         ))}
                                 </div>
                             </ScrollArea>
-                            <Button>
-                                Przejdź dalej
-                                <ArrowRight className={"w-4 h-4 ml-3"}/>
+                            <Button asChild>
+                                <Link to={"/universities"}>
+                                    Kontynuuj
+                                    <ArrowRight className={"w-4 h-4 ml-3"}/>
+                                </Link>
                             </Button>
                         </CardHeader>
                     </Card>

@@ -1,11 +1,11 @@
 import { create } from 'zustand';
 
-interface IFieldStore {
+interface IGraphStore {
     focused?: string;
     setFocused: (v: string) => void;
 }
 
-export const useFieldsStore = create<IFieldStore>((set) => ({
+export const useGraphStore = create<IGraphStore>((set) => ({
     focused: null,
     setFocused: (v: string) => set(() => ({ focused: v })),
 }))

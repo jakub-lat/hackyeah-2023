@@ -31,6 +31,49 @@ function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeo
     </Badge>
 }
 
+
+// const allFaculties: Record<string, string[]> = {
+//     'Informatyczne': [
+//         'Informatyka stosowana',
+//         'Informatyka algorytmiczna',
+//         'Cyberbezpieczeństwo',
+//         'Telekomunikacja',
+//         'Inżynieria systemów',
+//         'Inżynieria oprogramowania',
+//         'Inżynieria internetu rzeczy',
+//         'Inżynieria sieci komputerowych',
+//
+//     ],
+//     'Humanistyczne': [
+//         'Filozofia',
+//         'Socjologia',
+//         'Psychologia',
+//         'Pedagogika',
+//         'Historia',
+//         'Historia sztuki',
+//         'Historia kultury',
+//     ],
+//     'Techniczne': [
+//         'Inżynieria mechaniczna',
+//         'Inżynieria materiałowa',
+//         'Inżynieria chemiczna',
+//         'Inżynieria środowiska',
+//         'Inżynieria biomedyczna',
+//     ],
+//     'Medyczne': [
+//         'Medycyna',
+//         'Farmacja',
+//         'Dietetyka',
+//         'Zdrowie publiczne',
+//         'Pielęgniarstwo',
+//         'Położnictwo',
+//         'Fizjoterapia',
+//         'Logopedia',
+//         'Optyka',
+//         'Kosmetologia',
+//         'Zdrowie i uroda',
+//     ]
+// };
 const getAllFaculties = async () => {
     return {
         Informatyczne: await getFaculties(),
@@ -118,8 +161,8 @@ export default function FieldsOfStudy() {
                     <Card className={"w-full m-0 mb-4"}>
                         <CardHeader className={"flex flex-row items-center h-20"}>
                             <h3 className={"mr-5"}>Wybrane kierunki</h3>
-                            <ScrollArea className={'h-12 p-0 flex-1 mr-5'}>
-                                <div className={"flex items-center gap-3 flex-wrap min-h-20"}>
+                            <ScrollArea className={'h-20 flex-1 mr-5'}>
+                                <div className={"flex items-center gap-3 flex-wrap min-h-20 py-6"}>
                                     {selectedFields
                                         .map(x => (
                                             <FieldOfStudyBadge key={x} onClick={() => remove(x)}>

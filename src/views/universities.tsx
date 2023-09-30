@@ -1,4 +1,4 @@
-import PageLayout, { PageTitle } from "@/layouts/PageLayout.tsx";
+import PageLayout from "@/layouts/PageLayout.tsx";
 import Map from "@/components/ui/map.tsx";
 import UniMock from "@/mock/universities";
 import UniCard from "@/components/universities/uni-card";

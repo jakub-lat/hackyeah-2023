@@ -21,14 +21,14 @@ export default function Filters() {
 
     const cities = ['Wrocław', 'Warszawa', 'Kraków', 'Poznań', 'Gdańsk', 'Białystok', 'Bydgoszcz', 'Toruń'];
 
-    return <div className={"flex gap-4 mb-3"}>
+    return <div className={"flex flex-wrap gap-2 mb-5"}>
         <Button variant={"outline"} asChild>
             <Link to={"/fields-of-study"}>
                 <ArrowLeft className={"w-4 h-4 mr-3 opacity-50"}/>
                 Wybierz kierunki
             </Link>
         </Button>
-        <div className={'w-[250px]'}>
+        <div className={'max-h-10'}>
             <MultiSelect options={cities.map(x => ({label: x, value: x}))}
                          label={'Miasto'}
                          selected={selected} onChange={setSelected} className={'w-64'}

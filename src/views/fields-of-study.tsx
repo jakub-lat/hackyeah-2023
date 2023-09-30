@@ -2,7 +2,7 @@ import PageLayout, {PageTitle} from "@/layouts/PageLayout.tsx";
 
 import {Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList,} from "@/components/ui/command"
 import {Card, CardHeader} from "@/components/ui/card.tsx";
-import {ComponentProps, useRef, useState} from "react";
+import {ComponentProps, useEffect, useRef, useState} from "react";
 import {ArrowRight, X} from "lucide-react";
 import {Badge} from "@/components/ui/badge.tsx";
 import {cn} from "@/lib/utils.ts";
@@ -22,9 +22,7 @@ import {
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 import {Link} from "react-router-dom";
-import getFieldsOfStudy from '../store/facultiesStore.ts';
-import uuid from 'react-uuid';
-
+import getFaculties from '../store/facultiesStore.ts';
 
 function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeof Badge>) {
     return <Badge variant={"secondary"} className={cn("cursor-pointer h-7 gap-x-4", className)} {...props}>
@@ -33,10 +31,54 @@ function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeo
     </Badge>
 }
 
-// const getAllFaculties = async () => {
-//     return await getFaculties();
-// };
 
+// const allFaculties: Record<string, string[]> = {
+//     'Informatyczne': [
+//         'Informatyka stosowana',
+//         'Informatyka algorytmiczna',
+//         'Cyberbezpieczeństwo',
+//         'Telekomunikacja',
+//         'Inżynieria systemów',
+//         'Inżynieria oprogramowania',
+//         'Inżynieria internetu rzeczy',
+//         'Inżynieria sieci komputerowych',
+//
+//     ],
+//     'Humanistyczne': [
+//         'Filozofia',
+//         'Socjologia',
+//         'Psychologia',
+//         'Pedagogika',
+//         'Historia',
+//         'Historia sztuki',
+//         'Historia kultury',
+//     ],
+//     'Techniczne': [
+//         'Inżynieria mechaniczna',
+//         'Inżynieria materiałowa',
+//         'Inżynieria chemiczna',
+//         'Inżynieria środowiska',
+//         'Inżynieria biomedyczna',
+//     ],
+//     'Medyczne': [
+//         'Medycyna',
+//         'Farmacja',
+//         'Dietetyka',
+//         'Zdrowie publiczne',
+//         'Pielęgniarstwo',
+//         'Położnictwo',
+//         'Fizjoterapia',
+//         'Logopedia',
+//         'Optyka',
+//         'Kosmetologia',
+//         'Zdrowie i uroda',
+//     ]
+// };
+const getAllFaculties = async () => {
+    return {
+        Informatyczne: await getFaculties(),
+    };
+};
 
 export default function FieldsOfStudy() {
     const graphRef = useRef<DotsRef>(null);
@@ -44,13 +86,11 @@ export default function FieldsOfStudy() {
     const {focused} = useGraphStore();
 
     const {selectedFields, addSelectedField, removeSelectedField} = useFilterStore();
-    // const [allFaculties, setAllFaculties] = useState({Informatyczne: []});
+    const [allFaculties, setAllFaculties] = useState({Informatyczne: []});
 
-    // useEffect(() => {
-    //     getAllFaculties().then(setAllFaculties);
-    // }, [allFaculties]);
-
-    const allFaculties = getFieldsOfStudy();
+    useEffect(() => {
+        getAllFaculties().then(setAllFaculties);
+    }, [allFaculties]);
 
     const add = (v: string) => {
         addSelectedField(v);
@@ -80,11 +120,11 @@ export default function FieldsOfStudy() {
                         <CommandInput value={search} onValueChange={setSearch} placeholder="Wyszukaj kierunek..."/>
                         <CommandList className={"max-h-[65vh]"}>
                             <CommandEmpty>Nie znaleziono.</CommandEmpty>
-                            {Object.keys(allFaculties).map(x => <CommandGroup heading={x} key={uuid()}>
+                            {Object.keys(allFaculties).map(x => <CommandGroup heading={x} key={x}>
                                 {allFaculties[x]
                                     .filter(x => !selectedFields.includes(x))
                                     .map(f =>
-                                        <CommandItem key={uuid()} value={f} onSelect={() => add(f)}>
+                                        <CommandItem key={f} value={f} onSelect={() => add(f)}>
                                             {f}
                                         </CommandItem>
                                     )}

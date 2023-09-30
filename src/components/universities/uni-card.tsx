@@ -13,7 +13,7 @@ const UniCard = ({ header, description, icon, onClick }: {
     const { theme } = useTheme()
 
     return (
-        <Card className="flex items-center cursor-pointer hover:opacity-70 transition-all" onClick={onClick}>
+        <Card className="flex items-center cursor-pointer opacity-70 hover:opacity-100 transition-all" onClick={onClick}>
             <CardHeader className="p-5">
                 <div className="flex gap-4 items-center">
                     <div className="w-8 h-8 icon">

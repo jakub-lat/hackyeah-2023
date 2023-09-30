@@ -2,9 +2,11 @@ import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
 import OpenAI from 'openai';
 import FieldOfStudy from "./FieldOfStudy";
+import { openAiKey } from "./secrets";
+
 
 const openai = new OpenAI({
-  apiKey: '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', // defaults to process.env["OPENAI_API_KEY"]
+  apiKey: openAiKey, // defaults to process.env["OPENAI_API_KEY"]
   dangerouslyAllowBrowser: true
 });
 

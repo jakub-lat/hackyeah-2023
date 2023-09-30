@@ -20,7 +20,7 @@ export default function Universities() {
                     />
                 )}
             </div>
-            <div className="w-[65%] h-[80vh]">
+            <div className="lg:w-[65%] lg:h-[80vh]">
                 <Map
                     markers={UniMock.map((uni) => {
                         return {

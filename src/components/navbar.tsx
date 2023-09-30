@@ -19,7 +19,7 @@ export function Navbar({
                            ...props
                        }: React.HTMLAttributes<HTMLElement>) {
     return (
-        <div className="border-b">
+        <div className="p-6">
             <div className="flex h-16 items-center px-4">
                 <nav
                     className={cn("flex items-center space-x-4 lg:space-x-6", className)}
@@ -28,15 +28,19 @@ export function Navbar({
                     <Link to={"/"} className={cn("font-bold text-3xl")}>
                         {appName}
                     </Link>
-                    <NavItem className="font-radio-canada" to={"/fields-of-study"}>Znajdź kierunki</NavItem>
-                    <NavItem className="font-radio-canada" to={"/universities"}>Znajdź uczelnie</NavItem>
-                    <NavItem className="font-radio-canada" to={"/favorites"}>Ulubione</NavItem>
+
                 </nav>
 
                 <div className="ml-auto flex items-center space-x-4">
                     <ThemeToggle />
                     <UserDropdown />
                 </div>
+
+            </div>
+            <div className="grid grid-cols-3 divider-x px-4">
+                <NavItem className="font-radio-canada" to={"/fields-of-study"}>Znajdź kierunki</NavItem>
+                <NavItem className="font-radio-canada" to={"/universities"}>Znajdź uczelnie</NavItem>
+                <NavItem className="font-radio-canada" to={"/favorites"}>Ulubione</NavItem>
             </div>
         </div>
 

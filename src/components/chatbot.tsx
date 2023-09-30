@@ -1,16 +1,22 @@
 import { useState } from 'react';
-import { Input } from '@/components/ui/input.tsx';
-import { Button } from '@/components/ui/button.tsx';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '@/components/ui/card';
 import { Bot, BotIcon, ChevronRight, School2 } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
+import Textbox from "../components/textbox";
+import UniversityAssistant from '@/lib/UniversityAssistant';
+import { useMemo } from 'react';
 
 
 interface IQuestion {
-    title: string,
-    subtitle?: string,
+    question: string,
     type?: string,
     options?: string[]
+}
+
+const assistant = useMemo(() => new UniversityAssistant(), []);
+
+function getNextAnswer(userAnswer: string) {
+    return assistant.ask(userAnswer);
 }
 
 
@@ -18,6 +24,8 @@ export default function Chatbot() {
     const [messages, setMessages] = useState([]);
     const [currentMessage, setCurrentMessage] = useState('');
     const { theme } = useTheme()
+
+    // const [question, setQuestion] = useState({});
 
     const handleSubmit = () => {
         if (currentMessage.trim()) {
@@ -51,20 +59,11 @@ export default function Chatbot() {
                 </CardHeader>
             </Card>
 
-            <div className="flex mt-1 gap-2">
-                <Input
-                    className="text-white placeholder-red px-12"
-                    value={currentMessage}
-                    onChange={e => setCurrentMessage(e.target.value)}
-                    placeholder="Wpisz..."
-                />
-                <Button
-                    className="grow w-40"
-                    color="primary"
-                    onClick={handleSubmit}
-                >
-                    Odpowiedz
-                </Button>
+            <div>
+               <Textbox 
+               currentMessage={currentMessage} 
+               setCurrentMessage={setCurrentMessage} 
+               handleSubmit={handleSubmit} />
             </div>
         </div>
     );

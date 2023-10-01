@@ -42,7 +42,7 @@ export default function RecruitmentPoints() {
         setScores(scores.filter(([subj, _score]) => subj !== subject));
     }
 
-    return <AlertDialog modal={true}>
+    return <AlertDialog>
         <AlertDialogTrigger asChild>
             <Button variant={"outline"}>
                 Punkty rekrutacyjne

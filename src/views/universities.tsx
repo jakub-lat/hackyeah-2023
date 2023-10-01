@@ -67,13 +67,13 @@ export default function Universities() {
             </ScrollArea>
             <div className="lg:w-[65%] lg:h-[80vh]">
                 <Map
-                    markers={UniMock.map((uni) => {
+                    markers={selectedUniversities.map((uni) => {
                         return {
-                            lat: uni.lat,
-                            lng: uni.lng,
+                            lat: uni.latitude,
+                            lng: uni.longitude,
                             badge: uni.name,
-                            icon: uni.icon,
-                            onClick: () => setFocus({ lat: uni.lat, lng: uni.lng })
+                            icon: null,
+                            onClick: () => setFocus({ lat: uni.latitude, lng: uni.longitude })
                         }
                     })}
                     focus={focus}

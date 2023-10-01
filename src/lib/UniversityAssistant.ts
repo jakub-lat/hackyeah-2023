@@ -1,11 +1,8 @@
 import { ChatCompletionMessageParam } from "openai/resources/chat/index.mjs";
 import OpenAI from "openai";
 import { AssistantAnswer } from "./AssistantAnswer";
-import { openAiKey } from "./secrets";
-const openai = new OpenAI({
-    apiKey: openAiKey, 
-    dangerouslyAllowBrowser: true
-});
+import { getOpenAIKey } from "./secrets";
+
 
 export default class UniversityAssistant {
     messages: ChatCompletionMessageParam[] = [];
@@ -32,7 +29,10 @@ export default class UniversityAssistant {
         Jeśli possibleResponses nie jest nullem, niech będzie to lista możliwych odpowiedzi na Twoje pytanie zwięzłym zdaniem w języku polskim.
         Nie powtarzaj pytań, które zadałeś już wcześniej. Zdanie do odpowiedzi: ` + prompt;
         this.messages.push({ role: 'user', content: newPrompt });
-
+        const openai = new OpenAI({
+            apiKey: await getOpenAIKey(),
+            dangerouslyAllowBrowser: true
+        });
         const chatCompletion = await openai.chat.completions.create({
             messages: this.messages,
             model: 'gpt-4',

@@ -4,13 +4,13 @@ import UniCard from "@/components/universities/uni-card";
 import { useEffect, useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Filters from "@/components/filters.tsx";
-import {useFilterStore} from "@/store/filterStore.ts";
+import { useFilterStore } from "@/store/filterStore.ts";
 import universities from "../data/universities.json";
 import allFieldsOfStudy from "../data/fieldsOfStudy.json";
 import { useAssistantSuggestionsStore } from "@/store/assistantSuggestionsStore";
 import { getSimilarMetacategories } from "@/lib/utils";
 import getFaculties from '@/store/facultiesStore';
-import {useUniStore} from "@/store/universityStore.ts";
+import { useUniStore } from "@/store/universityStore.ts";
 import University from "@/components/university";
 import {useSearchParams} from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -50,16 +50,17 @@ interface University {
 }
 
 export default function Universities() {
-    const { selectedFields, addSelectedField, getSelectedFields } = useFilterStore();
+    const { selectedFields, addSelectedField, setCities, selectedCities, getSelectedFields } = useFilterStore();
+
     // const [focus, setFocus] = useState(null)
-    const {focused, setFocused} = useUniStore();
+    const { focused, setFocused } = useUniStore();
 
     const [search, _setSearch] = useSearchParams();
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        if(search.has('id')) {
-           setFocused(universities.find((uni) => uni.name === search.get('id')));
+        if (search.has('id')) {
+            setFocused(universities.find((uni) => uni.name === search.get('id')));
         }
     }, [search]);
   
@@ -73,7 +74,7 @@ export default function Universities() {
         }
         return `kierunki: ${Array.from(fields).join(", ")}`;
     };
-    const { suggestedFieldsOfStudy } = useAssistantSuggestionsStore();
+    const { suggestedFieldsOfStudy, preferredCity } = useAssistantSuggestionsStore();
     const [areAssistantSuggestionsIncluded, setAssistantSuggestionsIncluded] = useState(false);
     const allFaculties = getFaculties();
 
@@ -89,8 +90,12 @@ export default function Universities() {
             }
         };
 
-        if (!areAssistantSuggestionsIncluded && suggestedFieldsOfStudy.length > 0) {
-            filterByAssistantSuggestions();
+        if (!areAssistantSuggestionsIncluded) {
+            if (suggestedFieldsOfStudy.length > 0)
+                filterByAssistantSuggestions();
+            if (preferredCity !== null) {
+                setCities([...selectedCities, preferredCity]);
+            }
             setAssistantSuggestionsIncluded(true);
         }
     }, [areAssistantSuggestionsIncluded, suggestedFieldsOfStudy]);
@@ -100,8 +105,9 @@ export default function Universities() {
     }, [user])
 
     return <PageLayout>
-        <Filters/>
+        <Filters />
         <div className="flex flex-col lg:flex-row gap-5">
+
             {selectedFields.length === 0 && <Alert className={'h-min w-[450px] border-red-600 border-opacity-50 bg-red-600/10'}>
                 <AlertCircle className="h-4 w-4" />
                 <AlertTitle>Uwaga!</AlertTitle>

@@ -86,7 +86,7 @@ const UniCard = ({uni, aiScore, onClick: onClick}: {
                             </Button>
                         <Button variant="ghost" onClick={handleClick}><ChevronRight /></Button>
                     </div>
-                    <div><Badge variant="outline">AI score {aiScore !== 0 ? aiScore : '🤔'}</Badge></div>
+                    <div><Badge>AI score {aiScore !== 0 ? aiScore : '🤔'}</Badge></div>
                 </div>
             </CardFooter>
         </Card>

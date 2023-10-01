@@ -10,6 +10,8 @@ import {useUniStore} from "@/store/universityStore.ts";
 import University from "@/components/university";
 import {useSearchParams} from "react-router-dom";
 import {useEffect} from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "@/lib/firebase.ts";
 
 /*
     {
@@ -46,6 +48,7 @@ export default function Universities() {
     const {focused, setFocused} = useUniStore();
 
     const [search, _setSearch] = useSearchParams();
+    const [user] = useAuthState(auth);
 
     useEffect(() => {
         if(search.has('id')) {
@@ -53,7 +56,7 @@ export default function Universities() {
         }
     }, [search]);
 
-    const {selectedFields} = useFilterStore();
+    const {selectedFields, getSelectedFields} = useFilterStore();
     const selectedFieldsOfStudy = allFieldsOfStudy.filter((field) => selectedFields.includes(field.type));
     const doesUniversityOfferAnySelectedField = (uni: University) => selectedFieldsOfStudy.map((f) => f.universityId).includes(uni.name);
     const selectedUniversities = Array.from(new Set(universities.filter(doesUniversityOfferAnySelectedField)))
@@ -65,7 +68,9 @@ export default function Universities() {
         return `kierunki: ${Array.from(fields).join(", ")}`;
     };
 
-    console.log(selectedUniversities);
+    useEffect(() => {
+        getSelectedFields();
+    }, [user])
 
     return <PageLayout>
         <Filters/>
@@ -82,6 +87,7 @@ export default function Universities() {
                                 onClick={() => setFocused(uni)}
                             />
                         )}
+                        {selectedUniversities.length === 0 && <p className="text-center max-w-[20rem] mx-auto my-5 text-muted-foreground">Wybierz kierunki, aby zobaczyć listę proponowanych uczelni</p>}
                     </div>
                 </ScrollArea>}
             <div className="lg:w-[65%] lg:h-[80vh]">

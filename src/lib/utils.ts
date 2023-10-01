@@ -5,8 +5,6 @@ import FieldOfStudy from "./FieldOfStudy";
 import { getOpenAIKey } from "./secrets";
 
 
-
-
 async function askChat(prompt: string): Promise<string> {
   const openai = new OpenAI({
     apiKey: await getOpenAIKey(), // defaults to process.env["OPENAI_API_KEY"]

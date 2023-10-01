@@ -2,7 +2,7 @@ export interface AssistantSuggestion {
     suggestedFieldsOfStudy: string[],
     isAnyCityPreferred: boolean,
     preferredCity: string | null,
-    partTimeStudies: boolean,
+    partTimeStudies: boolean | null,
     currentDegree: "none" | "bachelors" | "masters",
 
 }

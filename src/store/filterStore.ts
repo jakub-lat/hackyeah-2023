@@ -1,11 +1,12 @@
 import { create } from 'zustand';
 import { auth, firestore } from '@/lib/firebase';
-import { doc, setDoc } from "@firebase/firestore";
+import { doc, setDoc, getDoc } from "@firebase/firestore";
 
 interface IFilter {
     selectedFields: string[],
     selectedCities: string[],
     tags: ITagValue[],
+    points?: number,
 }
 
 interface IFilterStore extends IFilter {
@@ -16,8 +17,10 @@ interface IFilterStore extends IFilter {
     removeSelectedField: (selectedField: string) => void,
     updateFilter: (filter: Partial<IFilter>) => void,
     saveSelectedFields: () => void,
+    getSelectedFields: () => void,
     addTag: (tag: ITagValue) => void,
     removeTag: (name: string) => void,
+    setPoints: (points: number) => void,
 }
 
 export interface ITagType {
@@ -41,10 +44,32 @@ export const useFilterStore = create<IFilterStore>((set) => ({
             setDoc(doc(firestore, 'users', auth.currentUser.uid), { fields }, { merge: true })
         }
     },
+    getSelectedFields: () => {
+        if (auth.currentUser?.uid) {
+            getDoc(doc(firestore, 'users', auth.currentUser.uid)).then((doc) => {
+                if (doc.exists()) {
+                    const data = doc.data()
+                    if (data.fields) {
+                        set({ selectedFields: data.fields })
+                    }
+                    else {
+                        set({ selectedFields: [] })
+                    }
+                }
+                else {
+                    set({ selectedFields: [] })
+                }
+            }
+            )
+        }
+    },
+    city: '',
     updateFilter: (filter: Partial<IFilter>) => set(filter),
     selectedCities: [],
     setCities: (cities: string[]) => set({ selectedCities: cities }),
     tags: [],
     addTag: (tag) => set((state) => ({ tags: [...state.tags, tag] })),
     removeTag: (name: string) => set((state) => ({ tags: state.tags.filter((t) => t.name !== name) })),
+    points: null,
+    setPoints: (points) => set({ points }),
 }));

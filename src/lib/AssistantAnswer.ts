@@ -3,6 +3,8 @@ export interface AssistantSuggestion {
     isAnyCityPreferred: boolean,
     preferredCity: string | null,
     partTimeStudies: boolean | null,
+    workingWithPeople: boolean | null,
+    physicalWork: boolean | null,
 }
 
 export interface AssistantAnswer {

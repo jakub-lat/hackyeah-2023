@@ -28,7 +28,7 @@ export function Navbar({
                     <Link to={"/"} className={cn("font-bold text-3xl mr-5")}>
                         {appName}
                     </Link>
-                    <NavItem to={"/fields-of-study"}>Twoje kierunki</NavItem>
+                    <NavItem to={"/fields-of-study"}>Wybierz kierunki</NavItem>
                     <NavItem to={"/universities"}>Znajdź uczelnie</NavItem>
                     <NavItem to={"/favorites"}>Ulubione</NavItem>
                 </nav>

@@ -33,7 +33,7 @@ export default function Filters() {
 
         <RecruitmentPoints />
 
-        <AlertDialog>
+        <AlertDialog defaultOpen={true}>
             <AlertDialogTrigger asChild>
                 <Button variant={"outline"}>
                     Zaawansowane filtry
@@ -46,6 +46,7 @@ export default function Filters() {
                     <AlertDialogTitle className={"flex items-center"}>
                         Zaawansowane filtry
                     </AlertDialogTitle>
+                    <h3>Na czym ci zależy?</h3>
                     <AlertDialogDescription>
                         <AdvancedFilters />
                     </AlertDialogDescription>

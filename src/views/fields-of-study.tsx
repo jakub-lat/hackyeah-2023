@@ -35,7 +35,7 @@ export default function FieldsOfStudy() {
     const {focused} = useGraphStore();
     const [itemHovered, setItemHovered] = useState({});
 
-    const {selectedFields, addSelectedField, removeSelectedField} = useFilterStore();
+    const {selectedFields, addSelectedField, removeSelectedField, saveSelectedFields} = useFilterStore();
 
     const allFaculties = getFaculties();
 
@@ -43,9 +43,13 @@ export default function FieldsOfStudy() {
         addSelectedField(v);
         setSearch('');
         graphRef.current?.focus(v);
+        saveSelectedFields();
     };
 
-    const remove = (v: string) => removeSelectedField(v);
+    const remove = (v: string) => {
+        removeSelectedField(v);
+        saveSelectedFields()
+    }
 
     return <>
         <PageLayout>

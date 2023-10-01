@@ -13,6 +13,7 @@ import { useAssistantSuggestionsStore } from '@/store/assistantSuggestionsStore'
 import { AssistantSuggestion } from '@/lib/AssistantAnswer';
 import { ArrowRight } from "lucide-react";
 import {Button} from "@/components/ui/button.tsx";
+import { text } from 'stream/consumers';
 
 
 export default function Chatbot() {
@@ -42,7 +43,7 @@ export default function Chatbot() {
     const { setSuggestion } = useAssistantSuggestionsStore();
 
     const handleSubmit = () => {
-        if (textAnswer.trim() || choiceAnswer.trim()) {
+        if (textAnswer?.trim() || choiceAnswer?.trim()) {
             const answer = choiceAnswer ?? textAnswer;
             setTextAnswer('');
             setChoicesAnswer(null)
@@ -144,6 +145,7 @@ export default function Chatbot() {
                         color="primary"
                         onClick={isDataGathered ? () => navigate('/universities') : handleSubmit}
                         isLoading={isLoading}
+                        disabled={!textAnswer.trim() && choicesAnswer && selected === null}
                     >
                         {isDataGathered ? "Kontynuuj" : "Wyślij"}
                         {isDataGathered ? <ArrowRight className={"w-4 h-4 ml-3"}/> : null}

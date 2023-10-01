@@ -11,8 +11,8 @@ export default function Home() {
     const [signInWithGoogle, _, _error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
 
-    return <div className={"h-[75vh] flex items-center justify-center"}>
-                        <img src="/icon.png" className="aspect-square" />
+    return <div className={"h-[75vh] flex items-center justify-center gap-x-16"}>
+        <img src="/icon.png" className="aspect-square" />
         <div className={"flex flex-col items-center justify-around"}>
             <div className={"text-center flex flex-col"}>
 

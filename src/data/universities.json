@@ -1,214 +1,4562 @@
 [
     {
-        "id": "1",
-        "name": "Uniwersytet Warszawski",
-        "address": "ul. Krakowskie Przedmieście 26/28, 00-927 Warszawa",
-        "latitude": "52.242502",
-        "longitude": "21.019781"
+        "name": "Akademia Ateneum w Gdańsku",
+        "latitude": 54.3599386,
+        "longitude": 18.6432946,
+        "geoHash": "u3tm0pzts7"
     },
     {
-        "id": "2",
-        "name": "Politechnika Warszawska",
-        "address": "ul. Plac Politechniki 1, 00-661 Warszawa",
-        "latitude": "52.218985",
-        "longitude": "20.996940"
+        "name": "Akademia Bialska im. Jana Pawła II",
+        "latitude": 52.0235579,
+        "longitude": 23.1589893,
+        "geoHash": "u90ryyxg5w"
     },
     {
-        "id": "3",
-        "name": "Uniwersytet Jagielloński",
-        "address": "ul. Gołębia 24, 31-007 Kraków",
-        "latitude": "50.061660",
-        "longitude": "19.936353"
+        "name": "Akademia Ekonomiczno-Humanistyczna w Warszawie",
+        "latitude": 52.2503591,
+        "longitude": 20.9792862,
+        "geoHash": "u3qcjrusku"
     },
     {
-        "id": "4",
-        "name": "Politechnika Krakowska",
-        "address": "ul. Warszawska 24, 31-155 Kraków",
-        "latitude": "50.075047",
-        "longitude": "19.934623"
+        "name": "Akademia Finansów i Biznesu Vistula",
+        "latitude": 52.1588131,
+        "longitude": 21.0343467,
+        "geoHash": "u3qbwxhxpg"
     },
     {
-        "id": "5",
-        "name": "Uniwersytet Wrocławski",
-        "address": "pl. Uniwersytecki 1, 50-137 Wrocław",
-        "latitude": "51.116905",
-        "longitude": "17.046950"
+        "name": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie",
+        "latitude": 50.06448229999999,
+        "longitude": 19.9232752,
+        "geoHash": "u2yhv3gwtz"
     },
     {
-        "id": "6",
-        "name": "Politechnika Wrocławska",
-        "address": "ul. Wybrzeże Wyspiańskiego 27, 50-370 Wrocław",
-        "latitude": "51.105076",
-        "longitude": "17.058911"
+        "name": "Akademia Górnośląska im. Wojciecha Korfantego w Katowicach",
+        "latitude": 50.212247,
+        "longitude": 18.976978,
+        "geoHash": "u2vmxufee9"
     },
     {
-        "id": "7",
-        "name": "Uniwersytet Gdański",
-        "address": "ul. Bazyliańska 8, 80-309 Gdańsk",
-        "latitude": "54.375431",
-        "longitude": "18.613105"
+        "name": "Akademia Handlowa Nauk Stosowanych w Radomiu",
+        "latitude": 51.3907635,
+        "longitude": 21.1595889,
+        "geoHash": "u3ph37ruyh"
     },
     {
-        "id": "8",
-        "name": "Politechnika Gdańska",
-        "address": "ul. Narutowicza 11/12, 80-233 Gdańsk",
-        "latitude": "54.376714",
-        "longitude": "18.609335"
+        "name": "Akademia Humanistyczna im. Aleksandra Gieysztora w Pułtusku",
+        "latitude": 52.6974595,
+        "longitude": 21.085207,
+        "geoHash": "u3qgzc3bby"
     },
     {
-        "id": "9",
-        "name": "Uniwersytet Łódzki",
-        "address": "ul. Narutowicza 68, 90-136 Łódź",
-        "latitude": "51.768082",
-        "longitude": "19.454228"
+        "name": "Akademia Humanistyczno-Ekonomiczna w Łodzi",
+        "latitude": 51.7750077,
+        "longitude": 19.4696838,
+        "geoHash": "u3jye137k8"
     },
     {
-        "id": "10",
-        "name": "Politechnika Łódzka",
-        "address": "ul. Żeromskiego 116, 90-924 Łódź",
-        "latitude": "51.773727",
-        "longitude": "19.459297"
+        "name": "Akademia Humanitas",
+        "latitude": 50.2816595,
+        "longitude": 19.1286845,
+        "geoHash": "u2vw533pfs"
     },
     {
-        "id": "11",
-        "name": "Uniwersytet Poznański",
-        "address": "ul. Wieniawskiego 1, 61-712 Poznań",
-        "latitude": "52.408217",
-        "longitude": "16.934607"
+        "name": "Akademia Ignatianum w Krakowie",
+        "latitude": 50.0626915,
+        "longitude": 19.9488768,
+        "geoHash": "u2yhvcwk6d"
     },
     {
-        "id": "12",
-        "name": "Politechnika Poznańska",
-        "address": "ul. Piotrowo 3, 60-965 Poznań",
-        "latitude": "52.412240",
-        "longitude": "16.927998"
+        "name": "Akademia im. Jakuba z Paradyża",
+        "latitude": 52.731994,
+        "longitude": 15.2521619,
+        "geoHash": "u36ggpd61h"
     },
     {
-        "id": "13",
-        "name": "Uniwersytet Śląski",
-        "address": "ul. Bankowa 12, 40-007 Katowice",
-        "latitude": "50.259147",
-        "longitude": "19.023515"
+        "name": "Akademia Jagiellońska w Toruniu",
+        "latitude": 53.0121373,
+        "longitude": 18.6096593,
+        "geoHash": "u3mjx6x4h6"
     },
     {
-        "id": "14",
-        "name": "Politechnika Śląska",
-        "address": "ul. Akademicka 2A, 44-100 Gliwice",
-        "latitude": "50.293879",
-        "longitude": "18.666688"
+        "name": "Akademia Kaliska im. Prezydenta Stanisława Wojciechowskiego",
+        "latitude": 51.75710110000001,
+        "longitude": 18.0851679,
+        "geoHash": "u3hy7w14yy"
     },
     {
-        "id": "15",
+        "name": "Akademia Katolicka w Warszawie",
+        "latitude": 52.2054844,
+        "longitude": 20.9998671,
+        "geoHash": "u3qbvzewur"
+    },
+    {
+        "name": "Akademia Kujawsko-Pomorska",
+        "latitude": 53.1190595,
+        "longitude": 18.0206519,
+        "geoHash": "u3ky4n40zw"
+    },
+    {
+        "name": "Akademia Kultury Społecznej i Medialnej w Toruniu - Akademia Nauk Stosowanych",
+        "latitude": 53.0184784,
+        "longitude": 18.5136363,
+        "geoHash": "u3mjt79pnb"
+    },
+    {
+        "name": "Akademia Leona Koźmińskiego w Warszawie",
+        "latitude": 52.27162939999999,
+        "longitude": 21.0144583,
+        "geoHash": "u3qcq5y223"
+    },
+    {
+        "name": "Akademia Łomżyńska",
+        "latitude": 53.160525,
+        "longitude": 22.049945,
+        "geoHash": "u3rwmv868b"
+    },
+    {
+        "name": "Akademia Marynarki Wojennej im. Bohaterów Westerplatte",
+        "latitude": 54.5429687,
+        "longitude": 18.5461962,
+        "geoHash": "u3tnq10zvd"
+    },
+    {
+        "name": "Akademia Mazowiecka w Płocku",
+        "latitude": 52.5393267,
+        "longitude": 19.6973697,
+        "geoHash": "u3q4bhrpvb"
+    },
+    {
+        "name": "Akademia Medycznych i Społecznych Nauk Stosowanych",
+        "latitude": 54.1470827,
+        "longitude": 19.4216109,
+        "geoHash": "u3tu1cnms7"
+    },
+    {
+        "name": "Akademia Muzyczna im. Feliksa Nowowiejskiego w Bydgoszczy",
+        "latitude": 53.1299934,
+        "longitude": 18.0098304,
+        "geoHash": "u3ky3b42ek"
+    },
+    {
+        "name": "Akademia Muzyczna im. Grażyny i Kiejstuta Bacewiczów w Łodzi",
+        "latitude": 51.773047,
+        "longitude": 19.448571,
+        "geoHash": "u3jyd8fpbe"
+    },
+    {
+        "name": "Akademia Muzyczna im. Ignacego Jana Paderewskiego w Poznaniu",
+        "latitude": 52.4071972,
+        "longitude": 16.9163215,
+        "geoHash": "u3k40uqn4c"
+    },
+    {
+        "name": "Akademia Muzyczna im. Karola Lipińskiego we Wrocławiu",
+        "latitude": 51.1111519,
+        "longitude": 17.0213048,
+        "geoHash": "u3h4g2d811"
+    },
+    {
+        "name": "Akademia Muzyczna im. Karola Szymanowskiego w Katowicach",
+        "latitude": 50.2554259,
+        "longitude": 19.0301244,
+        "geoHash": "u2vtch9r44"
+    },
+    {
+        "name": "Akademia Muzyczna im. Krzysztofa Pendereckiego w Krakowie",
+        "latitude": 50.0617184,
+        "longitude": 19.9432165,
+        "geoHash": "u2yhvc6nws"
+    },
+    {
+        "name": "Akademia Muzyczna im. Stanisława Moniuszki w Gdańsku",
+        "latitude": 54.3461922,
+        "longitude": 18.6635292,
+        "geoHash": "u3tm0tqmeb"
+    },
+    {
+        "name": "Akademia Nauk Społecznych i Medycznych w Lublinie - Akademia Nauk Stosowanych",
+        "latitude": 51.24029489999999,
+        "longitude": 22.5700371,
+        "geoHash": "u905984brg"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych Angelusa Silesiusa",
+        "latitude": 50.7620884,
+        "longitude": 16.2821413,
+        "geoHash": "u358f8bq97"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych Gospodarki Krajowej w Kutnie",
+        "latitude": 52.2359806,
+        "longitude": 19.3622141,
+        "geoHash": "u3mc0t70sk"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych im. Hipolita Cegielskiego w Gnieźnie Uczelnia Państwowa",
+        "latitude": 52.537721,
+        "longitude": 17.608076,
+        "geoHash": "u3kdbsjy3v"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych im. Jana Amosa Komeńskiego w Lesznie",
+        "latitude": 51.8490346,
+        "longitude": 16.579957,
+        "geoHash": "u35ycqc4sb"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych im. Józefa Gołuchowskiego",
+        "latitude": 50.9511161,
+        "longitude": 21.3897861,
+        "geoHash": "u3p1yeref0"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych im. Księcia Mieszka I w Poznaniu",
+        "latitude": 52.4005164,
+        "longitude": 16.8633465,
+        "geoHash": "u37fpepx0k"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych im. prof. Edwarda Lipińskiego w Kielcach",
+        "latitude": 50.8669477,
+        "longitude": 20.6021256,
+        "geoHash": "u3n9ku412q"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych im. Stanisława Staszica w Pile",
+        "latitude": 53.156574,
+        "longitude": 16.763768,
+        "geoHash": "u37ymkz52p"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych Mazovia",
+        "latitude": 52.191862,
+        "longitude": 22.265258,
+        "geoHash": "u3rbftjpdh"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych Stefana Batorego",
+        "latitude": 51.9491963,
+        "longitude": 20.1416985,
+        "geoHash": "u3nrd34dp8"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych Towarzystwa Wiedzy Powszechnej w Szczecinie",
+        "latitude": 53.436661,
+        "longitude": 14.5411,
+        "geoHash": "u36rfzue05"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych w Elblągu",
+        "latitude": 54.155759,
+        "longitude": 19.418773,
+        "geoHash": "u3tu1fu24j"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych we Wrocławiu",
+        "latitude": 51.1078852,
+        "longitude": 17.0385376,
+        "geoHash": "u3h4exzj48"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych Wincentego Pola w Lublinie",
+        "latitude": 51.2698288,
+        "longitude": 22.5573549,
+        "geoHash": "u9059m3u2k"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych w Koninie",
+        "latitude": 52.22766,
+        "longitude": 18.2711448,
+        "geoHash": "u3kcpgb8ht"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych w Nowym Sączu",
+        "latitude": 49.6170273,
+        "longitude": 20.6959142,
+        "geoHash": "u2ydqbw21u"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych w Raciborzu",
+        "latitude": 50.0872378,
+        "longitude": 18.2055865,
+        "geoHash": "u2uuyq0gkc"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych w Wałczu",
+        "latitude": 53.2806673,
+        "longitude": 16.4911462,
+        "geoHash": "u37xp72qrs"
+    },
+    {
+        "name": "Akademia Nauk Stosowanych - Wyższa Szkoła Zarządzania i Administracji w Opolu",
+        "latitude": 50.6630093,
+        "longitude": 17.9207422,
+        "geoHash": "u3h8pycmrt"
+    },
+    {
+        "name": "Akademia Pedagogiki Specjalnej im. Marii Grzegorzewskiej w Warszawie",
+        "latitude": 52.217093,
+        "longitude": 20.9707995,
+        "geoHash": "u3qcj1y6x5"
+    },
+    {
+        "name": "Akademia Piotrkowska",
+        "latitude": 51.4096666,
+        "longitude": 19.6713514,
+        "geoHash": "u3jurwu5p8"
+    },
+    {
+        "name": "Akademia Policji w Szczytnie",
+        "latitude": 53.5620808,
+        "longitude": 21.0128045,
+        "geoHash": "u3wbwntj9z"
+    },
+    {
+        "name": "Akademia Polonijna w Częstochowie",
+        "latitude": 50.8099944,
+        "longitude": 19.1037777,
+        "geoHash": "u3j949wvwm"
+    },
+    {
+        "name": "Akademia Pożarnicza",
+        "latitude": 52.2720284,
+        "longitude": 20.9762377,
+        "geoHash": "u3qcm7f6tu"
+    },
+    {
+        "name": "Akademia Sztuki Wojennej",
+        "latitude": 52.2670806,
+        "longitude": 21.1753964,
+        "geoHash": "u3r13fgmy6"
+    },
+    {
+        "name": "Akademia Sztuki w Szczecinie",
+        "latitude": 53.4261024,
+        "longitude": 14.5543933,
+        "geoHash": "u36rgjyjtg"
+    },
+    {
+        "name": "Akademia Sztuk Pięknych im. Eugeniusza Gepperta we Wrocławiu",
+        "latitude": 51.1067157,
+        "longitude": 17.0440691,
+        "geoHash": "u3h4ezen5w"
+    },
+    {
+        "name": "Akademia Sztuk Pięknych im. Jana Matejki w Krakowie",
+        "latitude": 50.0662258,
+        "longitude": 19.9416155,
+        "geoHash": "u2yhvf30ck"
+    },
+    {
+        "name": "Akademia Sztuk Pięknych im. Władysława Strzemińskiego w Łodzi",
+        "latitude": 51.7885809,
+        "longitude": 19.4832827,
+        "geoHash": "u3jye7g637"
+    },
+    {
+        "name": "Akademia Sztuk Pięknych w Gdańsku",
+        "latitude": 54.3506444,
+        "longitude": 18.6489861,
+        "geoHash": "u3tm0q5z2y"
+    },
+    {
+        "name": "Akademia Sztuk Pięknych w Katowicach",
+        "latitude": 50.2532374,
+        "longitude": 19.0006341,
+        "geoHash": "u2vtbk7f6f"
+    },
+    {
+        "name": "Akademia Sztuk Pięknych w Warszawie",
+        "latitude": 52.2394019,
+        "longitude": 21.0150792,
+        "geoHash": "u3qcnjyswf"
+    },
+    {
+        "name": "Akademia Sztuk Teatralnych im. Stanisława Wyspiańskiego w Krakowie",
+        "latitude": 50.0601622,
+        "longitude": 19.9322823,
+        "geoHash": "u2yhv94jxf"
+    },
+    {
+        "name": "Akademia Śląska",
+        "latitude": 50.2309721,
+        "longitude": 18.9862639,
+        "geoHash": "u2vtb032s5"
+    },
+    {
+        "name": "Akademia Tarnowska",
+        "latitude": 50.01559590000001,
+        "longitude": 20.9905039,
+        "geoHash": "u2yut9hcfn"
+    },
+    {
+        "name": "Akademia Teatralna im. Aleksandra Zelwerowicza w Warszawie",
+        "latitude": 52.24847279999999,
+        "longitude": 21.0072266,
+        "geoHash": "u3qcnp8crv"
+    },
+    {
+        "name": "Akademia Wojsk Lądowych imienia generała Tadeusza Kościuszki",
+        "latitude": 51.14377959999999,
+        "longitude": 17.0533053,
+        "geoHash": "u3h4un3y4g"
+    },
+    {
+        "name": "Akademia WSB",
+        "latitude": 50.32647100000001,
+        "longitude": 19.19177,
+        "geoHash": "u2vwk9xhbw"
+    },
+    {
+        "name": "Akademia Wychowania Fizycznego im. Bronisława Czecha w Krakowie",
+        "latitude": 50.0725854,
+        "longitude": 20.0006913,
+        "geoHash": "u2yhz5kjcy"
+    },
+    {
+        "name": "Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu",
+        "latitude": 52.3989542,
+        "longitude": 16.9331725,
+        "geoHash": "u3k416fq59"
+    },
+    {
+        "name": "Akademia Wychowania Fizycznego im. Jerzego Kukuczki w Katowicach",
+        "latitude": 50.2499639,
+        "longitude": 19.0037803,
+        "geoHash": "u2vtb7wpk0"
+    },
+    {
+        "name": "Akademia Wychowania Fizycznego im. Polskich Olimpijczyków we Wrocławiu",
+        "latitude": 51.1183942,
+        "longitude": 17.091475,
+        "geoHash": "u3h4ucvdhp"
+    },
+    {
+        "name": "Akademia Wychowania Fizycznego i Sportu im. Jędrzeja Śniadeckiego w Gdańsku",
+        "latitude": 54.41995900000001,
+        "longitude": 18.5625195,
+        "geoHash": "u3tjw6ug4p"
+    },
+    {
+        "name": "Akademia Wychowania Fizycznego Józefa Piłsudskiego w Warszawie",
+        "latitude": 52.285264,
+        "longitude": 20.958769,
+        "geoHash": "u3qckyjxwx"
+    },
+    {
+        "name": "Akademia Wymiaru Sprawiedliwości",
+        "latitude": 52.2459299,
+        "longitude": 20.993173,
+        "geoHash": "u3qcjxnf87"
+    },
+    {
+        "name": "Akademia Zamojska",
+        "latitude": 50.71187940000001,
+        "longitude": 23.256019,
+        "geoHash": "u9083pyd0e"
+    },
+    {
+        "name": "ALMAMER Szkoła Wyższa z siedzibą w Warszawie w likwidacji",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Bałtycka Wyższa Szkoła Bursztynu z siedzibą w Junoszynie",
+        "latitude": 54.33068770000001,
+        "longitude": 19.0643204,
+        "geoHash": "u3tt1fd5ny"
+    },
+    {
+        "name": "Bałtycka Wyższa Szkoła Humanistyczna w Koszalinie",
+        "latitude": 54.1904668,
+        "longitude": 16.1910691,
+        "geoHash": "u3es23jfr7"
+    },
+    {
+        "name": "Beskidzka Wyższa Szkoła Umiejętności w Żywcu w likwidacji",
+        "latitude": 49.6767313,
+        "longitude": 19.2230888,
+        "geoHash": "u2vdt7mgfm"
+    },
+    {
+        "name": "Biblioteka Narodowa",
+        "latitude": 52.2137667,
+        "longitude": 21.0034311,
+        "geoHash": "u3qcjcnppr"
+    },
+    {
+        "name": "Bielska Wyższa Szkoła Biznesu z siedzibą w Bielsku-Białej",
+        "latitude": 49.8270334,
+        "longitude": 19.051272,
+        "geoHash": "u2ve3w8xwb"
+    },
+    {
+        "name": "Bielska Wyższa Szkoła im. Józefa Tyszkiewicza w Bielsku-Białej",
+        "latitude": 49.8270334,
+        "longitude": 19.051272,
+        "geoHash": "u2ve3w8xwb"
+    },
+    {
+        "name": "Bioten Sp. z o.o.",
+        "latitude": 52.439167,
+        "longitude": 16.8932046,
+        "geoHash": "u3k426m221"
+    },
+    {
+        "name": "Bydgoska Szkoła Wyższa w Bydgoszczy",
+        "latitude": 53.132862,
+        "longitude": 17.9926757,
+        "geoHash": "u3ky32tc7e"
+    },
+    {
+        "name": "Bydgoska Wyższa Szkoła Główna z siedzibą w Bydgoszczy w likwidacji",
+        "latitude": 53.121235,
+        "longitude": 18.001896,
+        "geoHash": "u3ky1wktde"
+    },
+    {
+        "name": "CASE - Centrum Analiz Społeczno-Ekonomicznych - Fundacja Naukowa",
+        "latitude": 52.2479246,
+        "longitude": 20.9958209,
+        "geoHash": "u3qcjz2wnp"
+    },
+    {
+        "name": "Centralne Laboratorium Kryminalistyczne Policji",
+        "latitude": 52.2172685,
+        "longitude": 21.0251585,
+        "geoHash": "u3qcn3y59s"
+    },
+    {
+        "name": "Centralne Laboratorium Ochrony Radiologicznej",
+        "latitude": 52.3014431,
+        "longitude": 20.986745,
+        "geoHash": "u3qct94jfx"
+    },
+    {
+        "name": "Centralny Instytut Ochrony Pracy - Państwowy Instytut Badawczy",
+        "latitude": 52.1991555,
+        "longitude": 21.0522768,
+        "geoHash": "u3qbzn9f1e"
+    },
+    {
+        "name": "Centralny Ośrodek Badawczo Rozwojowy Aparatury Badawczej i Dydaktycznej COBRABiD sp. z o.o. w likwidacji",
+        "latitude": 52.197501,
+        "longitude": 20.933467,
+        "geoHash": "u3qbuq723p"
+    },
+    {
+        "name": "Centralny Ośrodek Badawczo-Rozwojowy Przemysłu Izolacji Budowlanej",
+        "latitude": 49.7823132,
+        "longitude": 22.7744294,
+        "geoHash": "u8b5nnxffx"
+    },
+    {
+        "name": "Centralny Ośrodek Badawczo-Rozwojowy Przemysłu Poligraficznego",
+        "latitude": 52.197501,
+        "longitude": 20.933467,
+        "geoHash": "u3qbuq723p"
+    },
+    {
+        "name": "Centralny Ośrodek Chłodnictwa „COCH” w Krakowie Sp. z o.o.",
+        "latitude": 50.0721855,
+        "longitude": 19.9013191,
+        "geoHash": "u2yhug7ew7"
+    },
+    {
+        "name": "Centrum Badań i Innowacji Pro-Akademia",
+        "latitude": 51.7436347,
+        "longitude": 19.364493,
+        "geoHash": "u3jy2esu92"
+    },
+    {
+        "name": "Centrum Badań Kosmicznych Polskiej Akademii Nauk",
+        "latitude": 52.2142485,
+        "longitude": 21.0675467,
+        "geoHash": "u3qcp3kfj3"
+    },
+    {
+        "name": "Centrum Badań Molekularnych i Makromolekularnych Polskiej Akademii Nauk",
+        "latitude": 51.7508092,
+        "longitude": 19.4642347,
+        "geoHash": "u3jy6uvqmd"
+    },
+    {
+        "name": "Centrum Badawczo - Rozwojowe \"NOVASOME\" spółka z o.o.",
+        "latitude": 51.1273669,
+        "longitude": 16.9000309,
+        "geoHash": "u3h4be6nrr"
+    },
+    {
+        "name": "Centrum Fizyki Teoretycznej Polskiej Akademii Nauk",
+        "latitude": 52.1769196,
+        "longitude": 21.0083781,
+        "geoHash": "u3qby49bdd"
+    },
+    {
+        "name": "Centrum Innowacji STB sp. z o.o. sp. k.",
+        "latitude": 54.09303080000001,
+        "longitude": 18.7530761,
+        "geoHash": "u3t7dxrddr"
+    },
+    {
+        "name": "Centrum Łukasiewicz",
+        "latitude": 52.1536667,
+        "longitude": 21.0076742,
+        "geoHash": "u3qbwn334k"
+    },
+    {
+        "name": "Centrum Materiałów Polimerowych i Węglowych Polskiej Akademii Nauk",
+        "latitude": 50.3149287,
+        "longitude": 18.7733741,
+        "geoHash": "u2vq5pw3eq"
+    },
+    {
+        "name": "Centrum Medyczne Kształcenia Podyplomowego w Warszawie",
+        "latitude": 52.2858756,
+        "longitude": 20.9531694,
+        "geoHash": "u3qcky3ek1"
+    },
+    {
+        "name": "Centrum Nauki Kopernik",
+        "latitude": 52.2418552,
+        "longitude": 21.0287271,
+        "geoHash": "u3qcnw2dug"
+    },
+    {
+        "name": "Centrum Naukowo-Badawcze Ochrony Przeciwpożarowej im. Józefa Tuliszkowskiego - Państwowy Instytut Badawczy",
+        "latitude": 52.1164017,
+        "longitude": 21.2121749,
+        "geoHash": "u3r06xw0p9"
+    },
+    {
+        "name": "Centrum Naukowo-Techniczne Kolejnictwa w Warszawie",
+        "latitude": 52.2500029,
+        "longitude": 21.1108089,
+        "geoHash": "u3r10ru6md"
+    },
+    {
+        "name": "Chrześcijańska Akademia Teologiczna w Warszawie",
+        "latitude": 52.24763189999999,
+        "longitude": 21.006964,
+        "geoHash": "u3qcnp2u98"
+    },
+    {
+        "name": "Collegium Balticum - Akademia Nauk Stosowanych z siedzibą w Szczecinie",
+        "latitude": 53.4094852,
+        "longitude": 14.5163405,
+        "geoHash": "u36rf6fkz3"
+    },
+    {
+        "name": "Collegium Civitas w Warszawie",
+        "latitude": 52.2317994,
+        "longitude": 21.0063159,
+        "geoHash": "u3qcnh8269"
+    },
+    {
+        "name": "Collegium Da Vinci z siedzibą w Poznaniu",
+        "latitude": 52.41587819999999,
+        "longitude": 16.9316779,
+        "geoHash": "u3k41q128e"
+    },
+    {
+        "name": "Collegium Humanitatis z siedzibą w Świdnicy w likwidacji",
+        "latitude": 50.8458181,
+        "longitude": 16.4739799,
+        "geoHash": "u359qb5yre"
+    },
+    {
+        "name": "Collegium Humanum - Szkoła Główna Menedżerska",
+        "latitude": 52.23489860000001,
+        "longitude": 21.0124129,
+        "geoHash": "u3qcnjhf2d"
+    },
+    {
+        "name": "Collegium Masoviense - Wyższa Szkoła Nauk o Zdrowiu w Żyrardowie",
+        "latitude": 52.0571157,
+        "longitude": 20.439131,
+        "geoHash": "u3q81heqdm"
+    },
+    {
+        "name": "Collegium Medicum Wyższa Szkoła Służb Medycznych w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Collegium Varsoviense z siedzibą w Warszawie w likwidacji",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Collegium Verum",
+        "latitude": 52.1514932,
+        "longitude": 21.0561786,
+        "geoHash": "u3qbxjuskw"
+    },
+    {
+        "name": "Collegium Witelona Uczelnia Państwowa",
+        "latitude": 51.2044585,
+        "longitude": 16.1500982,
+        "geoHash": "u357r92psd"
+    },
+    {
+        "name": "Dolnośląska Wyższa Szkoła Służb Publicznych \"Asesor\" we Wrocławiu",
+        "latitude": 51.1057154,
+        "longitude": 17.0325326,
+        "geoHash": "u3h4exd8qg"
+    },
+    {
+        "name": "Dolnośląskie Centrum Onkologii, Pulmonologii i Hematologii",
+        "latitude": 51.1013125,
+        "longitude": 17.0058185,
+        "geoHash": "u3h4dyxq8r"
+    },
+    {
+        "name": "Elbląska Wyższa Szkoła Humanistyczna - w likwidacji z siedzibą w Elblągu (wykreślona)",
+        "latitude": 54.1560613,
+        "longitude": 19.4044897,
+        "geoHash": "u3tu1dccvm"
+    },
+    {
+        "name": "Europejska Akademia Sztuk w Warszawie",
+        "latitude": 52.2668682,
+        "longitude": 21.0008467,
+        "geoHash": "u3qcmfuke4"
+    },
+    {
+        "name": "Europejska Szkoła Wyższa w Sopocie  w likwidacji",
+        "latitude": 54.4615105,
+        "longitude": 18.5574503,
+        "geoHash": "u3tjy63j7c"
+    },
+    {
+        "name": "Europejska Uczelnia Społeczno-Techniczna im. Sługi Bożego Roberta Schumana",
+        "latitude": 51.4060669,
+        "longitude": 21.1715321,
+        "geoHash": "u3ph3y0wh3"
+    },
+    {
+        "name": "Europejska Uczelnia w Warszawie",
+        "latitude": 52.3065604,
+        "longitude": 20.9840466,
+        "geoHash": "u3qctd05g9"
+    },
+    {
+        "name": "Europejska Wyższa Szkoła Biznesu w likwidacji",
+        "latitude": 52.5103924,
+        "longitude": 13.3783424,
+        "geoHash": "u33d8rjz1y"
+    },
+    {
+        "name": "Europejska Wyższa Szkoła Biznesu w Warszawie w likwidacji",
+        "latitude": 52.2513285,
+        "longitude": 20.9916194,
+        "geoHash": "u3qcm8jdh1"
+    },
+    {
+        "name": "Europejska Wyższa Szkoła Prawa i Administracji w Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Europejskie Centrum Solidarności",
+        "latitude": 54.361313,
+        "longitude": 18.64974,
+        "geoHash": "u3tm22hmd7"
+    },
+    {
+        "name": "Ewangelikalna Wyższa Szkoła Teologiczna",
+        "latitude": 51.114764,
+        "longitude": 17.040299,
+        "geoHash": "u3h4gc0m5d"
+    },
+    {
+        "name": "Francusko-Polska Wyższa Szkoła Nowych Technik Informatyczno-Komunikacyjnych z siedzibą w Poznaniu",
+        "latitude": 52.406374,
+        "longitude": 16.9251681,
+        "geoHash": "u3k41hk930"
+    },
+    {
+        "name": "Fundacja Badań i Rozwoju Nauki",
+        "latitude": 52.2228223,
+        "longitude": 20.9572385,
+        "geoHash": "u3qchfuegp"
+    },
+    {
+        "name": "FUNDACJA NA RZECZ ROZWOJU PRZEDSIĘBIORCZOŚCI",
+        "latitude": 53.4364395,
+        "longitude": 14.5431566,
+        "geoHash": "u36rfzy1b4"
+    },
+    {
+        "name": "Fundacja Obywatelskiego Rozwoju - Ryki",
+        "latitude": 51.6256317,
+        "longitude": 21.9326302,
+        "geoHash": "u3pten4v57"
+    },
+    {
+        "name": "Fundacja Partnerstwa Technologicznego TECHNOLOGY PARTNERS",
+        "latitude": 52.1747196,
+        "longitude": 21.1137846,
+        "geoHash": "u3r0b6nefb"
+    },
+    {
+        "name": "Fundacja Uniwersytetu im. Adama Mickiewicza w Poznaniu",
+        "latitude": 52.4083974,
+        "longitude": 16.915402,
+        "geoHash": "u3k40utmj3"
+    },
+    {
+        "name": "Gdańska Szkoła Wyższa z siedzibą w Gdańsku",
+        "latitude": 54.3443659,
+        "longitude": 18.6410909,
+        "geoHash": "u3tm0jn4bu"
+    },
+    {
+        "name": "Gdańska Wyższa Szkoła Humanistyczna",
+        "latitude": 54.36259949999999,
+        "longitude": 18.6351309,
+        "geoHash": "u3tm203tn5"
+    },
+    {
+        "name": "Gdańska Wyższa Szkoła Humanistyczna z siedzibą w Gdańsku (wykreślona)",
+        "latitude": 54.36259949999999,
+        "longitude": 18.6351309,
+        "geoHash": "u3tm203tn5"
+    },
+    {
+        "name": "Gdański Uniwersytet Medyczny",
+        "latitude": 54.3659002,
+        "longitude": 18.6228077,
+        "geoHash": "u3tjrc08qf"
+    },
+    {
+        "name": "Gliwicka Wyższa Szkoła Przedsiębiorczości w likwidacji",
+        "latitude": 50.2788713,
+        "longitude": 18.6829973,
+        "geoHash": "u2vq10ux9k"
+    },
+    {
+        "name": "Główny Instytut Górnictwa",
+        "latitude": 50.2706495,
+        "longitude": 19.0260351,
+        "geoHash": "u2vtbzqrfb"
+    },
+    {
+        "name": "Gnieźnieńska Szkoła Wyższa Milenium z siedzibą w Gnieźnie",
+        "latitude": 52.52082859999999,
+        "longitude": 17.5946103,
+        "geoHash": "u3kdb3hh00"
+    },
+    {
+        "name": "Górnośląska Wyższa Szkoła Pedagogiczna im. Kardynała Augusta Hlonda w likwidacji z siedzibą w Mysłowicach",
+        "latitude": 50.2374529,
+        "longitude": 19.14356,
+        "geoHash": "u2vtg97ym7"
+    },
+    {
+        "name": "Górnośląska Wyższa Szkoła Przedsiębiorczości im. Karola Goduli w Chorzowie",
+        "latitude": 50.2806128,
+        "longitude": 18.9508083,
+        "geoHash": "u2vqp1r9cc"
+    },
+    {
+        "name": "IBD Business School Sp. z o.o.",
+        "latitude": 52.2487796,
+        "longitude": 20.983622,
+        "geoHash": "u3qcjrxg1y"
+    },
+    {
+        "name": "Instytut Agrofizyki im. Bohdana Dobrzańskiego Polskiej Akademii Nauk",
+        "latitude": 51.2199672,
+        "longitude": 22.6262427,
+        "geoHash": "u9056u7cvt"
+    },
+    {
+        "name": "Instytut Allerhanda",
+        "latitude": 52.2262901,
+        "longitude": 21.0041395,
+        "geoHash": "u3qcjgw8py"
+    },
+    {
+        "name": "Instytut Archeologii i Etnologii Polskiej Akademii Nauk",
+        "latitude": 52.242497,
+        "longitude": 20.9961583,
+        "geoHash": "u3qcjy2ytg"
+    },
+    {
+        "name": "Instytut Badań Edukacyjnych",
+        "latitude": 52.2373548,
+        "longitude": 20.9694154,
+        "geoHash": "u3qcjjt2wu"
+    },
+    {
+        "name": "Instytut Badań Literackich Polskiej Akademii Nauk",
+        "latitude": 52.2372208,
+        "longitude": 21.0181281,
+        "geoHash": "u3qcnm2zvg"
+    },
+    {
+        "name": "Instytut Badań Systemowych Polskiej Akademii Nauk",
+        "latitude": 52.2455666,
+        "longitude": 20.9403839,
+        "geoHash": "u3qchx026r"
+    },
+    {
+        "name": "Instytut Badawczy Dróg i Mostów",
+        "latitude": 52.2672874,
+        "longitude": 21.0250894,
+        "geoHash": "u3qcq6yp00"
+    },
+    {
+        "name": "Instytut Badawczy Leśnictwa",
+        "latitude": 52.10140819999999,
+        "longitude": 20.881481,
+        "geoHash": "u3qb7hv2ty"
+    },
+    {
+        "name": "Instytut Biochemii i Biofizyki Polskiej Akademii Nauk",
+        "latitude": 52.2073492,
+        "longitude": 20.9792458,
+        "geoHash": "u3qcj2h9gg"
+    },
+    {
+        "name": "Instytut Biocybernetyki i Inżynierii Biomedycznej im. Macieja Nałęcza Polskiej Akademii Nauk",
+        "latitude": 52.2062408,
+        "longitude": 20.9785545,
+        "geoHash": "u3qbvru57u"
+    },
+    {
+        "name": "Instytut Biotechnologii i Medycyny Molekularnej",
+        "latitude": 54.3181063,
+        "longitude": 18.5989905,
+        "geoHash": "u3tjp0r3gu"
+    },
+    {
+        "name": "Instytut Biotechnologii Przemysłu Rolno-Spożywczego im. prof. Wacława Dąbrowskiego – Państwowy Instytut Badawczy",
+        "latitude": 52.2069403,
+        "longitude": 21.0004963,
+        "geoHash": "u3qbvzup7p"
+    },
+    {
+        "name": "Instytut Botaniki im. Władysława Szafera Polskiej Akademii Nauk",
+        "latitude": 50.0656531,
+        "longitude": 19.9552684,
+        "geoHash": "u2yhy44vx6"
+    },
+    {
+        "name": "Instytut Budownictwa, Mechanizacji i Elektryfikacji Rolnictwa w Warszawie",
+        "latitude": 52.2073297,
+        "longitude": 21.0024837,
+        "geoHash": "u3qcjbj99r"
+    },
+    {
+        "name": "Instytut Budownictwa Wodnego Polskiej Akademii Nauk",
+        "latitude": 54.4081452,
+        "longitude": 18.5442616,
+        "geoHash": "u3tjtbxw2t"
+    },
+    {
+        "name": "Instytut \"Centrum Zdrowia Matki Polki\"",
+        "latitude": 51.7050093,
+        "longitude": 19.4810595,
+        "geoHash": "u3jy5k9et8"
+    },
+    {
+        "name": "Instytut Chemii Bioorganicznej Polskiej Akademii Nauk",
+        "latitude": 52.4119653,
+        "longitude": 16.9161862,
+        "geoHash": "u3k40vmczd"
+    },
+    {
+        "name": "Instytut Chemii Fizycznej Polskiej Akademii Nauk",
+        "latitude": 52.2289502,
+        "longitude": 20.9655809,
+        "geoHash": "u3qcj5fxtm"
+    },
+    {
+        "name": "Instytut Chemii i Techniki Jądrowej",
+        "latitude": 52.3013226,
+        "longitude": 20.9808989,
+        "geoHash": "u3qct3jv63"
+    },
+    {
+        "name": "Instytut Chemii Organicznej Polskiej Akademii Nauk",
+        "latitude": 52.22909199999999,
+        "longitude": 20.965477,
+        "geoHash": "u3qcjh48e0"
+    },
+    {
+        "name": "Instytut Dendrologii Polskiej Akademii Nauk",
+        "latitude": 52.2445639,
+        "longitude": 17.0911996,
+        "geoHash": "u3k1hyv6tu"
+    },
+    {
+        "name": "Instytut Ekologii Terenów Uprzemysłowionych",
+        "latitude": 50.2655711,
+        "longitude": 18.9759422,
+        "geoHash": "u2vmzy9f5t"
+    },
+    {
+        "name": "Instytut Ekonomiki Rolnictwa i Gospodarki Żywnościowej - Państwowy Instytut Badawczy",
+        "latitude": 52.2357707,
+        "longitude": 21.0100935,
+        "geoHash": "u3qcnj5p6t"
+    },
+    {
+        "name": "Instytut Energetyki - Instytut Badawczy",
+        "latitude": 52.212885,
+        "longitude": 20.875697,
+        "geoHash": "u3qc5114ng"
+    },
+    {
+        "name": "Instytut Energii Atomowej POLATOM w Świerku",
+        "latitude": 52.1223535,
+        "longitude": 21.3425393,
+        "geoHash": "u3r0t8t4tn"
+    },
+    {
+        "name": "Instytut Europy Środkowo-Wschodniej",
+        "latitude": 51.25036040000001,
+        "longitude": 22.5610124,
+        "geoHash": "u90593u6vx"
+    },
+    {
+        "name": "Instytut Farmakologii im. Jerzego Maja Polskiej Akademii Nauk",
+        "latitude": 50.0926792,
+        "longitude": 19.8850122,
+        "geoHash": "u2yhurpg42"
+    },
+    {
+        "name": "Instytut Filozofii i Socjologii Polskiej Akademii Nauk",
+        "latitude": 52.2377194,
+        "longitude": 21.017891,
+        "geoHash": "u3qcnm8fb2"
+    },
+    {
+        "name": "Instytut Fizjologii i Patologii Słuchu",
+        "latitude": 52.2173033,
+        "longitude": 20.9842676,
+        "geoHash": "u3qcj9b7bf"
+    },
+    {
+        "name": "Instytut Fizjologii i Żywienia Zwierząt im. Jana Kielanowskiego Polskiej Akademii Nauk",
+        "latitude": 52.3783496,
+        "longitude": 20.9093387,
+        "geoHash": "u3qcgz1wnb"
+    },
+    {
+        "name": "Instytut Fizyki Jądrowej im. Henryka Niewodniczańskiego Polskiej Akademii Nauk",
+        "latitude": 50.0879463,
+        "longitude": 19.8899605,
+        "geoHash": "u2yhuw5rmt"
+    },
+    {
+        "name": "Instytut Fizyki Molekularnej Polskiej Akademii Nauk",
+        "latitude": 52.3951071,
+        "longitude": 16.8464176,
+        "geoHash": "u37fp65ptg"
+    },
+    {
+        "name": "Instytut Fizyki Plazmy i Laserowej Mikrosyntezy",
+        "latitude": 52.24994299999999,
+        "longitude": 20.9075938,
+        "geoHash": "u3qc5zb3yp"
+    },
+    {
+        "name": "Instytut Fizyki Polskiej Akademii Nauk",
+        "latitude": 52.17657639999999,
+        "longitude": 21.0086195,
+        "geoHash": "u3qby46n86"
+    },
+    {
+        "name": "Instytut Genetyki Człowieka Polskiej Akademii Nauk",
+        "latitude": 52.4459346,
+        "longitude": 16.9045145,
+        "geoHash": "u3k42emrxw"
+    },
+    {
+        "name": "Instytut Genetyki i Biotechnologii Zwierząt Polskiej Akademii Nauk",
+        "latitude": 52.0317392,
+        "longitude": 20.8282724,
+        "geoHash": "u3qb1bndvg"
+    },
+    {
+        "name": "Instytut Genetyki Roślin Polskiej Akademii Nauk",
+        "latitude": 52.4458077,
+        "longitude": 16.9003352,
+        "geoHash": "u3k42e6qyr"
+    },
+    {
+        "name": "Instytut Geodezji i Kartografii",
+        "latitude": 52.1786373,
+        "longitude": 21.0135448,
+        "geoHash": "u3qby4vde4"
+    },
+    {
+        "name": "Instytut Geofizyki Polskiej Akademii Nauk",
+        "latitude": 52.2462347,
+        "longitude": 20.9395668,
+        "geoHash": "u3qchrpsrk"
+    },
+    {
+        "name": "Instytut Geografii i Przestrzennego Zagospodarowania im. Stanisława Leszczyckiego Polskiej Akademii Nauk",
+        "latitude": 52.2282234,
+        "longitude": 20.9930934,
+        "geoHash": "u3qcjeyeqw"
+    },
+    {
+        "name": "Instytut Gospodarki Surowcami Mineralnymi i Energią Polskiej Akademii Nauk",
+        "latitude": 50.0834328,
+        "longitude": 19.9265202,
+        "geoHash": "u2yhvmqj1s"
+    },
+    {
+        "name": "Instytut Gruźlicy i Chorób Płuc",
+        "latitude": 52.236024,
+        "longitude": 20.965602,
+        "geoHash": "u3qcjj68vu"
+    },
+    {
+        "name": "Instytut Hematologii i Transfuzjologii",
+        "latitude": 52.2080759,
+        "longitude": 21.0238345,
+        "geoHash": "u3qcn2jn4f"
+    },
+    {
+        "name": "Instytut Historii Nauki imienia Ludwika i Aleksandra Birkenmajerów Polskiej Akademii Nauk",
+        "latitude": 52.237892,
+        "longitude": 21.0178119,
+        "geoHash": "u3qcnm8ey8"
+    },
+    {
+        "name": "Instytut Hodowli i Aklimatyzacji Roślin - Państwowy Instytut Badawczy",
+        "latitude": 52.2138937,
+        "longitude": 20.6440957,
+        "geoHash": "u3q9jc0xfr"
+    },
+    {
+        "name": "Instytut Immunologii i Terapii Doświadczalnej im. Ludwika Hirszfelda Polskiej Akademii Nauk",
+        "latitude": 51.0765633,
+        "longitude": 17.0223469,
+        "geoHash": "u3h4e65q93"
+    },
+    {
+        "name": "Instytut Informatyki Teoretycznej i Stosowanej Polskiej Akademii Nauk",
+        "latitude": 50.2912786,
+        "longitude": 18.6374562,
+        "geoHash": "u2vq055ruj"
+    },
+    {
+        "name": "Instytut Inżynierii Chemicznej Polskiej Akademii Nauk",
+        "latitude": 50.2912885,
+        "longitude": 18.6374573,
+        "geoHash": "u2vq055rup"
+    },
+    {
+        "name": "Instytut Języka Polskiego Polskiej Akademii Nauk",
+        "latitude": 50.0663286,
+        "longitude": 19.9252591,
+        "geoHash": "u2yhv6m1s0"
+    },
+    {
+        "name": "Instytut Katalizy i Fizykochemii Powierzchni im. Jerzego Habera Polskiej Akademii Nauk",
+        "latitude": 51.919438,
+        "longitude": 19.145136,
+        "geoHash": "u3jx7ethdh"
+    },
+    {
+        "name": "Instytut Kolejnictwa",
+        "latitude": 52.2500029,
+        "longitude": 21.1108089,
+        "geoHash": "u3r10ru6md"
+    },
+    {
+        "name": "Instytut Leków w Warszawie",
+        "latitude": 52.2029036,
+        "longitude": 21.0418164,
+        "geoHash": "u3qbyz4pvy"
+    },
+    {
+        "name": "Instytut Łączności - Państwowy Instytut Badawczy",
+        "latitude": 52.1728327,
+        "longitude": 21.1965861,
+        "geoHash": "u3r0f3fbu2"
+    },
+    {
+        "name": "Instytut Maszyn Matematycznych",
+        "latitude": 52.2217382,
+        "longitude": 21.0003225,
+        "geoHash": "u3qcjfevwv"
+    },
+    {
+        "name": "Instytut Maszyn Przepływowych im. Roberta Szewalskiego Polskiej Akademii Nauk",
+        "latitude": 54.37320339999999,
+        "longitude": 18.6152669,
+        "geoHash": "u3tjrd74z5"
+    },
+    {
+        "name": "Instytut Matematyczny Polskiej Akademii Nauk",
+        "latitude": 52.221428,
+        "longitude": 21.0147083,
+        "geoHash": "u3qcn4w7y5"
+    },
+    {
+        "name": "Instytut Matki i Dziecka",
+        "latitude": 52.22692379999999,
+        "longitude": 20.970186,
+        "geoHash": "u3qcj5w5bu"
+    },
+    {
+        "name": "Instytut Mechaniki Górotworu Polskiej Akademii Nauk",
+        "latitude": 50.0669913,
+        "longitude": 19.9083233,
+        "geoHash": "u2yhv42v3e"
+    },
+    {
+        "name": "Instytut Medycyny Doświadczalnej i Klinicznej im. Mirosława Mossakowskiego Polskiej Akademii Nauk",
+        "latitude": 51.919438,
+        "longitude": 19.145136,
+        "geoHash": "u3jx7ethdh"
+    },
+    {
+        "name": "Instytut Medycyny Morskiej i Tropikalnej w Gdyni",
+        "latitude": 54.4881605,
+        "longitude": 18.5492867,
+        "geoHash": "u3tjyp70t9"
+    },
+    {
+        "name": "Instytut Medycyny Pracy i Zdrowia Środowiskowego",
+        "latitude": 50.2708999,
+        "longitude": 19.1281793,
+        "geoHash": "u2vtgr89ny"
+    },
+    {
+        "name": "Instytut Medycyny Wsi im. Witolda Chodźki",
+        "latitude": 51.25575190000001,
+        "longitude": 22.5627446,
+        "geoHash": "u90596vdqh"
+    },
+    {
+        "name": "Instytut Melioracji i Użytków Zielonych w Falentach",
+        "latitude": 52.1414497,
+        "longitude": 20.9158894,
+        "geoHash": "u3qbeun3zw"
+    },
+    {
+        "name": "Instytut Metalurgii i Inżynierii Materiałowej im. Aleksandra Krupkowskiego Polskiej Akademii Nauk",
+        "latitude": 50.06675019999999,
+        "longitude": 19.9095434,
+        "geoHash": "u2yhv43evy"
+    },
+    {
+        "name": "Instytut Meteorologii i Gospodarki Wodnej - Państwowy Instytut Badawczy",
+        "latitude": 52.2809328,
+        "longitude": 20.96136,
+        "geoHash": "u3qckvrwe0"
+    },
+    {
+        "name": "Instytut Morski w Gdańsku",
+        "latitude": 54.3486184,
+        "longitude": 18.6538094,
+        "geoHash": "u3tm0mz79k"
+    },
+    {
+        "name": "Instytut Nafty i Gazu - Państwowy Instytut Badawczy",
+        "latitude": 50.065149,
+        "longitude": 19.9539419,
+        "geoHash": "u2yhy4448s"
+    },
+    {
+        "name": "Instytut Nauk Ekonomicznych Polskiej Akademii Nauk",
+        "latitude": 52.2377194,
+        "longitude": 21.017891,
+        "geoHash": "u3qcnm8fb2"
+    },
+    {
+        "name": "Instytut Nauk Geologicznych Polskiej Akademii Nauk",
+        "latitude": 52.22827729999999,
+        "longitude": 20.9933166,
+        "geoHash": "u3qcjeygg8"
+    },
+    {
+        "name": "Instytut Nauk Prawnych Polskiej Akademii Nauk",
+        "latitude": 52.2377194,
+        "longitude": 21.017891,
+        "geoHash": "u3qcnm8fb2"
+    },
+    {
+        "name": "Instytut Niskich Temperatur i Badań Strukturalnych im. Włodzimierza Trzebiatowskiego Polskiej Akademii Nauk",
+        "latitude": 51.1011987,
+        "longitude": 17.067915,
+        "geoHash": "u3h4sqsqp1"
+    },
+    {
+        "name": "Instytut Oceanologii Polskiej Akademii Nauk",
+        "latitude": 54.4507583,
+        "longitude": 18.5638955,
+        "geoHash": "u3tjy2mydj"
+    },
+    {
+        "name": "Instytut Ochrony Przyrody Polskiej Akademii Nauk",
+        "latitude": 50.06650210000001,
+        "longitude": 19.9252862,
+        "geoHash": "u2yhv6m4sb"
+    },
+    {
+        "name": "Instytut Ochrony Roślin - Państwowy Instytut Badawczy",
+        "latitude": 52.3958886,
+        "longitude": 16.8546561,
+        "geoHash": "u37fpd3hjv"
+    },
+    {
+        "name": "Instytut Ochrony Środowiska - Państwowy Instytut Badawczy",
+        "latitude": 52.1883986,
+        "longitude": 20.961538,
+        "geoHash": "u3qbuuxern"
+    },
+    {
+        "name": "Instytut Paleobiologii im. Romana Kozłowskiego Polskiej Akademii Nauk",
+        "latitude": 52.2284045,
+        "longitude": 20.9934255,
+        "geoHash": "u3qcjeyuw2"
+    },
+    {
+        "name": "Instytut Parazytologii im. Witolda Stefańskiego Polskiej Akademii Nauk",
+        "latitude": 52.22827729999999,
+        "longitude": 20.9933166,
+        "geoHash": "u3qcjeygg8"
+    },
+    {
+        "name": "Instytut Podstaw Informatyki Polskiej Akademii Nauk",
+        "latitude": 52.2259208,
+        "longitude": 20.9497774,
+        "geoHash": "u3qchernj1"
+    },
+    {
+        "name": "Instytut Podstaw Inżynierii Środowiska Polskiej Akademii Nauk",
+        "latitude": 50.3146677,
+        "longitude": 18.7720732,
+        "geoHash": "u2vq5pt2jj"
+    },
+    {
+        "name": "Instytut Podstawowych Problemów Techniki Polskiej Akademii Nauk",
+        "latitude": 52.20669480000001,
+        "longitude": 20.9810504,
+        "geoHash": "u3qbvrvyjc"
+    },
+    {
+        "name": "Instytut \"Pomnik - Centrum Zdrowia Dziecka\"",
+        "latitude": 52.206782,
+        "longitude": 21.1921589,
+        "geoHash": "u3r0fpzwt1"
+    },
+    {
+        "name": "Instytut Pracy i Spraw Socjalnych",
+        "latitude": 52.2419641,
+        "longitude": 20.9802825,
+        "geoHash": "u3qcjqm7kp"
+    },
+    {
+        "name": "Instytut Psychiatrii i Neurologii",
+        "latitude": 52.1722774,
+        "longitude": 21.0652639,
+        "geoHash": "u3qbz3em81"
+    },
+    {
+        "name": "Instytut Psychologii Polskiej Akademii Nauk",
+        "latitude": 52.2374506,
+        "longitude": 21.0325085,
+        "geoHash": "u3qcnte3hy"
+    },
+    {
+        "name": "Instytut Rozrodu Zwierząt i Badań Żywności Polskiej Akademii Nauk",
+        "latitude": 53.7549649,
+        "longitude": 20.4727756,
+        "geoHash": "u3w9ccgc65"
+    },
+    {
+        "name": "Instytut Rozwoju Miast i Regionów",
+        "latitude": 50.0748393,
+        "longitude": 19.9295298,
+        "geoHash": "u2yhveb5pd"
+    },
+    {
+        "name": "Instytut Rozwoju Służb Społecznych",
+        "latitude": 52.2210721,
+        "longitude": 21.0175672,
+        "geoHash": "u3qcn689bc"
+    },
+    {
+        "name": "Instytut Rozwoju Wsi i Rolnictwa Polskiej Akademii Nauk",
+        "latitude": 52.2377194,
+        "longitude": 21.017891,
+        "geoHash": "u3qcnm8fb2"
+    },
+    {
+        "name": "Instytut Rybactwa Śródlądowego im. Stanisława Sakowicza - Państwowy Instytut Badawczy",
+        "latitude": 53.7574968,
+        "longitude": 20.459123,
+        "geoHash": "u3w9cd3bh5"
+    },
+    {
+        "name": "Instytut Sadownictwa i Kwiaciarstwa im. Szczepana Pieniążka w Skierniewicach",
+        "latitude": 51.9547169,
+        "longitude": 20.1583303,
+        "geoHash": "u3nrddnf5j"
+    },
+    {
+        "name": "Instytut Slawistyki Polskiej Akademii Nauk",
+        "latitude": 52.23745419999999,
+        "longitude": 21.0227008,
+        "geoHash": "u3qcnms30r"
+    },
+    {
+        "name": "Instytut Sportu - Państwowy Instytut Badawczy",
+        "latitude": 52.3090231,
+        "longitude": 20.9251754,
+        "geoHash": "u3qcs4t4pu"
+    },
+    {
+        "name": "Instytut Studiów Politycznych Polskiej Akademii Nauk",
+        "latitude": 52.2160467,
+        "longitude": 21.0183592,
+        "geoHash": "u3qcn39he2"
+    },
+    {
+        "name": "Instytut Systematyki i Ewolucji Zwierząt Polskiej Akademii Nauk",
+        "latitude": 50.06454489999999,
+        "longitude": 19.938312,
+        "geoHash": "u2yhv9yxh7"
+    },
+    {
+        "name": "Instytut Sztuki Polskiej Akademii Nauk",
+        "latitude": 52.2478072,
+        "longitude": 21.0050631,
+        "geoHash": "u3qcjzrmt3"
+    },
+    {
+        "name": "Instytut Środowiska Rolniczego i Leśnego Polskiej Akademii Nauk",
+        "latitude": 52.40736589999999,
+        "longitude": 16.9055739,
+        "geoHash": "u3k40sqr03"
+    },
+    {
+        "name": "Instytut Techniczny Wojsk Lotniczych",
+        "latitude": 52.2506738,
+        "longitude": 20.9373687,
+        "geoHash": "u3qchrynhp"
+    },
+    {
+        "name": "Instytut Techniki Budowlanej",
+        "latitude": 52.2185705,
+        "longitude": 21.0084332,
+        "geoHash": "u3qcn41g5z"
+    },
+    {
+        "name": "Instytut Techniki Górniczej KOMAG",
+        "latitude": 50.2881174,
+        "longitude": 18.6726312,
+        "geoHash": "u2vq0fsvxb"
+    },
+    {
+        "name": "Instytut Technologiczno-Przyrodniczy - Państwowy Instytut Badawczy",
+        "latitude": 52.13955199999999,
+        "longitude": 20.9197996,
+        "geoHash": "u3qbs59qfs"
+    },
+    {
+        "name": "Instytut Technologii Bezpieczeństwa MORATEX",
+        "latitude": 51.7641293,
+        "longitude": 19.4486345,
+        "geoHash": "u3jy6x65fj"
+    },
+    {
+        "name": "Instytut Technologii Paliw i Energii",
+        "latitude": 50.3286481,
+        "longitude": 18.8268503,
+        "geoHash": "u2vqk6j39k"
+    },
+    {
+        "name": "Instytut Teologiczny im. bł. Wincentego Kadłubka w Sandomierzu",
+        "latitude": 50.6958441,
+        "longitude": 21.7390655,
+        "geoHash": "u3p2qsvusy"
+    },
+    {
+        "name": "Instytut Teologiczny im. św. Jana Kantego w Bielsku-Białej",
+        "latitude": 49.82994129999999,
+        "longitude": 19.0405916,
+        "geoHash": "u2ve3r2bmy"
+    },
+    {
+        "name": "Instytut Transportu Samochodowego",
+        "latitude": 52.27033249999999,
+        "longitude": 21.018783,
+        "geoHash": "u3qcq792v0"
+    },
+    {
+        "name": "Instytut Uprawy Nawożenia i Gleboznawstwa - Państwowy Instytut Badawczy",
+        "latitude": 51.4121275,
+        "longitude": 21.9589802,
+        "geoHash": "u3ps7xq137"
+    },
+    {
+        "name": "Instytut Warzywnictwa w Skierniewicach",
+        "latitude": 51.9613004,
+        "longitude": 20.1417002,
+        "geoHash": "u3nrd768x8"
+    },
+    {
+        "name": "Instytut Włókien Naturalnych i Roślin Zielarskich - Państwowy Instytut Badawczy",
+        "latitude": 52.4275327,
+        "longitude": 16.8948268,
+        "geoHash": "u3k422nktb"
+    },
+    {
+        "name": "Instytut Wymiaru Sprawiedliwości",
+        "latitude": 52.2437199,
+        "longitude": 21.013786,
+        "geoHash": "u3qcnntv8x"
+    },
+    {
+        "name": "Instytut Wysokich Ciśnień Polskiej Akademii Nauk",
+        "latitude": 52.2388019,
+        "longitude": 20.9588645,
+        "geoHash": "u3qchvvc0f"
+    },
+    {
+        "name": "Instytut Zachodni im. Zygmunta Wojciechowskiego",
+        "latitude": 52.4052204,
+        "longitude": 16.9389805,
+        "geoHash": "u3k41knddc"
+    },
+    {
+        "name": "Instytut Zootechniki - Państwowy Instytut Badawczy",
+        "latitude": 50.0859451,
+        "longitude": 19.7878398,
+        "geoHash": "u2yhfmc5f0"
+    },
+    {
+        "name": "Karkonoska Akademia Nauk Stosowanych w Jeleniej Górze",
+        "latitude": 50.91453569999999,
+        "longitude": 15.7278734,
+        "geoHash": "u351tuswwj"
+    },
+    {
+        "name": "Kaszubsko-Pomorska Szkoła Wyższa w Wejherowie",
+        "latitude": 54.604283,
+        "longitude": 18.227996,
+        "geoHash": "u3sywu3jp0"
+    },
+    {
+        "name": "Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie",
+        "latitude": 51.2475453,
+        "longitude": 22.5450221,
+        "geoHash": "u905912f94"
+    },
+    {
+        "name": "KGHM CUPRUM sp. z o.o. Centrum Badawczo-Rozwojowe",
+        "latitude": 51.1132278,
+        "longitude": 17.0224666,
+        "geoHash": "u3h4g2gkhh"
+    },
+    {
+        "name": "Koszalińska Wyższa Szkoła Nauk Humanistycznych w Koszalinie",
+        "latitude": 54.19997619999999,
+        "longitude": 16.1751955,
+        "geoHash": "u3es24f3tr"
+    },
+    {
+        "name": "Krakowska Akademia im. Andrzeja Frycza Modrzewskiego w Krakowie",
+        "latitude": 50.0510134,
+        "longitude": 19.9651138,
+        "geoHash": "u2yhwrd0kc"
+    },
+    {
+        "name": "Krakowska Wyższa Szkoła Promocji Zdrowia w Krakowie",
+        "latitude": 50.0722047,
+        "longitude": 19.9324668,
+        "geoHash": "u2yhve67sp"
+    },
+    {
+        "name": "Kujawska Szkoła Wyższa we Włocławku",
+        "latitude": 52.65539,
+        "longitude": 19.0683459,
+        "geoHash": "u3me9ct5us"
+    },
+    {
+        "name": "Lingwistyczna Szkoła Wyższa w Warszawie",
+        "latitude": 52.1889847,
+        "longitude": 20.953129,
+        "geoHash": "u3qbuu9wg7"
+    },
+    {
+        "name": "Lotnicza Akademia Wojskowa",
+        "latitude": 51.55063639999999,
+        "longitude": 21.8736075,
+        "geoHash": "u3pt38xb5z"
+    },
+    {
+        "name": "Lubelska Akademia WSEI",
+        "latitude": 51.2453613,
+        "longitude": 22.6105882,
+        "geoHash": "u905d8btbg"
+    },
+    {
+        "name": "Lubelska Szkoła Wyższa im. Króla Władysława Jagiełły w likwidacji z siedzibą w Lublinie",
+        "latitude": 51.2458333,
+        "longitude": 22.5621032,
+        "geoHash": "u90593j0x5"
+    },
+    {
+        "name": "Lubelska Szkoła Wyższa w Rykach",
+        "latitude": 51.62203479999999,
+        "longitude": 21.9363768,
+        "geoHash": "u3ptejt84s"
+    },
+    {
+        "name": "Lubuska Wyższa Szkoła Zdrowia Publicznego w Zielonej Górze w likwidacji",
+        "latitude": 51.9356214,
+        "longitude": 15.5061862,
+        "geoHash": "u35p2ye6bm"
+    },
+    {
+        "name": "Łużycka Szkoła Wyższa im. Jana Benedykta Solfy z siedzibą w Żarach",
+        "latitude": 51.64356009999999,
+        "longitude": 15.1531133,
+        "geoHash": "u34vbc6jt1"
+    },
+    {
+        "name": "Małopolska Uczelnia Państwowa im. rotmistrza Witolda Pileckiego w Oświęcimiu",
+        "latitude": 50.0259197,
+        "longitude": 19.1982448,
+        "geoHash": "u2vssfgwpe"
+    },
+    {
+        "name": "Małopolska Wyższa Szkoła Ekonomiczna z siedzibą w Tarnowie",
+        "latitude": 50.0147531,
+        "longitude": 20.9929153,
+        "geoHash": "u2yut8yt43"
+    },
+    {
+        "name": "Małopolska Wyższa Szkoła im. Józefa Dietla w Krakowie w likwidacji",
+        "latitude": 50.0876663,
+        "longitude": 19.9705608,
+        "geoHash": "u2yhyqnjgc"
+    },
+    {
+        "name": "Mazowiecka Wyższa Szkoła Humanistyczno-Pedagogiczna w Łowiczu",
+        "latitude": 52.1053721,
+        "longitude": 19.945493,
+        "geoHash": "u3q0mv7zg9"
+    },
+    {
+        "name": "Mazurska Szkoła Wyższa w Ełku z siedzibą w Ełku",
+        "latitude": 53.8242291,
+        "longitude": 22.3516281,
+        "geoHash": "u3xfhw7uye"
+    },
+    {
+        "name": "Menedżerska Akademia Nauk Stosowanych w Warszawie",
+        "latitude": 52.2576094,
+        "longitude": 21.0585873,
+        "geoHash": "u3qcr1nqss"
+    },
+    {
+        "name": "Międzynarodowa Akademia Nauk Stosowanych w Łomży",
+        "latitude": 53.1727065,
+        "longitude": 22.0397805,
+        "geoHash": "u3rwmxbckn"
+    },
+    {
+        "name": "Międzynarodowa Szkoła Wyższa \"Concordia\" w Lubartowie",
+        "latitude": 51.4598694,
+        "longitude": 22.6094606,
+        "geoHash": "u90hdrzxqw"
+    },
+    {
+        "name": "Międzynarodowa Wyższa Szkoła Logistyki i Transportu we Wrocławiu",
+        "latitude": 51.1406733,
+        "longitude": 17.071704,
+        "geoHash": "u3h4umzhp8"
+    },
+    {
+        "name": "Międzynarodowy Instytut Biologii Molekularnej i Komórkowej w Warszawie",
+        "latitude": 52.2066654,
+        "longitude": 20.9788486,
+        "geoHash": "u3qbvrumfe"
+    },
+    {
+        "name": "Międzynarodowy Instytut Mechanizmów i Maszyn Molekularnych Polskiej Akademii Nauk - IMol",
+        "latitude": 52.1894556,
+        "longitude": 20.9504638,
+        "geoHash": "u3qbusz9t5"
+    },
+    {
+        "name": "MIĘDZYNARODOWY INSTYTUT ONKOLOGII MOLEKULARNEJ",
+        "latitude": 52.38664310000001,
+        "longitude": 16.8937086,
+        "geoHash": "u3k402tw7f"
+    },
+    {
+        "name": "Morski Instytut Rybacki - Państwowy Instytut Badawczy",
+        "latitude": 54.5201644,
+        "longitude": 18.5257091,
+        "geoHash": "u3tnjt44br"
+    },
+    {
+        "name": "Muzeum Archeologiczne w Poznaniu",
+        "latitude": 52.4073889,
+        "longitude": 16.9347225,
+        "geoHash": "u3k41k7rpt"
+    },
+    {
+        "name": "Muzeum Górnośląskie w Bytomiu",
+        "latitude": 50.3490843,
+        "longitude": 18.925726,
+        "geoHash": "u2vqqtv29m"
+    },
+    {
+        "name": "Muzeum Historii Fotografii im. Walerego Rzewuskiego w Krakowie",
+        "latitude": 50.0643519,
+        "longitude": 19.8806997,
+        "geoHash": "u2yhu3utvz"
+    },
+    {
+        "name": "Muzeum Historyczne Miasta Krakowa",
+        "latitude": 50.0626812,
+        "longitude": 19.9365176,
+        "geoHash": "u2yhv9tk68"
+    },
+    {
+        "name": "Muzeum i Instytut Zoologii Polskiej Akademii Nauk",
+        "latitude": 52.223943,
+        "longitude": 21.009057,
+        "geoHash": "u3qcn546d8"
+    },
+    {
+        "name": "Muzeum Narodowe w Krakowie",
+        "latitude": 50.0604656,
+        "longitude": 19.9237364,
+        "geoHash": "u2yhv3hp2e"
+    },
+    {
+        "name": "Muzeum Narodowe w Poznaniu",
+        "latitude": 52.4090067,
+        "longitude": 16.9296664,
+        "geoHash": "u3k41hzb9f"
+    },
+    {
+        "name": "Muzeum Sztuki w Łodzi",
+        "latitude": 51.7716313,
+        "longitude": 19.4484902,
+        "geoHash": "u3jyd89zwe"
+    },
+    {
+        "name": "Muzeum Sztuki Współczesnej w Krakowie MOCAK",
+        "latitude": 50.0569769,
+        "longitude": 19.9570773,
+        "geoHash": "u2yhy0s718"
+    },
+    {
+        "name": "Nadbużańska Szkoła Wyższa im. Marka J. Karpia w Siemiatyczach",
+        "latitude": 52.4229303,
+        "longitude": 22.8746617,
+        "geoHash": "u9260x2cdq"
+    },
+    {
+        "name": "Narodowe Centrum Badań Jądrowych",
+        "latitude": 52.12433679999999,
+        "longitude": 21.33869,
+        "geoHash": "u3r0t8fq78"
+    },
+    {
+        "name": "Narodowy Instytut Geriatrii, Reumatologii i Rehabilitacji im. prof. dr hab. med. Eleonory Reicher",
+        "latitude": 52.1912811,
+        "longitude": 20.9946753,
+        "geoHash": "u3qbvtpu5r"
+    },
+    {
+        "name": "Narodowy Instytut Kardiologii Stefana Kardynała Wyszyńskiego – Państwowy Instytut Badawczy",
+        "latitude": 52.21786669999999,
+        "longitude": 21.1744585,
+        "geoHash": "u3r11cfz0e"
+    },
+    {
+        "name": "Narodowy Instytut Leków",
+        "latitude": 52.2029036,
+        "longitude": 21.0418164,
+        "geoHash": "u3qbyz4pvy"
+    },
+    {
+        "name": "Narodowy Instytut Muzyki i Tańca",
+        "latitude": 52.2386304,
+        "longitude": 21.0296281,
+        "geoHash": "u3qcntc21f"
+    },
+    {
+        "name": "Narodowy Instytut Onkologii im. Marii Skłodowskiej-Curie – Państwowy Instytut Badawczy",
+        "latitude": 52.21588200000001,
+        "longitude": 20.9836171,
+        "geoHash": "u3qcj3xg99"
+    },
+    {
+        "name": "Narodowy Instytut Zdrowia Publicznego PZH – Państwowy Instytut Badawczy",
+        "latitude": 52.2107447,
+        "longitude": 21.0231894,
+        "geoHash": "u3qcn2steu"
+    },
+    {
+        "name": "Niepaństwowa Wyższa Szkoła Pedagogiczna w Białymstoku",
+        "latitude": 53.1449741,
+        "longitude": 23.0770298,
+        "geoHash": "u92qm4spvv"
+    },
+    {
+        "name": "Niepubliczna Wyższa Szkoła Medyczna we Wrocławiu",
+        "latitude": 51.1188199,
+        "longitude": 17.0580654,
+        "geoHash": "u3h4u1vk9w"
+    },
+    {
+        "name": "Olsztyńska Szkoła Wyższa",
+        "latitude": 53.79418099999999,
+        "longitude": 20.496005,
+        "geoHash": "u3wd42utzd"
+    },
+    {
+        "name": "OLYMPUS Szkoła Wyższa im. Romualda Kudlińskiego w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2411216,
+        "longitude": 20.9839965,
+        "geoHash": "u3qcjw0ndd"
+    },
+    {
+        "name": "OPEGIEKA Spółka z ograniczoną odpowiedzialnością",
+        "latitude": 54.1556782,
+        "longitude": 19.4010014,
+        "geoHash": "u3tu16xrsn"
+    },
+    {
+        "name": "Ośrodek Badań Naukowych im. Wojciecha Kętrzyńskiego w Olsztynie",
+        "latitude": 53.7820135,
+        "longitude": 20.4957075,
+        "geoHash": "u3w9fqswbt"
+    },
+    {
+        "name": "Ośrodek Badawczo-Rozwojowy Budowy Urządzeń Chemicznych CEBEA",
+        "latitude": 49.9649042,
+        "longitude": 20.4399787,
+        "geoHash": "u2ys1pgfwj"
+    },
+    {
+        "name": "Ośrodek Badawczo-Rozwojowy Centrum Techniki Morskiej S.A.",
+        "latitude": 54.5595284,
+        "longitude": 18.5469158,
+        "geoHash": "u3tnqh32q3"
+    },
+    {
+        "name": "Ośrodek Badawczo-Rozwojowy Dźwignic i Urządzeń Transportowych \"Detrans\"",
+        "latitude": 51.1490889,
+        "longitude": 17.0442226,
+        "geoHash": "u3h4gz7jp1"
+    },
+    {
+        "name": "Ośrodek Badawczo-Rozwojowy Przemysłu Płyt Drewnopochodnych sp. z o.o.",
+        "latitude": 53.8507511,
+        "longitude": 18.0845966,
+        "geoHash": "u3sf7e0z3e"
+    },
+    {
+        "name": "Ośrodek Badawczo-Rozwojowy Urządzeń Mechanicznych \"OBRUM\" sp. z o.o.",
+        "latitude": 50.3200436,
+        "longitude": 18.6657953,
+        "geoHash": "u2vq2b2p88"
+    },
+    {
+        "name": "Ośrodek Przetwarzania Informacji — Państwowy Instytut Badawczy",
+        "latitude": 52.2127047,
+        "longitude": 21.0082357,
+        "geoHash": "u3qcn119p3"
+    },
+    {
+        "name": "Państwowa Akademia Nauk Stosowanych w Chełmie",
+        "latitude": 51.1297608,
+        "longitude": 23.4804592,
+        "geoHash": "u90dy7cuqq"
+    },
+    {
+        "name": "Państwowa Akademia Nauk Stosowanych we Włocławku",
+        "latitude": 52.65801889999999,
+        "longitude": 19.0697174,
+        "geoHash": "u3me9fn5hw"
+    },
+    {
+        "name": "Państwowa Akademia Nauk Stosowanych w Krośnie",
+        "latitude": 49.69241599999999,
+        "longitude": 21.7644693,
+        "geoHash": "u2z6xq0rkc"
+    },
+    {
+        "name": "Państwowa Akademia Nauk Stosowanych w Nysie",
+        "latitude": 50.4766574,
+        "longitude": 17.3300473,
+        "geoHash": "u2ur4kgrg6"
+    },
+    {
+        "name": "Państwowa Akademia Nauk Stosowanych w Przemyślu",
+        "latitude": 49.77393190000001,
+        "longitude": 22.789022,
+        "geoHash": "u8b5nt46nt"
+    },
+    {
+        "name": "Państwowa Medyczna Wyższa Szkoła Zawodowa w Opolu",
+        "latitude": 50.6723326,
+        "longitude": 17.9350147,
+        "geoHash": "u3hb20egsp"
+    },
+    {
+        "name": "Państwowa Uczelnia Zawodowa im. Ignacego Mościckiego w Ciechanowie",
+        "latitude": 52.8812175,
+        "longitude": 20.6041653,
+        "geoHash": "u3qsuferrv"
+    },
+    {
+        "name": "Państwowa Uczelnia Zawodowa im. prof. Edwarda F. Szczepanika w Suwałkach",
+        "latitude": 54.09667140000001,
+        "longitude": 22.9327021,
+        "geoHash": "u9879zgpfw"
+    },
+    {
+        "name": "Państwowa Uczelnia Zawodowa im. prof. Stanisława Tarnowskiego w Tarnobrzegu",
+        "latitude": 50.5758514,
+        "longitude": 21.6772308,
+        "geoHash": "u2zrtr0csn"
+    },
+    {
+        "name": "Państwowa Wyższa Szkoła Filmowa, Telewizyjna i Teatralna im. Leona Schillera w Łodzi",
+        "latitude": 51.757352,
+        "longitude": 19.473052,
+        "geoHash": "u3jy7n5u6v"
+    },
+    {
+        "name": "Państwowa Wyższa Szkoła Techniczno-Ekonomiczna im. ks. Bronisława Markiewicza w Jarosławiu",
+        "latitude": 50.0121564,
+        "longitude": 22.6731636,
+        "geoHash": "u8bhebqjgj"
+    },
+    {
+        "name": "Państwowa Wyższa Szkoła Zawodowa w Głogowie",
+        "latitude": 51.661076,
+        "longitude": 16.0964944,
+        "geoHash": "u35myk95ed"
+    },
+    {
+        "name": "Państwowa Wyższa Szkoła Zawodowa w Koszalinie",
+        "latitude": 54.1960407,
+        "longitude": 16.2166947,
+        "geoHash": "u3es340du6"
+    },
+    {
+        "name": "Państwowa Wyższa Szkoła Zawodowa w Sandomierzu",
+        "latitude": 50.6997587,
+        "longitude": 21.7510085,
+        "geoHash": "u3p2qvwee0"
+    },
+    {
+        "name": "Państwowa Wyższa Szkoła Zawodowa w Sulechowie",
+        "latitude": 52.079863,
+        "longitude": 15.6197902,
+        "geoHash": "u37072vgpq"
+    },
+    {
+        "name": "Państwowy Instytut Geologiczny - Państwowy Instytut Badawczy",
+        "latitude": 52.2089922,
+        "longitude": 21.0132703,
+        "geoHash": "u3qcn0m7kt"
+    },
+    {
+        "name": "Państwowy Instytut Medyczny Ministerstwa Spraw Wewnętrznych i Administracji",
+        "latitude": 52.1990129,
+        "longitude": 20.9979874,
+        "geoHash": "u3qbvyd329"
+    },
+    {
+        "name": "Państwowy Instytut Naukowy - Instytut Śląski w Opolu",
+        "latitude": 50.6659983,
+        "longitude": 17.9214755,
+        "geoHash": "u3h8pz6nbd"
+    },
+    {
+        "name": "Papieski Wydział Teologiczny we Wrocławiu",
+        "latitude": 51.1137313,
+        "longitude": 17.0457649,
+        "geoHash": "u3h4gbur54"
+    },
+    {
+        "name": "Pedagogium Wyższa Szkoła Nauk Społecznych w Warszawie",
+        "latitude": 52.2412067,
+        "longitude": 21.0034187,
+        "geoHash": "u3qcjynpp4"
+    },
+    {
+        "name": "Pedagogium - Wyższa Szkoła Pedagogiki Resocjalizacyjnej w Warszawie w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2412067,
+        "longitude": 21.0034187,
+        "geoHash": "u3qcjynpp4"
+    },
+    {
+        "name": "Podhalańska Państwowa Uczelnia Zawodowa w Nowym Targu",
+        "latitude": 49.48983380000001,
+        "longitude": 20.0460263,
+        "geoHash": "u2y381m54m"
+    },
+    {
+        "name": "Podkarpacka Szkoła Wyższa im. bł. ks. Władysława Findysza w Jaśle",
+        "latitude": 49.7561841,
+        "longitude": 21.4852751,
+        "geoHash": "u2z70cv4g0"
+    },
+    {
+        "name": "Podkowiańska Wyższa Szkoła Medyczna im. Zofii i Jonasza Łyko w likwidacji",
+        "latitude": 52.12061240000001,
+        "longitude": 20.727123,
+        "geoHash": "u3q8x8m08f"
+    },
+    {
         "name": "Politechnika Białostocka",
-        "address": "ul. Wiejska 45A, 15-351 Białystok",
-        "latitude": "53.131561",
-        "longitude": "23.135177"
+        "latitude": 53.11621239999999,
+        "longitude": 23.1465921,
+        "geoHash": "u92qntwb6e"
     },
     {
-        "id": "16",
-        "name": "Uniwersytet Białostocki",
-        "address": "ul. M. Skłodowskiej-Curie 14, 15-245 Białystok",
-        "latitude": "53.130616",
-        "longitude": "23.150408"
+        "name": "Politechnika Bydgoska im. Jana i Jędrzeja Śniadeckich",
+        "latitude": 53.1432581,
+        "longitude": 18.1307625,
+        "geoHash": "u3kykd6mvm"
     },
     {
-        "id": "17",
-        "name": "Uniwersytet Rzeszowski",
-        "address": "ul. Rejtana 16C, 35-959 Rzeszów",
-        "latitude": "50.038508",
-        "longitude": "22.003609"
+        "name": "Politechnika Częstochowska",
+        "latitude": 50.8209921,
+        "longitude": 19.1115918,
+        "geoHash": "u3j94gstsr"
     },
     {
-        "id": "18",
-        "name": "Politechnika Rzeszowska",
-        "address": "al. Powstańców Warszawy 6, 35-959 Rzeszów",
-        "latitude": "50.041374",
-        "longitude": "22.011160"
+        "name": "Politechnika Gdańska",
+        "latitude": 54.3716751,
+        "longitude": 18.6163277,
+        "geoHash": "u3tjrd5czy"
     },
     {
-        "id": "19",
-        "name": "Uniwersytet Opolski",
-        "address": "pl. Kopernika 11a, 45-040 Opole",
-        "latitude": "50.666239",
-        "longitude": "17.929635"
+        "name": "Politechnika Koszalińska",
+        "latitude": 54.1943219,
+        "longitude": 16.1714908,
+        "geoHash": "u3ekrcz8z1"
     },
     {
-        "id": "20",
+        "name": "Politechnika Krakowska im. Tadeusza Kościuszki",
+        "latitude": 50.0720447,
+        "longitude": 19.9427642,
+        "geoHash": "u2yhvg3fu1"
+    },
+    {
+        "name": "Politechnika Lubelska",
+        "latitude": 51.2351784,
+        "longitude": 22.5488406,
+        "geoHash": "u9053p5dd1"
+    },
+    {
+        "name": "Politechnika Łódzka",
+        "latitude": 51.7537146,
+        "longitude": 19.4517176,
+        "geoHash": "u3jy6tkr1z"
+    },
+    {
+        "name": "Politechnika Morska w Szczecinie",
+        "latitude": 53.42887109999999,
+        "longitude": 14.5636405,
+        "geoHash": "u36rgqkvtr"
+    },
+    {
         "name": "Politechnika Opolska",
-        "address": "ul. Katowicka 48, 45-065 Opole",
-        "latitude": "50.677306",
-        "longitude": "17.934869"
+        "latitude": 50.65411719999999,
+        "longitude": 17.9050435,
+        "geoHash": "u3h8pmq19g"
     },
     {
-        "facultyName": "Wydział Elektrotechniki, Automatyki i Informatyki",
-        "universityId": "20",
-        "type": "Elektrotechnika",
-        "numberOfPoints": 280
+        "name": "Politechnika Poznańska",
+        "latitude": 52.3941095,
+        "longitude": 16.91838,
+        "geoHash": "u3k40fp9fc"
     },
     {
-        "facultyName": "Wydział Elektrotechniki, Automatyki i Informatyki",
-        "universityId": "20",
-        "type": "Informatyka",
-        "numberOfPoints": 275
+        "name": "Politechnika Rzeszowska im. Ignacego Łukasiewicza",
+        "latitude": 50.019034,
+        "longitude": 21.989195,
+        "geoHash": "u2zss3sjcr"
     },
     {
-        "facultyName": "Wydział Elektrotechniki, Automatyki i Informatyki",
-        "universityId": "20",
-        "type": "Automatyka i robotyka",
-        "numberOfPoints": 270
+        "name": "Politechnika Śląska",
+        "latitude": 50.2909719,
+        "longitude": 18.6746196,
+        "geoHash": "u2vq0gnqnh"
     },
     {
-        "facultyName": "Wydział Budownictwa i Architektury",
-        "universityId": "20",
-        "type": "Budownictwo",
-        "numberOfPoints": 285
+        "name": "Politechnika Świętokrzyska",
+        "latitude": 50.8787922,
+        "longitude": 20.6400556,
+        "geoHash": "u3n9mwjwkn"
     },
     {
-        "facultyName": "Wydział Budownictwa i Architektury",
-        "universityId": "20",
-        "type": "Architektura",
-        "numberOfPoints": 280
+        "name": "Politechnika Warszawska",
+        "latitude": 52.2212012,
+        "longitude": 21.0080857,
+        "geoHash": "u3qcn49dec"
     },
     {
-        "facultyName": "Wydział Budownictwa i Architektury",
-        "universityId": "20",
-        "type": "Inżynieria środowiska",
-        "numberOfPoints": 275
+        "name": "Politechnika Wrocławska",
+        "latitude": 51.1077469,
+        "longitude": 17.0625052,
+        "geoHash": "u3h4srbs1n"
     },
     {
-        "facultyName": "Wydział Mechaniczny",
-        "universityId": "20",
-        "type": "Mechanika",
-        "numberOfPoints": 290
+        "name": "Polska Akademia Nauk Archiwum w Warszawie",
+        "latitude": 52.2377194,
+        "longitude": 21.017891,
+        "geoHash": "u3qcnm8fb2"
     },
     {
-        "facultyName": "Wydział Mechaniczny",
-        "universityId": "20",
-        "type": "Inżynieria mechaniczna",
-        "numberOfPoints": 285
+        "name": "Polska Akademia Nauk Biblioteka Gdańska",
+        "latitude": 54.35838469999999,
+        "longitude": 18.6494601,
+        "geoHash": "u3tm0rshec"
     },
     {
-        "facultyName": "Wydział Mechaniczny",
-        "universityId": "20",
-        "type": "Energetyka",
-        "numberOfPoints": 280
+        "name": "Polska Akademia Nauk Biblioteka Kórnicka",
+        "latitude": 52.2438874,
+        "longitude": 17.0908739,
+        "geoHash": "u3k1hytnwn"
     },
     {
-        "facultyName": "Wydział Informatyki i Zarządzania",
-        "universityId": "20",
-        "type": "Informatyka",
-        "numberOfPoints": 295
+        "name": "Polska Akademia Nauk Muzeum Ziemi w Warszawie",
+        "latitude": 52.2290325,
+        "longitude": 21.0285328,
+        "geoHash": "u3qcns080m"
     },
     {
-        "facultyName": "Wydział Informatyki i Zarządzania",
-        "universityId": "20",
-        "type": "Sztuczna inteligencja",
-        "numberOfPoints": 290
+        "name": "Polska Akademia Nauk Ogród Botaniczny - Centrum Zachowania Różnorodności Biologicznej w Powsinie",
+        "latitude": 52.10588389999999,
+        "longitude": 21.0961506,
+        "geoHash": "u3r02j9dzb"
     },
     {
-        "facultyName": "Wydział Informatyki i Zarządzania",
-        "universityId": "20",
-        "type": "Cyberbezpieczeństwo",
-        "numberOfPoints": 285
+        "name": "Polska Akademia Nauk Stacja Naukowa w Moskwie",
+        "latitude": 55.755826,
+        "longitude": 37.6173,
+        "geoHash": "ucfv0n014x"
+    },
+    {
+        "name": "Polska Akademia Nauk Stacja Naukowa w Rzymie",
+        "latitude": 41.9027835,
+        "longitude": 12.4963655,
+        "geoHash": "sr2ykk5t6k"
+    },
+    {
+        "name": "Polska Akademia Nauk Zakład Antropologii we Wrocławiu",
+        "latitude": 51.1078852,
+        "longitude": 17.0385376,
+        "geoHash": "u3h4exzj48"
+    },
+    {
+        "name": "Polska Akademia Nauk Zakład Ichtiobiologii i Gospodarki Rybackiej w Gołyszu",
+        "latitude": 49.8697745,
+        "longitude": 18.7969372,
+        "geoHash": "u2v7ewx82r"
+    },
+    {
+        "name": "Polska Akademia Umiejętności",
+        "latitude": 51.919438,
+        "longitude": 19.145136,
+        "geoHash": "u3jx7ethdh"
+    },
+    {
+        "name": "Polskie Laboratorium Antydopingowe",
+        "latitude": 52.2697155,
+        "longitude": 21.0745696,
+        "geoHash": "u3qcre6j1j"
+    },
+    {
+        "name": "Polskie Zrzeszenie Producentów Bydła Mięsnego",
+        "latitude": 52.2372378,
+        "longitude": 21.0313837,
+        "geoHash": "u3qcnt6xfy"
+    },
+    {
+        "name": "Polski Instytut Spraw Międzynarodowych",
+        "latitude": 52.2353648,
+        "longitude": 21.0177263,
+        "geoHash": "u3qcnm0th9"
+    },
+    {
+        "name": "Polsko-Japońska Akademia Technik Komputerowych",
+        "latitude": 52.2237871,
+        "longitude": 20.9941064,
+        "geoHash": "u3qcjep3w5"
+    },
+    {
+        "name": "\"Poltegor-Instytut\" Instytut Górnictwa Odkrywkowego",
+        "latitude": 51.1133505,
+        "longitude": 17.0734638,
+        "geoHash": "u3h4u8bsbe"
+    },
+    {
+        "name": "Pomorska Szkoła Wyższa w Starogardzie Gdańskim",
+        "latitude": 53.9644012,
+        "longitude": 18.5441226,
+        "geoHash": "u3t4vzzmmm"
+    },
+    {
+        "name": "Pomorska Wyższa Szkoła Nauk Stosowanych w Gdyni",
+        "latitude": 54.5344186,
+        "longitude": 18.4938837,
+        "geoHash": "u3tnhzdy48"
+    },
+    {
+        "name": "Pomorski Uniwersytet Medyczny w Szczecinie",
+        "latitude": 53.4230157,
+        "longitude": 14.5543878,
+        "geoHash": "u36rgjq5tg"
+    },
+    {
+        "name": "Powiślańska Szkoła Wyższa",
+        "latitude": 53.7291405,
+        "longitude": 18.9263105,
+        "geoHash": "u3t3wtjdyv"
+    },
+    {
+        "name": "Powszechna Wyższa Szkoła Humanistyczna \"Pomerania\" w Chojnicach",
+        "latitude": 53.692778,
+        "longitude": 17.570469,
+        "geoHash": "u3s3ry6rje"
+    },
+    {
+        "name": "Poznańskie Towarzystwo Przyjaciół Nauk",
+        "latitude": 52.4094706,
+        "longitude": 16.9225308,
+        "geoHash": "u3k41hfe79"
+    },
+    {
+        "name": "Prawosławne Seminarium Duchowne w Warszawie",
+        "latitude": 52.2290706,
+        "longitude": 21.0571326,
+        "geoHash": "u3qcphj26u"
+    },
+    {
+        "name": "Profesjonalna Szkoła Biznesu-Szkoła Wyższa w likwidacji w Krakowie",
+        "latitude": 50.0696222,
+        "longitude": 19.9539755,
+        "geoHash": "u2yhy4fh9q"
+    },
+    {
+        "name": "Prywatna Wyższa Szkoła Informatyki i Zarządzania im. Józefa Tyszkiewicza w Bielsku-Białej",
+        "latitude": 49.8270334,
+        "longitude": 19.051272,
+        "geoHash": "u2ve3w8xwb"
+    },
+    {
+        "name": "Prywatna Wyższa Szkoła Ochrony Środowiska w Radomiu",
+        "latitude": 51.421051,
+        "longitude": 21.1997184,
+        "geoHash": "u3phd2vjm4"
+    },
+    {
+        "name": "Przemysłowy Instytut Maszyn Budowlanych Sp. z o.o.",
+        "latitude": 52.3313794,
+        "longitude": 21.1955379,
+        "geoHash": "u3r1dqdh7u"
+    },
+    {
+        "name": "Puławska Szkoła Wyższa w likwidacji z siedzibą w Puławach",
+        "latitude": 51.4144415,
+        "longitude": 21.9579732,
+        "geoHash": "u3ps7xtqcf"
+    },
+    {
+        "name": "Radomska Szkoła Wyższa",
+        "latitude": 51.3911171,
+        "longitude": 21.1407799,
+        "geoHash": "u3ph356nzy"
+    },
+    {
+        "name": "Sano - Centrum Zindywidualizowanej Medycyny Obliczeniowej - Międzynarodowa Fundacja Badawcza",
+        "latitude": 50.0669446,
+        "longitude": 19.9203616,
+        "geoHash": "u2yhv63t44"
+    },
+    {
+        "name": "Schola Posnaniensis - Wyższa Szkoła Sztuki Stosowanej w Poznaniu",
+        "latitude": 52.406374,
+        "longitude": 16.9251681,
+        "geoHash": "u3k41hk930"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Ciężkiej Syntezy Organicznej BLACHOWNIA",
+        "latitude": 50.3593215,
+        "longitude": 18.2870655,
+        "geoHash": "u2vn2pshr9"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Elektrotechniki",
+        "latitude": 52.2070545,
+        "longitude": 21.1738776,
+        "geoHash": "u3r11b425h"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Farmaceutyczny",
+        "latitude": 52.2613387,
+        "longitude": 20.97452,
+        "geoHash": "u3qcm3chme"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Inżynierii Materiałów Polimerowych i Barwników",
+        "latitude": 53.0344381,
+        "longitude": 18.6487612,
+        "geoHash": "u3mm8qeegx"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Lotnictwa",
+        "latitude": 52.1790341,
+        "longitude": 20.9481818,
+        "geoHash": "u3qbudyhbh"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Metali Nieżelaznych",
+        "latitude": 50.29555610000001,
+        "longitude": 18.6336493,
+        "geoHash": "u2vq0h08g7"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Mikroelektroniki i Fotoniki",
+        "latitude": 52.2812194,
+        "longitude": 20.9108829,
+        "geoHash": "u3qc7vdb4v"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Napędów i Maszyn Elektrycznych KOMEL",
+        "latitude": 50.2667412,
+        "longitude": 19.0563455,
+        "geoHash": "u2vtcwu2vp"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Nowych Syntez Chemicznych",
+        "latitude": 51.4519641,
+        "longitude": 21.9828431,
+        "geoHash": "u3pssnx3mm"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Obróbki Plastycznej",
+        "latitude": 52.4046242,
+        "longitude": 16.9530909,
+        "geoHash": "u3k41gbz59"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Organizacji i Zarządzania w Przemyśle \"ORGMASZ\"",
+        "latitude": 52.23879119999999,
+        "longitude": 20.9877109,
+        "geoHash": "u3qcjtfc10"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Przemysłu Organicznego",
+        "latitude": 52.30610530000001,
+        "longitude": 21.0185811,
+        "geoHash": "u3qcw6130k"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Techniki i Aparatury Medycznej ITAM",
+        "latitude": 50.2935058,
+        "longitude": 18.7625576,
+        "geoHash": "u2vq4gwkzm"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Technik Innowacyjnych EMAG",
+        "latitude": 50.2723069,
+        "longitude": 19.0457111,
+        "geoHash": "u2vtcru9mj"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Technologii Drewna",
+        "latitude": 52.4287704,
+        "longitude": 16.9082539,
+        "geoHash": "u3k42b25wz"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Technologii Eksploatacji",
+        "latitude": 51.424555,
+        "longitude": 21.1536122,
+        "geoHash": "u3ph93e9dz"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Technologii Elektronowej",
+        "latitude": 52.1773363,
+        "longitude": 21.010572,
+        "geoHash": "u3qby4e7jb"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Technologii Materiałów Elektronicznych",
+        "latitude": 52.2812194,
+        "longitude": 20.9108829,
+        "geoHash": "u3qc7vdb4v"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Tele- i Radiotechniczny",
+        "latitude": 52.2583274,
+        "longitude": 21.0324723,
+        "geoHash": "u3qcq976u4"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Instytut Włókiennictwa",
+        "latitude": 51.79468139999999,
+        "longitude": 19.5050392,
+        "geoHash": "u3jyeugjuk"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Krakowski Instytut Technologiczny",
+        "latitude": 50.0203275,
+        "longitude": 19.9314774,
+        "geoHash": "u2yht9ctt0"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Łódzki Instytut Technologiczny",
+        "latitude": 51.76223299999999,
+        "longitude": 19.4430123,
+        "geoHash": "u3jy6rjbz5"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - PORT Polski Ośrodek Rozwoju Technologii",
+        "latitude": 51.1715341,
+        "longitude": 16.903049,
+        "geoHash": "u3h50ekrv9"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Poznański Instytut Technologiczny",
+        "latitude": 52.4104546,
+        "longitude": 16.9403096,
+        "geoHash": "u3k41mp91b"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Przemysłowy Instytut Automatyki i Pomiarów PIAP",
+        "latitude": 52.1934427,
+        "longitude": 20.921571,
+        "geoHash": "u3qbujd8gf"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Przemysłowy Instytut Motoryzacji",
+        "latitude": 52.2692872,
+        "longitude": 21.0140324,
+        "geoHash": "u3qcq5mfwm"
+    },
+    {
+        "name": "Sieć Badawcza Łukasiewicz - Warszawski Instytut Technologiczny (Łukasiewicz-WIT)",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Sopocka Akademia Nauk Stosowanych",
+        "latitude": 54.42897559999999,
+        "longitude": 18.5636285,
+        "geoHash": "u3tjwkmxgb"
+    },
+    {
+        "name": "Społeczna Akademia Nauk z siedzibą w Łodzi",
+        "latitude": 51.76966470000001,
+        "longitude": 19.4594688,
+        "geoHash": "u3jydb3unk"
+    },
+    {
+        "name": "Stargardzka Szkoła Wyższa Stargardinum w Stargardzie Szczecińskim",
+        "latitude": 53.3364746,
+        "longitude": 15.0503771,
+        "geoHash": "u36xqmx77p"
+    },
+    {
+        "name": "Staropolska Akademia Nauk Stosowanych w Kielcach",
+        "latitude": 50.8923376,
+        "longitude": 20.6146783,
+        "geoHash": "u3n9t0ejkg"
+    },
+    {
+        "name": "Stowarzyszenie Polska Platforma Bezpieczeństwa Wewnętrznego",
+        "latitude": 52.4101661,
+        "longitude": 16.9090327,
+        "geoHash": "u3k40ubz35"
+    },
+    {
+        "name": "Sudecka Wyższa Szkoła w Kłodzku z siedzibą w Kłodzku",
+        "latitude": 50.4317985,
+        "longitude": 16.660549,
+        "geoHash": "u2gyghgfdb"
+    },
+    {
+        "name": "SWPS Uniwersytet Humanistycznospołeczny z siedzibą w Warszawie",
+        "latitude": 52.2483911,
+        "longitude": 21.0659662,
+        "geoHash": "u3qcprebbw"
+    },
+    {
+        "name": "Szkoła Główna Gospodarstwa Wiejskiego w Warszawie",
+        "latitude": 52.1635854,
+        "longitude": 21.0463478,
+        "geoHash": "u3qbybj6zm"
+    },
+    {
+        "name": "Szkoła Główna Handlowa w Warszawie",
+        "latitude": 52.2089374,
+        "longitude": 21.008737,
+        "geoHash": "u3qcn06555"
+    },
+    {
+        "name": "Szkoła Główna Krajowa z siedzibą w Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Szkoła Główna Mikołaja Kopernika",
+        "latitude": 50.0660047,
+        "longitude": 19.9423492,
+        "geoHash": "u2yhvf1xd7"
+    },
+    {
+        "name": "Szkoła Główna Turystyki i Hotelarstwa Vistula",
+        "latitude": 52.1587014,
+        "longitude": 21.0344682,
+        "geoHash": "u3qbwxhy6w"
+    },
+    {
+        "name": "Szkoła Nauk Ścisłych w  Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Szkoła Wyższa Ekonomii i Zarządzania w Łodzi",
+        "latitude": 51.7730235,
+        "longitude": 19.4807237,
+        "geoHash": "u3jye2crtz"
+    },
+    {
+        "name": "Szkoła Wyższa im. Bogdana Jańskiego w Warszawie",
+        "latitude": 52.2018144,
+        "longitude": 21.0410771,
+        "geoHash": "u3qbyz19se"
+    },
+    {
+        "name": "Szkoła Wyższa im. Pawła Włodkowica w Płocku",
+        "latitude": 52.5446442,
+        "longitude": 19.7072599,
+        "geoHash": "u3q4bmqqsr"
+    },
+    {
+        "name": "Szkoła Wyższa Prawa i Dyplomacji w Gdyni",
+        "latitude": 54.5188898,
+        "longitude": 18.5305409,
+        "geoHash": "u3tnjsve8c"
+    },
+    {
+        "name": "Szkoła Wyższa Rzemiosł Artystycznych i Zarządzania we Wrocławiu",
+        "latitude": 51.1191779,
+        "longitude": 17.0354758,
+        "geoHash": "u3h4g9uyg3"
+    },
+    {
+        "name": "Szkoła Wyższa Rzemiosł Artystycznych w Warszawie w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2510542,
+        "longitude": 21.0072867,
+        "geoHash": "u3qcq0103q"
+    },
+    {
+        "name": "Śląska Wyższa Szkoła Informatyczno-Medyczna z siedzibą w Chorzowie w likwidacji",
+        "latitude": 50.2974884,
+        "longitude": 18.9545728,
+        "geoHash": "u2vqpk6k1e"
+    },
+    {
+        "name": "Śląska Wyższa Szkoła Medyczna w Katowicach",
+        "latitude": 50.26359009999999,
+        "longitude": 19.0136967,
+        "geoHash": "u2vtbwjqeh"
+    },
+    {
+        "name": "Śląska Wyższa Szkoła Zarządzania im. Gen. Jerzego Ziętka w Katowicach",
+        "latitude": 50.25567760000001,
+        "longitude": 19.0313302,
+        "geoHash": "u2vtchf0w1"
+    },
+    {
+        "name": "Śląski Ogród Botaniczny",
+        "latitude": 50.179544,
+        "longitude": 18.8284053,
+        "geoHash": "u2vmkqymj8"
+    },
+    {
+        "name": "Śląski Park Technologii Medycznych ŚPTM KMS Sp. z o.o.",
+        "latitude": 50.5716595,
+        "longitude": 19.3219768,
+        "geoHash": "u2vxxwmc68"
+    },
+    {
+        "name": "Śląski Uniwersytet Medyczny w Katowicach",
+        "latitude": 50.2510603,
+        "longitude": 19.0102821,
+        "geoHash": "u2vtbefves"
+    },
+    {
+        "name": "Świętokrzyska Szkoła Wyższa w Kielcach",
+        "latitude": 50.8697139,
+        "longitude": 20.630001,
+        "geoHash": "u3n9mkw39c"
+    },
+    {
+        "name": "Świętokrzyskie Centrum Onkologii",
+        "latitude": 50.8720227,
+        "longitude": 20.5987376,
+        "geoHash": "u3n9kszx12"
+    },
+    {
+        "name": "Tarnowska Szkoła Wyższa Akademia Nauk Stosowanych",
+        "latitude": 50.01253,
+        "longitude": 20.975417,
+        "geoHash": "u2yut29b4e"
+    },
+    {
+        "name": "Uczelnia Collegium Intermarium",
+        "latitude": 52.2137809,
+        "longitude": 21.0227223,
+        "geoHash": "u3qcn3hr2f"
+    },
+    {
+        "name": "Uczelnia im. Edwarda Herzberga w likwidacji",
+        "latitude": 53.4936203,
+        "longitude": 18.7490863,
+        "geoHash": "u3t26dhwvm"
+    },
+    {
+        "name": "Uczelnia Jana Wyżykowskiego",
+        "latitude": 51.510531,
+        "longitude": 16.0762173,
+        "geoHash": "u35mjc4qe4"
+    },
+    {
+        "name": "Uczelnia Jańskiego z siedzibą w Łomży",
+        "latitude": 53.1801605,
+        "longitude": 22.0827163,
+        "geoHash": "u3rww90hus"
+    },
+    {
+        "name": "Uczelnia Korczaka - Akademia Nauk Stosowanych",
+        "latitude": 52.2007163,
+        "longitude": 20.962603,
+        "geoHash": "u3qbvnbe0n"
+    },
+    {
+        "name": "Uczelnia Lingwistyczno-Techniczna w Przasnyszu",
+        "latitude": 53.017073,
+        "longitude": 20.8680605,
+        "geoHash": "u3qvdg7wv4"
+    },
+    {
+        "name": "Uczelnia Łazarskiego w Warszawie",
+        "latitude": 52.1776819,
+        "longitude": 21.015687,
+        "geoHash": "u3qby4xjj0"
+    },
+    {
+        "name": "Uczelnia Łukaszewski ",
+        "latitude": 52.1533294,
+        "longitude": 21.041431,
+        "geoHash": "u3qbwy1zhv"
+    },
+    {
+        "name": "Uczelnia Medyczna im. Marii Skłodowskiej - Curie w Warszawie",
+        "latitude": 52.2621106,
+        "longitude": 21.0504531,
+        "geoHash": "u3qcr402z5"
+    },
+    {
+        "name": "Uczelnia Metropolitalna",
+        "latitude": 50.255799,
+        "longitude": 19.031255,
+        "geoHash": "u2vtchf1hr"
+    },
+    {
+        "name": "Uczelnia Nauk Społecznych",
+        "latitude": 51.7772321,
+        "longitude": 19.4748613,
+        "geoHash": "u3jye1v0jp"
+    },
+    {
+        "name": "Uczelnia Państwowa im. Jana Grodka w Sanoku",
+        "latitude": 49.5638167,
+        "longitude": 22.2033785,
+        "geoHash": "u2zccqb40j"
+    },
+    {
+        "name": "Uczelnia Społeczno-Medyczna w Warszawie",
+        "latitude": 52.2461459,
+        "longitude": 21.0809661,
+        "geoHash": "u3qcpxney5"
+    },
+    {
+        "name": "Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej",
+        "latitude": 52.2714744,
+        "longitude": 21.0194996,
+        "geoHash": "u3qcq79zmv"
+    },
+    {
+        "name": "Uczelnia Vistula z siedzibą w Warszawie",
+        "latitude": 52.1588131,
+        "longitude": 21.0343467,
+        "geoHash": "u3qbwxhxpg"
+    },
+    {
+        "name": "Uczelnia WSB Merito w Warszawie",
+        "latitude": 52.2976958,
+        "longitude": 21.0320346,
+        "geoHash": "u3qcw8e01v"
+    },
+    {
+        "name": "Uczelnia Zawodowa Zagłębia Miedziowego w Lubinie",
+        "latitude": 51.3959074,
+        "longitude": 16.19883,
+        "geoHash": "u35s2s7du5"
+    },
+    {
+        "name": "Uniwersytet Artystyczny im. Magdaleny Abakanowicz w Poznaniu",
+        "latitude": 52.4100522,
+        "longitude": 16.9287565,
+        "geoHash": "u3k41hznst"
+    },
+    {
+        "name": "Uniwersytet Bielsko-Bialski",
+        "latitude": 49.7832302,
+        "longitude": 19.0577378,
+        "geoHash": "u2ve1wv2m6"
+    },
+    {
+        "name": "Uniwersytet Dolnośląski DSW we Wrocławiu",
+        "latitude": 51.1143211,
+        "longitude": 16.9919349,
+        "geoHash": "u3h4f9j4sb"
+    },
+    {
+        "name": "Uniwersytet Ekonomiczny we Wrocławiu",
+        "latitude": 51.0900234,
+        "longitude": 17.0279969,
+        "geoHash": "u3h4ekxkvn"
+    },
+    {
+        "name": "Uniwersytet Ekonomiczny w Katowicach",
+        "latitude": 50.2607327,
+        "longitude": 19.0454949,
+        "geoHash": "u2vtcmstbp"
+    },
+    {
+        "name": "Uniwersytet Ekonomiczny w Krakowie",
+        "latitude": 50.0685649,
+        "longitude": 19.9551201,
+        "geoHash": "u2yhy4dys0"
+    },
+    {
+        "name": "Uniwersytet Ekonomiczny w Poznaniu",
+        "latitude": 52.4062108,
+        "longitude": 16.9184021,
+        "geoHash": "u3k40ur873"
+    },
+    {
+        "name": "Uniwersytet Gdański",
+        "latitude": 54.3961355,
+        "longitude": 18.5743203,
+        "geoHash": "u3tjqwt2mn"
+    },
+    {
+        "name": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
+        "latitude": 52.4083974,
+        "longitude": 16.915402,
+        "geoHash": "u3k40utmj3"
+    },
+    {
+        "name": "Uniwersytet Jagielloński w Krakowie",
+        "latitude": 50.0610645,
+        "longitude": 19.9328982,
+        "geoHash": "u2yhv96dy4"
+    },
+    {
+        "name": "Uniwersytet Jana Długosza w Częstochowie",
+        "latitude": 50.810087,
+        "longitude": 19.116269,
+        "geoHash": "u3j9518n1q"
+    },
+    {
+        "name": "Uniwersytet Jana Kochanowskiego w Kielcach",
+        "latitude": 50.866608,
+        "longitude": 20.6375151,
+        "geoHash": "u3n9megz2y"
+    },
+    {
+        "name": "Uniwersytet Kardynała Stefana Wyszyńskiego w Warszawie",
+        "latitude": 52.29531830000001,
+        "longitude": 20.9599186,
+        "geoHash": "u3qcsbnd39"
+    },
+    {
+        "name": "Uniwersytet Kazimierza Wielkiego w Bydgoszczy",
+        "latitude": 53.1311376,
+        "longitude": 18.0191983,
+        "geoHash": "u3ky601pmc"
+    },
+    {
+        "name": "Uniwersytet Łódzki",
+        "latitude": 51.77254500000001,
+        "longitude": 19.4746328,
+        "geoHash": "u3jye0uuzv"
+    },
+    {
+        "name": "Uniwersytet Marii Curie-Skłodowskiej w Lublinie",
+        "latitude": 51.2455041,
+        "longitude": 22.5408742,
+        "geoHash": "u9058bvy8q"
+    },
+    {
+        "name": "Uniwersytet Medyczny im. Karola Marcinkowskiego w Poznaniu",
+        "latitude": 52.4097395,
+        "longitude": 16.918381,
+        "geoHash": "u3k40uzsfg"
+    },
+    {
+        "name": "Uniwersytet Medyczny im. Piastów Śląskich we Wrocławiu",
+        "latitude": 51.1089147,
+        "longitude": 17.0688865,
+        "geoHash": "u3h4u2j5jb"
+    },
+    {
+        "name": "Uniwersytet Medyczny w Białymstoku",
+        "latitude": 53.13058119999999,
+        "longitude": 23.1653094,
+        "geoHash": "u92qr0hknf"
+    },
+    {
+        "name": "Uniwersytet Medyczny w Lublinie",
+        "latitude": 51.2481722,
+        "longitude": 22.5488293,
+        "geoHash": "u905917w1z"
+    },
+    {
+        "name": "Uniwersytet Medyczny w Łodzi",
+        "latitude": 51.769881,
+        "longitude": 19.454088,
+        "geoHash": "u3jyd8qj3j"
+    },
+    {
+        "name": "Uniwersytet Mikołaja Kopernika w Toruniu",
+        "latitude": 53.0195187,
+        "longitude": 18.5711994,
+        "geoHash": "u3mjwegjh6"
+    },
+    {
+        "name": "Uniwersytet Morski w Gdyni",
+        "latitude": 54.52646069999999,
+        "longitude": 18.5116564,
+        "geoHash": "u3tnjnpz8u"
+    },
+    {
+        "name": "Uniwersytet Muzyczny Fryderyka Chopina w Warszawie",
+        "latitude": 52.2356926,
+        "longitude": 21.0223154,
+        "geoHash": "u3qcnm5yzq"
+    },
+    {
+        "name": "Uniwersytet Opolski",
+        "latitude": 50.6690459,
+        "longitude": 17.9259921,
+        "geoHash": "u3h8rbj29f"
+    },
+    {
+        "name": "Uniwersytet Papieski Jana Pawła II w Krakowie",
+        "latitude": 50.05558079999999,
+        "longitude": 19.9366751,
+        "geoHash": "u2yhv8m6yh"
+    },
+    {
+        "name": "Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie",
+        "latitude": 50.07376619999999,
+        "longitude": 19.908438,
+        "geoHash": "u2yhv58uu4"
+    },
+    {
+        "name": "Uniwersytet Pomorski w Słupsku",
+        "latitude": 54.4525039,
+        "longitude": 17.042463,
+        "geoHash": "u3sjgbcby4"
+    },
+    {
+        "name": "Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach",
+        "latitude": 52.1696246,
+        "longitude": 22.2842717,
+        "geoHash": "u3rbg14yj4"
+    },
+    {
+        "name": "Uniwersytet Przyrodniczy we Wrocławiu",
+        "latitude": 51.11142299999999,
+        "longitude": 17.064267,
+        "geoHash": "u3h4u29cd5"
+    },
+    {
+        "name": "Uniwersytet Przyrodniczy w Lublinie",
+        "latitude": 51.24372469999999,
+        "longitude": 22.5401097,
+        "geoHash": "u9058bthqd"
+    },
+    {
+        "name": "Uniwersytet Przyrodniczy w Poznaniu",
+        "latitude": 52.4271447,
+        "longitude": 16.9042848,
+        "geoHash": "u3k428j662"
+    },
+    {
+        "name": "Uniwersytet Radomski im. Kazimierza Pułaskiego",
+        "latitude": 51.4075535,
+        "longitude": 21.1509056,
+        "geoHash": "u3ph3q3wey"
+    },
+    {
+        "name": "Uniwersytet Rolniczy im. Hugona Kołłątaja w Krakowie",
+        "latitude": 50.0649014,
+        "longitude": 19.9247613,
+        "geoHash": "u2yhv6hc0w"
+    },
+    {
+        "name": "Uniwersytet Rzeszowski",
+        "latitude": 50.03030740000001,
+        "longitude": 22.0155799,
+        "geoHash": "u2zssgxr8j"
+    },
+    {
+        "name": "Uniwersytet Szczeciński",
+        "latitude": 53.4364995,
+        "longitude": 14.5447261,
+        "geoHash": "u36rfzz4ht"
+    },
+    {
+        "name": "Uniwersytet Śląski w Katowicach",
+        "latitude": 50.2607465,
+        "longitude": 19.0280937,
+        "geoHash": "u2vtbvxy4d"
+    },
+    {
+        "name": "Uniwersytet Warmińsko-Mazurski w Olsztynie",
+        "latitude": 53.7601848,
+        "longitude": 20.4608081,
+        "geoHash": "u3w9cdepg2"
+    },
+    {
+        "name": "Uniwersytet Warszawski",
+        "latitude": 52.2403463,
+        "longitude": 21.0186012,
+        "geoHash": "u3qcnq160f"
+    },
+    {
+        "name": "Uniwersytet w Białymstoku",
+        "latitude": 53.1154192,
+        "longitude": 23.1484361,
+        "geoHash": "u92qnv25tx"
+    },
+    {
+        "name": "Uniwersytet Wrocławski",
+        "latitude": 51.1140053,
+        "longitude": 17.034463,
+        "geoHash": "u3h4g9h0ev"
+    },
+    {
+        "name": "Uniwersytet WSB Merito we Wrocławiu",
+        "latitude": 51.1134447,
+        "longitude": 16.9817306,
+        "geoHash": "u3h4f2vtrh"
+    },
+    {
+        "name": "Uniwersytet WSB Merito w Gdańsku",
+        "latitude": 54.3890797,
+        "longitude": 18.5842916,
+        "geoHash": "u3tjqvhxm7"
+    },
+    {
+        "name": "Uniwersytet WSB Merito w Poznaniu",
+        "latitude": 52.4040121,
+        "longitude": 16.9225663,
+        "geoHash": "u3k415fekr"
+    },
+    {
+        "name": "Uniwersytet WSB Merito w Toruniu",
+        "latitude": 53.01991719999999,
+        "longitude": 18.6071942,
+        "geoHash": "u3mjx7vr7h"
+    },
+    {
+        "name": "Uniwersytet Zielonogórski",
+        "latitude": 51.9364549,
+        "longitude": 15.5070414,
+        "geoHash": "u35p2yezu2"
+    },
+    {
+        "name": "VIAMODA Szkoła Wyższa z siedzibą w Warszawie",
+        "latitude": 52.2484056,
+        "longitude": 21.0824023,
+        "geoHash": "u3qcpxx9p8"
+    },
+    {
+        "name": "Warszawska Akademia Medyczna Nauk Stosowanych",
+        "latitude": 52.1909182,
+        "longitude": 21.0168828,
+        "geoHash": "u3qbym040u"
+    },
+    {
+        "name": "Warszawska Szkoła Biznesu w Warszawie",
+        "latitude": 52.2379984,
+        "longitude": 21.0315529,
+        "geoHash": "u3qcntdsqs"
+    },
+    {
+        "name": "Warszawska Szkoła Filmowa z siedzibą w Warszawie",
+        "latitude": 52.2604141,
+        "longitude": 20.9920158,
+        "geoHash": "u3qcm9tyvr"
+    },
+    {
+        "name": "Warszawska Szkoła Wyższa z siedzibą w Otwocku",
+        "latitude": 52.1017938,
+        "longitude": 21.2755046,
+        "geoHash": "u3r0khu6gn"
+    },
+    {
+        "name": "Warszawska Szkoła Zarządzania - Szkoła Wyższa w Warszawie",
+        "latitude": 52.2297813,
+        "longitude": 20.9725731,
+        "geoHash": "u3qcjhpu82"
+    },
+    {
+        "name": "Warszawska Uczelnia Medyczna im. Tadeusza Koźluka",
+        "latitude": 52.20070519999999,
+        "longitude": 21.0458709,
+        "geoHash": "u3qbyyv5hk"
+    },
+    {
+        "name": "Warszawska Wyższa Szkoła Biznesu z siedzibą w Warszawie",
+        "latitude": 52.2379984,
+        "longitude": 21.0315529,
+        "geoHash": "u3qcntdsqs"
+    },
+    {
+        "name": "Warszawska Wyższa Szkoła Ekonomiczna im. Edwarda Wiszniewskiego z siedzibą w Warszawie w likwidacji",
+        "latitude": 52.2258638,
+        "longitude": 20.9451104,
+        "geoHash": "u3qche7v8q"
+    },
+    {
+        "name": "Warszawska Wyższa Szkoła Humanistyczna im. Bolesława Prusa (decyzja z dnia 06.07.2006 r.)",
+        "latitude": 52.2379294,
+        "longitude": 21.0315278,
+        "geoHash": "u3qcntdeyp"
+    },
+    {
+        "name": "Warszawska Wyższa Szkoła Informatyki w Warszawie",
+        "latitude": 52.24915240000001,
+        "longitude": 20.9896602,
+        "geoHash": "u3qcjxsjqe"
+    },
+    {
+        "name": "Warszawska Wyższa Szkoła Nauk Społecznych im. Rafała Lemkina ",
+        "latitude": 52.215811,
+        "longitude": 21.0255122,
+        "geoHash": "u3qcn3w71u"
+    },
+    {
+        "name": "Warszawski Uniwersytet Medyczny",
+        "latitude": 52.2076428,
+        "longitude": 20.9830589,
+        "geoHash": "u3qcj2p7sd"
+    },
+    {
+        "name": "Wielkopolska Akademia Społeczno - Ekonomiczna w Środzie Wielkopolskiej - Akademia Nauk Stosowanych",
+        "latitude": 52.2350643,
+        "longitude": 17.2679594,
+        "geoHash": "u3k30vn5k9"
+    },
+    {
+        "name": "Wielkopolska Uczelnia Techniczna w likwidacji",
+        "latitude": 52.279986,
+        "longitude": 17.3522939,
+        "geoHash": "u3k36v78cz"
+    },
+    {
+        "name": "Wielkopolska Wyższa Szkoła Humanistyczno-Ekonomiczna w Jarocinie w likwidacji",
+        "latitude": 51.96962560000001,
+        "longitude": 17.4840969,
+        "geoHash": "u3hrtug90b"
+    },
+    {
+        "name": "Wielkopolska Wyższa Szkoła Turystyki i Zarządzania w Poznaniu",
+        "latitude": 52.4042834,
+        "longitude": 16.9238026,
+        "geoHash": "u3k415gt14"
+    },
+    {
+        "name": "Wielkopolskie Centrum Onkologii im. Marii Skłodowskiej-Curie",
+        "latitude": 52.4020105,
+        "longitude": 16.9359234,
+        "geoHash": "u3k417krgd"
+    },
+    {
+        "name": "Wielkopolskie Collegium Kompetencji Zintegrowanych w likwidacji z siedzibą w Poznaniu",
+        "latitude": 52.3554981,
+        "longitude": 16.9385609,
+        "geoHash": "u3k1c7n2ch"
+    },
+    {
+        "name": "Wojewódzki Szpital Specjalistyczny we Wrocławiu",
+        "latitude": 51.148564,
+        "longitude": 17.0449686,
+        "geoHash": "u3h4gz7cbx"
+    },
+    {
+        "name": "Wojskowa Akademia Techniczna im. Jarosława Dąbrowskiego",
+        "latitude": 52.2531867,
+        "longitude": 20.8996897,
+        "geoHash": "u3qc786sy5"
+    },
+    {
+        "name": "Wojskowy Instytut Chemii i Radiometrii",
+        "latitude": 52.2691151,
+        "longitude": 21.1727446,
+        "geoHash": "u3r13g398t"
+    },
+    {
+        "name": "Wojskowy Instytut Higieny i Epidemiologii im. gen. Karola Kaczkowskiego",
+        "latitude": 52.2540415,
+        "longitude": 20.961843,
+        "geoHash": "u3qckbxcy7"
+    },
+    {
+        "name": "Wojskowy Instytut Łączności im. prof. dr. hab. Janusza Groszkowskiego Państwowy Instytut Badawczy",
+        "latitude": 52.452979,
+        "longitude": 21.0062296,
+        "geoHash": "u3qfqhb28x"
+    },
+    {
+        "name": "Wojskowy Instytut Medycyny Lotniczej",
+        "latitude": 52.26142549999999,
+        "longitude": 20.9647081,
+        "geoHash": "u3qcm1fhc5"
+    },
+    {
+        "name": "Wojskowy Instytut Medyczny - Państwowy Instytut Badawczy",
+        "latitude": 52.2510606,
+        "longitude": 21.0885423,
+        "geoHash": "u3qcrbh0qx"
+    },
+    {
+        "name": "Wojskowy Instytut Techniczny Uzbrojenia",
+        "latitude": 52.3049999,
+        "longitude": 21.1649906,
+        "geoHash": "u3r199gfsn"
+    },
+    {
+        "name": "Wojskowy Instytut Techniki Inżynieryjnej im. profesora Józefa Kosackiego",
+        "latitude": 51.1483269,
+        "longitude": 17.0194969,
+        "geoHash": "u3h4gr30x5"
+    },
+    {
+        "name": "Wojskowy Instytut Techniki Pancernej i Samochodowej",
+        "latitude": 52.2517694,
+        "longitude": 21.2862706,
+        "geoHash": "u3r1k2hhw5"
+    },
+    {
+        "name": "Wrocławska Akademia Biznesu w Naukach Stosowanych",
+        "latitude": 51.0946934,
+        "longitude": 16.9752006,
+        "geoHash": "u3h4dm8bnv"
+    },
+    {
+        "name": "Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu",
+        "latitude": 51.128195,
+        "longitude": 16.9826958,
+        "geoHash": "u3h4f7w7m6"
+    },
+    {
+        "name": "Wschodnioeuropejska Akademia Nauk Stosowanych w Białymstoku",
+        "latitude": 53.1414032,
+        "longitude": 23.1683083,
+        "geoHash": "u92qr4nehe"
+    },
+    {
+        "name": "WSHIU Akademia Nauk Stosowanych",
+        "latitude": 52.3810717,
+        "longitude": 16.9111066,
+        "geoHash": "u3k1bzdmc7"
+    },
+    {
+        "name": "Wszechnica Mazurska w likwidacji z siedzibą w Olecku",
+        "latitude": 54.0408127,
+        "longitude": 22.5097997,
+        "geoHash": "u9852jz4s3"
+    },
+    {
+        "name": "Wszechnica Polska Akademia Nauk Stosowanych w Warszawie",
+        "latitude": 52.231856,
+        "longitude": 21.0059076,
+        "geoHash": "u3qcnh8095"
+    },
+    {
+        "name": "Wszechnica Świętokrzyska w Kielcach",
+        "latitude": 50.887035,
+        "longitude": 20.6540251,
+        "geoHash": "u3n9mzxy3w"
+    },
+    {
+        "name": "Wyższa Hanzeatycka Szkoła Zarządzania w likwidacji z siedzibą w Słupsku",
+        "latitude": 54.46414799999999,
+        "longitude": 17.0284824,
+        "geoHash": "u3sjg6zu8m"
+    },
+    {
+        "name": "Wyższa Informatyczna Szkoła Zawodowa w Gorzowie Wielkopolskim w likwidacji z siedzibą w Gorzowie Wielkopolskim",
+        "latitude": 52.7325285,
+        "longitude": 15.2369305,
+        "geoHash": "u36gfxxjnp"
+    },
+    {
+        "name": "Wyższa Inżynierska Szkoła Bezpieczeństwa i Organizacji Pracy w Radomiu",
+        "latitude": 51.4080109,
+        "longitude": 21.1749984,
+        "geoHash": "u3ph3ye1m5"
+    },
+    {
+        "name": "Wyższa Inżynierska Szkoła Przedsiębiorczości w likwidacji z siedzibą w Radomiu",
+        "latitude": 51.40272359999999,
+        "longitude": 21.1471333,
+        "geoHash": "u3ph3jwfef"
+    },
+    {
+        "name": "Wyższa Międzynarodowa Szkoła Biznesu w Warszawie w likwidacji",
+        "latitude": 52.24817299999999,
+        "longitude": 21.009959,
+        "geoHash": "u3qcnp6zxt"
+    },
+    {
+        "name": "Wyższa Pedagogiczna Szkoła Zawodowa im. Świętej Rodziny z siedzibą w Krakowie (wykreślona)",
+        "latitude": 50.090593,
+        "longitude": 20.0141356,
+        "geoHash": "u2yhzqtyg5"
+    },
+    {
+        "name": "Wyższa Praska Szkoła Biznesu - w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2826749,
+        "longitude": 21.0217825,
+        "geoHash": "u3qcqmg8eh"
+    },
+    {
+        "name": "Wyższa Skoła Administracji i Nowych Technologii w Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Wyższa Szkoła Administracji i Biznesu im. Eugeniusza Kwiatkowskiego w Gdyni",
+        "latitude": 54.507679,
+        "longitude": 18.530359,
+        "geoHash": "u3tnjdv6hx"
+    },
+    {
+        "name": "Wyższa Szkoła Administracji i Zarządzania w Zawierciu w likwidacji",
+        "latitude": 50.4898858,
+        "longitude": 19.4215481,
+        "geoHash": "u2vz1zqkfu"
+    },
+    {
+        "name": "Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku w likwidacji",
+        "latitude": 53.1086578,
+        "longitude": 23.208806,
+        "geoHash": "u92w0hhhk7"
+    },
+    {
+        "name": "Wyższa Szkoła Administracji Publicznej w Kielcach",
+        "latitude": 50.8846435,
+        "longitude": 20.6472835,
+        "geoHash": "u3n9mz6bs9"
+    },
+    {
+        "name": "Wyższa Szkoła Administracji Publicznej w likwidacji z siedzibą w Łodzi",
+        "latitude": 51.7592485,
+        "longitude": 19.4559833,
+        "geoHash": "u3jy6wrrmr"
+    },
+    {
+        "name": "Wyższa Szkoła Administracji Publicznej w Ostrołęce",
+        "latitude": 53.0749057,
+        "longitude": 21.5739392,
+        "geoHash": "u3rmfvvxtp"
+    },
+    {
+        "name": "Wyższa Szkoła Administracji Publicznej w Szczecinie",
+        "latitude": 53.4481074,
+        "longitude": 14.5139,
+        "geoHash": "u3d243bty3"
+    },
+    {
+        "name": "Wyższa Szkoła Administracji w Bielsku-Białej",
+        "latitude": 49.8229231,
+        "longitude": 19.0400042,
+        "geoHash": "u2ve3mbx86"
+    },
+    {
+        "name": "Wyższa Szkoła Administracyjno – Społeczna w Warszawie w likwidacji",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Wyższa Szkoła Artystyczna w Warszawie",
+        "latitude": 52.244374,
+        "longitude": 21.0787063,
+        "geoHash": "u3qcpwv193"
+    },
+    {
+        "name": "Wyższa Szkoła Bankowości i Finansów z siedzibą w Katowicach w likwidacji",
+        "latitude": 50.25360939999999,
+        "longitude": 19.0031147,
+        "geoHash": "u2vtbkmskx"
+    },
+    {
+        "name": "Wyższa Szkoła Bezpieczeństwa i Ochrony im. Marszałka Józefa Piłsudskiego z siedzibą w Warszawie",
+        "latitude": 52.2553966,
+        "longitude": 21.0054936,
+        "geoHash": "u3qcmbz9xr"
+    },
+    {
+        "name": "Wyższa Szkoła Bezpieczeństwa Publicznego i Indywidualnego \"Apeiron\" w Krakowie",
+        "latitude": 50.0663799,
+        "longitude": 19.938539,
+        "geoHash": "u2yhvdqcc9"
+    },
+    {
+        "name": "Wyższa Szkoła Bezpieczeństwa Wewnętrznego w Łodzi",
+        "latitude": 51.7592485,
+        "longitude": 19.4559833,
+        "geoHash": "u3jy6wrrmr"
+    },
+    {
+        "name": "Wyższa Szkoła Bezpieczeństwa w Poznaniu",
+        "latitude": 52.402457,
+        "longitude": 16.9000373,
+        "geoHash": "u3k40ed4rq"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu im. Biskupa Jana Chrapka w Radomiu w likwidacji",
+        "latitude": 51.388597,
+        "longitude": 21.1570035,
+        "geoHash": "u3ph37n03b"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi",
+        "latitude": 51.7464433,
+        "longitude": 19.4622199,
+        "geoHash": "u3jy6u5uys"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu i Zarządzania z siedzibą w Ciechanowie",
+        "latitude": 52.869841,
+        "longitude": 20.6274619,
+        "geoHash": "u3qsv2smns"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu, Mediów i Reklamy",
+        "latitude": 49.6003501,
+        "longitude": 20.6894146,
+        "geoHash": "u2ydnv3wfr"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu - National Louis University z siedzibą w Nowym Sączu",
+        "latitude": 49.6003501,
+        "longitude": 20.6894146,
+        "geoHash": "u2ydnv3wfr"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu - National Louis University z siedzibą w Nowym Sączu (wykreślona)",
+        "latitude": 49.6003501,
+        "longitude": 20.6894146,
+        "geoHash": "u2ydnv3wfr"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu w Gorzowie Wlkp.",
+        "latitude": 52.7476937,
+        "longitude": 15.2567312,
+        "geoHash": "u36u54mted"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2513285,
+        "longitude": 20.9916194,
+        "geoHash": "u3qcm8jdh1"
+    },
+    {
+        "name": "Wyższa Szkoła Biznesu z siedzibą w Tarnowie",
+        "latitude": 50.0046573,
+        "longitude": 21.0085428,
+        "geoHash": "u2yuqp1fnx"
+    },
+    {
+        "name": "Wyższa Szkoła Cła i Logistyki w Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Wyższa Szkoła COSINUS w Łodzi",
+        "latitude": 51.7639927,
+        "longitude": 19.4527969,
+        "geoHash": "u3jy6xm555"
+    },
+    {
+        "name": "Wyższa Szkoła Demokracji im. ks. Jerzego Popiełuszki w Grudziądzu",
+        "latitude": 53.4995868,
+        "longitude": 18.7683168,
+        "geoHash": "u3t27569tm"
+    },
+    {
+        "name": "Wyższa Szkoła Dziennikarska im. Melchiora Wańkowicza w Warszawie w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2354378,
+        "longitude": 21.0186687,
+        "geoHash": "u3qcnm1m6r"
+    },
+    {
+        "name": "Wyższa Szkoła - Edukacja w Sporcie w Warszawie",
+        "latitude": 52.2882185,
+        "longitude": 21.0062316,
+        "geoHash": "u3qcqnb2bw"
+    },
+    {
+        "name": "Wyższa Szkoła Edukacji i Terapii im. prof. Kazimiery Milanowskiej z siedzibą w Poznaniu",
+        "latitude": 52.3724958,
+        "longitude": 16.9000985,
+        "geoHash": "u3k1bw47bu"
+    },
+    {
+        "name": "Wyższa Szkoła Ekologii i Zarządzania w Warszawie",
+        "latitude": 52.2091623,
+        "longitude": 21.0204046,
+        "geoHash": "u3qcn26s6v"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczna w Białymstoku",
+        "latitude": 53.1369632,
+        "longitude": 23.1306301,
+        "geoHash": "u92qq371nx"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczna w Bochni",
+        "latitude": 49.96845769999999,
+        "longitude": 20.4303285,
+        "geoHash": "u2ys2bkzm5"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczna z siedzibą w Stalowej Woli",
+        "latitude": 50.56957,
+        "longitude": 22.0658447,
+        "geoHash": "u2zxwjgv57"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczno - Humanistyczna im. prof. Szczepana A. Pieniążka w likwidacji",
+        "latitude": 51.9602807,
+        "longitude": 20.1561358,
+        "geoHash": "u3nrdej684"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczno-Humanistyczna w Bielsku-Białej",
+        "latitude": 49.8194058,
+        "longitude": 19.0418752,
+        "geoHash": "u2ve3m3g5f"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczno-Społeczna w Bydgoszczy w likwidacji z siedzibą w Bydgoszczy",
+        "latitude": 53.12348040000001,
+        "longitude": 18.0084378,
+        "geoHash": "u3ky1yc6en"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczno-Społeczna w Ostrołęce w likwidacji",
+        "latitude": 53.0918741,
+        "longitude": 21.6074639,
+        "geoHash": "u3rq59n4d6"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczno-Techniczna w Legionowie (wykreślona)",
+        "latitude": 52.4219136,
+        "longitude": 20.9391428,
+        "geoHash": "u3qfhrp7v2"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomiczno-Turystyczna w Szczecinie",
+        "latitude": 53.4230487,
+        "longitude": 14.5498499,
+        "geoHash": "u36rgj6gu4"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomii i Administracji w likwidacji z siedzibą w Bytomiu",
+        "latitude": 50.3336721,
+        "longitude": 18.8934458,
+        "geoHash": "u2vqmfvych"
+    },
+    {
+        "name": "Wyższa Szkoła Ekonomii i Informatyki w Krakowie",
+        "latitude": 50.0681689,
+        "longitude": 19.9411485,
+        "geoHash": "u2yhvf8snr"
+    },
+    {
+        "name": "Wyższa Szkoła Europejska im. Ks. Józefa Tischnera w Krakowie",
+        "latitude": 50.0766049,
+        "longitude": 19.9945947,
+        "geoHash": "u2yhyupt7g"
+    },
+    {
+        "name": "Wyższa Szkoła Filologiczna we Wrocławiu",
+        "latitude": 51.1175006,
+        "longitude": 17.0481842,
+        "geoHash": "u3h4gcwj52"
+    },
+    {
+        "name": "Wyższa Szkoła Filologii Hebrajskiej w likwidacji w Toruniu",
+        "latitude": 53.0137902,
+        "longitude": 18.5984437,
+        "geoHash": "u3mjx4ygxn"
+    },
+    {
+        "name": "Wyższa Szkoła Finansów i Administracji w likwidacji z siedzibą w Gdyni",
+        "latitude": 54.430549,
+        "longitude": 18.56334,
+        "geoHash": "u3tjwkv2vj"
+    },
+    {
+        "name": "Wyższa Szkoła Finansów i Informatyki im. prof. Janusza Chechlińskiego w Łodzi",
+        "latitude": 51.74379159999999,
+        "longitude": 19.4521603,
+        "geoHash": "u3jy6estkj"
+    },
+    {
+        "name": "Wyższa Szkoła Finansów i Prawa w Bielsku-Białej",
+        "latitude": 49.8133417,
+        "longitude": 18.9988241,
+        "geoHash": "u2ve2k4x8x"
+    },
+    {
+        "name": "Wyższa Szkoła Finansów i Zarządzania w Warszawie z siedzibą w Warszawie (wykreślona)",
+        "latitude": 52.2547955,
+        "longitude": 20.9850449,
+        "geoHash": "u3qcm88y4z"
+    },
+    {
+        "name": "Wyższa Szkoła Fizjoterapii we Wrocławiu",
+        "latitude": 51.1036,
+        "longitude": 17.0268923,
+        "geoHash": "u3h4erns53"
+    },
+    {
+        "name": "Wyższa Szkoła Fundacji Kultury Informatycznej w Nadarzynie",
+        "latitude": 52.0984753,
+        "longitude": 20.7942941,
+        "geoHash": "u3qb3hjzw5"
+    },
+    {
+        "name": "Wyższa Szkoła Gospodarki Euroregionalnej im. Alcide De Gasperi w Józefowie",
+        "latitude": 52.1441147,
+        "longitude": 21.2152037,
+        "geoHash": "u3r0du83qp"
+    },
+    {
+        "name": "Wyższa Szkoła Gospodarki i Zarządzania",
+        "latitude": 50.2985814,
+        "longitude": 21.4409862,
+        "geoHash": "u2znpusf7p"
+    },
+    {
+        "name": "Wyższa Szkoła Gospodarki Narodowej w Tychach z siedzibą w Tychach (wykreślona)",
+        "latitude": 50.12180069999999,
+        "longitude": 19.0200022,
+        "geoHash": "u2vt0u3uwh"
+    },
+    {
+        "name": "Wyższa Szkoła Gospodarki w Bydgoszczy",
+        "latitude": 53.1272627,
+        "longitude": 17.9936553,
+        "geoHash": "u3ky1rw8dx"
+    },
+    {
+        "name": "Wyższa Szkoła Gospodarowania Nieruchomościami w Warszawie w likwidacji",
+        "latitude": 52.2304814,
+        "longitude": 20.9654112,
+        "geoHash": "u3qcjh6897"
+    },
+    {
+        "name": "Wyższa Szkoła Handlowa im. Bolesława Markowskiego w Kielcach w likwidacji",
+        "latitude": 50.9032896,
+        "longitude": 20.6389805,
+        "geoHash": "u3n9tdsv5h"
+    },
+    {
+        "name": "Wyższa Szkoła Handlowa im. Króla Stefana Batorego w Piotrkowie Trybunalskim  w likwidacji z siedzibą w Piotrkowie Trybunalskim",
+        "latitude": 51.4136283,
+        "longitude": 19.687413,
+        "geoHash": "u3jurzxfjf"
+    },
+    {
+        "name": "Wyższa Szkoła Handlowa w likwidacji z siedzibą w Krakowie",
+        "latitude": 50.06465009999999,
+        "longitude": 19.9449799,
+        "geoHash": "u2yhvcgrxx"
+    },
+    {
+        "name": "Wyższa Szkoła Handlu i Finansów Międzynarodowych im. Fryderyka Skarbka w likwidacji w Warszawie",
+        "latitude": 52.2276596,
+        "longitude": 21.0043483,
+        "geoHash": "u3qcjgybhv"
+    },
+    {
+        "name": "Wyższa Szkoła Handlu i Rachunkowości z siedzibą w Poznaniu w likwidacji",
+        "latitude": 52.407823,
+        "longitude": 16.924342,
+        "geoHash": "u3k41hecty"
+    },
+    {
+        "name": "Wyższa Szkoła Hotelarstwa i Gastronomii w Poznaniu w restrukturyzacji",
+        "latitude": 52.4176313,
+        "longitude": 16.9799584,
+        "geoHash": "u3k44qk6vd"
+    },
+    {
+        "name": "Wyższa Szkoła Hotelarstwa i Turystyki z siedzibą w Częstochowie w likwidacji",
+        "latitude": 50.8052089,
+        "longitude": 19.1254382,
+        "geoHash": "u3j950y9z1"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczna im. Alojzego Szubartowskiego w Lublinie w likwidacji z siedzibą w Lublinie",
+        "latitude": 51.2464536,
+        "longitude": 22.5684463,
+        "geoHash": "u905991u4z"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczna im. Króla Stanisława Leszczyńskiego w Lesznie",
+        "latitude": 51.8436071,
+        "longitude": 16.578465,
+        "geoHash": "u35ycmb4fh"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczna we Wrocławiu",
+        "latitude": 51.1113296,
+        "longitude": 17.0000372,
+        "geoHash": "u3h4fbe11d"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczna w Katowicach w likwidacji z siedzibą w Katowicach",
+        "latitude": 50.26489189999999,
+        "longitude": 19.0237815,
+        "geoHash": "u2vtbykwnn"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczno-Ekonomiczna im. J. Zamoyskiego w Zamościu",
+        "latitude": 50.7300377,
+        "longitude": 23.2532004,
+        "geoHash": "u90895h7yu"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczno-Ekonomiczna w Brzegu",
+        "latitude": 50.8564816,
+        "longitude": 17.4713302,
+        "geoHash": "u3h3md4hrx"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczno-Ekonomiczna w Pabianicach",
+        "latitude": 51.6574061,
+        "longitude": 19.356252,
+        "geoHash": "u3jvb7yy1q"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczno-Ekonomiczna w Sieradzu",
+        "latitude": 51.5956014,
+        "longitude": 18.7302994,
+        "geoHash": "u3jmd0wypt"
+    },
+    {
+        "name": "Wyższa Szkoła Humanistyczno-Przyrodnicza Studium Generale Sandomiriense w Sandomierzu",
+        "latitude": 50.6846398,
+        "longitude": 21.7423983,
+        "geoHash": "u3p2qfb76t"
+    },
+    {
+        "name": "Wyższa Szkoła Informatyki i Ekonomii TWP w Olsztynie",
+        "latitude": 53.79418099999999,
+        "longitude": 20.496005,
+        "geoHash": "u3wd42utzd"
+    },
+    {
+        "name": "Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi",
+        "latitude": 51.7378947,
+        "longitude": 19.4671926,
+        "geoHash": "u3jy6fxe46"
+    },
+    {
+        "name": "Wyższa Szkoła Informatyki i Zarządzania \"COPERNICUS\" we Wrocławiu",
+        "latitude": 51.11740589999999,
+        "longitude": 17.0144568,
+        "geoHash": "u3h4g1ts3x"
+    },
+    {
+        "name": "Wyższa Szkoła Informatyki i Zarządzania im. Prof. Tadeusza Kotarbińskiego z siedzibą w Olsztynie",
+        "latitude": 53.7939295,
+        "longitude": 20.4957418,
+        "geoHash": "u3wd42us37"
+    },
+    {
+        "name": "Wyższa Szkoła Informatyki i Zarządzania w Bielsku-Białej",
+        "latitude": 49.8322539,
+        "longitude": 19.0559553,
+        "geoHash": "u2ve3xsjgv"
+    },
+    {
+        "name": "Wyższa Szkoła Informatyki i Zarządzania z siedzibą w Rzeszowie",
+        "latitude": 50.0489064,
+        "longitude": 21.9817016,
+        "geoHash": "u2zsspns4b"
+    },
+    {
+        "name": " Wyższa Szkoła Informatyki i Zdrowia",
+        "latitude": 49.7752498,
+        "longitude": 22.7812206,
+        "geoHash": "u8b5nmkcbg"
+    },
+    {
+        "name": "Wyższa Szkoła Informatyki Stosowanej i Zarządzania w Warszawie",
+        "latitude": 52.2455666,
+        "longitude": 20.9403839,
+        "geoHash": "u3qchx026r"
+    },
+    {
+        "name": "Wyższa Szkoła Integracji Europejskiej w Szczecinie",
+        "latitude": 53.43790569999999,
+        "longitude": 14.5292142,
+        "geoHash": "u3d2485f75"
+    },
+    {
+        "name": "Wyższa Szkoła Inżynierii Bezpieczeństwa i Ekologii w Sosnowcu w likwidacji ",
+        "latitude": 50.27798740000001,
+        "longitude": 19.1268002,
+        "geoHash": "u2vw50zdw8"
+    },
+    {
+        "name": "Wyższa Szkoła Inżynierii Dentystycznej i Nauk Humanistycznych im prof. Meissnera w Ustroniu",
+        "latitude": 49.7222991,
+        "longitude": 18.8066613,
+        "geoHash": "u2v6ggwt6u"
+    },
+    {
+        "name": "Wyższa Szkoła Inżynierii Gospodarki w Słupsku",
+        "latitude": 54.4749423,
+        "longitude": 17.0267479,
+        "geoHash": "u3sjgky7xc"
+    },
+    {
+        "name": "Wyższa Szkoła Inżynierii i Zdrowia w Warszawie",
+        "latitude": 52.2090136,
+        "longitude": 20.9914398,
+        "geoHash": "u3qcj8m7xc"
+    },
+    {
+        "name": "Wyższa Szkoła Inżynierska w Ostrowie Wielkopolskim",
+        "latitude": 51.6325923,
+        "longitude": 17.802702,
+        "geoHash": "u3http7t9h"
+    },
+    {
+        "name": "Wyższa Szkoła Inżynieryjno-Ekonomiczna z siedzibą w Ropczycach (przekształcona wykreślona)",
+        "latitude": 50.05228,
+        "longitude": 21.60887,
+        "geoHash": "u2zkexxpej"
+    },
+    {
+        "name": "Wyższa Szkoła Inżynieryjno-Ekonomiczna z siedzibą w Rzeszowie w likwidacji",
+        "latitude": 50.0658839,
+        "longitude": 21.9716964,
+        "geoHash": "u2zsgfpqct"
+    },
+    {
+        "name": "Wyższa Szkoła Języków Obcych im. Samuela Bogumiła Lindego z siedzibą w Poznaniu",
+        "latitude": 52.3976088,
+        "longitude": 16.9229666,
+        "geoHash": "u3k414dyjw"
+    },
+    {
+        "name": "Wyższa Szkoła Języków Obcych w Szczecinie w likwidacji z siedzibą w Szczecinie",
+        "latitude": 53.4285438,
+        "longitude": 14.5528116,
+        "geoHash": "u36rgnm5c4"
+    },
+    {
+        "name": "Wyższa Szkoła Kadr Menedżerskich",
+        "latitude": 52.2038917,
+        "longitude": 18.2446002,
+        "geoHash": "u3kbzpmm9y"
+    },
+    {
+        "name": "Wyższa Szkoła Komunikacji i Zarządzania",
+        "latitude": 52.4084338,
+        "longitude": 16.9280451,
+        "geoHash": "u3k41hwtk0"
+    },
+    {
+        "name": "Wyższa Szkoła Komunikacji Społecznej w Gdyni",
+        "latitude": 54.518041,
+        "longitude": 18.53644,
+        "geoHash": "u3tnju9yd7"
+    },
+    {
+        "name": "Wyższa Szkoła Komunikowania i Mediów Społecznych im. Jerzego Giedroycia w Warszawie w likwidacji",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Wyższa Szkoła Kosmetologii i Promocji Zdrowia z siedzibą w Szczecinie w likwidacji",
+        "latitude": 53.4285438,
+        "longitude": 14.5528116,
+        "geoHash": "u36rgnm5c4"
+    },
+    {
+        "name": "Wyższa Szkoła Kosmetyki i Nauk o Zdrowiu w Łodzi",
+        "latitude": 51.7547216,
+        "longitude": 19.4176537,
+        "geoHash": "u3jy3vet05"
+    },
+    {
+        "name": "Wyższa Szkoła Kształcenia Zawodowego",
+        "latitude": 51.0911702,
+        "longitude": 17.0170024,
+        "geoHash": "u3h4ehz7su"
+    },
+    {
+        "name": "Wyższa Szkoła Kultury Fizycznej i Turystyki imienia Haliny Konopackiej w Pruszkowie",
+        "latitude": 52.1704725,
+        "longitude": 20.8118862,
+        "geoHash": "u3qbc96g00"
+    },
+    {
+        "name": "Wyższa Szkoła Kupiecka w likwidacji z siedzibą w Łodzi",
+        "latitude": 51.8006683,
+        "longitude": 19.4135797,
+        "geoHash": "u3jy9y08c0"
+    },
+    {
+        "name": "Wyższa Szkoła Lingwistyczna w Częstochowie",
+        "latitude": 50.8006356,
+        "longitude": 19.107187,
+        "geoHash": "u3j8fzcrjs"
+    },
+    {
+        "name": "Wyższa Szkoła Logistyki w Poznaniu",
+        "latitude": 52.41046979999999,
+        "longitude": 16.9403558,
+        "geoHash": "u3k41mp94g"
+    },
+    {
+        "name": "Wyższa Szkoła Marketingu i Biznesu w likwidacji z siedzibą w Łodzi",
+        "latitude": 51.7592485,
+        "longitude": 19.4559833,
+        "geoHash": "u3jy6wrrmr"
+    },
+    {
+        "name": "Wyższa Szkoła Marketingu i Zarządzania w Lesznie w likwidacji",
+        "latitude": 51.8485155,
+        "longitude": 16.5848803,
+        "geoHash": "u35ycqsxrx"
+    },
+    {
+        "name": "Wyższa Szkoła Matematyki i Informatyki Użytkowej w likwidacji z siedzibą w Białymstoku",
+        "latitude": 53.1355102,
+        "longitude": 23.1766139,
+        "geoHash": "u92qr3h8y1"
+    },
+    {
+        "name": "Wyższa Szkoła Mechatroniki w Katowicach w likwidacji z siedzibą w Katowicach",
+        "latitude": 50.259842,
+        "longitude": 19.089669,
+        "geoHash": "u2vtfms8v9"
+    },
+    {
+        "name": "Wyższa Szkoła Medyczna w Kłodzku",
+        "latitude": 50.4543682,
+        "longitude": 16.6680653,
+        "geoHash": "u2gz52cmfp"
+    },
+    {
+        "name": "Wyższa Szkoła Medyczna w Legnicy z siedzibą w Legnicy",
+        "latitude": 51.2055199,
+        "longitude": 16.1641691,
+        "geoHash": "u357rcdmu2"
+    },
+    {
+        "name": "Wyższa Szkoła Medyczna w Sosnowcu",
+        "latitude": 50.2407663,
+        "longitude": 19.1585042,
+        "geoHash": "u2vtgfnc9t"
+    },
+    {
+        "name": "Wyższa Szkoła Medyczna z siedzibą w Białymstoku",
+        "latitude": 53.132779,
+        "longitude": 23.1474336,
+        "geoHash": "u92qq8x2y7"
+    },
+    {
+        "name": "Wyższa Szkoła Menedżerska w Białymstoku w likwidacji",
+        "latitude": 53.1376792,
+        "longitude": 23.171467,
+        "geoHash": "u92qr32vqm"
+    },
+    {
+        "name": "Wyższa Szkoła Menedżerska w Legnicy w likwidacji z siedzibą w Legnicy",
+        "latitude": 51.2055953,
+        "longitude": 16.1661312,
+        "geoHash": "u357rcey4n"
+    },
+    {
+        "name": "Wyższa Szkoła Menedżerska w likwidacji z siedzibą w Świeciu",
+        "latitude": 53.4093843,
+        "longitude": 18.4473864,
+        "geoHash": "u3mpgfbupq"
+    },
+    {
+        "name": "Wyższa Szkoła Menedżerska z siedzibą w Jeleniej Górze w likwidacji",
+        "latitude": 50.8474541,
+        "longitude": 15.6459672,
+        "geoHash": "u351k03pck"
+    },
+    {
+        "name": "Wyższa Szkoła Nauk Ekonomicznych i Społecznych w Kętach",
+        "latitude": 49.88072990000001,
+        "longitude": 19.2228003,
+        "geoHash": "u2vev2t879"
+    },
+    {
+        "name": "Wyższa Szkoła Nauk o Zdrowiu w Bydgoszczy",
+        "latitude": 53.1240057,
+        "longitude": 18.0030904,
+        "geoHash": "u3ky1wvmy2"
+    },
+    {
+        "name": "Wyższa Szkoła Nauk Pedagogicznych",
+        "latitude": 52.2223033,
+        "longitude": 20.9781342,
+        "geoHash": "u3qcj6gbcy"
+    },
+    {
+        "name": "Wyższa Szkoła Nauk Prawnych  i Administracji im. Leona Petrażyckiego z siedzibą w Wołominie",
+        "latitude": 52.3391162,
+        "longitude": 21.242318,
+        "geoHash": "u3r1g2h1my"
+    },
+    {
+        "name": "Wyższa Szkoła Nauk Społecznych im. Ks. J. Majki w Mińsku Mazowieckim",
+        "latitude": 52.1710533,
+        "longitude": 21.5456656,
+        "geoHash": "u3r2f33n6m"
+    },
+    {
+        "name": "Wyższa Szkoła Nauk Stosowanych w Rudzie Śląskiej",
+        "latitude": 50.3226387,
+        "longitude": 18.8736209,
+        "geoHash": "u2vqm2zqe5"
+    },
+    {
+        "name": "Wyższa Szkoła Nowa Edukacja w Łomiankach",
+        "latitude": 52.3317849,
+        "longitude": 20.8815631,
+        "geoHash": "u3qcentqxx"
+    },
+    {
+        "name": "Wyższa Szkoła Ochrony Środowiska, Turystyki i Rekreacji w Krakowie z siedzibą w Krakowie",
+        "latitude": 50.0584702,
+        "longitude": 19.9711206,
+        "geoHash": "u2yhy2ye8z"
+    },
+    {
+        "name": "Wyższa Szkoła Organizacji Turystyki i Hotelarstwa w Warszawie w likwidacji",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Wyższa Szkoła Pedagogiczna w Łodzi w likwidacji",
+        "latitude": 51.7513061,
+        "longitude": 19.459987,
+        "geoHash": "u3jy6v434w"
+    },
+    {
+        "name": "Wyższa Szkoła Pedagogiczna Związku Nauczycielstwa Polskiego z siedzibą w Warszawie",
+        "latitude": 52.2379778,
+        "longitude": 21.0316676,
+        "geoHash": "u3qcntdu32"
+    },
+    {
+        "name": "Wyższa Szkoła Pedagogiczno-Techniczna w Koninie",
+        "latitude": 52.2272803,
+        "longitude": 18.2578451,
+        "geoHash": "u3kcp7wvyw"
+    },
+    {
+        "name": "Wyższa Szkoła Planowania Strategicznego w Dąbrowie Górniczej",
+        "latitude": 50.3369212,
+        "longitude": 19.2312052,
+        "geoHash": "u2vwmee9zd"
+    },
+    {
+        "name": "Wyższa Szkoła Prawa i Administracji Rzeszowska Szkoła Wyższa z siedzibą w Rzeszowie",
+        "latitude": 50.0411867,
+        "longitude": 21.9991196,
+        "geoHash": "u2zsster09"
+    },
+    {
+        "name": "Wyższa Szkoła Prawa we Wrocławiu",
+        "latitude": 51.1146489,
+        "longitude": 17.040271,
+        "geoHash": "u3h4gc0k7j"
+    },
+    {
+        "name": "Wyższa Szkoła Promocji, Mediów i Show Businessu z siedzibą w Warszawie",
+        "latitude": 52.231896,
+        "longitude": 21.006162,
+        "geoHash": "u3qcnh80z5"
+    },
+    {
+        "name": "Wyższa Szkoła Przedsiębiorczości i Administracji w Lublinie",
+        "latitude": 51.270112,
+        "longitude": 22.5694513,
+        "geoHash": "u9059t6w43"
+    },
+    {
+        "name": "Wyższa Szkoła Przedsiębiorczości i Marketingu w likwidacji z siedzibą w Chrzanowie",
+        "latitude": 50.13549279999999,
+        "longitude": 19.402071,
+        "geoHash": "u2vv1wbhmj"
+    },
+    {
+        "name": "Wyższa Szkoła Przedsiębiorczości imienia Księcia Kazimierza Kujawskiego z siedzibą w Inowrocławiu",
+        "latitude": 52.7866305,
+        "longitude": 18.2692356,
+        "geoHash": "u3kur9x22j"
+    },
+    {
+        "name": "Wyższa Szkoła Przedsiębiorczości i Rozwoju Regionalnego w likwidacji z siedzibą w Falentach",
+        "latitude": 52.1414497,
+        "longitude": 20.9158894,
+        "geoHash": "u3qbeun3zw"
+    },
+    {
+        "name": "Wyższa Szkoła Rehabilitacji w Warszawie",
+        "latitude": 52.226367,
+        "longitude": 20.9459049,
+        "geoHash": "u3qches2du"
+    },
+    {
+        "name": "Wyższa Szkoła Rozwoju Lokalnego w Żyrardowie",
+        "latitude": 52.0617993,
+        "longitude": 20.443202,
+        "geoHash": "u3q81jw3cn"
+    },
+    {
+        "name": "Wyższa Szkoła Sanocka z siedzibą w Sanoku",
+        "latitude": 49.55501870000001,
+        "longitude": 22.2060658,
+        "geoHash": "u2zccm1yyv"
+    },
+    {
+        "name": "Wyższa Szkoła Służb Lotniczych z siedzibą w Bydgoszczy w likwidacji",
+        "latitude": 53.12348040000001,
+        "longitude": 18.0084378,
+        "geoHash": "u3ky1yc6en"
+    },
+    {
+        "name": "Wyższa Szkoła Służby Społecznej im. Ks. Franciszka Blachnickiego w Suwałkach w likwidacji",
+        "latitude": 54.0980749,
+        "longitude": 22.9280593,
+        "geoHash": "u987c8r8ns"
+    },
+    {
+        "name": "Wyższa Szkoła Społeczno-Ekonomiczna w Gdańsku z siedzibą w Gdańsku",
+        "latitude": 54.355303,
+        "longitude": 18.6506351,
+        "geoHash": "u3tm0rhfx6"
+    },
+    {
+        "name": "Wyższa Szkoła Społeczno-Ekonomiczna w likwidacji",
+        "latitude": 54.355303,
+        "longitude": 18.6506351,
+        "geoHash": "u3tm0rhfx6"
+    },
+    {
+        "name": "Wyższa Szkoła Społeczno-Gospodarcza",
+        "latitude": 50.0550303,
+        "longitude": 22.5000129,
+        "geoHash": "u8bhb00p8m"
+    },
+    {
+        "name": "Wyższa Szkoła Społeczno-Gospodarcza w Tyczynie",
+        "latitude": 49.9638636,
+        "longitude": 22.0339385,
+        "geoHash": "u2zsjrsseg"
+    },
+    {
+        "name": "Wyższa Szkoła Sportu",
+        "latitude": 52.2882185,
+        "longitude": 21.0062316,
+        "geoHash": "u3qcqnb2bw"
+    },
+    {
+        "name": "Wyższa Szkoła Stosunków Międzynarodowych i Amerykanistyki w Warszawie",
+        "latitude": 52.2223033,
+        "longitude": 20.9781342,
+        "geoHash": "u3qcj6gbcy"
+    },
+    {
+        "name": "Wyższa Szkoła Studiów Międzynarodowych w likwidacji",
+        "latitude": 51.7456977,
+        "longitude": 19.4692643,
+        "geoHash": "u3jy7h10d9"
+    },
+    {
+        "name": "Wyższa Szkoła Suwalsko-Mazurska im. Papieża Jana Pawła II w likwidacji z siedzibą w Suwałkach",
+        "latitude": 54.103913,
+        "longitude": 22.923392,
+        "geoHash": "u987c9k61s"
+    },
+    {
+        "name": "Wyższa Szkoła Sztuki i Projektowania w Łodzi",
+        "latitude": 51.7564871,
+        "longitude": 19.4733425,
+        "geoHash": "u3jy7jup3u"
+    },
+    {
+        "name": "Wyższa Szkoła Sztuki Stosowanej \"OPUS-ART\" - w likwidacji z siedzibą w Sosnowcu",
+        "latitude": 50.27798740000001,
+        "longitude": 19.1268002,
+        "geoHash": "u2vw50zdw8"
+    },
+    {
+        "name": "Wyższa Szkoła Sztuki Użytkowej w likwidacji z siedzibą w Szczecinie",
+        "latitude": 53.4285438,
+        "longitude": 14.5528116,
+        "geoHash": "u36rgnm5c4"
+    },
+    {
+        "name": "Wyższa Szkoła Sztuk Wizualnych i Nowych Mediów w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Wyższa Szkoła Techniczna we Włocławku",
+        "latitude": 52.6564606,
+        "longitude": 19.07877,
+        "geoHash": "u3med1udpe"
+    },
+    {
+        "name": "Wyższa Szkoła Techniczna w likwidacji z siedzibą w Legnicy",
+        "latitude": 51.2070067,
+        "longitude": 16.1553231,
+        "geoHash": "u357r9gyqm"
+    },
+    {
+        "name": "Wyższa Szkoła Techniczno-Ekonomiczna w Szczecinie w likwidacji z siedzibą w Szczecinie",
+        "latitude": 53.4516874,
+        "longitude": 14.5035558,
+        "geoHash": "u3d24494tk"
+    },
+    {
+        "name": "Wyższa Szkoła Techniczno-Ekonomiczna w Świdnicy z siedzibą w Świdnicy",
+        "latitude": 50.84795,
+        "longitude": 16.4954963,
+        "geoHash": "u359r2edub"
+    },
+    {
+        "name": "Wyższa Szkoła Techniczno-Ekonomiczna w Warszawie w likwidacji",
+        "latitude": 52.1728713,
+        "longitude": 21.1966293,
+        "geoHash": "u3r0f3fcj2"
+    },
+    {
+        "name": "Wyższa Szkoła Techniczno-Przyrodnicza w Poznaniu z siedzibą w Poznaniu",
+        "latitude": 52.446074,
+        "longitude": 16.906999,
+        "geoHash": "u3k42ex298"
+    },
+    {
+        "name": "Wyższa Szkoła Technik Komputerowych i Telekomunikacji w Kielcach",
+        "latitude": 50.8932793,
+        "longitude": 20.6442045,
+        "geoHash": "u3n9tbbduf"
+    },
+    {
+        "name": "Wyższa Szkoła Technologii Informatycznych w Katowicach",
+        "latitude": 50.26359009999999,
+        "longitude": 19.0136972,
+        "geoHash": "u2vtbwjqek"
+    },
+    {
+        "name": "Wyższa Szkoła Technologii Informatycznych w Warszawie",
+        "latitude": 52.2503591,
+        "longitude": 20.9792862,
+        "geoHash": "u3qcjrusku"
+    },
+    {
+        "name": "Wyższa Szkoła Telekomunikacji i Informatyki w Kielcach",
+        "latitude": 50.8904001,
+        "longitude": 20.6175669,
+        "geoHash": "u3n9t0m604"
+    },
+    {
+        "name": "Wyższa Szkoła Teologiczno-Humanistyczna im. Michała Beliny-Czechowskiego w Podkowie Leśnej",
+        "latitude": 52.1139411,
+        "longitude": 20.7276115,
+        "geoHash": "u3q8rxj3sq"
+    },
+    {
+        "name": "Wyższa Szkoła Teologiczno–Społeczna w Warszawie",
+        "latitude": 52.2819634,
+        "longitude": 21.074955,
+        "geoHash": "u3qcrtdkd0"
+    },
+    {
+        "name": "Wyższa Szkoła Teologiczno-Społeczna w Warszawie",
+        "latitude": 52.2819634,
+        "longitude": 21.074955,
+        "geoHash": "u3qcrtdkd0"
+    },
+    {
+        "name": "Wyższa Szkoła Trenerów Sportu w Warszawie",
+        "latitude": 52.1589318,
+        "longitude": 21.0344789,
+        "geoHash": "u3qbwxhzfc"
+    },
+    {
+        "name": "Wyższa Szkoła Turystyki i Ekologii w Suchej Beskidzkiej",
+        "latitude": 49.7460985,
+        "longitude": 19.6017659,
+        "geoHash": "u2vgn01842"
+    },
+    {
+        "name": "Wyższa Szkoła Turystyki i Hotelarstwa w Gdańsku",
+        "latitude": 54.37712149999999,
+        "longitude": 18.6147622,
+        "geoHash": "u3tjre4ceq"
+    },
+    {
+        "name": "Wyższa Szkoła Turystyki i Hotelarstwa w likwidacji z siedzibą w Warszawie",
+        "latitude": 52.2553083,
+        "longitude": 21.066032,
+        "geoHash": "u3qcr2gc4p"
+    },
+    {
+        "name": "Wyższa Szkoła Turystyki i Hotelarstwa w Łodzi",
+        "latitude": 51.746783,
+        "longitude": 19.4709493,
+        "geoHash": "u3jy7h4qf5"
+    },
+    {
+        "name": "Wyższa Szkoła Turystyki i Języków Obcych w Warszawie",
+        "latitude": 52.22149839999999,
+        "longitude": 20.9603172,
+        "geoHash": "u3qchfwu6b"
+    },
+    {
+        "name": "Wyższa Szkoła Turystyki i Rekreacji im. Mieczysława Orłowicza w Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Wyższa Szkoła Ubezpieczeń w Krakowie w likwidacji",
+        "latitude": 50.0672979,
+        "longitude": 19.9279737,
+        "geoHash": "u2yhv6rp5k"
+    },
+    {
+        "name": "Wyższa Szkoła Umiejętności im. Stanisława Staszica w Kielcach w likwidacji",
+        "latitude": 50.8677492,
+        "longitude": 20.6169365,
+        "geoHash": "u3n9mhhy17"
+    },
+    {
+        "name": "Wyższa Szkoła Umiejętności Społecznych im. prof. Michała Iwaszkiewicza",
+        "latitude": 52.3995922,
+        "longitude": 16.9209768,
+        "geoHash": "u3k41513xr"
+    },
+    {
+        "name": "Wyższa Szkoła Umiejętności Zawodowych w Pińczowie",
+        "latitude": 50.523503,
+        "longitude": 20.528674,
+        "geoHash": "u2yx7js88z"
+    },
+    {
+        "name": "Wyższa Szkoła Uni-Terra z siedzibą w Poznaniu",
+        "latitude": 52.3909866,
+        "longitude": 16.9167447,
+        "geoHash": "u3k40cqrse"
+    },
+    {
+        "name": "Wyższa Szkoła Współpracy Międzynarodowej i Regionalnej im. Zygmunta Glogera z siedzibą w Wołominie",
+        "latitude": 52.3503687,
+        "longitude": 21.2375118,
+        "geoHash": "u3r1g60ejb"
+    },
+    {
+        "name": "Wyższa Szkoła Wychowania Fizycznego i Turystyki w Białymstoku",
+        "latitude": 53.1192877,
+        "longitude": 23.1759589,
+        "geoHash": "u92qpqh4qb"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania \"Edukacja\" we Wrocławiu",
+        "latitude": 51.0939063,
+        "longitude": 17.0620902,
+        "geoHash": "u3h4sm25xd"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Administracji w likwidacji z siedzibą w Zamościu",
+        "latitude": 50.7121736,
+        "longitude": 23.2558844,
+        "geoHash": "u9083py7v6"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Bankowości w Krakowie",
+        "latitude": 50.0719303,
+        "longitude": 19.9153768,
+        "geoHash": "u2yhv5mfju"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Bankowości w Poznaniu",
+        "latitude": 52.394409,
+        "longitude": 16.9162083,
+        "geoHash": "u3k40fn581"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Finansów we Wrocławiu",
+        "latitude": 51.1078852,
+        "longitude": 17.0385376,
+        "geoHash": "u3h4exzj48"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Finansów - w likwidacji z siedzibą w Bydgoszczy (wykreślona)",
+        "latitude": 53.13770299999999,
+        "longitude": 18.0184089,
+        "geoHash": "u3ky612te3"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Marketingu we Wrocławiu",
+        "latitude": 51.0939063,
+        "longitude": 17.0620902,
+        "geoHash": "u3h4sm25xd"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Marketingu w Sochaczewie",
+        "latitude": 52.2075004,
+        "longitude": 20.2217788,
+        "geoHash": "u3q3h0j49x"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Nauk Społecznych im. ks. Emila Szramka w Tychach w likwidacji z siedzibą w Tychach",
+        "latitude": 50.1200599,
+        "longitude": 18.9867531,
+        "geoHash": "u2vt0h1dx2"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania i Przedsiębiorczości z siedzibą w Wałbrzychu",
+        "latitude": 50.79774700000001,
+        "longitude": 16.2904309,
+        "geoHash": "u358fxqq6d"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania Marketingowego i Języków Obcych w likwidacji z siedzibą w Katowicach",
+        "latitude": 50.24400290000001,
+        "longitude": 18.9935439,
+        "geoHash": "u2vtb4wst8"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania Ochroną Pracy w Katowicach",
+        "latitude": 50.2594548,
+        "longitude": 19.0281935,
+        "geoHash": "u2vtbvryt1"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania Środowiskiem w Tucholi",
+        "latitude": 53.5889131,
+        "longitude": 17.8649078,
+        "geoHash": "u3s8ye8f49"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania w Częstochowie",
+        "latitude": 50.7985221,
+        "longitude": 19.113044,
+        "geoHash": "u3j8fztdy4"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania w Rzeszowie w likwidacji",
+        "latitude": 50.0376293,
+        "longitude": 22.0056099,
+        "geoHash": "u2zsstpfrf"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania w Szczecinie",
+        "latitude": 53.4285438,
+        "longitude": 14.5528116,
+        "geoHash": "u36rgnm5c4"
+    },
+    {
+        "name": "Wyższa Szkoła Zarządzania w Warszawie",
+        "latitude": 52.2297813,
+        "longitude": 20.9725731,
+        "geoHash": "u3qcjhpu82"
+    },
+    {
+        "name": "Wyższa Szkoła Zawodowa Kosmetyki i Pielęgnacji Zdrowia w Warszawie",
+        "latitude": 52.2095719,
+        "longitude": 20.9589397,
+        "geoHash": "u3qchbmyf9"
+    },
+    {
+        "name": "Wyższa Szkoła Zawodowa Łódzkiej Korporacji Oświatowej w Łodzi",
+        "latitude": 51.7626051,
+        "longitude": 19.4530137,
+        "geoHash": "u3jy6xj700"
+    },
+    {
+        "name": "Wyższa Szkoła Zawodowa Ochrony Zdrowia TWP w Łomży z siedzibą w Łomży",
+        "latitude": 53.170105,
+        "longitude": 22.071562,
+        "geoHash": "u3rwqr2429"
+    },
+    {
+        "name": "Wyższa Szkoła Zawodowa „Oeconomicus” Polskiego Towarzystwa Ekonomicznego  w likwidacji",
+        "latitude": 53.44130500000001,
+        "longitude": 14.5472718,
+        "geoHash": "u3d2509n0j"
+    },
+    {
+        "name": "Wyższa Szkoła Zawodowa w Gorzowie Wielkopolskim",
+        "latitude": 52.7325285,
+        "longitude": 15.2369305,
+        "geoHash": "u36gfxxjnp"
+    },
+    {
+        "name": "Wyższa Szkoła Zdrowia i Turystyki w Pucku - w likwidacji z siedzibą w Pucku",
+        "latitude": 54.721851,
+        "longitude": 18.4129389,
+        "geoHash": "u3tp6czcus"
+    },
+    {
+        "name": "Wyższa Szkoła Zdrowia, Urody i Edukacji w Poznaniu",
+        "latitude": 52.39007429999999,
+        "longitude": 16.8757251,
+        "geoHash": "u3k4012d2c"
+    },
+    {
+        "name": "Wyższa Szkoła Zdrowia w Gdańsku",
+        "latitude": 54.4167019,
+        "longitude": 18.5717862,
+        "geoHash": "u3tjwd783b"
+    },
+    {
+        "name": "Wyższe Seminarium Duchowne Diecezji Pelplińskiej",
+        "latitude": 53.9267425,
+        "longitude": 18.6949455,
+        "geoHash": "u3t6c3j4pc"
+    },
+    {
+        "name": "Wyższe Seminarium Duchowne Kościoła Polskokatolickiego w Warszawie",
+        "latitude": 52.2296756,
+        "longitude": 21.0122287,
+        "geoHash": "u3qcnhheum"
+    },
+    {
+        "name": "Wyższe Seminarium Duchowne Towarzystwa Salezjańskiego w Lądzie",
+        "latitude": 52.2039985,
+        "longitude": 17.8941917,
+        "geoHash": "u3k8zpqnkf"
+    },
+    {
+        "name": "Wyższe Seminarium Duchowne w Przemyślu",
+        "latitude": 49.7802027,
+        "longitude": 22.7673846,
+        "geoHash": "u8b5nn4www"
+    },
+    {
+        "name": "Wyższe Seminarium Duchowne w Rzeszowie",
+        "latitude": 50.0296597,
+        "longitude": 22.043288,
+        "geoHash": "u2zstee7vu"
+    },
+    {
+        "name": "Wyższe Seminarium Teologiczne imienia Jana Łaskiego w Warszawie",
+        "latitude": 52.2203402,
+        "longitude": 21.018491,
+        "geoHash": "u3qcn63jw2"
+    },
+    {
+        "name": "Wyższy Instytut Teologiczny w Częstochowie",
+        "latitude": 50.8057899,
+        "longitude": 19.0967521,
+        "geoHash": "u3j948cv4t"
+    },
+    {
+        "name": "Zachodnia Wyższa Szkoła Handlu i Finansów Międzynarodowych im. Jana Pawła  II z siedzibą w Zielonej Górze w likwidacji",
+        "latitude": 51.93621109999999,
+        "longitude": 15.5041664,
+        "geoHash": "u35p2y9y37"
+    },
+    {
+        "name": "Zachodniopomorska Szkoła Biznesu - Akademia Nauk Stosowanych",
+        "latitude": 53.4490394,
+        "longitude": 14.4920823,
+        "geoHash": "u3d21f0g1z"
+    },
+    {
+        "name": "Zachodniopomorski Uniwersytet Technologiczny w Szczecinie",
+        "latitude": 53.42453649999999,
+        "longitude": 14.5355133,
+        "geoHash": "u36rfv8kqp"
+    },
+    {
+        "name": "Zakład Badania Ssaków w Białowieży",
+        "latitude": 52.7007132,
+        "longitude": 23.8676724,
+        "geoHash": "u92gz1ggvh"
+    },
+    {
+        "name": "Zakład Biologii Antarktyki w Warszawie",
+        "latitude": 52.1925375,
+        "longitude": 20.9736055,
+        "geoHash": "u3qbvm2e86"
     }
 ]

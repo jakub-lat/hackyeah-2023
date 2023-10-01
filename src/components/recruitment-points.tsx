@@ -74,7 +74,7 @@ export default function RecruitmentPoints() {
                             </Button>
                         </div>)}
                     </div>
-                    <Popover open={open} onOpenChange={setOpen}>
+                    <Popover open={open} onOpenChange={setOpen} modal={true}>
                         <PopoverTrigger asChild>
                             <Button
                                 variant="outline"
@@ -92,7 +92,7 @@ export default function RecruitmentPoints() {
                             <Command>
                                 <CommandInput placeholder="Wyszukaj..."/>
                                 <CommandEmpty>Nie znaleziono.</CommandEmpty>
-                                <CommandGroup>
+                                <CommandGroup className="overflow-y-auto max-h">
                                     {maturaSubjects.filter(x => !scores.find(score => score[0] === x)).map((subject) => (
                                         <CommandItem
                                             key={subject}

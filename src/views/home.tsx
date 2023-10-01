@@ -37,7 +37,7 @@ export default function Home() {
             </Button>
         </div>
 
-        <div className="w-[100vw] h-[100vh] absolute bg-red-500 top-0 left-0 opacity-10 -z-10">
+        <div className="w-[100vw] h-[100vh] absolute top-0 left-0 opacity-10 -z-10">
             <img className="w-full h-full" src="/background.jpg" alt="" />
         </div>
     </div>

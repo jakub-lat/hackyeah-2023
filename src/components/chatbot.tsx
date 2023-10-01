@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input.tsx';
 import LoadingButton from './ui/loading-button';
 import { useNavigate } from 'react-router-dom';
 import UniversityAssistant from '@/lib/UniversityAssistant';
-import { useMemo } from 'react';
+import { useMemo, useRef, useEffect } from 'react';
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
@@ -16,6 +16,16 @@ export default function Chatbot() {
         message: "Cześć! Opowiedziałbyś mi o tym co lubisz robić w wolnym czasie?",
         bot: true
     }]);
+
+    const messagesEndRef = useRef(null)
+
+    const scrollToBottom = () => {
+      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+    }
+  
+    useEffect(() => {
+      scrollToBottom()
+    }, [messages]);
 
     const [textAnswer, setTextAnswer] = useState('');
     const [choicesAnswer, setChoicesAnswer] = useState<string[] | null>(null);
@@ -87,6 +97,7 @@ export default function Chatbot() {
                     </CardContent>
                 </Card>
             ))}
+            <div ref={messagesEndRef}></div>
             <div>
                 <div className='flex mt-1 gap-2 items-center'>
                     {choicesAnswer !== null ? (

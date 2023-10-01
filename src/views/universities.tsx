@@ -78,6 +78,8 @@ export default function Universities() {
     const [areAssistantSuggestionsIncluded, setAssistantSuggestionsIncluded] = useState(false);
     const allFaculties = getFaculties();
 
+    const {getFavorites} = useUniStore();
+
     useEffect(() => {
         const filterByAssistantSuggestions = async () => {
             const similarMetacategories = await getSimilarMetacategories(suggestedFieldsOfStudy);
@@ -102,6 +104,7 @@ export default function Universities() {
 
     useEffect(() => {
         getSelectedFields();
+        getFavorites();
     }, [user])
 
     return <PageLayout>

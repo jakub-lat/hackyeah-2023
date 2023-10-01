@@ -4,7 +4,7 @@ import { ChevronRight, School2 } from "lucide-react";
 import {HTMLProps, MouseEvent} from "react";
 import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid"
 import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline"
-import { useState } from "react";
+import {useUniStore} from "@/store/universityStore.ts";
 
 const UniCard = ({ header, description, icon, onClick: onClick }: {
     header: string,
@@ -13,7 +13,19 @@ const UniCard = ({ header, description, icon, onClick: onClick }: {
     onClick?: () => void
 } & HTMLProps<HTMLButtonElement>) => {
 
-    const [isFavorited, setIsFavorited] = useState<boolean>(false);
+    // const [isFavorited, setIsFavorited] = useState<boolean>(false);
+
+    const {favorites, setFavorites, saveFavorites} = useUniStore();
+    const isFavorited = favorites?.includes(header);
+    const setIsFavorited = (x: boolean) => {
+        console.log('setting to', x);
+        if (x) {
+            setFavorites([...favorites, header]);
+        } else {
+            setFavorites(favorites?.filter(y => y !== header));
+        }
+        saveFavorites();
+    }
 
     function handleClick() {
         if (onClick) {
@@ -23,7 +35,7 @@ const UniCard = ({ header, description, icon, onClick: onClick }: {
 
     function toggleFav(e: MouseEvent) {
         e.stopPropagation();
-        setIsFavorited(x => x = !x);
+        setIsFavorited(!isFavorited);
     }
 
     return (

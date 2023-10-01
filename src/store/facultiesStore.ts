@@ -1,5 +1,5 @@
-import {firestore} from "../lib/firebase";
-import { collection, getDocs, query } from 'firebase/firestore';
+// import {firestore} from "../lib/firebase";
+// import { collection, getDocs, query } from 'firebase/firestore';
 import allFieldsOfStudy from "../data/allFieldsOfStudy.json";
 
 export interface IFaculty {

@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 interface IUniversity {
     name: string,
     description: string,

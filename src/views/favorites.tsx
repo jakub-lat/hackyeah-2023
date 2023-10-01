@@ -1,7 +1,7 @@
 import PageLayout, {PageTitle} from "@/layouts/PageLayout.tsx";
 import UniCard from "@/components/universities/uni-card";
 import {createSearchParams, useNavigate} from "react-router-dom";
-import {useFilterStore} from "@/store/filterStore.ts";
+// import {useFilterStore} from "@/store/filterStore.ts";
 // import Filters from "@/components/filters.tsx";
 import {useAuthState} from "react-firebase-hooks/auth";
 import {auth} from "@/lib/firebase.ts";

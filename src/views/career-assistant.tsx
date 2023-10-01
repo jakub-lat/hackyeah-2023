@@ -12,7 +12,7 @@ export default function CareerAssistant() {
                     <ArrowLeft />
                 </Link>
             </Button>
-            Asystent kierunków
+            Asystent
         </PageTitle>
         <Chatbot />
     </PageLayout>

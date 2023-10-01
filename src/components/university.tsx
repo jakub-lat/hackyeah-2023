@@ -5,14 +5,60 @@ import { X, UserCircle } from "lucide-react";
 import { StarIcon as StarOutline } from "@heroicons/react/24/outline";
 import { StarIcon as StarSolid } from "@heroicons/react/24/solid";
 import getRandomNumber from "@/lib/math";
+import ReactStreetview from "react-streetview";
 
 
 const field = (x) => {
     return <div className="field float-left m-2 bg-yellow-400 text-stone-950 px-2 py-0.5">{x}</div>
 }
 
+const comments = [
+    { "name": "Aleksandra", "review": "Kampus jest piękny i rozległy. Profesorowie są kompetentni. Ogólnie wspaniałe doświadczenie." },
+    { "name": "Bartosz", "review": "Udogodnienia są nieco przestarzałe. Jednak program nauczania jest pierwszorzędny." },
+    { "name": "Cezary", "review": "Uwielbiam zróżnicowaną społeczność tutaj. Poznałem przyjaciół na całe życie." },
+    { "name": "Dorota", "review": "Administracja zdaje się być nieco powolna. Akademicka strona jest dobra." },
+    { "name": "Edward", "review": "Zasoby biblioteki są ogromne. Miałem wspaniałe doświadczenia z nauką." },
+    { "name": "Franciszka", "review": "Dormitoria są wygodne. Jedzenie na kampusie wymaga poprawy." },
+    { "name": "Grzegorz", "review": "Jestem pod wrażeniem obiektów sportowych. Drużyny są konkurencyjne." },
+    { "name": "Halina", "review": "Laboratoria są wyposażone w najnowsze technologie. Było to świetne dla moich badań." },
+    { "name": "Igor", "review": "Uniwersyteckie usługi kariery pomogły mi zdobyć staż. Bardzo pomocny personel." },
+    { "name": "Joanna", "review": "Społeczność studencka jest aktywna. Uwielbiam festiwale i wydarzenia." },
+    { "name": "Krzysztof", "review": "Lokalizacja jest dogodna. Wokół jest wiele miejsc do jedzenia." },
+    { "name": "Lidia", "review": "Niektóre kursy wydawały się zatłoczone. Ogólnie dobre środowisko do nauki." },
+    { "name": "Marek", "review": "Miałem wiele okazji do pracy nad projektami. Praktyczne doświadczenie było cenne." },
+    { "name": "Nina", "review": "Kampus jest ekologiczny. Promują zrównoważony rozwój." },
+    { "name": "Oskar", "review": "Profesorowie są bardzo dostępni. Pozytywna droga akademicka." },
+    { "name": "Paulina", "review": "Wi-Fi bywa nierówne. Sale wykładowe są jednak wygodne." },
+    { "name": "Radosław", "review": "Udogodnienia artystyczne są niesamowite. Naprawdę pobudziły moją kreatywność." },
+    { "name": "Sylwia", "review": "Siłownia jest świetnie wyposażona. Pomaga w zachowaniu równowagi w życiu." },
+    { "name": "Tomasz", "review": "Dołączyłem do różnych klubów i społeczności. Wzbogaciło to moje życie na uniwersytecie." },
+    { "name": "Urszula", "review": "Administracja słucha opinii studentów. Dobrze czuć się wysłuchanym." },
+    { "name": "Wojciech", "review": "Otoczenie uniwersytetu oferuje wiele. Dobry balans między życiem akademickim a społecznym." },
+    { "name": "Zofia", "review": "Uniwersytet oferuje stypendia. Pomogło to złagodzić obciążenie finansowe." },
+    { "name": "Adrian", "review": "Kulturalne zróżnicowanie na kampusie jest godne uwagi. To globalne doświadczenie." },
+    { "name": "Barbara", "review": "Na kampusie zawsze coś się dzieje. Nigdy się nie nudziłem." },
+    { "name": "Cecylia", "review": "Możliwości badawcze są tutaj ogromne. Zdobyłem dużo praktycznej wiedzy." },
+    { "name": "Damian", "review": "Kampus jest bezpieczny. Personel ochrony jest czujny." },
+    { "name": "Ewa", "review": "Programy studiów zagranicznych są kompleksowe. Dały mi globalne doświadczenie." },
+    { "name": "Filip", "review": "Seminaria i warsztaty były pełne wglądów. Dodały wartości do kursów." },
+    { "name": "Gabriela", "review": "Jest równowaga między nauką a zabawą. Czułem się kompletnie." },
+    { "name": "Hubert", "review": "Dostałem praktyczne doświadczenie z projektami branżowymi. Było to korzystne dla mojej kariery." },
+    { "name": "Izabela", "review": "Komórka pośrednictwa pracy jest aktywna. Dostałem dobre oferty pracy." },
+    { "name": "Jacek", "review": "Sieć absolwentów jest silna. Są bardzo wspierający." },
+    { "name": "Karolina", "review": "Opłaty są nieco wysokie. Ale udogodnienia uzasadniają koszt." },
+    { "name": "Lucjan", "review": "Kursy online podczas pandemii były dobrze przemyślane. Brawo dla zarządu." },
+    { "name": "Magdalena", "review": "Festiwale kulturalne są wspaniałe. Uwielbiam brać udział." },
+    { "name": "Norbert", "review": "Usługi doradztwa studenckiego są godne uwagi. Są bardzo wyrozumiali." },
+    { "name": "Olga", "review": "Jest wiele programów wymiany studenckiej. Nauczyłem się o różnych kulturach." }
+]
+
+const getRandomComments = (arr, num) => {
+    const shuffled = arr.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+};
+
 const University = ({ university }: { university: IUniversity }) => {
-    const { setFocused } = useUniStore();
+    const { setFocused, focused } = useUniStore();
     let starRatings: any = [];
 
     let ratingMax = 5;
@@ -27,8 +73,9 @@ const University = ({ university }: { university: IUniversity }) => {
         randomPeopleCount = 0;
     }
 
-    var comm = university.comments || ["lubię placki", "jestem hardkorem", "2137!!!111"];
+    // var comm = university.comments || ["lubię placki", "jestem hardkorem", "2137!!!111"];
 
+    const randomComments = getRandomComments(comments, 5)
 
     for (let index = 0; index < ratingMax; index++) {
         let star = index < (university.rating || randomRating)
@@ -40,18 +87,29 @@ const University = ({ university }: { university: IUniversity }) => {
     return (
         <ScrollArea className="lg:w-[35%] max-h-[80vh]">
             <div className={"w-full pt-3"}>
-                <div className={"flex justify-between pb-4"}>
+                <div className={"flex justify-between items-center pb-4"}>
                     <h1 className={"font-bold text-xl"}>{university.name}</h1>
                     <Button variant={"outline"} className={'px-3 py-3'} onClick={() => setFocused(null)}>
                         <X className={'w-5 h-5'} />
                     </Button>
                 </div>
-                <div className="grid grid-cols-3">
-                    <img src="/logoUP_pl.png" className="aspect-video" />
-                    <img src="/Nowy-projekt-Uniwersytetu-Pedagogicznego.png" className="aspect-video" />
-                    <img src="/z29934078IEG,Uniwersytet-Pedagogiczny-w-Krakowie.jpg" className="aspect-video" />
+                <p className="">{university.description || "To jest test opisu uniwersytetu jakiegoś, super polecam! 10/10"}</p>
+
+                <div
+                    className="w-full h-[20rem] py-5"
+                >
+                    <ReactStreetview
+                        apiKey={"AIzaSyDOsTKlBP4R0isFK6ucap0vYvoYYUecgD0"}
+                        streetViewPanoramaOptions={{
+                            position: { lat: focused.latitude, lng: focused.longitude },
+                            pov: { heading: 100, pitch: 0 },
+                            zoom: 1,
+                            addressControl: false,
+                            showRoadLabels: false,
+                            zoomControl: false
+                        }}
+                    />
                 </div>
-                <p className="pb-8 pt-4">{university.description || "To jest test opisu uniwersytetu jakiegoś, super polecam! 10/10"}</p>
                 <div>
                     <p className="rating">
                         <div className="flex mb-2">
@@ -64,13 +122,14 @@ const University = ({ university }: { university: IUniversity }) => {
                 </div>
                 <div className="comments">
                     <h1>Komentarze</h1>
-                    {comm.map(x => (<div className="grid grid-cols-3">
-                        <div className="flex flex-col py-4">
+                    {randomComments.map((comment, index) => (
+                        <div key={index} className="flex flex-col py-4 pr-4">
+                            {/* Assuming UserCircle is a component that renders a user icon */}
                             <UserCircle />
-                            <p>{"Anonim"}</p>
-                            <p className="text-[14px]">{x}</p>
-                            </div>
-                        </div>))}
+                            <p>{comment.name}</p>
+                            <p className="text-[14px]">{comment.review}</p>
+                        </div>
+                    ))}
                 </div>
                 <div className="fields">
                     {university.fieldsOfStudy?.map(x => field(x))}

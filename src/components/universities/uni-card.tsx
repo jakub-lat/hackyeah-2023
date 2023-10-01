@@ -8,8 +8,13 @@ import {IUniversity, useUniStore} from "@/store/universityStore.ts";
 import {Badge} from "@/components/ui/badge.tsx";
 import allFieldsOfStudy from "@/data/fieldsOfStudy.json";
 import {useFilterStore} from "@/store/filterStore.ts";
+import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid"
+import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline"
+import { useState } from "react";
+import { Badge } from "../ui/badge";
 
-const UniCard = ({uni, onClick: onClick}: {
+
+const UniCard = ({uni, aiScore, onClick: onClick}: {
     uni: IUniversity
     aiScore: number
     onClick?: () => void
@@ -78,11 +83,15 @@ const UniCard = ({uni, onClick: onClick}: {
                 </div>
             </CardHeader>
             <CardFooter className="p-5 ml-auto">
-                <Button onClick={toggleFav} variant="ghost">
-                    {isFavorited ? <HeartSolid className="h-5 w-5"/> : <HeartOutline className="h-5 w-5"/>}
-                </Button>
-                <Button variant="ghost" onClick={handleClick}><ChevronRight/></Button>
-                <>AI: {aiScore}</>
+                <div className="flex flex-col items-center gap-3">
+                    <div className="flex">
+                        <Button onClick={toggleFav} variant="ghost">
+                            { isFavorited ? <HeartSolid className="h-5 w-5" /> : <HeartOutline className="h-5 w-5" />}
+                            </Button>
+                        <Button variant="ghost" onClick={handleClick}><ChevronRight /></Button>
+                    </div>
+                    <div><Badge variant="outline">AI score {aiScore !== 0 ? aiScore : '🤔'}</Badge></div>
+                </div>
             </CardFooter>
         </Card>
     )

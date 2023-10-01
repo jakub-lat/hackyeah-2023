@@ -62,7 +62,7 @@ export default function Chatbot() {
                     setMessages(prev => [
                         ...prev,
                         {
-                            message: "Dziękuje za Twoje odpowiedzi. Przygotowałem dla Ciebie kilka propozycji. Kliknij Kontynuuj, aby je zobaczyć." as string,
+                            message: "Dziękuje za Twoje odpowiedzi. Przygotowałem dla Ciebie kilka propozycji. Kliknij kontynuuj, aby je zobaczyć." as string,
                             bot: true
                         }
                     ]);

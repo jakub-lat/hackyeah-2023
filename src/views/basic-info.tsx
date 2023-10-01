@@ -51,7 +51,7 @@ export default function BasicInfo() {
         setDoc(doc(firestore, 'users', auth.currentUser.uid), {
             category: category,
             userOrigin: userOrigin
-        }).then(() => {
+        }, { merge: true }).then(() => {
             navigate('/fields-of-study');
         })
     }

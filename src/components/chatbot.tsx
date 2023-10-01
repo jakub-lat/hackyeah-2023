@@ -87,10 +87,6 @@ export default function Chatbot() {
 
     const [selected, setSelected] = useState(null);
 
-    const select = (i) => {
-        setSelected(i);
-    }
-
     const setClasses = (i) => {
         if(selected == i)
             return "outline outline-1";
@@ -122,7 +118,7 @@ export default function Chatbot() {
                             {choicesAnswer.map((choice, i) => (
                                 <div className="space-x-0.5 inline-block" key={i}>
                                     <RadioGroupItem className="hidden" value={choice} id={`choice${i}`} />
-                                    <Button variant="secondary" id={`choice${i}`} onClick={() => select(i)} className={setClasses(i)}>
+                                    <Button variant="secondary" id={`choice${i}`} onClick={() => setSelected(i)} className={setClasses(i)}>
                                         <Label htmlFor={`choice${i}`}>{choice}</Label>
                                     </Button>
                                 </div>

@@ -7,16 +7,16 @@ import { Button } from "@/components/ui/button.tsx";
 import Graph3D, { DotsRef } from "@/views/graph3d.tsx";
 import { useGraphStore } from "@/store/graphStore.ts";
 import { useFilterStore } from "@/store/filterStore.ts";
-import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-} from "@/components/ui/alert-dialog"
+// import {
+//     AlertDialog,
+//     AlertDialogAction,
+//     AlertDialogCancel,
+//     AlertDialogContent,
+//     AlertDialogDescription,
+//     AlertDialogFooter,
+//     AlertDialogHeader,
+//     AlertDialogTitle,
+// } from "@/components/ui/alert-dialog"
 import { Link } from "react-router-dom";
 import getFaculties from '../store/facultiesStore.ts';
 import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid"
@@ -161,25 +161,25 @@ export default function FieldsOfStudy() {
                 </div>
             </div>
         </PageLayout>
-        <AlertDialog onOpenChange={() => localStorage.setItem("hadAiAlert", "true")} defaultOpen={selectedFields.length === 0 && !localStorage.getItem("hadAiAlert")}>
-            <AlertDialogContent>
-                <AlertDialogHeader>
-                    <AlertDialogTitle>Nie wiesz jeszcze, co chcesz studiować?</AlertDialogTitle>
-                    <AlertDialogDescription>
-                        Nasz asystent AI - kierunkomat - pomoże ci wybrać ścieżkę kariery dopasowaną do twoich
-                        predyspozycji
-                        i zainteresowań!
-                    </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                    <AlertDialogCancel>Pomiń</AlertDialogCancel>
-                    <AlertDialogAction asChild>
-                        <Link to={"/fields-of-study/assistant"}>
-                            Kontynuuj
-                        </Link>
-                    </AlertDialogAction>
-                </AlertDialogFooter>
-            </AlertDialogContent>
-        </AlertDialog>
+        {/*<AlertDialog onOpenChange={() => localStorage.setItem("hadAiAlert", "true")} defaultOpen={selectedFields.length === 0 && !localStorage.getItem("hadAiAlert")}>*/}
+        {/*    <AlertDialogContent>*/}
+        {/*        <AlertDialogHeader>*/}
+        {/*            <AlertDialogTitle>Nie wiesz jeszcze, co chcesz studiować?</AlertDialogTitle>*/}
+        {/*            <AlertDialogDescription>*/}
+        {/*                Nasz asystent AI - kierunkomat - pomoże ci wybrać ścieżkę kariery dopasowaną do twoich*/}
+        {/*                predyspozycji*/}
+        {/*                i zainteresowań!*/}
+        {/*            </AlertDialogDescription>*/}
+        {/*        </AlertDialogHeader>*/}
+        {/*        <AlertDialogFooter>*/}
+        {/*            <AlertDialogCancel>Pomiń</AlertDialogCancel>*/}
+        {/*            <AlertDialogAction asChild>*/}
+        {/*                <Link to={"/fields-of-study/assistant"}>*/}
+        {/*                    Kontynuuj*/}
+        {/*                </Link>*/}
+        {/*            </AlertDialogAction>*/}
+        {/*        </AlertDialogFooter>*/}
+        {/*    </AlertDialogContent>*/}
+        {/*</AlertDialog>*/}
     </>
 }

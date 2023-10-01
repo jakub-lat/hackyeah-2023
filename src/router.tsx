@@ -15,7 +15,7 @@ export default createBrowserRouter(
             <Route path="*" element={<NotFound />} />
             <Route path="/basic-info" element={<BasicInfo />} />
             <Route path="/fields-of-study" element={<FieldsOfStudy />} />
-            <Route path="/fields-of-study/assistant" element={<CareerAssistant />} />
+            <Route path="/assistant" element={<CareerAssistant />} />
             <Route path="/universities" element={<Universities />} />
             <Route path="/favorites" element={<Favorites />} />
         </Route>

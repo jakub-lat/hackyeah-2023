@@ -1,17 +1,18 @@
-import { useState } from 'react';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { Bot, User } from "lucide-react";
-import { useTheme } from "@/components/theme-provider";
-import { Input } from '@/components/ui/input.tsx';
+import {useState} from 'react';
+import {Card, CardContent, CardHeader} from '@/components/ui/card';
+import {Bot, User} from "lucide-react";
+import {useTheme} from "@/components/theme-provider";
+import {Input} from '@/components/ui/input.tsx';
 import LoadingButton from './ui/loading-button';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import UniversityAssistant from '@/lib/UniversityAssistant';
-import { useMemo, useRef, useEffect } from 'react';
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { useAssistantSuggestionsStore } from '@/store/assistantSuggestionsStore';
-import { AssistantSuggestion } from '@/lib/AssistantAnswer';
-import { ArrowRight } from 'lucide-react';
+import {useMemo, useRef, useEffect} from 'react';
+import {Label} from "@/components/ui/label"
+import {RadioGroup, RadioGroupItem} from "@/components/ui/radio-group"
+import {useAssistantSuggestionsStore} from '@/store/assistantSuggestionsStore';
+import {AssistantSuggestion} from '@/lib/AssistantAnswer';
+import {ArrowRight} from 'lucide-react';
+import {Button} from "@/components/ui/button.tsx";
 
 
 export default function Chatbot() {
@@ -23,7 +24,7 @@ export default function Chatbot() {
     const messagesEndRef = useRef(null)
 
     const scrollToBottom = () => {
-        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+        messagesEndRef.current?.scrollIntoView({behavior: "smooth"})
     }
 
     useEffect(() => {
@@ -33,12 +34,12 @@ export default function Chatbot() {
     const [textAnswer, setTextAnswer] = useState('');
     const [choicesAnswer, setChoicesAnswer] = useState<string[] | null>(null);
     const [choiceAnswer, setChoiceAnswer] = useState<string | null>(null);
-    const { theme } = useTheme()
+    const {theme} = useTheme()
     const assistant = useMemo(() => new UniversityAssistant(), []);
     const [isLoading, setLoading] = useState(false);
     const [isDataGathered, setDataGathered] = useState(false);
     const navigate = useNavigate()
-    const { setSuggestion } = useAssistantSuggestionsStore();
+    const {setSuggestion} = useAssistantSuggestionsStore();
 
     const handleSubmit = () => {
         if (textAnswer.trim() || choiceAnswer.trim()) {
@@ -51,7 +52,7 @@ export default function Chatbot() {
 
             setMessages(prev => [
                 ...prev,
-                { message: answer, bot: false },
+                {message: answer, bot: false},
             ]);
 
             assistant.ask(answer).then((res) => {
@@ -60,10 +61,12 @@ export default function Chatbot() {
                     setSuggestion(res.answer as AssistantSuggestion);
                     setMessages(prev => [
                         ...prev,
-                        { message: "Dziękuje za Twoje odpowiedzi. Przygotowałem dla Ciebie kilka propozycji. Kliknij kontynuuj, aby je zobaczyć." as string, bot: true }
+                        {
+                            message: "Dziękuje za Twoje odpowiedzi. Przygotowałem dla Ciebie kilka propozycji. Kliknij kontynuuj, aby je zobaczyć." as string,
+                            bot: true
+                        }
                     ]);
-                }
-                else {
+                } else {
 
 
                     if (res.possibleResponses) {
@@ -72,7 +75,7 @@ export default function Chatbot() {
 
                     setMessages(prev => [
                         ...prev,
-                        { message: res.answer as string, bot: true }
+                        {message: res.answer as string, bot: true}
                     ]);
                 }
 
@@ -84,14 +87,13 @@ export default function Chatbot() {
 
     return (
         <div className="my-4 flex flex-col gap-y-2 mx-auto w-full lg:max-w-[60%]">
-
-            {messages.map(({ message, bot }, i) => (
+            {messages.map(({message, bot}, i) => (
                 <Card key={i}>
                     <CardHeader>
                         <div className="flex gap-2 px-3">
                             {bot ?
-                                <Bot className='w-6 h-6' color={theme === "dark" ? "white" : "black"} /> :
-                                <User className='w-6 h-6' color={theme === "dark" ? "white" : "black"} />
+                                <Bot className='w-6 h-6' color={theme === "dark" ? "white" : "black"}/> :
+                                <User className='w-6 h-6' color={theme === "dark" ? "white" : "black"}/>
                             }
                             <h1>{bot ? "Asystent" : "Ty"}</h1>
                         </div>
@@ -108,7 +110,7 @@ export default function Chatbot() {
                         <RadioGroup value={choiceAnswer} onValueChange={e => setChoiceAnswer(e)}>
                             {choicesAnswer.map((choice, i) => (
                                 <div className="flex items-center space-x-2 p-2" key={i}>
-                                    <RadioGroupItem value={choice} id={`choice${i}`} />
+                                    <RadioGroupItem value={choice} id={`choice${i}`}/>
                                     <Label htmlFor={`choice${i}`}>{choice}</Label>
                                 </div>
                             ))}
@@ -136,9 +138,17 @@ export default function Chatbot() {
                         isLoading={isLoading}
                     >
                         {isDataGathered ? "Kontynuuj" : "Wyślij"}
-                        {isDataGathered ? <ArrowRight className={"w-4 h-4 ml-3"} /> : null}
+                        {isDataGathered ? <ArrowRight className={"w-4 h-4 ml-3"}/> : null}
                     </LoadingButton>
                 </div>
+            </div>
+            <div className='flex justify-end'>
+                <Button variant={'secondary'} className={'w-32 mt-5'} asChild>
+                    <Link to={'/fields-of-study'}>
+                        Pomiń
+                        <ArrowRight className={"w-4 h-4 ml-3 text-muted-foreground"}/>
+                    </Link>
+                </Button>
             </div>
         </div>
     );

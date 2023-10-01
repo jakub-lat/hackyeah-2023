@@ -15,7 +15,7 @@ import AdvancedFilters from "@/components/advanced-filters.tsx";
 
 
 export default function Filters() {
-    const { setCities, selectedCities } = useFilterStore();
+    const { setCities, selectedCities,tags } = useFilterStore();
 
     const cities = ['Wrocław', 'Warszawa', 'Kraków', 'Poznań', 'Gdańsk', 'Białystok', 'Bydgoszcz', 'Toruń'];
 
@@ -39,14 +39,14 @@ export default function Filters() {
             <AlertDialogTrigger asChild>
                 <Button variant={"outline"}>
                     Zaawansowane filtry
-                    <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-5 text-pink-400"} />
+                    {tags.length !== 0 && <span className={'text-muted-foreground ml-2'}>{tags?.length || 0}</span>}
+                    <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-3 text-pink-400"} />
                 </Button>
             </AlertDialogTrigger>
             <AlertDialogContent className={"min-w-[800px]"}>
                 <AlertDialogHeader className={"min-h-[400px]"}>
                     <AlertDialogTitle className={"flex items-center"}>
                         Zaawansowane filtry
-                        <Sparkles className={"w-5 h-5 shrink-0 opacity-75 ml-3 text-pink-400"} />
                     </AlertDialogTitle>
                     <AlertDialogDescription>
                         <AdvancedFilters />

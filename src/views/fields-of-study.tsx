@@ -124,7 +124,9 @@ export default function FieldsOfStudy() {
                                     .values(allFaculties)
                                     .reduce((acc, x) => [...acc, ...x], [])
                                     .map(x => ({ name: x }))
-                                } />
+                                }
+                                neighborCount={6}
+                            />
                         </div>
                     </div>
                     {/*<Card className={"w-full m-0 mb-4"}>*/}

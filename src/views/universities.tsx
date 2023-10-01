@@ -13,7 +13,6 @@ import getFaculties from '@/store/facultiesStore';
 import {useUniStore} from "@/store/universityStore.ts";
 import University from "@/components/university";
 import {useSearchParams} from "react-router-dom";
-import {useEffect} from "react";
 import {Alert, AlertDescription} from "@/components/ui/alert";
 import {AlertTitle} from "@/components/ui/alert.tsx";
 import {AlertCircle} from "lucide-react";

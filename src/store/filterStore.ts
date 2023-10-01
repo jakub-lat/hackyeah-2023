@@ -47,8 +47,11 @@ export const useFilterStore = create<IFilterStore>((set) => ({
             getDoc(doc(firestore, 'users', auth.currentUser.uid)).then((doc) => {
                 if (doc.exists()) {
                     const data = doc.data()
-                    if (data) {
+                    if (data.fields) {
                         set({ selectedFields: data.fields })
+                    }
+                    else {
+                        set({ selectedFields: [] })
                     }
                 }
                 else {

@@ -9,16 +9,20 @@ import {useFilterStore} from "@/store/filterStore.ts";
 import allFieldsOfStudy from "@/data/fieldsOfStudy.json";
 import {Badge} from "@/components/ui/badge.tsx";
 import {Link, useBeforeUnload} from "react-router-dom";
+// @ts-ignore
+import ReactStreetview from "react-streetview";
 
 export default function Tinder({}: { universities?: IUniversity[] }) {
     const controller = useRef<any>();
     const [index, setIndex] = useState(0);
+    const [added, setAdded] = useState(0);
     const {universities, favorites, setFavorites, saveFavorites} = useUniStore();
     const [stack, setStack] = useState(universities);
 
     useBeforeUnload(() => {
-       setIndex(0);
-       setStack(universities);
+        setIndex(0);
+        setAdded(0);
+        setStack(universities);
     });
 
     useEffect(() => {
@@ -32,6 +36,7 @@ export default function Tinder({}: { universities?: IUniversity[] }) {
         if (dir === 'right') {
             setFavorites([...new Set([...favorites, name])]);
             saveFavorites();
+            setAdded(added + 1);
         }
     }
 
@@ -55,9 +60,10 @@ export default function Tinder({}: { universities?: IUniversity[] }) {
 
                     return <TinderCard key={uni.name} onSwipe={(dir) => onSwipe(dir, uni.name)}
                                        onCardLeftScreen={() => onCardLeftScreen()}
-                                       preventSwipe={['right', 'left']} swipeThreshold={1000}
+                                       preventSwipe={['up', 'down']}
                                        ref={index === idx ? controller : undefined}
-                                       className={'absolute top-0 left-[50%] right-0'}>
+                                       className={'absolute top-0 left-[50%] right-0'}
+                                       swipeRequirementType={'position'}>
                         <Card className={'h-[500px] w-[500px] -translate-x-1/2'}>
                             <CardHeader>
                                 <CardTitle>{uni.name}</CardTitle>
@@ -78,6 +84,19 @@ export default function Tinder({}: { universities?: IUniversity[] }) {
                                         </Badge>
                                     )}
                                 </div>
+                                <div className={'h-[300px] mt-3'}>
+                                    <ReactStreetview
+                                        apiKey={"AIzaSyDOsTKlBP4R0isFK6ucap0vYvoYYUecgD0"}
+                                        streetViewPanoramaOptions={{
+                                            position: {lat: uni.latitude, lng: uni.longitude},
+                                            pov: {heading: 100, pitch: 0},
+                                            zoom: 1,
+                                            addressControl: false,
+                                            showRoadLabels: false,
+                                            zoomControl: false
+                                        }}
+                                    />
+                                </div>
                             </CardContent>
                         </Card>
                     </TinderCard>;
@@ -85,6 +104,7 @@ export default function Tinder({}: { universities?: IUniversity[] }) {
 
             {!controller.current && <div className={'h-96 flex flex-col items-center justify-center'}>
                 <h1 className={'font-bold text-2xl'}>Gotowe!</h1>
+                <h3>Dodanych ulubionych uczelni: {added}.</h3>
                 <div className={'flex gap-x-2 mt-10'}>
                     <Button asChild variant={'secondary'}>
                         <Link to={"/universities"}>

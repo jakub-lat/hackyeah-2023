@@ -25,6 +25,8 @@ export default function Tinder({}: { universities?: IUniversity[] }) {
         setStack(universities);
     }, [universities]);
 
+    console.log(universities);
+
     const onSwipe = (dir: string, name: string) => {
         setIndex(index + 1);
         if (dir === 'right') {

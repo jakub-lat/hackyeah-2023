@@ -86,7 +86,7 @@ const University = ({ university }: { university: IUniversity }) => {
 
     return (
         <ScrollArea className="lg:w-[35%] max-h-[80vh]">
-            <div className={"w-full pt-3"}>
+            <div className={"w-full pt-3 px-3"}>
                 <div className={"flex justify-between items-center pb-4"}>
                     <h1 className={"font-bold text-xl"}>{university.name}</h1>
                     <Button variant={"outline"} className={'px-3 py-3'} onClick={() => setFocused(null)}>
@@ -125,9 +125,11 @@ const University = ({ university }: { university: IUniversity }) => {
                     {randomComments.map((comment, index) => (
                         <div key={index} className="flex flex-col py-4 pr-4">
                             {/* Assuming UserCircle is a component that renders a user icon */}
-                            <UserCircle />
-                            <p>{comment.name}</p>
-                            <p className="text-[14px]">{comment.review}</p>
+                            <div className={'flex gap-x-1 items-center'}>
+                                <UserCircle className={'w-4 h-4'} />
+                                <p className={''}>{comment.name}</p>
+                            </div>
+                            <p className="text-[14px] text-muted-foreground">{comment.review}</p>
                         </div>
                     ))}
                 </div>

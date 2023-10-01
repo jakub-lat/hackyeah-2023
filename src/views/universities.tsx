@@ -71,7 +71,7 @@ export default function Universities() {
 
     useEffect(() => {
         setUniversitiesStore(selectedUniversities)
-    }, [universities]);
+    }, [selectedUniversities]);
 
     // const getUniversityFieldsDescription = (uni: University) => {
     //     const fields = new Set(selectedFieldsOfStudy.filter((f) => f.universityId === uni.name).map(f => f.type))

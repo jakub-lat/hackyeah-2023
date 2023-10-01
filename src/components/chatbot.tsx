@@ -102,6 +102,7 @@ export default function Chatbot() {
                         <Input
                             className="placeholder-red px-7 h-14"
                             value={textAnswer}
+                            disabled={isLoading}
                             onChange={e => setTextAnswer(e.currentTarget.value)}
                             onKeyDown={e => {
                                 if (e.key === 'Enter') {

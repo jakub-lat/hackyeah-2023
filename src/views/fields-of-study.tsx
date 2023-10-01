@@ -66,7 +66,7 @@ export default function FieldsOfStudy() {
                         <CommandInput value={search} onValueChange={setSearch} placeholder="Wyszukaj kierunek..."/>
                         <CommandList className={"max-h-[65vh]"}>
                             <CommandEmpty>Nie znaleziono.</CommandEmpty>
-                            {selectedFields.length !== 0 && <CommandGroup heading={"Wybrane"}>
+                            {selectedFields.length !== 0 && <CommandGroup heading={"❤️"}>
                                 {selectedFields.map(f =>
                                     <CommandItem key={f} value={f} onSelect={() => remove(f)} className={"cursor-pointer"}>
                                         <Check className={"w-4 h-4 opacity-50 mr-3"} />
@@ -94,10 +94,10 @@ export default function FieldsOfStudy() {
                                 {focused}
                                 {selectedFields.includes(focused) ?
                                     <Button size={'sm'} variant={'secondary'} onClick={() => remove(focused)}>
-                                        Usuń
+                                        Usuń z ❤️
                                     </Button>
                                     : <Button size={'sm'} variant={'secondary'} onClick={() => add(focused)}>
-                                        Dodaj
+                                        Dodaj do ❤️
                                     </Button>
                                 }
                             </CardHeader>

@@ -23,9 +23,9 @@ export default function Tinder({}: { universities?: IUniversity[] }) {
 
     useEffect(() => {
         setStack(universities);
-    }, [universities]);
+    }, [universities.length]);
 
-    console.log(universities);
+    console.log(stack);
 
     const onSwipe = (dir: string, name: string) => {
         setIndex(index + 1);
@@ -83,7 +83,7 @@ export default function Tinder({}: { universities?: IUniversity[] }) {
                     </TinderCard>;
                 })}
 
-            {stack.length === 0 && <div className={'h-96 flex flex-col items-center justify-center'}>
+            {!controller.current && <div className={'h-96 flex flex-col items-center justify-center'}>
                 <h1 className={'font-bold text-2xl'}>Gotowe!</h1>
                 <div className={'flex gap-x-2 mt-10'}>
                     <Button asChild variant={'secondary'}>
@@ -99,7 +99,7 @@ export default function Tinder({}: { universities?: IUniversity[] }) {
                 </div>
             </div>}
         </div>
-        {stack.length !== 0 && <div className={'flex justify-center gap-x-4'}>
+        {controller.current && <div className={'flex justify-center gap-x-4'}>
             <Button size={'lg'} variant={'secondary'} onClick={() => controller?.current.swipe('left')}>
                 <X className={'w-6 h-6'}/>
             </Button>

@@ -53,7 +53,7 @@ export default function Universities() {
     const { selectedFields, addSelectedField, setCities, selectedCities, getSelectedFields } = useFilterStore();
 
     // const [focus, setFocus] = useState(null)
-    const { focused, setFocused, setUniversities: setUniversitiesStore } = useUniStore();
+    const { focused, setFocused, universities: universitiesStore, setUniversities: setUniversitiesStore } = useUniStore();
 
 
     const [search, _setSearch] = useSearchParams();
@@ -70,7 +70,9 @@ export default function Universities() {
     const selectedUniversities = Array.from(new Set(universities.filter(doesUniversityOfferAnySelectedField)))
 
     useEffect(() => {
-        setUniversitiesStore(selectedUniversities)
+        if(universitiesStore.length != selectedUniversities.length) {
+            setUniversitiesStore(selectedUniversities)
+        }
     }, [selectedUniversities]);
 
     // const getUniversityFieldsDescription = (uni: University) => {

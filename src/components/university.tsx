@@ -5,6 +5,7 @@ import { X, UserCircle } from "lucide-react";
 import { StarIcon as StarOutline } from "@heroicons/react/24/outline";
 import { StarIcon as StarSolid } from "@heroicons/react/24/solid";
 import getRandomNumber from "@/lib/math";
+// @ts-ignore
 import ReactStreetview from "react-streetview";
 
 

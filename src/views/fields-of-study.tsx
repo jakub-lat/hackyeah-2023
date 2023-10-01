@@ -28,23 +28,14 @@ import getFaculties from '../store/facultiesStore.ts';
 //     </Badge>
 // }
 
-const getAllFaculties = async () => {
-    return {
-        Informatyczne: await getFaculties(),
-    };
-};
-
 export default function FieldsOfStudy() {
     const graphRef = useRef<DotsRef>(null);
     const [search, setSearch] = useState('');
     const {focused} = useGraphStore();
 
     const {selectedFields, addSelectedField, removeSelectedField} = useFilterStore();
-    const [allFaculties, setAllFaculties] = useState({Informatyczne: []});
 
-    useEffect(() => {
-        getAllFaculties().then(setAllFaculties);
-    }, [allFaculties]);
+    const allFaculties = getFaculties();
 
     const add = (v: string) => {
         addSelectedField(v);

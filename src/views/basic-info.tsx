@@ -52,7 +52,7 @@ export default function BasicInfo() {
             category: category,
             userOrigin: userOrigin
         }, { merge: true }).then(() => {
-            navigate('/fields-of-study');
+            navigate('/assistant');
         })
     }
 

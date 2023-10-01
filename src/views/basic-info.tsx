@@ -59,7 +59,7 @@ export default function BasicInfo() {
     return <div className={"flex justify-center items-center mt-20"}>
         <Card className="w-[600px]">
             <CardHeader>
-                <CardTitle>Zacznijmy!</CardTitle>
+                <CardTitle>Zaczynamy!</CardTitle>
                 <CardDescription>Powiedz nam kilka słów o sobie.</CardDescription>
             </CardHeader>
             <CardContent>

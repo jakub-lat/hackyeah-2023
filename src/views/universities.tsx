@@ -67,13 +67,13 @@ export default function Universities() {
     const selectedFieldsOfStudy = allFieldsOfStudy.filter((field) => selectedFields.includes(field.type));
     const doesUniversityOfferAnySelectedField = (uni: University) => selectedFieldsOfStudy.map((f) => f.universityId).includes(uni.name);
     const selectedUniversities = Array.from(new Set(universities.filter(doesUniversityOfferAnySelectedField)))
-    const getUniversityFieldsDescription = (uni: University) => {
-        const fields = new Set(selectedFieldsOfStudy.filter((f) => f.universityId === uni.name).map(f => f.type))
-        if (fields.size === 1) {
-            return `kierunek: ${Array.from(fields)[0]}`;
-        }
-        return `kierunki: ${Array.from(fields).join(", ")}`;
-    };
+    // const getUniversityFieldsDescription = (uni: University) => {
+    //     const fields = new Set(selectedFieldsOfStudy.filter((f) => f.universityId === uni.name).map(f => f.type))
+    //     if (fields.size === 1) {
+    //         return `kierunek: ${Array.from(fields)[0]}`;
+    //     }
+    //     return `kierunki: ${Array.from(fields).join(", ")}`;
+    // };
     const { suggestedFieldsOfStudy, preferredCity } = useAssistantSuggestionsStore();
     const [areAssistantSuggestionsIncluded, setAssistantSuggestionsIncluded] = useState(false);
     const allFaculties = getFaculties();
@@ -124,9 +124,9 @@ export default function Universities() {
                         {selectedUniversities.map((uni, i) =>
                             <UniCard
                                 key={i}
-                                header={uni.name}
-                                description={`${uni.city}, ${getUniversityFieldsDescription(uni)}`}
-                                icon={null}
+                                uni={uni}
+                                // description={`${uni.city}, ${getUniversityFieldsDescription(uni)}`}
+                                // icon={null}
                                 onClick={() => setFocused(uni)}
                             />
                         )}

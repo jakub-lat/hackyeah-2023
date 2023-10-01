@@ -1,9 +1,8 @@
 import PageLayout, {PageTitle} from "@/layouts/PageLayout.tsx";
-
 import {Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList,} from "@/components/ui/command"
 import {Card, CardHeader} from "@/components/ui/card.tsx";
 import {useRef, useState} from "react";
-import {ArrowRight, Check, Sparkles} from "lucide-react";
+import {ArrowRight, Check, Delete, Sparkles} from "lucide-react";
 import {Button} from "@/components/ui/button.tsx";
 import Graph3D, {DotsRef} from "@/views/graph3d.tsx";
 import {useGraphStore} from "@/store/graphStore.ts";
@@ -20,6 +19,8 @@ import {
 } from "@/components/ui/alert-dialog"
 import {Link} from "react-router-dom";
 import getFaculties from '../store/facultiesStore.ts';
+import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid"
+import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline"
 
 // function FieldOfStudyBadge({children, className, ...props}: ComponentProps<typeof Badge>) {
 //     return <Badge variant={"secondary"} className={cn("cursor-pointer h-7 gap-x-4", className)} {...props}>
@@ -32,8 +33,9 @@ export default function FieldsOfStudy() {
     const graphRef = useRef<DotsRef>(null);
     const [search, setSearch] = useState('');
     const {focused} = useGraphStore();
+    const [itemHovered, setItemHovered] = useState({});
 
-    const {selectedFields, addSelectedField, removeSelectedField} = useFilterStore();
+    const {selectedFields, addSelectedField, removeSelectedField, saveSelectedFields} = useFilterStore();
 
     const allFaculties = getFaculties();
 
@@ -41,10 +43,13 @@ export default function FieldsOfStudy() {
         addSelectedField(v);
         setSearch('');
         graphRef.current?.focus(v);
+        saveSelectedFields();
     };
 
-    const remove = (v: string) => removeSelectedField(v);
-
+    const remove = (v: string) => {
+        removeSelectedField(v);
+        saveSelectedFields()
+    }
 
     return <>
         <PageLayout>
@@ -66,10 +71,10 @@ export default function FieldsOfStudy() {
                         <CommandInput value={search} onValueChange={setSearch} placeholder="Wyszukaj kierunek..."/>
                         <CommandList className={"max-h-[65vh]"}>
                             <CommandEmpty>Nie znaleziono.</CommandEmpty>
-                            {selectedFields.length !== 0 && <CommandGroup heading={"❤️"}>
+                            {selectedFields.length !== 0 && <CommandGroup>
                                 {selectedFields.map(f =>
-                                    <CommandItem key={f} value={f} onSelect={() => remove(f)} className={"cursor-pointer"}>
-                                        <Check className={"w-4 h-4 opacity-50 mr-3"} />
+                                    <CommandItem key={f} value={f} onMouseLeave={() => setItemHovered(null)} onMouseEnter={() => setItemHovered(f)} onSelect={() => remove(f)} className={"cursor-pointer"}>
+                                        {itemHovered === f ? <Delete className={"w-4 h-4 opacity-50 mr-3"} />  : <Check className={"w-4 h-4 opacity-50 mr-3"} />}
                                         {f}
                                     </CommandItem>
                                 )}
@@ -88,16 +93,16 @@ export default function FieldsOfStudy() {
                 </div>
                 <div className={"flex-1 flex flex-col gap-5"}>
                     <div className={"flex-grow relative"}>
-                        {focused && <Card className={'absolute -bottom-[63px] w-[300px] left-[50%] z-40'}
+                        {focused && <Card className={'absolute -bottom-[63px] w-[400px] left-[50%] z-40'}
                                           style={{transform: 'translateX(-50%)'}}>
                             <CardHeader className={'py-2 px-3 flex flex-row items-center justify-between'}>
                                 {focused}
                                 {selectedFields.includes(focused) ?
                                     <Button size={'sm'} variant={'secondary'} onClick={() => remove(focused)}>
-                                        Usuń z ❤️
+                                        <HeartSolid className={'w-4 h-4 text-red-500'}/>
                                     </Button>
                                     : <Button size={'sm'} variant={'secondary'} onClick={() => add(focused)}>
-                                        Dodaj do ❤️
+                                        <HeartOutline className={'w-4 h-4'}/>
                                     </Button>
                                 }
                             </CardHeader>

@@ -11,6 +11,7 @@ import {
     AlertDialogTrigger
 } from "@/components/ui/alert-dialog.tsx";
 import RecruitmentPoints from "@/components/recruitment-points.tsx";
+import AdvancedFilters from "@/components/advanced-filters.tsx";
 
 
 export default function Filters() {
@@ -50,8 +51,7 @@ export default function Filters() {
                         <Sparkles className={"w-5 h-5 shrink-0 opacity-75 ml-3 text-pink-400"} />
                     </AlertDialogTitle>
                     <AlertDialogDescription>
-                        This action cannot be undone. This will permanently delete your
-                        account and remove your data from our servers.
+                        <AdvancedFilters />
                     </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>

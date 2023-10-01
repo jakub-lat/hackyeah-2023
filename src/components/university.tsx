@@ -13,7 +13,7 @@ const field = (x) => {
 
 const University = ({university}: { university: IUniversity }) => {
     const {setFocused} = useUniStore();
-    let elements : any = [];
+    let starRatings : any = [];
 
     let ratingMax = 5;
     let ratingMin = 0;
@@ -25,12 +25,11 @@ const University = ({university}: { university: IUniversity }) => {
     var randomPeopleCount = getRandomNumber(peopleCountMin, peopleCountMax);
 
     for (let index = 0; index < ratingMax; index++) {
-        let star = index < randomRating 
+        let star = index < (university.rating || randomRating) 
         ? <StarSolid className="w-5 h-5"></StarSolid> 
         : <StarOutline className="w-5 h-5"></StarOutline>
-        elements.push(star);
+        starRatings.push(star);
     }
-    console.log(elements);
 
     return (
         <ScrollArea className="lg:w-[35%] max-h-[80vh]">
@@ -41,18 +40,15 @@ const University = ({university}: { university: IUniversity }) => {
                         <X className={'w-5 h-5'}/>
                     </Button>
                 </div>
-                <p>
-                    {university.name}
-                </p>
+                <p>{university.description}</p>
                 <div>
                     <p className="rating">
-                        <div className="flex">
-                            {elements}
+                        <div className="flex mb-2">
+                            {starRatings}
                         </div>
-                        {randomRating}/5
                     </p>
                     <p className="text-sm text-muted-foreground">
-                        na bazie {randomPeopleCount} opinii
+                        na bazie {university.comments.length || randomPeopleCount} opinii
                     </p>
                 </div>
                 <div className="comments">

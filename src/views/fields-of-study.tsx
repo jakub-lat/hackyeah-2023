@@ -2,10 +2,8 @@ import PageLayout, {PageTitle} from "@/layouts/PageLayout.tsx";
 
 import {Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList,} from "@/components/ui/command"
 import {Card, CardHeader} from "@/components/ui/card.tsx";
-import {ComponentProps, useEffect, useRef, useState} from "react";
-import {ArrowRight, Check, Sparkles, X} from "lucide-react";
-import {Badge} from "@/components/ui/badge.tsx";
-import {cn} from "@/lib/utils.ts";
+import {useEffect, useRef, useState} from "react";
+import {ArrowRight, Check, Sparkles} from "lucide-react";
 import {Button} from "@/components/ui/button.tsx";
 import Graph3D, {DotsRef} from "@/views/graph3d.tsx";
 import {useGraphStore} from "@/store/graphStore.ts";

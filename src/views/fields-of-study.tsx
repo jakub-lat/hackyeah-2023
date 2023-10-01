@@ -2,7 +2,7 @@ import PageLayout, { PageTitle } from "@/layouts/PageLayout.tsx";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, } from "@/components/ui/command"
 import { Card, CardHeader } from "@/components/ui/card.tsx";
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Check, Delete, Sparkles } from "lucide-react";
+import {ArrowRight,  Delete, Heart, Sparkles} from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
 import Graph3D, { DotsRef } from "@/views/graph3d.tsx";
 import { useGraphStore } from "@/store/graphStore.ts";
@@ -84,7 +84,7 @@ export default function FieldsOfStudy() {
                             {selectedFields.length !== 0 && <CommandGroup>
                                 {selectedFields.map(f =>
                                     <CommandItem key={f} value={f} onMouseLeave={() => setItemHovered(null)} onMouseEnter={() => setItemHovered(f)} onSelect={() => remove(f)} className={"cursor-pointer"}>
-                                        {itemHovered === f ? <Delete className={"w-4 h-4 opacity-50 mr-3"} /> : <Check className={"w-4 h-4 opacity-50 mr-3"} />}
+                                        {itemHovered === f ? <Delete className={"w-4 h-4 opacity-50 mr-3"} /> : <Heart className={"w-4 h-4 opacity-50 mr-3"} />}
                                         {f}
                                     </CommandItem>
                                 )}

@@ -51,6 +51,9 @@ export const useFilterStore = create<IFilterStore>((set) => ({
                         set({ selectedFields: data.fields })
                     }
                 }
+                else {
+                    set({ selectedFields: [] })
+                }
             }
             )
         }

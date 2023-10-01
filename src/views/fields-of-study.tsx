@@ -90,7 +90,7 @@ export default function FieldsOfStudy() {
                 </div>
                 <div className={"flex-1 flex flex-col gap-5"}>
                     <div className={"flex-grow relative"}>
-                        {focused && <Card className={'absolute -bottom-[63px] w-[300px] left-[50%] z-40'}
+                        {focused && <Card className={'absolute -bottom-[63px] w-[400px] left-[50%] z-40'}
                                           style={{transform: 'translateX(-50%)'}}>
                             <CardHeader className={'py-2 px-3 flex flex-row items-center justify-between'}>
                                 {focused}

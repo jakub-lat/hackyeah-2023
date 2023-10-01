@@ -7,6 +7,9 @@ import { StarIcon as StarSolid } from "@heroicons/react/24/solid";
 import getRandomNumber from "@/lib/math";
 // @ts-ignore
 import ReactStreetview from "react-streetview";
+import {Badge} from "@/components/ui/badge.tsx";
+import {useFilterStore} from "@/store/filterStore.ts";
+import allFieldsOfStudy from "@/data/fieldsOfStudy.json";
 
 
 const field = (x) => {
@@ -85,6 +88,11 @@ const University = ({ university }: { university: IUniversity }) => {
         starRatings.push(star);
     }
 
+    const {selectedFields} = useFilterStore();
+    const selectedFieldsOfStudy = allFieldsOfStudy.filter((field) => selectedFields.includes(field.type));
+    const fields = [...new Set(selectedFieldsOfStudy.filter((f) => f.universityId === university.name).map(f => f.type))];
+
+
     return (
         <ScrollArea className="lg:w-[35%] max-h-[80vh]">
             <div className={"w-full pt-3 px-3"}>
@@ -95,7 +103,25 @@ const University = ({ university }: { university: IUniversity }) => {
                     </Button>
                 </div>
                 <p className="">{university.description || "To jest test opisu uniwersytetu jakiegoś, super polecam! 10/10"}</p>
-
+                <div className={'flex flex-wrap gap-1 mt-3'}>
+                    {Object.entries(university.tags_scored)
+                        ?.filter(([, value]: [string, any]) => value !== false)
+                        .map(([tag, value]: [string, any]) =>
+                        <Badge variant={'secondary'} className={'p-2'} key={tag}>
+                            {typeof value === 'boolean' ? tag : `${tag}: ${value}/10`}
+                        </Badge>
+                    )}
+                </div>
+                <h3 className={'text-lg font-bold mt-6'}>Kierunki</h3>
+                <div className={'flex flex-wrap gap-1 mt-2'}>
+                    {fields.map(x =>
+                        <Badge title={x} variant={'secondary'}
+                               className={'p-2 whitespace-nowrap max-w-[250px] overflow-hidden truncate'}
+                               key={x}>
+                            {x}
+                        </Badge>
+                    )}
+                </div>
                 <div
                     className="w-full h-[20rem] py-5"
                 >

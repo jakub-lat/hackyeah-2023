@@ -4,11 +4,13 @@ import { doc, setDoc } from "@firebase/firestore";
 
 interface IFilter {
     selectedFields: string[],
-    city: string,
+    selectedCities: string[],
     tags: ITagValue[],
 }
 
 interface IFilterStore extends IFilter {
+    setCities: (cities: string[]) => void,
+    selectedCities: string[],
     setSelectedFields: (selectedFields: string[]) => void,
     addSelectedField: (selectedField: string) => void,
     removeSelectedField: (selectedField: string) => void,
@@ -39,8 +41,9 @@ export const useFilterStore = create<IFilterStore>((set) => ({
             setDoc(doc(firestore, 'users', auth.currentUser.uid), { fields }, { merge: true })
         }
     },
-    city: '',
     updateFilter: (filter: Partial<IFilter>) => set(filter),
+    selectedCities: [],
+    setCities: (cities: string[]) => set({ selectedCities: cities }),
     tags: [],
     addTag: (tag) => set((state) => ({ tags: [...state.tags, tag] })),
     removeTag: (name: string) => set((state) => ({ tags: state.tags.filter((t) => t.name !== name) })),

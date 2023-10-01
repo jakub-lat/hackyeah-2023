@@ -101,7 +101,7 @@ export default function Chatbot() {
             <div>
                 <div className='flex mt-1 gap-2 items-center'>
                     {choicesAnswer !== null ? (
-                        <RadioGroup defaultValue="option-one" value={choiceAnswer} onValueChange={e => setChoiceAnswer(e)}>
+                        <RadioGroup value={choiceAnswer} onValueChange={e => setChoiceAnswer(e)}>
                             {choicesAnswer.map((choice, i) => (
                                 <div className="flex items-center space-x-2 p-2" key={i}>
                                     <RadioGroupItem value={choice} id={`choice${i}`} />
@@ -125,10 +125,11 @@ export default function Chatbot() {
                     )}
 
                     <LoadingButton
-                        className="grow w-40 max-w-40 h-14 ml-auto"
+                        className="w-40 h-14 ml-auto"
                         color="primary"
                         onClick={isDataGathered ? () => navigate('/universities') : handleSubmit}
                         isLoading={isLoading}
+                        disabled={isDataGathered}
                     >
                         {isDataGathered ? "Kontynuuj" : "Wyślij"}
                     </LoadingButton>

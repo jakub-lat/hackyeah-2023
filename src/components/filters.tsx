@@ -1,6 +1,5 @@
 import { useFilterStore } from "@/store/filterStore.ts";
 import { MultiSelect } from "@/components/ui/multiselect.tsx";
-import { useState } from "react";
 import { Button } from "@/components/ui/button.tsx";
 import { ArrowLeft, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";

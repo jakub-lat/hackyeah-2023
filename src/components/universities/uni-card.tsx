@@ -2,6 +2,9 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/comp
 import { Button } from "@/components/ui/button";
 import { ChevronRight, School2 } from "lucide-react";
 import { HTMLProps } from "react";
+import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid"
+import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline"
+import { useState } from "react";
 
 const UniCard = ({ header, description, icon, onClick }: {
     header: string,
@@ -9,6 +12,9 @@ const UniCard = ({ header, description, icon, onClick }: {
     icon?: string,
     onClick?: () => void
 } & HTMLProps<HTMLButtonElement>) => {
+
+    const [isFavorited, setIsFavorited] = useState<boolean>(false);
+
     return (
         <Card className="flex items-center cursor-pointer opacity-70 hover:opacity-100 transition-all" onClick={onClick}>
             <CardHeader className="p-5">
@@ -26,6 +32,9 @@ const UniCard = ({ header, description, icon, onClick }: {
                 </div>
             </CardHeader>
             <CardFooter className="p-5 ml-auto">
+                <Button onClick={e => setIsFavorited(x => x = !x)} variant="ghost">
+                    { isFavorited ? <HeartSolid className="h-5 w-5" /> : <HeartOutline className="h-5 w-5" />}
+                    </Button>
                 <Button variant="ghost"><ChevronRight /></Button>
             </CardFooter>
         </Card>

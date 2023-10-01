@@ -2,15 +2,16 @@ import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
 import OpenAI from 'openai';
 import FieldOfStudy from "./FieldOfStudy";
-import { openAiKey } from "./secrets";
+import { getOpenAIKey } from "./secrets";
 
 
-const openai = new OpenAI({
-  apiKey: openAiKey, // defaults to process.env["OPENAI_API_KEY"]
-  dangerouslyAllowBrowser: true
-});
+
 
 async function askChat(prompt: string): Promise<string> {
+  const openai = new OpenAI({
+    apiKey: await getOpenAIKey(), // defaults to process.env["OPENAI_API_KEY"]
+    dangerouslyAllowBrowser: true
+  });
   const chatCompletion = await openai.chat.completions.create({
     messages: [{ role: 'user', content: prompt }],
     model: 'gpt-3.5-turbo',

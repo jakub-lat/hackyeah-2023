@@ -25,14 +25,14 @@ const UniCard = ({ header, description, icon, onClick: onClick }: {
                             <School2 className="w-full h-full" color={"#478ce6"} />
                         }
                     </div>
-                    <div>
+                    <div className="flex-1">
                         <CardTitle className="text-lg">{header}</CardTitle>
                         <CardDescription>{description}</CardDescription>
                     </div>
                 </div>
             </CardHeader>
             <CardFooter className="p-5 ml-auto">
-                <Button onClick={e => setIsFavorited(x => x = !x)} variant="ghost">
+                <Button onClick={() => setIsFavorited(x => x = !x)} variant="ghost">
                     { isFavorited ? <HeartSolid className="h-5 w-5" /> : <HeartOutline className="h-5 w-5" />}
                     </Button>
                 <Button onClick={onClick} variant="ghost"><ChevronRight /></Button>

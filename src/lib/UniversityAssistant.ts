@@ -23,7 +23,7 @@ export default class UniversityAssistant {
         this.messages.push({ role: 'assistant', content: 'Cześć! Opowiedziałbyś mi o tym co lubisz robić w wolnym czasie?' })
     }
 
-    async ask(prompt: string, numberOfTries: number = 0): Promise<AssistantAnswer> {
+    async ask(prompt: string): Promise<AssistantAnswer> {
         const newPrompt = `Pamiętaj, żeby odpowiedzieć w formacie 
         {"answer": ..., "isDataGathered": true/false, "possibleResponses": [...]/null} i dalej zbierać informacje do wypełnienia dokumentu JSON, 
         chyba że już wszystkie są zebrane. 
@@ -45,17 +45,27 @@ export default class UniversityAssistant {
         this.messages.push(answer);
         try {
             return JSON.parse(answer.content!) as AssistantAnswer;
-
         } catch (e) {
-            if (numberOfTries > 2) {
+
+            const pattern = /{.*?}/;
+
+            // Find the first match of the pattern in the input string
+            const match = answer.content!.match(pattern);
+
+            try {
+                const result = JSON.parse(match[0]);
+                const parts = answer.content!.split(pattern);
+                result.answer = parts[0] + result.answer;
+                if (parts.length > 2)
+                    result.answer += answer.content!.substring(parts[0].length + match[0].length);
+                return result;
+            } catch {
                 return {
                     answer: answer.content!,
                     isDataGathered: false,
                     possibleResponses: null,
                 };
             }
-            const promptAddition = "Pamiętaj, aby Twoją odpowiedź dało się sparsować jako JSON - nie dodawaj do niej nic co spowodowałoby błąd. ";
-            return this.ask(promptAddition + prompt, numberOfTries + 1);
         }
     }
 }

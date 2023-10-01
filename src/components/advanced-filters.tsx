@@ -104,7 +104,7 @@ export default function AdvancedFilters() {
             <div className={'mt-12'}>
                 <Button asChild variant={'secondary'}>
                     <Link to={'/assistant'}>
-                        Pomóż mi wybrać
+                        Wygeneruj filtry
                         <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-3 text-pink-400"} />
                     </Link>
                 </Button>

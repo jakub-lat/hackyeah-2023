@@ -38,9 +38,7 @@ export default function Favorites() {
                 {selectedUniversities?.map((uni, i) =>
                     <UniCard
                         key={i}
-                        header={uni.name}
-                            description={`${uni.city}, ${getUniversityFieldsDescription(uni)}`}
-                        icon={uni.icon}
+                        uni={uni}
                         onClick={() => {
                             navigate({
                                 pathname: '/universities',

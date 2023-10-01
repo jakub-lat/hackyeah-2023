@@ -6,7 +6,7 @@ import Chatbot from "@/components/chatbot";
 
 export default function CareerAssistant() {
     return <PageLayout>
-        <PageTitle className={'flex items-center'}>
+        <PageTitle className={'flex items-center mt-6'}>
             <Button variant={'ghost'} size={'sm'} className={'mr-2'} asChild>
                 <Link to={'/fields-of-study'}>
                     <ArrowLeft />

@@ -1,20 +1,21 @@
 import PageLayout from "@/layouts/PageLayout.tsx";
 import Map from "@/components/ui/map.tsx";
 import UniCard from "@/components/universities/uni-card";
-import { useEffect, useState } from "react";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import {useEffect, useState} from "react";
+import {ScrollArea} from "@/components/ui/scroll-area";
 import Filters from "@/components/filters.tsx";
 import { useFilterStore } from "@/store/filterStore.ts";
-import universities from "../data/universities.json";
+import {useFilterStore} from "@/store/filterStore.ts";
+import universities from "../data/universities_with_tags_scored.json";
 import allFieldsOfStudy from "../data/fieldsOfStudy.json";
-import { useAssistantSuggestionsStore } from "@/store/assistantSuggestionsStore";
-import { getSimilarMetacategories } from "@/lib/utils";
+import {useAssistantSuggestionsStore} from "@/store/assistantSuggestionsStore";
+import {getSimilarMetacategories} from "@/lib/utils";
 import getFaculties from '@/store/facultiesStore';
 import { useUniStore } from "@/store/universityStore.ts";
 import University from "@/components/university";
 import {useSearchParams} from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "@/lib/firebase.ts";
+import {useAuthState} from "react-firebase-hooks/auth";
+import {auth} from "@/lib/firebase.ts";
 import {Alert, AlertDescription} from "@/components/ui/alert";
 import {AlertTitle} from "@/components/ui/alert.tsx";
 import {AlertCircle} from "lucide-react";
@@ -47,10 +48,11 @@ interface University {
     latitude: Number;
     city: string;
     geoHash: string;
+    tags_scored: any;
 }
 
 export default function Universities() {
-    const { selectedFields, addSelectedField, setCities, selectedCities, getSelectedFields } = useFilterStore();
+    const { selectedFields, tags,, addSelectedField, setCities, selectedCities, getSelectedFields } = useFilterStore();
 
     // const [focus, setFocus] = useState(null)
     const { focused, setFocused, universities: universitiesStore, setUniversities: setUniversitiesStore } = useUniStore();
@@ -64,7 +66,31 @@ export default function Universities() {
             setFocused(universities.find((uni) => uni.name === search.get('id')));
         }
     }, [search]);
-  
+
+    const getAIScore = (uni: University) => {
+        if (tags.length === 0) {
+            return 0;
+        }
+        var score = 0;
+        for (const tag of tags) {
+            const value = tag.value;
+            if (typeof value === 'boolean') {
+                if (value === uni.tags_scored[tag.name]) {
+                    score += uni.tags_scored[tag.name] * 10;
+                }
+            } else if (typeof value === 'number') {
+                const dist = Math.abs(value - uni.tags_scored[tag.name]);
+                score += (10 - dist);
+            }
+        }
+        const maxScore = 40 + 11 * 10;
+        var finalScore = Math.round(score / maxScore * 100) * 2;
+        if (finalScore >= 100) {
+            finalScore = 100 - Math.random() * 10;
+        }
+        return Math.round(finalScore);
+    }
+
     const selectedFieldsOfStudy = allFieldsOfStudy.filter((field) => selectedFields.includes(field.type));
     const doesUniversityOfferAnySelectedField = (uni: University) => selectedFieldsOfStudy.map((f) => f.universityId).includes(uni.name);
     const selectedUniversities = Array.from(new Set(universities.filter(doesUniversityOfferAnySelectedField)))
@@ -129,12 +155,13 @@ export default function Universities() {
             {focused ? <University university={focused}/> :
                 <ScrollArea className="lg:w-[35%] max-h-[80vh]">
                     <div className="flex flex-col gap-3">
-                        {selectedUniversities.map((uni, i) =>
+                        {selectedUniversities.sort((a, b) => getAIScore(b) - getAIScore(a)).map((uni, i) =>
                             <UniCard
                                 key={i}
                                 uni={uni}
                                 // description={`${uni.city}, ${getUniversityFieldsDescription(uni)}`}
                                 // icon={null}
+                                 aiScore={getAIScore(uni)}
                                 onClick={() => setFocused(uni)}
                             />
                         )}

@@ -11,6 +11,7 @@ import {useFilterStore} from "@/store/filterStore.ts";
 
 const UniCard = ({uni, onClick: onClick}: {
     uni: IUniversity
+    aiScore: number
     onClick?: () => void
 } & HTMLProps<HTMLButtonElement>) => {
 
@@ -81,6 +82,7 @@ const UniCard = ({uni, onClick: onClick}: {
                     {isFavorited ? <HeartSolid className="h-5 w-5"/> : <HeartOutline className="h-5 w-5"/>}
                 </Button>
                 <Button variant="ghost" onClick={handleClick}><ChevronRight/></Button>
+                <>AI: {aiScore}</>
             </CardFooter>
         </Card>
     )

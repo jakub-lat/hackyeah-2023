@@ -6,7 +6,7 @@ import {Slider} from '@/components/ui/slider.tsx';
 import {Link} from "react-router-dom";
 
 const minScore = 0;
-const maxScore = 5;
+const maxScore = 10;
 
 const tagTypes: ITagType[] = [
     {
@@ -40,7 +40,35 @@ const tagTypes: ITagType[] = [
     {
         name: 'Cena',
         type: 'score'
-    }
+    },
+    {
+        name: 'Wsparcie dla studentów z niepełnosprawnościami',
+        type: 'bool'
+    },
+    {
+        name: 'Infrastruktura sportowa',
+        type: 'bool'
+    },
+    {
+        name: 'Aktywność organizacji studenckich',
+        type: 'bool'
+    },
+    {
+        name: 'Dostępność programów wymiany studenckiej',
+        type: 'bool'
+    },
+    {
+        name: 'Wskaźnik zatrudnienia absolwentów',
+        type: 'score'
+    },
+    {
+        name: 'Dostępność stypendiów',
+        type: 'bool'
+    },
+    {
+        name: 'Dostępność biblioteki na kampusie',
+        type: 'bool'
+    },
 ];
 
 function TagFilter({tagType}: { tagType: ITagType }) {
@@ -99,13 +127,13 @@ function TagFilter({tagType}: { tagType: ITagType }) {
 export default function AdvancedFilters() {
     return (<>
             <div className={'flex flex-wrap gap-2 pt-4'}>
-                {tagTypes.map(x => <TagFilter tagType={x} key={x.name}/>)}
+                {tagTypes.sort((a, b) => a.name.localeCompare(b.name)).map(x => <TagFilter tagType={x} key={x.name}/>)}
             </div>
             <div className={'mt-12'}>
                 <Button asChild variant={'secondary'}>
                     <Link to={'/assistant'}>
                         Wygeneruj filtry
-                        <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-3 text-pink-400"} />
+                        <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-3 text-pink-400"}/>
                     </Link>
                 </Button>
             </div>

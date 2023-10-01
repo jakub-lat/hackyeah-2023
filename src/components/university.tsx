@@ -19,7 +19,7 @@ const University = ({ university }: { university: IUniversity }) => {
     let ratingMin = 0;
 
     let peopleCountMax = 200;
-    let peopleCountMin = 0;
+    let peopleCountMin = 1;
 
     var randomRating = getRandomNumber(ratingMin, ratingMax);
     var randomPeopleCount = getRandomNumber(peopleCountMin, peopleCountMax);
@@ -32,7 +32,7 @@ const University = ({ university }: { university: IUniversity }) => {
 
     for (let index = 0; index < ratingMax; index++) {
         let star = index < (university.rating || randomRating)
-            ? <StarSolid className="fill-yellow text-yellow w-5 h-5"></StarSolid>
+            ? <StarSolid className="fill-yellow-400 text-yellow w-5 h-5"></StarSolid>
             : <StarOutline className="w-5 h-5"></StarOutline>
         starRatings.push(star);
     }
@@ -40,11 +40,16 @@ const University = ({ university }: { university: IUniversity }) => {
     return (
         <ScrollArea className="lg:w-[35%] max-h-[80vh]">
             <div className={"w-full pt-3"}>
-                <div className={"flex justify-between"}>
+                <div className={"flex justify-between pb-4"}>
                     <h1 className={"font-bold text-xl"}>{university.name}</h1>
                     <Button variant={"outline"} className={'px-3 py-3'} onClick={() => setFocused(null)}>
                         <X className={'w-5 h-5'} />
                     </Button>
+                </div>
+                <div className="grid grid-cols-3">
+                    <img src="/logoUP_pl.png" className="aspect-video" />
+                    <img src="/Nowy-projekt-Uniwersytetu-Pedagogicznego.png" className="aspect-video" />
+                    <img src="/z29934078IEG,Uniwersytet-Pedagogiczny-w-Krakowie.jpg" className="aspect-video" />
                 </div>
                 <p className="pb-8 pt-4">{university.description || "To jest test opisu uniwersytetu jakiegoś, super polecam! 10/10"}</p>
                 <div>
@@ -58,6 +63,7 @@ const University = ({ university }: { university: IUniversity }) => {
                     </p>
                 </div>
                 <div className="comments">
+                    <h1>Komentarze</h1>
                     {comm.map(x => (<div className="grid grid-cols-3">
                         <div className="flex flex-col py-4">
                             <UserCircle />

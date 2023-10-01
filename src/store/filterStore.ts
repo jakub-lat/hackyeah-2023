@@ -6,6 +6,7 @@ interface IFilter {
     selectedFields: string[],
     city: string,
     tags: ITagValue[],
+    points?: number,
 }
 
 interface IFilterStore extends IFilter {
@@ -16,6 +17,7 @@ interface IFilterStore extends IFilter {
     saveSelectedFields: () => void,
     addTag: (tag: ITagValue) => void,
     removeTag: (name: string) => void,
+    setPoints: (points: number) => void,
 }
 
 export interface ITagType {
@@ -44,4 +46,6 @@ export const useFilterStore = create<IFilterStore>((set) => ({
     tags: [],
     addTag: (tag) => set((state) => ({ tags: [...state.tags, tag] })),
     removeTag: (name: string) => set((state) => ({ tags: state.tags.filter((t) => t.name !== name) })),
+    points: null,
+    setPoints: (points) => set({ points }),
 }));

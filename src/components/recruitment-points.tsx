@@ -14,6 +14,7 @@ import {Command, CommandEmpty, CommandGroup, CommandInput, CommandItem} from "@/
 import {cn} from "@/lib/utils.ts";
 import {Input} from "@/components/ui/input.tsx";
 import { Slider } from "./ui/slider";
+import {useFilterStore} from "@/store/filterStore.ts";
 
 const maturaSubjects = ['J. polski PP', 'J. polski PR', 'Matematyka PP', 'Matematyka PR', 'Biologia', 'Chemia', 'Fizyka', 'Geografia', 'Historia', 'Informatyka', 'Wos', 'Francuski', 'Hiszpański', 'Niemiecki', 'Rosyjski', 'Włoski', 'Historia sztuki', 'Filozofia', 'Historia muzyki', 'Łaciński'];
 
@@ -22,6 +23,8 @@ export default function RecruitmentPoints() {
     const [value, setValue] = useState('');
     const [open, setOpen] = useState(false);
 
+    const {points, setPoints} = useFilterStore();
+
     function addSubject(subject: string) {
         setValue('');
         setOpen(false);
@@ -29,23 +32,28 @@ export default function RecruitmentPoints() {
     }
 
     function updateScore(subject: string, score: number) {
-        setScores(scores.map(([subj, _score]) => {
+        const newScores = scores.map(([subj, _score]) => {
             if (subj === subject) {
                 return [subj, score];
             }
             return [subj, _score];
-        }));
+        });
+        setScores(newScores as any);
+        setPoints(newScores.reduce((acc, x) => acc + (x[1] as number), 0));
     }
 
     function removeSubject(subject: string) {
-        setScores(scores.filter(([subj, _score]) => subj !== subject));
+        const newScores = scores.filter(([subj, _score]) => subj !== subject);
+        setScores(newScores);
+        setPoints(newScores.reduce((acc, x) => acc + x[1], 0));
     }
 
     return <AlertDialog>
         <AlertDialogTrigger asChild>
             <Button variant={"outline"}>
                 Punkty rekrutacyjne
-                <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50 ml-6"/>
+                {scores.length !== 0 && <span className={'text-muted-foreground ml-2'}>{points}</span>}
+                <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50 ml-3"/>
             </Button>
         </AlertDialogTrigger>
         <AlertDialogContent className={"min-w-[600px]"}>

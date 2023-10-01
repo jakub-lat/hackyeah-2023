@@ -1,9 +1,6 @@
 import PageLayout from "@/layouts/PageLayout.tsx";
 import Map from "@/components/ui/map.tsx";
 import UniMock from "@/mock/universities";
-import UniCard from "@/components/universities/uni-card";
-import { useState } from "react";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import Filters from "@/components/filters.tsx";
 import { useFilterStore } from "@/store/filterStore.ts";
 import universities from "../data/universities.json";
@@ -65,18 +62,13 @@ export default function Universities() {
                     )}
                 </div>
             </ScrollArea>
-            <div className="lg:w-[65%] lg:h-[80vh]">
-                <Map
-                    markers={selectedUniversities.map((uni) => {
-                        return {
-                            lat: uni.latitude,
-                            lng: uni.longitude,
-                            badge: uni.name,
+            {focused ? <University university={focused} /> : <UniversityList />}
+
                             icon: null,
                             onClick: () => setFocus({ lat: uni.latitude, lng: uni.longitude })
                         }
                     })}
-                    focus={focus}
+                    focus={focused}
                 />
             </div>
         </div>

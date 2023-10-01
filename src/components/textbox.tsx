@@ -9,7 +9,7 @@ export default function Textbox(
     return (
         <div className='flex mt-1 gap-2'>
                 <Input
-                    className="placeholder-red px-7"
+                    className="placeholder-red px-7 h-14"
                     value={currentMessage}
                     onChange={e => setCurrentMessage(e.currentTarget.value)}
                     onKeyDown={e => {
@@ -20,7 +20,7 @@ export default function Textbox(
                     placeholder="Wpisz..."
                 />
                 <Button
-                    className="grow w-40"
+                    className="grow w-40 h-14"
                     color="primary"
                     onClick={handleSubmit}
                 >

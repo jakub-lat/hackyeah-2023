@@ -15,7 +15,7 @@ import {cn} from "@/lib/utils.ts";
 import {Input} from "@/components/ui/input.tsx";
 import { Slider } from "./ui/slider";
 
-const maturaSubjects = ['j. polski PP', 'j. polski PR', 'matematyka PP', 'matematyka PR', 'biologia', 'chemia', 'fizyka', 'geografia', 'historia', 'informatyka', 'wos', 'francuski', 'hiszpański', 'niemiecki', 'rosyjski', 'włoski', 'historia sztuki', 'filozofia', 'historia muzyki', 'łaciński'];
+const maturaSubjects = ['J. polski PP', 'J. polski PR', 'Matematyka PP', 'Matematyka PR', 'Biologia', 'Chemia', 'Fizyka', 'Geografia', 'Historia', 'Informatyka', 'Wos', 'Francuski', 'Hiszpański', 'Niemiecki', 'Rosyjski', 'Włoski', 'Historia sztuki', 'Filozofia', 'Historia muzyki', 'Łaciński'];
 
 export default function RecruitmentPoints() {
     const [scores, setScores] = useState<[string, number | null][]>([]);
@@ -55,7 +55,8 @@ export default function RecruitmentPoints() {
                     Sprawdź, czy się dostaniesz
                 </AlertDialogTitle>
                 <AlertDialogDescription>
-                    <div className={'flex flex-col gap-y-4 py-5'}>
+                    <h3 className={'mb-2'}>Wpisz wyniki z matury (rzeczywiste lub szacowane) aby wyróżnić uczelnie, na które będzie ci się trudniej dostać.</h3>
+                    <div className={'flex flex-col gap-y-4 pb-4 pt-2'}>
                     {scores.map(([subject, score]) =>
                         <div className={'flex'}>
                         <div className={"grid items-center gap-4 grid-cols-3 mr-3"}>

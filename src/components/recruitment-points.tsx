@@ -23,7 +23,6 @@ export default function RecruitmentPoints() {
     const [open, setOpen] = useState(false);
 
     function addSubject(subject: string) {
-        console.log(subject);
         setValue('');
         setOpen(false);
         setScores([...scores, [subject, null]]);

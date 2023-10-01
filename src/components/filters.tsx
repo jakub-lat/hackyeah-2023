@@ -33,7 +33,7 @@ export default function Filters() {
 
         <RecruitmentPoints />
 
-        <AlertDialog defaultOpen={true}>
+        <AlertDialog>
             <AlertDialogTrigger asChild>
                 <Button variant={"outline"}>
                     Zaawansowane filtry

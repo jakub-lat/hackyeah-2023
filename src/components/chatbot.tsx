@@ -145,7 +145,7 @@ export default function Chatbot() {
                         color="primary"
                         onClick={isDataGathered ? () => navigate('/universities') : handleSubmit}
                         isLoading={isLoading}
-                        disabled={!textAnswer.trim() && choicesAnswer && !choiceAnswer}
+                        disabled={!textAnswer.trim() && choicesAnswer && selected !== null}
                     >
                         {isDataGathered ? "Kontynuuj" : "Wyślij"}
                         {isDataGathered ? <ArrowRight className={"w-4 h-4 ml-3"}/> : null}

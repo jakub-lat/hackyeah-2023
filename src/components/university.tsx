@@ -1,7 +1,7 @@
-import {IUniversity, useUniStore} from "@/store/universityStore.ts";
-import {ScrollArea} from "@/components/ui/scroll-area.tsx";
-import {Button} from "@/components/ui/button.tsx";
-import {X} from "lucide-react";
+import { IUniversity, useUniStore } from "@/store/universityStore.ts";
+import { ScrollArea } from "@/components/ui/scroll-area.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { X, UserCircle } from "lucide-react";
 import { StarIcon as StarOutline } from "@heroicons/react/24/outline";
 import { StarIcon as StarSolid } from "@heroicons/react/24/solid";
 import getRandomNumber from "@/lib/math";
@@ -11,9 +11,9 @@ const field = (x) => {
     return <div className="field float-left m-2 bg-yellow-400 text-stone-950 px-2 py-0.5">{x}</div>
 }
 
-const University = ({university}: { university: IUniversity }) => {
-    const {setFocused} = useUniStore();
-    let starRatings : any = [];
+const University = ({ university }: { university: IUniversity }) => {
+    const { setFocused } = useUniStore();
+    let starRatings: any = [];
 
     let ratingMax = 5;
     let ratingMin = 0;
@@ -23,11 +23,17 @@ const University = ({university}: { university: IUniversity }) => {
 
     var randomRating = getRandomNumber(ratingMin, ratingMax);
     var randomPeopleCount = getRandomNumber(peopleCountMin, peopleCountMax);
+    if (randomRating === 0) {
+        randomPeopleCount = 0;
+    }
+
+    var comm = university.comments || ["lubię placki", "jestem hardkorem", "2137!!!111"];
+
 
     for (let index = 0; index < ratingMax; index++) {
-        let star = index < (university.rating || randomRating) 
-        ? <StarSolid className="w-5 h-5"></StarSolid> 
-        : <StarOutline className="w-5 h-5"></StarOutline>
+        let star = index < (university.rating || randomRating)
+            ? <StarSolid className="fill-yellow text-yellow w-5 h-5"></StarSolid>
+            : <StarOutline className="w-5 h-5"></StarOutline>
         starRatings.push(star);
     }
 
@@ -37,22 +43,28 @@ const University = ({university}: { university: IUniversity }) => {
                 <div className={"flex justify-between"}>
                     <h1 className={"font-bold text-xl"}>{university.name}</h1>
                     <Button variant={"outline"} className={'px-3 py-3'} onClick={() => setFocused(null)}>
-                        <X className={'w-5 h-5'}/>
+                        <X className={'w-5 h-5'} />
                     </Button>
                 </div>
-                <p>{university.description}</p>
+                <p className="pb-8 pt-4">{university.description || "To jest test opisu uniwersytetu jakiegoś, super polecam! 10/10"}</p>
                 <div>
                     <p className="rating">
                         <div className="flex mb-2">
                             {starRatings}
                         </div>
                     </p>
-                    <p className="text-sm text-muted-foreground">
-                        na bazie {university.comments.length || randomPeopleCount} opinii
+                    <p className="text-sm text-muted-foreground mb-6">
+                        na bazie {university.comments?.length || randomPeopleCount} opinii
                     </p>
                 </div>
                 <div className="comments">
-                    {university.comments}
+                    {comm.map(x => (<div className="grid grid-cols-3">
+                        <div className="flex flex-col py-4">
+                            <UserCircle />
+                            <p>{"Anonim"}</p>
+                            <p className="text-[14px]">{x}</p>
+                            </div>
+                        </div>))}
                 </div>
                 <div className="fields">
                     {university.fieldsOfStudy?.map(x => field(x))}

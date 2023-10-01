@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useAssistantSuggestionsStore } from '@/store/assistantSuggestionsStore';
 import { AssistantSuggestion } from '@/lib/AssistantAnswer';
-
+import { ArrowRight } from "lucide-react";
 
 export default function Chatbot() {
     const [messages, setMessages] = useState<{ message: string, bot: boolean }[]>([{
@@ -22,11 +22,11 @@ export default function Chatbot() {
     const messagesEndRef = useRef(null)
 
     const scrollToBottom = () => {
-      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
     }
-  
+
     useEffect(() => {
-      scrollToBottom()
+        scrollToBottom()
     }, [messages]);
 
     const [textAnswer, setTextAnswer] = useState('');
@@ -37,7 +37,7 @@ export default function Chatbot() {
     const [isLoading, setLoading] = useState(false);
     const [isDataGathered, setDataGathered] = useState(false);
     const navigate = useNavigate()
-    const {setSuggestion} = useAssistantSuggestionsStore(); 
+    const { setSuggestion } = useAssistantSuggestionsStore();
 
     const handleSubmit = () => {
         if (textAnswer.trim() || choiceAnswer.trim()) {
@@ -63,7 +63,7 @@ export default function Chatbot() {
                     ]);
                 }
                 else {
-                    
+
 
                     if (res.possibleResponses) {
                         setChoicesAnswer(res.possibleResponses)
@@ -135,6 +135,7 @@ export default function Chatbot() {
                         isLoading={isLoading}
                     >
                         {isDataGathered ? "Kontynuuj" : "Wyślij"}
+                        {isDataGathered ? <ArrowRight className={"h-4 w-4 ml-2"} /> : null}
                     </LoadingButton>
                 </div>
             </div>

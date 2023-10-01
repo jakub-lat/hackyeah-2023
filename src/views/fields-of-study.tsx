@@ -144,7 +144,7 @@ export default function FieldsOfStudy() {
                 </div>
             </div>
         </PageLayout>
-        <AlertDialog defaultOpen={selectedFields.length === 0}>
+        <AlertDialog onOpenChange={() => localStorage.setItem("hadAiAlert", "true")} defaultOpen={selectedFields.length === 0 && !localStorage.getItem("hadAiAlert")}>
             <AlertDialogContent>
                 <AlertDialogHeader>
                     <AlertDialogTitle>Nie wiesz jeszcze, co chcesz studiować?</AlertDialogTitle>

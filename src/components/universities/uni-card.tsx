@@ -8,10 +8,6 @@ import {IUniversity, useUniStore} from "@/store/universityStore.ts";
 import {Badge} from "@/components/ui/badge.tsx";
 import allFieldsOfStudy from "@/data/fieldsOfStudy.json";
 import {useFilterStore} from "@/store/filterStore.ts";
-import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid"
-import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline"
-import { useState } from "react";
-import { Badge } from "../ui/badge";
 
 
 const UniCard = ({uni, aiScore, onClick: onClick}: {

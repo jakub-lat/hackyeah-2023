@@ -13,7 +13,6 @@ import { useAssistantSuggestionsStore } from '@/store/assistantSuggestionsStore'
 import { AssistantSuggestion } from '@/lib/AssistantAnswer';
 import { ArrowRight } from "lucide-react";
 import {Button} from "@/components/ui/button.tsx";
-import { text } from 'stream/consumers';
 
 
 export default function Chatbot() {

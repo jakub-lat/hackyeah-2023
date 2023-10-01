@@ -4,8 +4,6 @@ import UniCard from "@/components/universities/uni-card";
 import {useEffect, useState} from "react";
 import {ScrollArea} from "@/components/ui/scroll-area";
 import Filters from "@/components/filters.tsx";
-import { useFilterStore } from "@/store/filterStore.ts";
-import {useFilterStore} from "@/store/filterStore.ts";
 import universities from "../data/universities_with_tags_scored.json";
 import allFieldsOfStudy from "../data/fieldsOfStudy.json";
 import {useAssistantSuggestionsStore} from "@/store/assistantSuggestionsStore";
@@ -19,6 +17,7 @@ import {auth} from "@/lib/firebase.ts";
 import {Alert, AlertDescription} from "@/components/ui/alert";
 import {AlertTitle} from "@/components/ui/alert.tsx";
 import {AlertCircle} from "lucide-react";
+import { useFilterStore } from "@/store/filterStore";
 
 /*
     {
@@ -52,7 +51,7 @@ interface University {
 }
 
 export default function Universities() {
-    const { selectedFields, tags,, addSelectedField, setCities, selectedCities, getSelectedFields } = useFilterStore();
+    const { selectedFields, tags, addSelectedField, setCities, selectedCities, getSelectedFields } = useFilterStore();
 
     // const [focus, setFocus] = useState(null)
     const { focused, setFocused, universities: universitiesStore, setUniversities: setUniversitiesStore } = useUniStore();

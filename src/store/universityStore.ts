@@ -7,8 +7,8 @@ interface IUniStore {
 
 export interface IUniversity {
     name: string,
-    lat: number,
-    lng: number,
+    latitude: number,
+    longitude: number,
     icon?: string,
     description?: string,
     fieldsOfStudy?: string[],

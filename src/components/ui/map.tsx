@@ -21,8 +21,8 @@ type Marker = {
 type Props = {
     className?: string;
     focus?: {
-        lat: number;
-        lng: number;
+        latitude: number;
+        longitude: number;
     } | null;
     markers: Marker[];
 }
@@ -103,7 +103,7 @@ const Map = ({ className, focus, markers }: Props) => {
         if (map) {
             if (focus) {
                 map.flyTo({
-                    center: [focus.lng, focus.lat],
+                    center: [focus.longitude, focus.latitude],
                     zoom: 10,
                     essential: true,
                     speed: 2,

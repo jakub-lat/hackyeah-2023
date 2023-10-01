@@ -9,6 +9,8 @@ interface IUniStore {
     setFavorites: (v: string[]) => void;
     saveFavorites: () => Promise<void>;
     getFavorites: () => Promise<void>;
+    universities?: IUniversity[];
+    setUniversities: (v: IUniversity[]) => void;
 }
 
 export interface IUniversity {
@@ -55,4 +57,6 @@ export const useUniStore = create<IUniStore>((set) => ({
             )
         }
     },
+    universities: [],
+    setUniversities: (v) => set(() => ({ universities: v })),
 }))

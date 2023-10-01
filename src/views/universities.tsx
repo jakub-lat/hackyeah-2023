@@ -53,7 +53,8 @@ export default function Universities() {
     const { selectedFields, addSelectedField, setCities, selectedCities, getSelectedFields } = useFilterStore();
 
     // const [focus, setFocus] = useState(null)
-    const { focused, setFocused } = useUniStore();
+    const { focused, setFocused, setUniversities: setUniversitiesStore } = useUniStore();
+
 
     const [search, _setSearch] = useSearchParams();
     const [user] = useAuthState(auth);
@@ -67,6 +68,11 @@ export default function Universities() {
     const selectedFieldsOfStudy = allFieldsOfStudy.filter((field) => selectedFields.includes(field.type));
     const doesUniversityOfferAnySelectedField = (uni: University) => selectedFieldsOfStudy.map((f) => f.universityId).includes(uni.name);
     const selectedUniversities = Array.from(new Set(universities.filter(doesUniversityOfferAnySelectedField)))
+
+    useEffect(() => {
+        setUniversitiesStore(selectedUniversities)
+    }, [universities]);
+
     // const getUniversityFieldsDescription = (uni: University) => {
     //     const fields = new Set(selectedFieldsOfStudy.filter((f) => f.universityId === uni.name).map(f => f.type))
     //     if (fields.size === 1) {

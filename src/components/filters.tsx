@@ -1,7 +1,7 @@
 import { useFilterStore } from "@/store/filterStore.ts";
 import { MultiSelect } from "@/components/ui/multiselect.tsx";
 import { Button } from "@/components/ui/button.tsx";
-import { ArrowLeft, Sparkles } from "lucide-react";
+import {ArrowLeft, Flame, Sparkles} from "lucide-react";
 import { Link } from "react-router-dom";
 import {
     AlertDialog, AlertDialogAction, AlertDialogContent,
@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/alert-dialog.tsx";
 import RecruitmentPoints from "@/components/recruitment-points.tsx";
 import AdvancedFilters from "@/components/advanced-filters.tsx";
-
 
 export default function Filters() {
     const { setCities, selectedCities,tags } = useFilterStore();
@@ -57,5 +56,13 @@ export default function Filters() {
                 </AlertDialogFooter>
             </AlertDialogContent>
         </AlertDialog>
+
+        <div className={'flex-grow'}></div>
+        <Button variant={"secondary"} asChild>
+            <Link to={"/swipe"}>
+                Nie wiesz, co wybrać?
+                <Flame className={"w-4 h-4 shrink-0 opacity-80 ml-3 text-red-400"} />
+            </Link>
+        </Button>
     </div>
 }

@@ -7,6 +7,7 @@ import Universities from "@/views/universities.tsx";
 import BasicInfo from "@/views/basic-info.tsx";
 import CareerAssistant from "@/views/career-assistant.tsx";
 import Favorites from "./views/favorites";
+import Tinder from "@/components/tinder.tsx";
 
 export default createBrowserRouter(
     createRoutesFromElements(
@@ -17,6 +18,7 @@ export default createBrowserRouter(
             <Route path="/fields-of-study" element={<FieldsOfStudy />} />
             <Route path="/assistant" element={<CareerAssistant />} />
             <Route path="/universities" element={<Universities />} />
+            <Route path="/swipe" element={<Tinder />} />
             <Route path="/favorites" element={<Favorites />} />
         </Route>
     )

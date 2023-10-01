@@ -18,6 +18,7 @@ import allFieldsOfStudy from "../data/fieldsOfStudy.json";
     },
 */
 
+/*
 interface FieldOfStudy {
     type: string;
     universityId: string;
@@ -25,6 +26,7 @@ interface FieldOfStudy {
     degree: Number;
     numberOfPoints: Number;
 }
+*/
 
 interface University {
     name: string;

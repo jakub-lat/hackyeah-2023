@@ -181,8 +181,6 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
         // controls.current.update();
     });
 
-    // const font = useFont('/roboto.json');
-
     return (
         <group>
             {dots.map((dot, index) => {
@@ -193,11 +191,11 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
                              isSelected={selected === dot.name}/>
                         <Billboard>
                             <Text
+                                font="/RadioCanada-Regular.ttf"
                                 fontSize={0.2}
                                 position={[0, 0.2, 0]}
                                 anchorX="center"
                                 anchorY="middle"
-                                font={"/roboto.json"}
                                 color={isHighlighted ? 'white' : 'gray'}
                             >
                                 {dot.name}

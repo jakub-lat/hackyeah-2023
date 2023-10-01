@@ -5,10 +5,15 @@ import Filters from "@/components/filters.tsx";
 import {useUniStore} from "@/store/universityStore.ts";
 import UniversityList from "@/components/university-list.tsx";
 import University from "@/components/university.tsx";
+import {useEffect} from "react";
 
 export default function Universities() {
     // const [focus, setFocus] = useState(null)
     const {focused, setFocused} = useUniStore();
+
+    useEffect(() => {
+        setFocused(null);
+    }, []);
 
     return <PageLayout>
         <Filters />

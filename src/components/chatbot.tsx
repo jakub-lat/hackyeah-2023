@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { Bot, User } from "lucide-react";
-import { useTheme } from "@/components/theme-provider";
-import { Input } from '@/components/ui/input.tsx';
+import {useState} from 'react';
+import {Card, CardContent, CardHeader} from '@/components/ui/card';
+import {Bot, User} from "lucide-react";
+import {useTheme} from "@/components/theme-provider";
+import {Input} from '@/components/ui/input.tsx';
 import LoadingButton from './ui/loading-button';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import UniversityAssistant from '@/lib/UniversityAssistant';
 import { useMemo, useRef, useEffect } from 'react';
 import { Label } from "@/components/ui/label"
@@ -12,6 +12,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useAssistantSuggestionsStore } from '@/store/assistantSuggestionsStore';
 import { AssistantSuggestion } from '@/lib/AssistantAnswer';
 import { ArrowRight } from "lucide-react";
+import {Button} from "@/components/ui/button.tsx";
+
 
 export default function Chatbot() {
     const [messages, setMessages] = useState<{ message: string, bot: boolean }[]>([{
@@ -32,7 +34,7 @@ export default function Chatbot() {
     const [textAnswer, setTextAnswer] = useState('');
     const [choicesAnswer, setChoicesAnswer] = useState<string[] | null>(null);
     const [choiceAnswer, setChoiceAnswer] = useState<string | null>(null);
-    const { theme } = useTheme()
+    const {theme} = useTheme()
     const assistant = useMemo(() => new UniversityAssistant(), []);
     const [isLoading, setLoading] = useState(false);
     const [isDataGathered, setDataGathered] = useState(false);
@@ -50,7 +52,7 @@ export default function Chatbot() {
 
             setMessages(prev => [
                 ...prev,
-                { message: answer, bot: false },
+                {message: answer, bot: false},
             ]);
 
             assistant.ask(answer).then((res) => {
@@ -59,19 +61,20 @@ export default function Chatbot() {
                     setSuggestion(res.answer as AssistantSuggestion);
                     setMessages(prev => [
                         ...prev,
-                        { message: "Dziękuje za Twoje odpowiedzi. Przygotowałem dla Ciebie kilka propozycji. Kliknij kontynuuj, aby je zobaczyć." as string, bot: true }
+                        {
+                            message: "Dziękuje za Twoje odpowiedzi. Przygotowałem dla Ciebie kilka propozycji. Kliknij kontynuuj, aby je zobaczyć." as string,
+                            bot: true
+                        }
                     ]);
                 }
                 else {
-
-
                     if (res.possibleResponses) {
                         setChoicesAnswer(res.possibleResponses)
                     }
 
                     setMessages(prev => [
                         ...prev,
-                        { message: res.answer as string, bot: true }
+                        {message: res.answer as string, bot: true}
                     ]);
                 }
 
@@ -81,16 +84,22 @@ export default function Chatbot() {
         }
     };
 
+    const [selected, setSelected] = useState(null);
+
+    const setClasses = (i) => {
+        if(selected == i)
+            return "outline outline-1";
+    }
+
     return (
         <div className="my-4 flex flex-col gap-y-2 mx-auto w-full lg:max-w-[60%]">
-
-            {messages.map(({ message, bot }, i) => (
+            {messages.map(({message, bot}, i) => (
                 <Card key={i}>
                     <CardHeader>
                         <div className="flex gap-2 px-3">
                             {bot ?
-                                <Bot className='w-6 h-6' color={theme === "dark" ? "white" : "black"} /> :
-                                <User className='w-6 h-6' color={theme === "dark" ? "white" : "black"} />
+                                <Bot className='w-6 h-6' color={theme === "dark" ? "white" : "black"}/> :
+                                <User className='w-6 h-6' color={theme === "dark" ? "white" : "black"}/>
                             }
                             <h1>{bot ? "Asystent" : "Ty"}</h1>
                         </div>
@@ -104,11 +113,13 @@ export default function Chatbot() {
             <div>
                 <div className='flex mt-1 gap-2 items-center'>
                     {choicesAnswer !== null ? (
-                        <RadioGroup value={choiceAnswer} onValueChange={e => setChoiceAnswer(e)}>
+                        <RadioGroup className="flex flex-wrap" value={choiceAnswer} onValueChange={e => setChoiceAnswer(e)}>
                             {choicesAnswer.map((choice, i) => (
-                                <div className="flex items-center space-x-2 p-2" key={i}>
-                                    <RadioGroupItem value={choice} id={`choice${i}`} />
-                                    <Label htmlFor={`choice${i}`}>{choice}</Label>
+                                <div className="space-x-0.5 inline-block" key={i}>
+                                    <RadioGroupItem className="hidden" value={choice} id={`choice${i}`} />
+                                    <Button variant="secondary" id={`choice${i}`} onClick={() => setSelected(i)} className={setClasses(i)}>
+                                        <Label htmlFor={`choice${i}`}>{choice}</Label>
+                                    </Button>
                                 </div>
                             ))}
                         </RadioGroup>
@@ -135,9 +146,17 @@ export default function Chatbot() {
                         isLoading={isLoading}
                     >
                         {isDataGathered ? "Kontynuuj" : "Wyślij"}
-                        {isDataGathered ? <ArrowRight className={"h-4 w-4 ml-2"} /> : null}
+                        {isDataGathered ? <ArrowRight className={"w-4 h-4 ml-3"}/> : null}
                     </LoadingButton>
                 </div>
+            </div>
+            <div className='flex justify-end'>
+                {!isDataGathered ? <Button variant={'secondary'} className={'w-32 mt-5'} asChild>
+                    <Link to={'/fields-of-study'}>
+                        Pomiń
+                        <ArrowRight className={"w-4 h-4 ml-3 text-muted-foreground"}/>
+                    </Link>
+                </Button> : null}
             </div>
         </div>
     );

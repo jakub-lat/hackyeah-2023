@@ -51,15 +51,15 @@ export default function BasicInfo() {
         setDoc(doc(firestore, 'users', auth.currentUser.uid), {
             category: category,
             userOrigin: userOrigin
-        }).then(() => {
-            navigate('/fields-of-study');
+        }, { merge: true }).then(() => {
+            navigate('/assistant');
         })
     }
 
     return <div className={"flex justify-center items-center mt-20"}>
         <Card className="w-[600px]">
             <CardHeader>
-                <CardTitle>Zacznijmy!</CardTitle>
+                <CardTitle>Zaczynamy!</CardTitle>
                 <CardDescription>Powiedz nam kilka słów o sobie.</CardDescription>
             </CardHeader>
             <CardContent>

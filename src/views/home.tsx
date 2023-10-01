@@ -11,8 +11,8 @@ export default function Home() {
     const [signInWithGoogle, _, _error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
 
-    return <div className={"p-10 h-full"}>
-        <div className={"flex flex-col items-center justify-around my-20"}>
+    return <div className={"h-[75vh] flex items-center justify-center"}>
+        <div className={"flex flex-col items-center justify-around"}>
             <div className={"text-center"}>
                 <h1 className={"text-6xl font-bold mb-4 "}>{appName}</h1>
                 <h2 className="text-xl ">Znajdź swoją wymarzoną ścieżkę kariery</h2>
@@ -35,6 +35,10 @@ export default function Home() {
                     </span>
                 )}
             </Button>
+        </div>
+
+        <div className="w-[100vw] h-[100vh] absolute top-0 left-0 opacity-10 -z-10">
+            <img className="w-full h-full" src="/background.jpg" alt="" />
         </div>
     </div>
 }

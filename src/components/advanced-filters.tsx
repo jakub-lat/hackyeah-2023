@@ -1,9 +1,12 @@
 import {Button} from "@/components/ui/button.tsx";
 import {ITagType, useFilterStore} from "@/store/filterStore.ts";
-import {Check, Trash} from "lucide-react";
+import {Check, Sparkles, Trash} from "lucide-react";
 import {Popover, PopoverContent, PopoverTrigger} from "./ui/popover";
 import {Slider} from '@/components/ui/slider.tsx';
+import {Link} from "react-router-dom";
 
+const minScore = 0;
+const maxScore = 5;
 
 const tagTypes: ITagType[] = [
     {
@@ -58,7 +61,7 @@ function TagFilter({tagType}: { tagType: ITagType }) {
                 <Button variant={exists ? 'secondary' : "outline"}>
                     {exists && <Check className={'w-4 h-4 opacity-50 mr-2'}/>}
                     {tagType.name}
-                    {exists && <span className={'text-muted-foreground ml-3'}>{exists?.value}</span>}
+                    {exists && <span className={'text-muted-foreground ml-3'}>{exists?.value}/{maxScore}</span>}
                 </Button>
             </PopoverTrigger>
             <PopoverContent className="w-80">
@@ -72,8 +75,8 @@ function TagFilter({tagType}: { tagType: ITagType }) {
                         </div>
                         <div className={'flex gap-x-3'}>
                             <Slider
-                                min={0}
-                                max={5}
+                                min={minScore}
+                                max={maxScore}
                                 step={1}
                                 value={exists ? [exists.value as number] : [0]}
                                 onValueChange={value => {
@@ -94,9 +97,18 @@ function TagFilter({tagType}: { tagType: ITagType }) {
 }
 
 export default function AdvancedFilters() {
-    return (
-        <div className={'flex flex-wrap gap-2 pt-4'}>
-            {tagTypes.map(x => <TagFilter tagType={x} key={x.name}/>)}
-        </div>
+    return (<>
+            <div className={'flex flex-wrap gap-2 pt-4'}>
+                {tagTypes.map(x => <TagFilter tagType={x} key={x.name}/>)}
+            </div>
+            <div className={'mt-12'}>
+                <Button asChild variant={'secondary'}>
+                    <Link to={'/assistant'}>
+                        Wygeneruj filtry
+                        <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-3 text-pink-400"} />
+                    </Link>
+                </Button>
+            </div>
+        </>
     )
 }

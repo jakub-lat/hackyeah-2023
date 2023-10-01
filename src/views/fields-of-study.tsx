@@ -96,7 +96,7 @@ export default function FieldsOfStudy() {
                                 {focused}
                                 {selectedFields.includes(focused) ?
                                     <Button size={'sm'} variant={'secondary'} onClick={() => remove(focused)}>
-                                        <HeartSolid className={'w-4 h-4'}/>
+                                        <HeartSolid className={'w-4 h-4 text-red-500'}/>
                                     </Button>
                                     : <Button size={'sm'} variant={'secondary'} onClick={() => add(focused)}>
                                         <HeartOutline className={'w-4 h-4'}/>

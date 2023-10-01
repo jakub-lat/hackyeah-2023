@@ -7,6 +7,7 @@ import TWEEN from '@tweenjs/tween.js'
 import {OrbitControls as OrbitControlsImpl} from "three-stdlib/controls/OrbitControls";
 import embeddings from "../data/faculty_embeddings_glovo.json";
 import {useGraphStore} from "@/store/graphStore.ts";
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 
 interface GraphItem {
     position?: Vector3;
@@ -181,23 +182,27 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
         // controls.current.update();
     });
 
-    // const font = useFont('/roboto.json');
-
     return (
         <group>
             {dots.map((dot, index) => {
                 const isHighlighted = highlighted.has(dot.name);
+                var font;
+                const three_font = new FontLoader();
+                three_font.load('/Radio_Canada.json', function (font_font) {
+                  font=font_font
+                })
+
                 return (
                     <group key={index} position={[dot.position.x, dot.position.y, dot.position.z]}>
                         <Dot label={dot.name} onClick={() => handleDotClick(dot)} isHighlighted={isHighlighted}
                              isSelected={selected === dot.name}/>
                         <Billboard>
                             <Text
+                                font="/RadioCanada-Regular.ttf"
                                 fontSize={0.2}
                                 position={[0, 0.2, 0]}
                                 anchorX="center"
                                 anchorY="middle"
-                                font={"/roboto.json"}
                                 color={isHighlighted ? 'white' : 'gray'}
                             >
                                 {dot.name}

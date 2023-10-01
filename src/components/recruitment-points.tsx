@@ -56,7 +56,7 @@ export default function RecruitmentPoints() {
                 </AlertDialogTitle>
                 <AlertDialogDescription>
                     <h3 className={'mb-2'}>Wpisz wyniki z matury (rzeczywiste lub szacowane) aby wyróżnić uczelnie, na które będzie ci się trudniej dostać.</h3>
-                    <div className={'flex flex-col gap-y-4 pb-4 pt-2 h-[50vh] top-0 bottom-0 overflow-y-scroll'}>
+                    <div className={'flex flex-col gap-y-4 pb-4 pt-2 h-[50vh] top-0 bottom-0 overflow-y-auto'}>
                     {scores.map(([subject, score]) =>
                         <div className={'flex'}>
                         <div className={"grid items-center gap-4 grid-cols-3 mr-3"}>
@@ -80,7 +80,6 @@ export default function RecruitmentPoints() {
                                 variant="outline"
                                 role="combobox"
                                 aria-expanded={open}
-                                className="w-[200px] justify-between"
                             >
                                 {value
                                     ? maturaSubjects.find((subj) => subj === value)

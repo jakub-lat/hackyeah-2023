@@ -7,7 +7,6 @@ import TWEEN from '@tweenjs/tween.js'
 import {OrbitControls as OrbitControlsImpl} from "three-stdlib/controls/OrbitControls";
 import embeddings from "../data/faculty_embeddings_glovo.json";
 import {useGraphStore} from "@/store/graphStore.ts";
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 
 interface GraphItem {
     position?: Vector3;

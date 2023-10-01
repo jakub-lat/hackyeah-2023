@@ -9,6 +9,8 @@ import UniversityAssistant from '@/lib/UniversityAssistant';
 import { useMemo, useRef, useEffect } from 'react';
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Button } from './ui/button';
+import classNames from 'classnames';
 
 
 export default function Chatbot() {
@@ -78,6 +80,17 @@ export default function Chatbot() {
         }
     };
 
+    const [selected, setSelected] = useState(null);
+
+    const select = (i) => {
+        setSelected(i);
+    }
+
+    const setClasses = (i) => {
+        if(selected == i)
+            return "outline outline-1";
+    }
+
     return (
         <div className="my-4 flex flex-col gap-y-2 mx-auto w-full lg:max-w-[60%]">
 
@@ -101,11 +114,13 @@ export default function Chatbot() {
             <div>
                 <div className='flex mt-1 gap-2 items-center'>
                     {choicesAnswer !== null ? (
-                        <RadioGroup value={choiceAnswer} onValueChange={e => setChoiceAnswer(e)}>
+                        <RadioGroup className="flex flex-wrap" value={choiceAnswer} onValueChange={e => setChoiceAnswer(e)}>
                             {choicesAnswer.map((choice, i) => (
-                                <div className="flex items-center space-x-2 p-2" key={i}>
-                                    <RadioGroupItem value={choice} id={`choice${i}`} />
-                                    <Label htmlFor={`choice${i}`}>{choice}</Label>
+                                <div className="space-x-0.5 inline-block" key={i}>
+                                    <RadioGroupItem className="hidden" value={choice} id={`choice${i}`} />
+                                    <Button variant="secondary" id={`choice${i}`} onClick={() => select(i)} className={setClasses(i)}>
+                                        <Label htmlFor={`choice${i}`}>{choice}</Label>
+                                    </Button>
                                 </div>
                             ))}
                         </RadioGroup>
@@ -113,7 +128,7 @@ export default function Chatbot() {
                         <Input
                             className="placeholder-red px-7 h-14"
                             value={textAnswer}
-                            disabled={isLoading}
+                            disabled={isLoading || isDataGathered}
                             onChange={e => setTextAnswer(e.currentTarget.value)}
                             onKeyDown={e => {
                                 if (e.key === 'Enter') {

@@ -9,6 +9,8 @@ import UniversityAssistant from '@/lib/UniversityAssistant';
 import { useMemo, useRef, useEffect } from 'react';
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { useAssistantSuggestionsStore } from '@/store/assistantSuggestionsStore';
+import { AssistantSuggestion } from '@/lib/AssistantAnswer';
 
 
 export default function Chatbot() {
@@ -35,6 +37,7 @@ export default function Chatbot() {
     const [isLoading, setLoading] = useState(false);
     const [isDataGathered, setDataGathered] = useState(false);
     const navigate = useNavigate()
+    const {setSuggestion} = useAssistantSuggestionsStore(); 
 
     const handleSubmit = () => {
         if (textAnswer.trim() || choiceAnswer.trim()) {
@@ -53,7 +56,7 @@ export default function Chatbot() {
             assistant.ask(answer).then((res) => {
                 if (res.isDataGathered) {
                     setDataGathered(true);
-
+                    setSuggestion(res.answer as AssistantSuggestion);
                     setMessages(prev => [
                         ...prev,
                         { message: "Dziękuje za Twoje odpowiedzi. Przygotowałem dla Ciebie kilka propozycji. Kliknij kontynuuj, aby je zobaczyć." as string, bot: true }
@@ -113,7 +116,7 @@ export default function Chatbot() {
                         <Input
                             className="placeholder-red px-7 h-14"
                             value={textAnswer}
-                            disabled={isLoading}
+                            disabled={isLoading || isDataGathered}
                             onChange={e => setTextAnswer(e.currentTarget.value)}
                             onKeyDown={e => {
                                 if (e.key === 'Enter') {
@@ -121,6 +124,7 @@ export default function Chatbot() {
                                 }
                             }}
                             placeholder="Wiadomość"
+
                         />
                     )}
 
@@ -129,7 +133,6 @@ export default function Chatbot() {
                         color="primary"
                         onClick={isDataGathered ? () => navigate('/universities') : handleSubmit}
                         isLoading={isLoading}
-                        disabled={isDataGathered}
                     >
                         {isDataGathered ? "Kontynuuj" : "Wyślij"}
                     </LoadingButton>

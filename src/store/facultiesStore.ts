@@ -15,7 +15,7 @@ export interface IFaculty {
 //   return Array.from(uniqueData);
 // };
 
-const getFaculties = () =>{
+const getFaculties = () => {
     return allFieldsOfStudy;
 }
 

@@ -71,7 +71,7 @@ export default function FieldsOfStudy() {
                             <h2 className={"text-sm mb-5"}>Zaznacz kierunki, które cię interesują.</h2>
                         </div>
                         <Button variant={"secondary"} asChild>
-                            <Link to={"/fields-of-study/assistant"}>
+                            <Link to={"/assistant"}>
                                 Pomóż mi wybrać
                                 <Sparkles className={"w-4 h-4 text-pink-500 ml-2"} />
                             </Link>

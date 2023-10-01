@@ -1,8 +1,9 @@
 import {Button} from "@/components/ui/button.tsx";
 import {ITagType, useFilterStore} from "@/store/filterStore.ts";
-import {Check, Trash} from "lucide-react";
+import {Check, Sparkles, Trash} from "lucide-react";
 import {Popover, PopoverContent, PopoverTrigger} from "./ui/popover";
 import {Slider} from '@/components/ui/slider.tsx';
+import {Link} from "react-router-dom";
 
 const minScore = 0;
 const maxScore = 5;
@@ -96,9 +97,18 @@ function TagFilter({tagType}: { tagType: ITagType }) {
 }
 
 export default function AdvancedFilters() {
-    return (
-        <div className={'flex flex-wrap gap-2 pt-4'}>
-            {tagTypes.map(x => <TagFilter tagType={x} key={x.name}/>)}
-        </div>
+    return (<>
+            <div className={'flex flex-wrap gap-2 pt-4'}>
+                {tagTypes.map(x => <TagFilter tagType={x} key={x.name}/>)}
+            </div>
+            <div className={'mt-12'}>
+                <Button asChild variant={'secondary'}>
+                    <Link to={'/assistant'}>
+                        Pomóż mi wybrać
+                        <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-3 text-pink-400"} />
+                    </Link>
+                </Button>
+            </div>
+        </>
     )
 }

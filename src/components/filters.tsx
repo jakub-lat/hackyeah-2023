@@ -49,7 +49,6 @@ export default function Filters() {
                 <AlertDialogHeader className={"min-h-[400px]"}>
                     <AlertDialogTitle className={"flex items-center"}>
                         Zaawansowane filtry
-                        <Sparkles className={"w-5 h-5 shrink-0 opacity-75 ml-3 text-pink-400"} />
                     </AlertDialogTitle>
                     <AlertDialogDescription>
                         <AdvancedFilters />

@@ -186,12 +186,6 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
         <group>
             {dots.map((dot, index) => {
                 const isHighlighted = highlighted.has(dot.name);
-                var font;
-                const three_font = new FontLoader();
-                three_font.load('/Radio_Canada.json', function (font_font) {
-                  font=font_font
-                })
-
                 return (
                     <group key={index} position={[dot.position.x, dot.position.y, dot.position.z]}>
                         <Dot label={dot.name} onClick={() => handleDotClick(dot)} isHighlighted={isHighlighted}

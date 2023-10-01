@@ -91,7 +91,7 @@ export default function Universities() {
     }
 
     const selectedFieldsOfStudy = allFieldsOfStudy.filter((field) => selectedFields.includes(field.type));
-    const doesUniversityOfferAnySelectedField = (uni: University) => selectedFieldsOfStudy.map((f) => f.universityId).includes(uni.name);
+    const doesUniversityOfferAnySelectedField = (uni: University) => (selectedCities.length === 0 || selectedCities.includes(uni.city)) && selectedFieldsOfStudy.map((f) => f.universityId).includes(uni.name);
     const selectedUniversities = Array.from(new Set(universities.filter(doesUniversityOfferAnySelectedField)))
 
     useEffect(() => {

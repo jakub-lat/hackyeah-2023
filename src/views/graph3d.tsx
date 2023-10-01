@@ -108,7 +108,7 @@ const Dots = forwardRef<DotsRef, DotsProps>(({
     const dots = useMemo(() => {
         return items.map(item => {
             const formattedName = getNameForEmbedding(item.name);
-            // console.log("looking for: ", item.name, ' => ', formattedName);
+            console.log("looking for: ", item.name, ' => ', formattedName);
             const emb = embeddings[formattedName];
             // console.log(emb);
             const moveTowardsMiddle = (x: number) => {

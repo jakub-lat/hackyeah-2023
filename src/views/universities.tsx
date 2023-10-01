@@ -13,6 +13,8 @@ import getFaculties from '@/store/facultiesStore';
 import {useUniStore} from "@/store/universityStore.ts";
 import University from "@/components/university";
 import {useSearchParams} from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "@/lib/firebase.ts";
 import {Alert, AlertDescription} from "@/components/ui/alert";
 import {AlertTitle} from "@/components/ui/alert.tsx";
 import {AlertCircle} from "lucide-react";
@@ -48,18 +50,19 @@ interface University {
 }
 
 export default function Universities() {
-    const { selectedFields, addSelectedField } = useFilterStore();
+    const { selectedFields, addSelectedField, getSelectedFields } = useFilterStore();
     // const [focus, setFocus] = useState(null)
     const {focused, setFocused} = useUniStore();
 
     const [search, _setSearch] = useSearchParams();
+    const [user] = useAuthState(auth);
 
     useEffect(() => {
         if(search.has('id')) {
            setFocused(universities.find((uni) => uni.name === search.get('id')));
         }
     }, [search]);
-
+  
     const selectedFieldsOfStudy = allFieldsOfStudy.filter((field) => selectedFields.includes(field.type));
     const doesUniversityOfferAnySelectedField = (uni: University) => selectedFieldsOfStudy.map((f) => f.universityId).includes(uni.name);
     const selectedUniversities = Array.from(new Set(universities.filter(doesUniversityOfferAnySelectedField)))
@@ -92,7 +95,9 @@ export default function Universities() {
         }
     }, [areAssistantSuggestionsIncluded, suggestedFieldsOfStudy]);
 
-    console.log(selectedUniversities);
+    useEffect(() => {
+        getSelectedFields();
+    }, [user])
 
     return <PageLayout>
         <Filters/>

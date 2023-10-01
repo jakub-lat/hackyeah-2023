@@ -12,10 +12,8 @@ export default function Home() {
     const navigate = useNavigate();
 
     return <div className={"h-[75vh] flex items-center justify-center"}>
-                        <img src="/icon.png" className="aspect-square" />
         <div className={"flex flex-col items-center justify-around"}>
-            <div className={"text-center flex flex-col"}>
-
+            <div className={"text-center"}>
                 <h1 className={"text-6xl font-bold mb-4 "}>{appName}</h1>
                 <h2 className="text-xl ">Znajdź swoją wymarzoną ścieżkę kariery</h2>
             </div>

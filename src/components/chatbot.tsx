@@ -143,12 +143,12 @@ export default function Chatbot() {
                 </div>
             </div>
             <div className='flex justify-end'>
-                <Button variant={'secondary'} className={'w-32 mt-5'} asChild>
+                {!isDataGathered ? <Button variant={'secondary'} className={'w-32 mt-5'} asChild>
                     <Link to={'/fields-of-study'}>
                         Pomiń
                         <ArrowRight className={"w-4 h-4 ml-3 text-muted-foreground"}/>
                     </Link>
-                </Button>
+                </Button> : null}
             </div>
         </div>
     );

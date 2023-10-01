@@ -16,7 +16,6 @@ const UniCard = ({ header, description, icon, onClick: onClick }: {
     const [isFavorited, setIsFavorited] = useState<boolean>(false);
 
     function handleClick() {
-        console.log('click');
         if (onClick) {
             onClick();
         }

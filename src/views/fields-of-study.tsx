@@ -43,7 +43,6 @@ export default function FieldsOfStudy() {
     const { selectedFields, addSelectedField, removeSelectedField, saveSelectedFields, getSelectedFields } = useFilterStore();
 
     useEffect(() => {
-        console.log('test')
         getSelectedFields();
     }, [user])
 

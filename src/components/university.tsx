@@ -135,6 +135,7 @@ const University = ({ university }: { university: IUniversity }) => {
                             showRoadLabels: false,
                             zoomControl: false
                         }}
+                        key={focused.latitude + focused.longitude}
                     />
                 </div>
                 <div>

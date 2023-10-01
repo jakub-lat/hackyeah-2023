@@ -9,8 +9,10 @@ import {Badge} from "@/components/ui/badge.tsx";
 import allFieldsOfStudy from "@/data/fieldsOfStudy.json";
 import {useFilterStore} from "@/store/filterStore.ts";
 
-const UniCard = ({uni, onClick: onClick}: {
+
+const UniCard = ({uni, aiScore, onClick: onClick}: {
     uni: IUniversity
+    aiScore: number
     onClick?: () => void
 } & HTMLProps<HTMLButtonElement>) => {
 
@@ -77,10 +79,15 @@ const UniCard = ({uni, onClick: onClick}: {
                 </div>
             </CardHeader>
             <CardFooter className="p-5 ml-auto">
-                <Button onClick={toggleFav} variant="ghost">
-                    {isFavorited ? <HeartSolid className="h-5 w-5"/> : <HeartOutline className="h-5 w-5"/>}
-                </Button>
-                <Button variant="ghost" onClick={handleClick}><ChevronRight/></Button>
+                <div className="flex flex-col items-center gap-3">
+                    <div className="flex">
+                        <Button onClick={toggleFav} variant="ghost">
+                            { isFavorited ? <HeartSolid className="h-5 w-5" /> : <HeartOutline className="h-5 w-5" />}
+                            </Button>
+                        <Button variant="ghost" onClick={handleClick}><ChevronRight /></Button>
+                    </div>
+                    <div><Badge variant="outline">AI score {aiScore !== 0 ? aiScore : '🤔'}</Badge></div>
+                </div>
             </CardFooter>
         </Card>
     )

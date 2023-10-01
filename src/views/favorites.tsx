@@ -1,6 +1,8 @@
 import PageLayout, {PageTitle} from "@/layouts/PageLayout.tsx";
 import UniCard from "@/components/universities/uni-card";
 import {createSearchParams, useNavigate} from "react-router-dom";
+import {useFilterStore} from "@/store/filterStore.ts";
+// import Filters from "@/components/filters.tsx";
 import {useAuthState} from "react-firebase-hooks/auth";
 import {auth} from "@/lib/firebase.ts";
 import {useEffect} from "react";
@@ -20,6 +22,31 @@ export default function Favorites() {
     const selectedUniversities: IUniversity[] = Array.from(new Set(universities.filter(x => favorites?.includes(x.name))));
 
     const navigate = useNavigate();
+    const {tags} = useFilterStore();
+    const getAIScore = (uni) => {
+        if (tags.length === 0) {
+            return 0;
+        }
+        var score = 0;
+        for (const tag of tags) {
+            const value = tag.value;
+            if (typeof value === 'boolean') {
+                if (value === uni.tags_scored[tag.name]) {
+                    score += uni.tags_scored[tag.name] * 10;
+                }
+            } else if (typeof value === 'number') {
+                const dist = Math.abs(value - uni.tags_scored[tag.name]);
+                score += (10 - dist);
+            }
+        }
+        const maxScore = 40 + 11 * 10;
+        var finalScore = Math.round(score / maxScore * 100) * 2;
+        if (finalScore >= 100) {
+            finalScore = 100 - Math.random() * 10;
+        }
+        return Math.round(finalScore);
+    }
+
     return <PageLayout className={"px-64"}>
         <PageTitle className={"mt-4 mb-4"}>Ulubione uczelnie/kierunki</PageTitle>
 
@@ -38,6 +65,7 @@ export default function Favorites() {
                     <UniCard
                         key={i}
                         uni={uni}
+                        aiScore={getAIScore(uni)}
                         onClick={() => {
                             navigate({
                                 pathname: '/universities',

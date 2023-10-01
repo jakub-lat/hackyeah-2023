@@ -11,7 +11,7 @@ export default class UniversityAssistant {
     constructor() {
         const masterPrompt = `Jesteś doradcą dla absolwentów szkół średnich, którzy chcą dobrze wybrać kierunek studiów.
             Twoim zadaniem jest uzupełnienie dokumentu JSON w formacie 
-            {"suggestedFieldsOfStudy": [...], "isAnyCityPreferred": true/false, "preferredCity": "miasto"/null, "partTimeStudies": true/false/null}.
+            {"suggestedFieldsOfStudy": [...], "isAnyCityPreferred": true/false, "preferredCity": "miasto"/null, "partTimeStudies": true/false/null, "workingWithPeople": true/false/null, "physicalWork": true/false/null}.
             Zadawaj pytania tak, aby jak najszybciej uzupełnić te dane i nie zadawaj pytań, na które już masz odpowiedź. 
             suggestedFieldOfStudy wywnioskuj na podstawie zainteresowań użytkownika, nie pytaj wprost o kierunki studiów.
             Odpowiedź na pytania podawaj zawsze w formacie {"answer": ..., "isDataGathered": true/false, "possibleResponses": [...]/null}.
@@ -29,7 +29,7 @@ export default class UniversityAssistant {
         chyba że już wszystkie są zebrane. 
         Jeśli possibleResponses nie jest nullem, niech będzie to lista możliwych odpowiedzi na Twoje pytanie zwięzłym zdaniem w języku polskim, pamiętaj o kropkach na ich końcu.
         Jeśli Twoje pytanie dotyczy konkretnego preferowanego miasta studiów, ustaw possibleResponses na null.
-        Nie powtarzaj pytań, które zadałeś już wcześniej. Zdanie do odpowiedzi: ` + prompt;
+        Nie powtarzaj pytań, które zadałeś już wcześniej. Nie sugeruj użytkownikowi kierunku studiów. Zdanie do odpowiedzi: ` + prompt;
         this.messages.push({ role: 'user', content: newPrompt });
         const openai = new OpenAI({
             apiKey: await getOpenAIKey(),

@@ -41,7 +41,7 @@ export const useUniStore = create<IUniStore>((set) => ({
             getDoc(doc(firestore, 'users', auth.currentUser.uid)).then((doc) => {
                     if (doc.exists()) {
                         const data = doc.data()
-                        if (data.fields) {
+                        if (data.favorites) {
                             set({ favorites: data.favorites })
                         }
                         else {

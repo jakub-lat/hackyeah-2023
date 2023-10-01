@@ -19,7 +19,6 @@ const UniCard = ({uni, onClick: onClick}: {
     const {favorites, setFavorites, saveFavorites} = useUniStore();
     const isFavorited = favorites?.includes(uni.name);
     const setIsFavorited = (x: boolean) => {
-        console.log('setting to', x);
         if (x) {
             setFavorites([...favorites, uni.name]);
         } else {

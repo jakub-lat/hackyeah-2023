@@ -23,7 +23,7 @@ export default function Favorites() {
     return <PageLayout className={"px-64"}>
         <PageTitle className={"mt-4 mb-4"}>Ulubione uczelnie/kierunki</PageTitle>
 
-        {selectedFields.length === 0 && <Alert className={'h-min w-[450px] border-red-600 border-opacity-50 bg-red-600/10'}>
+        {selectedUniversities.length === 0 && <Alert className={'h-min w-[450px] border-red-600 border-opacity-50 bg-red-600/10'}>
                 <AlertCircle className="h-4 w-4" />
                 <AlertTitle>Uwaga!</AlertTitle>
                 <AlertDescription>

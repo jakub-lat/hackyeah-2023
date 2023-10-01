@@ -144,7 +144,6 @@ export default function Chatbot() {
                         color="primary"
                         onClick={isDataGathered ? () => navigate('/universities') : handleSubmit}
                         isLoading={isLoading}
-                        disabled={isDataGathered}
                     >
                         {isDataGathered ? "Kontynuuj" : "Wyślij"}
                     </LoadingButton>

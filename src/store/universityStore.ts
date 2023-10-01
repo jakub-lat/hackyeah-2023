@@ -24,8 +24,8 @@ export interface IUniversity {
     description?: string,
     fieldsOfStudy?: string[],
     rating?: number,
-    comments?: []
-    tags_scored?: (boolean | number)[]
+    comments?: [],
+    tags_scored?: Record<string, (boolean | number)>
 }
 
 export const useUniStore = create<IUniStore>((set) => ({

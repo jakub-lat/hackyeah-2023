@@ -82,7 +82,10 @@ export default function Chatbot() {
                 setTextAnswer('');
                 setLoading(false)
             })
+
+            setSelected(null);
         }
+
     };
 
     const [selected, setSelected] = useState(null);

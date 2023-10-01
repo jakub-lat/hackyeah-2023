@@ -5,6 +5,7 @@ import { appName } from "@/lib/const.ts";
 import { useAuthState, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { auth } from "@/lib/firebase.ts";
 import { useNavigate } from "react-router-dom";
+import HomeBackground from '@/background.jpg';
 
 export default function Home() {
     const [user] = useAuthState(auth);
@@ -38,7 +39,7 @@ export default function Home() {
         </div>
 
         <div className="w-[100vw] h-[100vh] absolute top-0 left-0 opacity-10 -z-10">
-            <img className="w-full h-full" src="/background.jpg" alt="" />
+            <img className="w-full h-full" src={HomeBackground} alt="" />
         </div>
     </div>
 }

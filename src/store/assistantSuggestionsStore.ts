@@ -11,4 +11,6 @@ export const useAssistantSuggestionsStore = create<IAssistantSuggestionStore>((s
     preferredCity: null,
     partTimeStudies: null,
     setSuggestion: (suggestion: AssistantSuggestion) => set(suggestion),
+    physicalWork: null,
+    workingWithPeople: null,
 }))

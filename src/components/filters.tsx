@@ -3,7 +3,6 @@ import {MultiSelect} from "@/components/ui/multiselect.tsx";
 import {useState} from "react";
 import {Button} from "@/components/ui/button.tsx";
 import {ArrowLeft, Sparkles} from "lucide-react";
-import {Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select.tsx";
 import {Link} from "react-router-dom";
 import {
     AlertDialog, AlertDialogAction,    AlertDialogContent,
@@ -34,20 +33,6 @@ export default function Filters() {
                          selected={selected} onChange={setSelected} className={'w-64'}
             />
         </div>
-        <Select>
-            <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Select a fruit"/>
-            </SelectTrigger>
-            <SelectContent>
-                <SelectGroup>
-                    <SelectItem value="apple">Apple</SelectItem>
-                    <SelectItem value="banana">Banana</SelectItem>
-                    <SelectItem value="blueberry">Blueberry</SelectItem>
-                    <SelectItem value="grapes">Grapes</SelectItem>
-                    <SelectItem value="pineapple">Pineapple</SelectItem>
-                </SelectGroup>
-            </SelectContent>
-        </Select>
 
         <RecruitmentPoints />
 

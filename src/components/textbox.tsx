@@ -9,9 +9,14 @@ export default function Textbox(
     return (
         <div className='flex mt-1 gap-2'>
                 <Input
-                    className="text-white placeholder-red px-12"
+                    className="placeholder-red px-7"
                     value={currentMessage}
                     onChange={e => setCurrentMessage(e.currentTarget.value)}
+                    onKeyDown={e => {
+                        if (e.key === 'Enter') {
+                            handleSubmit();
+                        }
+                    }}
                     placeholder="Wpisz..."
                 />
                 <Button

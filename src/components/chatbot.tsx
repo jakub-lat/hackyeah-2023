@@ -29,24 +29,24 @@ export default function Chatbot() {
     };
 
     return (
-        <div className="my-4">
+        <div className="my-4 flex flex-col gap-y-2  ">
             {messages.map((message, i) => (
                 <Card key={i}>
                     <CardHeader>
-                        <div className="flex gap-2 px-6">
+                        <div className="flex gap-2 px-3">
                             <Bot color={theme === "dark" ? "white" : "black"} />
                             <h1>Wolisz samorozwój czy zdobycie zawodu?</h1>
                         </div>
                     </CardHeader>
-                    <CardContent className="mx-6">
-                        <p className=" text-gray-700">{message}</p>
+                    <CardContent className="mx-3">
+                        <p className="text-muted-foreground">{message}</p>
                     </CardContent>
                 </Card>
             ))}
 
             <Card>
                 <CardHeader>
-                    <div className="flex gap-2 px-6">
+                    <div className="flex gap-2 px-3">
                         <Bot color={theme === "dark" ? "white" : "black"} />
                         <h1>Wolisz samorozwój czy zdobycie zawodu?</h1>
                     </div>

@@ -78,7 +78,7 @@ function MultiSelect({ options, selected, onChange, className, placeholder = 'Sz
                         ))}
                         {!selected.length && <span className={"text-muted-foreground"}>{label}</span>}
                     </div>
-                    <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50" />
+                    <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50 ml-4" />
                 </Button>
             </PopoverTrigger>
             <PopoverContent className="w-full p-0">

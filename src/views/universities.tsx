@@ -1,17 +1,24 @@
 import PageLayout from "@/layouts/PageLayout.tsx";
 import Map from "@/components/ui/map.tsx";
 import UniCard from "@/components/universities/uni-card";
-import {ScrollArea} from "@/components/ui/scroll-area";
+import { useEffect, useState } from "react";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import Filters from "@/components/filters.tsx";
 import {useFilterStore} from "@/store/filterStore.ts";
 import universities from "../data/universities.json";
 import allFieldsOfStudy from "../data/fieldsOfStudy.json";
+import { useAssistantSuggestionsStore } from "@/store/assistantSuggestionsStore";
+import { getSimilarMetacategories } from "@/lib/utils";
+import getFaculties from '@/store/facultiesStore';
 import {useUniStore} from "@/store/universityStore.ts";
 import University from "@/components/university";
 import {useSearchParams} from "react-router-dom";
 import {useEffect} from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/lib/firebase.ts";
+import {Alert, AlertDescription} from "@/components/ui/alert";
+import {AlertTitle} from "@/components/ui/alert.tsx";
+import {AlertCircle} from "lucide-react";
 
 /*
     {
@@ -44,6 +51,7 @@ interface University {
 }
 
 export default function Universities() {
+    const { selectedFields, addSelectedField } = useFilterStore();
     // const [focus, setFocus] = useState(null)
     const {focused, setFocused} = useUniStore();
 
@@ -57,6 +65,7 @@ export default function Universities() {
     }, [search]);
 
     const {selectedFields, getSelectedFields} = useFilterStore();
+  
     const selectedFieldsOfStudy = allFieldsOfStudy.filter((field) => selectedFields.includes(field.type));
     const doesUniversityOfferAnySelectedField = (uni: University) => selectedFieldsOfStudy.map((f) => f.universityId).includes(uni.name);
     const selectedUniversities = Array.from(new Set(universities.filter(doesUniversityOfferAnySelectedField)))
@@ -67,6 +76,27 @@ export default function Universities() {
         }
         return `kierunki: ${Array.from(fields).join(", ")}`;
     };
+    const { suggestedFieldsOfStudy } = useAssistantSuggestionsStore();
+    const [areAssistantSuggestionsIncluded, setAssistantSuggestionsIncluded] = useState(false);
+    const allFaculties = getFaculties();
+
+    useEffect(() => {
+        const filterByAssistantSuggestions = async () => {
+            const similarMetacategories = await getSimilarMetacategories(suggestedFieldsOfStudy);
+            for (const metacategory of similarMetacategories) {
+                if (metacategory in allFaculties) {
+                    for (let i = 0; i < Math.min(5, allFaculties[metacategory].length); i++) {
+                        addSelectedField(allFaculties[metacategory][i]);
+                    }
+                }
+            }
+        };
+
+        if (!areAssistantSuggestionsIncluded && suggestedFieldsOfStudy.length > 0) {
+            filterByAssistantSuggestions();
+            setAssistantSuggestionsIncluded(true);
+        }
+    }, [areAssistantSuggestionsIncluded, suggestedFieldsOfStudy]);
 
     useEffect(() => {
         getSelectedFields();
@@ -75,6 +105,13 @@ export default function Universities() {
     return <PageLayout>
         <Filters/>
         <div className="flex flex-col lg:flex-row gap-5">
+            {selectedFields.length === 0 && <Alert className={'h-min w-[450px] border-red-600 border-opacity-50 bg-red-600/10'}>
+                <AlertCircle className="h-4 w-4" />
+                <AlertTitle>Uwaga!</AlertTitle>
+                <AlertDescription>
+                    Nie wybrałeś żadnych kierunków.
+                </AlertDescription>
+            </Alert>}
             {focused ? <University university={focused}/> :
                 <ScrollArea className="lg:w-[35%] max-h-[80vh]">
                     <div className="flex flex-col gap-3">

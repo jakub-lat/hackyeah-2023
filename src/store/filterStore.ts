@@ -5,6 +5,8 @@ import { doc, setDoc, getDoc } from "@firebase/firestore";
 interface IFilter {
     selectedFields: string[],
     city: string,
+    tags: ITagValue[],
+    points?: number,
 }
 
 interface IFilterStore extends IFilter {
@@ -14,6 +16,19 @@ interface IFilterStore extends IFilter {
     updateFilter: (filter: Partial<IFilter>) => void,
     saveSelectedFields: () => void,
     getSelectedFields: () => void,
+    addTag: (tag: ITagValue) => void,
+    removeTag: (name: string) => void,
+    setPoints: (points: number) => void,
+}
+
+export interface ITagType {
+    name: string;
+    type: 'bool' | 'score';
+}
+
+export interface ITagValue {
+    name: string;
+    value: boolean | number;
 }
 
 export const useFilterStore = create<IFilterStore>((set) => ({
@@ -42,4 +57,9 @@ export const useFilterStore = create<IFilterStore>((set) => ({
     },
     city: '',
     updateFilter: (filter: Partial<IFilter>) => set(filter),
-}))
+    tags: [],
+    addTag: (tag) => set((state) => ({ tags: [...state.tags, tag] })),
+    removeTag: (name: string) => set((state) => ({ tags: state.tags.filter((t) => t.name !== name) })),
+    points: null,
+    setPoints: (points) => set({ points }),
+}));

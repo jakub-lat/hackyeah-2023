@@ -3,8 +3,6 @@ export interface AssistantSuggestion {
     isAnyCityPreferred: boolean,
     preferredCity: string | null,
     partTimeStudies: boolean | null,
-    currentDegree: "none" | "bachelors" | "masters",
-
 }
 
 export interface AssistantAnswer {

@@ -11,10 +11,11 @@ import {
     AlertDialogTrigger
 } from "@/components/ui/alert-dialog.tsx";
 import RecruitmentPoints from "@/components/recruitment-points.tsx";
+import AdvancedFilters from "@/components/advanced-filters.tsx";
 
 
 export default function Filters() {
-    const {} = useFilterStore();
+    const {tags} = useFilterStore();
 
     const [selected, setSelected] = useState<string[]>([]);
 
@@ -40,7 +41,8 @@ export default function Filters() {
             <AlertDialogTrigger asChild>
                 <Button variant={"outline"}>
                     Zaawansowane filtry
-                    <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-5 text-pink-400"} />
+                    {tags.length !== 0 && <span className={'text-muted-foreground ml-2'}>{tags?.length || 0}</span>}
+                    <Sparkles className={"w-4 h-4 shrink-0 opacity-75 ml-3 text-pink-400"} />
                 </Button>
             </AlertDialogTrigger>
             <AlertDialogContent className={"min-w-[800px]"}>
@@ -50,8 +52,7 @@ export default function Filters() {
                         <Sparkles className={"w-5 h-5 shrink-0 opacity-75 ml-3 text-pink-400"} />
                     </AlertDialogTitle>
                     <AlertDialogDescription>
-                        This action cannot be undone. This will permanently delete your
-                        account and remove your data from our servers.
+                        <AdvancedFilters />
                     </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
